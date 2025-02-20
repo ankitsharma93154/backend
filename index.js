@@ -92,12 +92,18 @@ app.post('/get-pronunciation', async (req, res) => {
     return res.status(400).json({ error: 'Invalid accent selected' });
   }
 
-  const voiceName = isMale === true ? voiceMap[accent].male : voiceMap[accent].female;
+  const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
   console.log("Selected Voice:", voiceName);  // Debugging log
 
   try {
-    // Fetch word details (now with up to 3 prioritized definitions)
+    // Fetch word details
     const { phonetic, meanings } = await getWordDetails(word);
+    console.log("Fetched Meanings:", meanings);
+
+    // Ensure meanings is always an array and only return the first 3 definitions
+    const formattedMeanings = Array.isArray(meanings) && meanings.length > 0 
+      ? meanings.slice(0, 3) 
+      : ["Meaning not available."];
 
     const request = {
       input: { text: word },
@@ -114,7 +120,7 @@ app.post('/get-pronunciation', async (req, res) => {
     res.json({ 
       audioContent: base64Audio, 
       phonetic: phonetic || "Phonetic transcription not available.", 
-      meanings: meanings.length > 0 ? meanings : ["Meaning not available."] // Send multiple meanings
+      meanings: formattedMeanings // Send an array of meanings (up to 3)
     });
   } catch (error) {
     console.error('Error:', error);
