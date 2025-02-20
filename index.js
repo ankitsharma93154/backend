@@ -49,10 +49,16 @@ const getWordDetails = async (word) => {
       // Get phonetic if available
       const phonetic = wordData.phonetic || null;
 
-      // Extract up to 3 definitions
       let meanings = [];
+
       if (wordData.meanings) {
-        wordData.meanings.forEach(meaning => {
+        // Separate adjectives first (higher priority)
+        const adjectiveMeanings = wordData.meanings.filter(m => m.partOfSpeech === 'adjective');
+        const otherMeanings = wordData.meanings.filter(m => m.partOfSpeech !== 'adjective');
+
+        const sortedMeanings = [...adjectiveMeanings, ...otherMeanings];
+
+        sortedMeanings.forEach(meaning => {
           meaning.definitions.forEach(def => {
             if (meanings.length < 3) {
               meanings.push(def.definition);
