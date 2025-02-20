@@ -96,7 +96,8 @@ app.post('/get-pronunciation', async (req, res) => {
   console.log("Selected Voice:", voiceName);  // Debugging log
 
   try {
-    const { phonetic, meaning } = await getWordDetails(word);
+    // Fetch word details (now with up to 3 prioritized definitions)
+    const { phonetic, meanings } = await getWordDetails(word);
 
     const request = {
       input: { text: word },
@@ -113,13 +114,14 @@ app.post('/get-pronunciation', async (req, res) => {
     res.json({ 
       audioContent: base64Audio, 
       phonetic: phonetic || "Phonetic transcription not available.", 
-      meaning: meaning || "Meaning not available." // Send the meaning
+      meanings: meanings.length > 0 ? meanings : ["Meaning not available."] // Send multiple meanings
     });
   } catch (error) {
     console.error('Error:', error);
     res.status(500).json({ error: 'Error processing pronunciation request', details: error.message });
   }
 });
+
 
 // const PORT = process.env.PORT || 5000;
 // app.listen(PORT, () => {
