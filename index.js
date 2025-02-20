@@ -49,25 +49,25 @@ const getWordDetails = async (word) => {
       // Get phonetic if available
       const phonetic = wordData.phonetic || null;
 
-      // Look for an adjective definition first
-      let meaning = 'No definition available';
+      // Extract up to 3 definitions
+      let meanings = [];
       if (wordData.meanings) {
-        const adjectiveMeaning = wordData.meanings.find(m => m.partOfSpeech === 'adjective');
-        if (adjectiveMeaning) {
-          meaning = adjectiveMeaning.definitions[0].definition;
-        } else {
-          // Fallback to first available definition
-          meaning = wordData.meanings[0].definitions[0].definition;
-        }
+        wordData.meanings.forEach(meaning => {
+          meaning.definitions.forEach(def => {
+            if (meanings.length < 3) {
+              meanings.push(def.definition);
+            }
+          });
+        });
       }
 
-      return { phonetic, meaning };
+      return { phonetic, meanings };
     } else {
-      return { phonetic: null, meaning: 'No details available' };
+      return { phonetic: null, meanings: ['No details available'] };
     }
   } catch (error) {
     console.error('Error fetching word details:', error);
-    return { phonetic: null, meaning: 'Error fetching details' };
+    return { phonetic: null, meanings: ['Error fetching details'] };
   }
 };
 
