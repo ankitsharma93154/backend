@@ -44,8 +44,23 @@ const getWordDetails = async (word) => {
   try {
     const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
     if (response.data && response.data[0]) {
-      const phonetic = response.data[0].phonetic || null;
-      const meaning = response.data[0].meanings ? response.data[0].meanings[0].definitions[0].definition : 'No definition available';
+      const wordData = response.data[0];
+
+      // Get phonetic if available
+      const phonetic = wordData.phonetic || null;
+
+      // Look for an adjective definition first
+      let meaning = 'No definition available';
+      if (wordData.meanings) {
+        const adjectiveMeaning = wordData.meanings.find(m => m.partOfSpeech === 'adjective');
+        if (adjectiveMeaning) {
+          meaning = adjectiveMeaning.definitions[0].definition;
+        } else {
+          // Fallback to first available definition
+          meaning = wordData.meanings[0].definitions[0].definition;
+        }
+      }
+
       return { phonetic, meaning };
     } else {
       return { phonetic: null, meaning: 'No details available' };
