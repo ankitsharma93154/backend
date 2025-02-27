@@ -19,6 +19,12 @@ app.use(cors());
 app.use(compression()); // Add compression for response optimization
 app.use(bodyParser.json());
 require("dotenv").config();
+app.use(
+  express.static("public", {
+    maxAge: "1y", // Cache for 1 year
+    etag: false,
+  })
+);
 
 // Creates a client
 const { GoogleAuth } = require("google-auth-library");
@@ -174,12 +180,10 @@ app.post("/get-pronunciation", async (req, res) => {
     res.json(responseData);
   } catch (error) {
     console.error("Error:", error);
-    res
-      .status(500)
-      .json({
-        error: "Error processing pronunciation request",
-        details: error.message,
-      });
+    res.status(500).json({
+      error: "Error processing pronunciation request",
+      details: error.message,
+    });
   }
 });
 
