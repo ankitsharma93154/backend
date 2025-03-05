@@ -99,9 +99,7 @@ const getWordDetails = async (word) => {
     return {
       phonetic: null,
       meanings: [
-        `${
-          /^[A-Z][a-z]+$/.test(word) ? "This looks like a name! " : ""
-        }Hmm... we couldn't find a meaning for this word. Try another word!`,
+        "Hmm... we couldn't find a meaning for this word. This might be a name! Try another word!",
       ],
     };
   }
