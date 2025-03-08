@@ -53,10 +53,6 @@ const voiceMap = {
   "en-GB": { male: "en-GB-Wavenet-D", female: "en-GB-Wavenet-F" },
   "en-AU": { male: "en-AU-Wavenet-B", female: "en-AU-Wavenet-C" },
   "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
-  "en-CA": { male: "en-CA-Wavenet-D", female: "en-CA-Wavenet-A" },
-  "en-IE": { male: "en-IE-Wavenet-A", female: "en-IE-Wavenet-A" },
-  "en-ZA": { male: "en-ZA-Wavenet-A", female: "en-ZA-Wavenet-A" },
-  "en-PH": { male: "en-PH-Wavenet-B", female: "en-PH-Wavenet-A" },
 };
 
 // Create an axios instance with optimized settings
