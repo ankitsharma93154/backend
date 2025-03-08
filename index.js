@@ -47,12 +47,12 @@ const client = new textToSpeech.TextToSpeechClient({
 const getCacheKey = (word, accent, voice) =>
   `${word.toLowerCase()}_${accent}_${voice}`;
 
-// Predefine voiceMap with optimized object structure
+//Predefine voiceMap with optimized object structure
 const voiceMap = {
   "en-US": { male: "en-US-Wavenet-D", female: "en-US-Wavenet-F" },
   "en-GB": { male: "en-GB-Wavenet-D", female: "en-GB-Wavenet-F" },
   "en-AU": { male: "en-AU-Wavenet-B", female: "en-AU-Wavenet-C" },
-  "en-IN": { male: "en-IN-Wavenet-B", female: "en-IN-Wavenet-D" },
+  "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
   "en-CA": { male: "en-CA-Wavenet-D", female: "en-CA-Wavenet-A" },
   "en-IE": { male: "en-IE-Wavenet-A", female: "en-IE-Wavenet-A" },
   "en-ZA": { male: "en-ZA-Wavenet-A", female: "en-ZA-Wavenet-A" },
