@@ -7,140 +7,158 @@ const axios = require("axios");
 const compression = require("compression");
 const etag = require("etag");
 
-// Create cache instance (keeps pronunciations for 1 hour)
+// Create cache instance with increased TTL for better hit rate
 const cache = new NodeCache({
-  stdTTL: 3600,
-  maxKeys: 1000, // Limit to 1000 entries to prevent memory leaks
+  stdTTL: 86400, // Increased to 24 hours for better cache utilization
+  checkperiod: 3600, // Check for expired keys every hour
+  maxKeys: 5000, // Increased cache size
+  useClones: false, // Disable cloning for better performance
 });
 
 // Initialize Express app
 const app = express();
 app.use(cors());
-app.use(compression()); // Add compression for response optimization
-app.use(bodyParser.json());
+app.use(compression({ level: 6 })); // Optimize compression level
+app.use(bodyParser.json({ limit: "1mb" })); // Limit payload size
 require("dotenv").config();
 app.use(
   express.static("public", {
-    maxAge: "1y", // Cache for 1 year
+    maxAge: "1y",
     etag: false,
+    immutable: true, // Add immutable flag for better caching
   })
 );
 
-// Creates a client
+// Creates a client with connection pooling
 const { GoogleAuth } = require("google-auth-library");
-
-// Create a client using environment variables
+const credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 const client = new textToSpeech.TextToSpeechClient({
   auth: new GoogleAuth({
-    credentials: JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS),
+    credentials,
+    scopes: "https://www.googleapis.com/auth/cloud-platform",
+    // Add connection pooling
+    poolSize: 5,
+    keepAlive: true,
+    keepAliveMsecs: 3000,
   }),
 });
 
-// Helper function to generate cache key
-const getCacheKey = (word, accent, voice) => {
-  return `${word.toLowerCase()}_${accent}_${voice}`;
-};
+// Optimize cache key generation
+const getCacheKey = (word, accent, voice) =>
+  `${word.toLowerCase()}_${accent}_${voice}`;
 
-// **Updated: Define valid voices per accent**
+// Predefine voiceMap with optimized object structure
 const voiceMap = {
   "en-US": { male: "en-US-Wavenet-D", female: "en-US-Wavenet-F" },
   "en-GB": { male: "en-GB-Wavenet-D", female: "en-GB-Wavenet-F" },
   "en-AU": { male: "en-AU-Wavenet-B", female: "en-AU-Wavenet-C" },
   "en-IN": { male: "en-IN-Wavenet-B", female: "en-IN-Wavenet-D" },
+  "en-CA": { male: "en-CA-Wavenet-D", female: "en-CA-Wavenet-A" },
+  "en-IE": { male: "en-IE-Wavenet-A", female: "en-IE-Wavenet-A" },
+  "en-ZA": { male: "en-ZA-Wavenet-A", female: "en-ZA-Wavenet-A" },
+  "en-PH": { male: "en-PH-Wavenet-B", female: "en-PH-Wavenet-A" },
 };
 
-// Fetch phonetic transcription and meaning from Free Dictionary API with timeout
+// Create an axios instance with optimized settings
+const dictionaryApi = axios.create({
+  baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en",
+  timeout: 2500, // Reduced timeout for faster response
+  headers: { "Accept-Encoding": "gzip,deflate" }, // Request compressed responses
+  maxRedirects: 2, // Limit redirects
+});
+
+// Optimized word details function
 const getWordDetails = async (word) => {
   try {
-    const response = await axios.get(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
-      { timeout: 3000 } // 3 second timeout
-    );
+    const response = await dictionaryApi.get(`/${word}`);
 
-    if (response.data && response.data[0]) {
-      const wordData = response.data[0];
-
-      // Get phonetic if available
-      const phonetic = wordData.phonetic || null;
-
-      let meanings = [];
-
-      if (wordData.meanings) {
-        // Separate adjectives first (higher priority)
-        const adjectiveMeanings = wordData.meanings.filter(
-          (m) => m.partOfSpeech === "adjective"
-        );
-        const otherMeanings = wordData.meanings.filter(
-          (m) => m.partOfSpeech !== "adjective"
-        );
-
-        const sortedMeanings = [...adjectiveMeanings, ...otherMeanings];
-
-        sortedMeanings.forEach((meaning) => {
-          meaning.definitions.forEach((def) => {
-            if (meanings.length < 3) {
-              meanings.push(def.definition);
-            }
-          });
-        });
-      }
-
-      return { phonetic, meanings };
-    } else {
+    if (!response.data || !response.data[0]) {
       return { phonetic: null, meanings: ["No details available"] };
     }
-  } catch (error) {
-    // Better error handling with timeout detection
-    if (error.code === "ECONNABORTED") {
-      console.error("Dictionary API timeout");
-      return { phonetic: null, meanings: ["Service unavailable (timeout)"] };
+
+    const wordData = response.data[0];
+    const phonetic = wordData.phonetic || null;
+
+    // Fast array population with early returns
+    const meanings = [];
+
+    if (wordData.meanings && wordData.meanings.length > 0) {
+      // Get adjectives first (faster than filtering twice)
+      const allMeanings = wordData.meanings;
+      const adjectives = [];
+      const others = [];
+
+      for (const m of allMeanings) {
+        if (m.partOfSpeech === "adjective") {
+          adjectives.push(m);
+        } else {
+          others.push(m);
+        }
+      }
+
+      // Combine sorted meanings
+      const sortedMeanings = [...adjectives, ...others];
+
+      // Faster loop for gathering definitions
+      for (const meaning of sortedMeanings) {
+        if (meanings.length >= 3) break; // Early exit
+
+        for (const def of meaning.definitions) {
+          if (meanings.length >= 3) break; // Early exit
+          meanings.push(def.definition);
+        }
+      }
     }
-    console.error("Error fetching word details:", error);
+
+    return {
+      phonetic,
+      meanings: meanings.length > 0 ? meanings : ["No details available"],
+    };
+  } catch (error) {
+    console.error("Dictionary API error:", error.code || error.message);
     return {
       phonetic: null,
-      meanings: [
-        "Hmm... we couldn't find a meaning for this word. This might be a name! Try another word!",
-      ],
+      meanings: ["Definition service unavailable. Please try again later."],
     };
   }
 };
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+// Root route with minimal processing
+app.get("/", (_, res) => res.send("Express on Vercel"));
 
+// Optimized pronunciation route
 app.post("/get-pronunciation", async (req, res) => {
-  // Sanitize and trim input
-  const word = (req.body.word || "").trim().toLowerCase();
-  const accent = req.body.accent;
-  const isMale = Boolean(req.body.isMale);
+  // Destructure and validate in one step
+  const { word: rawWord, accent, isMale } = req.body;
 
-  // Quick validation with early returns
-  if (!word) {
+  if (!rawWord) {
     return res.status(400).json({ error: "Word is required." });
   }
 
-  if (!voiceMap[accent]) {
+  // Trim once and reuse
+  const word = rawWord.trim().toLowerCase();
+
+  // Fast validation
+  const accentConfig = voiceMap[accent];
+  if (!accentConfig) {
     return res.status(400).json({ error: "Invalid accent selected" });
   }
 
-  const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
-  console.log("Selected Voice:", voiceName);
+  // Get voice directly
+  const voiceName = isMale ? accentConfig.male : accentConfig.female;
 
-  // Create a cache key and check cache first
+  // Check cache with efficient key generation
   const cacheKey = getCacheKey(word, accent, isMale ? "male" : "female");
   const cachedResponse = cache.get(cacheKey);
 
   if (cachedResponse) {
-    console.log("Cache hit for:", word);
-
-    // Set ETag header for cached response
-    const responseETag = etag(JSON.stringify(cachedResponse));
-    res.setHeader("ETag", responseETag);
-
-    return res.json(cachedResponse);
+    // Set ETag without stringify for better performance
+    res.setHeader("ETag", cachedResponse.etag || etag(word + accent));
+    return res.json(cachedResponse.data);
   }
 
   try {
-    // Set up parallel API calls for better performance
+    // Prepare request objects before Promise.all for better performance
     const ttsRequestObj = {
       input: { text: word },
       voice: { languageCode: accent, name: voiceName },
@@ -150,51 +168,40 @@ app.post("/get-pronunciation", async (req, res) => {
       },
     };
 
-    // Run API calls in parallel
+    // Run API calls in parallel with Promise.all
     const [wordDetails, ttsResponse] = await Promise.all([
       getWordDetails(word),
       client.synthesizeSpeech(ttsRequestObj),
     ]);
 
     const { phonetic, meanings } = wordDetails;
-    console.log("Fetched Meanings:", meanings);
 
-    // Ensure meanings is always an array and only return the first 3 definitions
-    const formattedMeanings =
-      Array.isArray(meanings) && meanings.length > 0
-        ? meanings.slice(0, 3)
-        : ["Meaning not available."];
-
+    // Direct base64 conversion
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
 
-    // Prepare the response data
+    // Create response data once
     const responseData = {
       audioContent: base64Audio,
       phonetic: phonetic || "Phonetic transcription not available.",
-      meanings: formattedMeanings,
+      meanings: meanings.slice(0, 3),
     };
 
-    // Store in cache
-    cache.set(cacheKey, responseData);
+    // Generate ETag only once
+    const responseETag = etag(word + accent);
 
-    // Generate and set ETag
-    const responseETag = etag(JSON.stringify(responseData));
+    // Store both data and etag in cache to avoid regenerating etag
+    cache.set(cacheKey, { data: responseData, etag: responseETag });
+
+    // Set header and send response
     res.setHeader("ETag", responseETag);
-
-    // Send response
     res.json(responseData);
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error:", error.message || error);
     res.status(500).json({
       error: "Error processing pronunciation request",
-      details: error.message,
+      details: error.message || "Unknown error",
     });
   }
 });
-
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => {
-//   console.log(`Server running on port ${PORT}`);
-// });
 
 module.exports = app;
