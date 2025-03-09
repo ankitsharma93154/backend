@@ -63,20 +63,26 @@ const dictionaryApi = axios.create({
   maxRedirects: 2, // Limit redirects
 });
 
-// Optimized word details function
+// Optimized word details function with example sentences
 const getWordDetails = async (word) => {
   try {
     const response = await dictionaryApi.get(`/${word}`);
 
     if (!response.data || !response.data[0]) {
-      return { phonetic: null, meanings: ["No details available"] };
+      return {
+        phonetic: null,
+        meanings: ["No details available"],
+        examples: [],
+      };
     }
 
     const wordData = response.data[0];
+    console.log("Word data:", wordData);
     const phonetic = wordData.phonetic || null;
 
     // Fast array population with early returns
     const meanings = [];
+    const examples = [];
 
     if (wordData.meanings && wordData.meanings.length > 0) {
       // Get adjectives first (faster than filtering twice)
@@ -95,13 +101,22 @@ const getWordDetails = async (word) => {
       // Combine sorted meanings
       const sortedMeanings = [...adjectives, ...others];
 
-      // Faster loop for gathering definitions
+      // Faster loop for gathering definitions and examples
       for (const meaning of sortedMeanings) {
-        if (meanings.length >= 3) break; // Early exit
+        if (meanings.length >= 3 && examples.length >= 3) break; // Early exit if we have enough of both
 
         for (const def of meaning.definitions) {
-          if (meanings.length >= 3) break; // Early exit
-          meanings.push(def.definition);
+          if (meanings.length < 3) {
+            meanings.push(def.definition);
+          }
+
+          // Extract example if available and we need more
+          if (examples.length < 3 && def.example) {
+            examples.push({
+              text: def.example,
+              partOfSpeech: meaning.partOfSpeech,
+            });
+          }
         }
       }
     }
@@ -109,12 +124,16 @@ const getWordDetails = async (word) => {
     return {
       phonetic,
       meanings: meanings.length > 0 ? meanings : ["No details available"],
+      examples: examples.length > 0 ? examples : [],
     };
   } catch (error) {
     console.error("Dictionary API error:", error.code || error.message);
     return {
       phonetic: null,
-      meanings: ["Definition service unavailable. Please try again later."],
+      meanings: [
+        "Definition service unavailable. This might be a name. Try another word.",
+      ],
+      examples: [],
     };
   }
 };
@@ -170,7 +189,7 @@ app.post("/get-pronunciation", async (req, res) => {
       client.synthesizeSpeech(ttsRequestObj),
     ]);
 
-    const { phonetic, meanings } = wordDetails;
+    const { phonetic, meanings, examples } = wordDetails;
 
     // Direct base64 conversion
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
@@ -180,6 +199,7 @@ app.post("/get-pronunciation", async (req, res) => {
       audioContent: base64Audio,
       phonetic: phonetic || "Phonetic transcription not available.",
       meanings: meanings.slice(0, 3),
+      examples: examples.slice(0, 3),
     };
 
     // Generate ETag only once
