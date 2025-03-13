@@ -15,6 +15,43 @@ const cache = new NodeCache({
   useClones: false, // Disable cloning for better performance
 });
 
+// Initialize phonetic transcriptions cache
+let phoneticTranscriptions = null;
+const PHONETIC_JSON_URL =
+  "https://phonetic-transcriptions.vercel.app/ipa_transcriptions.min.json";
+
+// Function to load phonetic transcriptions
+const loadPhoneticTranscriptions = async () => {
+  try {
+    const response = await axios.get(PHONETIC_JSON_URL, {
+      headers: { "Accept-Encoding": "gzip,deflate" },
+      timeout: 5000,
+    });
+
+    if (response.data) {
+      phoneticTranscriptions = response.data;
+      console.log("Phonetic transcriptions loaded successfully");
+      return true;
+    }
+    return false;
+  } catch (error) {
+    console.error(
+      "Error loading phonetic transcriptions:",
+      error.message || error
+    );
+    return false;
+  }
+};
+
+// Load phonetic data on startup
+loadPhoneticTranscriptions().then((success) => {
+  if (!success) {
+    console.warn(
+      "Failed to load initial phonetic transcriptions. Will retry when needed."
+    );
+  }
+});
+
 // Initialize Express app
 const app = express();
 app.use(cors());
@@ -55,56 +92,6 @@ const voiceMap = {
   "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
 };
 
-// Function to get the correct phonetic key based on accent
-const getCountryCode = (accent) => {
-  const mapping = {
-    "en-US": "US",
-    "en-GB": "UK",
-    "en-AU": "UK", // Use UK phonetics for AU
-    "en-IN": "US", // Use US phonetics for IN
-  };
-  return mapping[accent] || null;
-};
-
-// Hosted JSON file URL
-const PHONETIC_JSON_URL =
-  "https://phonetic-transcriptions.vercel.app/ipa_transcriptions.min.json";
-
-// Cache phonetic data globally
-let phoneticCache = null;
-
-// Function to fetch phonetic JSON once
-const fetchPhoneticJson = async () => {
-  try {
-    if (!phoneticCache) {
-      console.log("Fetching phonetic JSON...");
-      const response = await axios.get(PHONETIC_JSON_URL);
-      phoneticCache = response.data;
-    }
-  } catch (error) {
-    console.error("Error fetching phonetic JSON:", error.message);
-    phoneticCache = {};
-  }
-};
-
-// Fetch phonetic transcription from hosted JSON
-const getPhoneticFromJson = async (word, accent) => {
-  try {
-    await fetchPhoneticJson(); // Ensure JSON is fetched before accessing
-    const countryCode = getCountryCode(accent);
-    if (!countryCode) return null;
-
-    const phonetics = phoneticCache[word]?.[countryCode];
-
-    phonetics = phonetics.split(",")[0].trim();
-
-    return phonetics || null;
-  } catch (error) {
-    console.error("Error fetching phonetic from JSON:", error);
-    return null;
-  }
-};
-
 // Create an axios instance with optimized settings
 const dictionaryApi = axios.create({
   baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en",
@@ -112,6 +99,24 @@ const dictionaryApi = axios.create({
   headers: { "Accept-Encoding": "gzip,deflate" }, // Request compressed responses
   maxRedirects: 2, // Limit redirects
 });
+
+// Get phonetic transcription from JSON data
+const getPhoneticFromJSON = (word) => {
+  if (!phoneticTranscriptions) return null;
+
+  // Normalize word to lowercase
+  const normalizedWord = word.toLowerCase();
+
+  // Check if word exists in our JSON data
+  if (phoneticTranscriptions[normalizedWord]) {
+    return {
+      UK: phoneticTranscriptions[normalizedWord].UK || null,
+      US: phoneticTranscriptions[normalizedWord].US || null,
+    };
+  }
+
+  return null;
+};
 
 // Optimized word details function with example sentences
 const getWordDetails = async (word) => {
@@ -128,15 +133,7 @@ const getWordDetails = async (word) => {
 
     const wordData = response.data[0];
     console.log("Word data:", wordData);
-
-    // Try fetching phonetic transcription from JSON
-    const phonetic = await getPhoneticFromJson(word, accent);
-    // phonetic = wordData.phonetic || null;
-
-    // If not found in JSON, fallback to Dictionary API
-    if (!phonetic) {
-      phonetic = wordData.phonetic || "Phonetic transcription not available.";
-    }
+    const phonetic = wordData.phonetic || null;
 
     // Fast array population with early returns
     const meanings = [];
@@ -199,6 +196,24 @@ const getWordDetails = async (word) => {
 // Root route with minimal processing
 app.get("/", (_, res) => res.send("Express on Vercel"));
 
+// Endpoint to force reload of phonetic transcriptions
+app.get("/reload-phonetics", async (_, res) => {
+  const success = await loadPhoneticTranscriptions();
+  if (success) {
+    res.json({
+      status: "success",
+      message: "Phonetic transcriptions reloaded",
+    });
+  } else {
+    res
+      .status(500)
+      .json({
+        status: "error",
+        message: "Failed to reload phonetic transcriptions",
+      });
+  }
+});
+
 // Optimized pronunciation route
 app.post("/get-pronunciation", async (req, res) => {
   // Destructure and validate in one step
@@ -231,6 +246,23 @@ app.post("/get-pronunciation", async (req, res) => {
   }
 
   try {
+    // Ensure phonetic data is loaded
+    if (!phoneticTranscriptions) {
+      await loadPhoneticTranscriptions();
+    }
+
+    // Check if the word exists in our JSON file first for phonetic transcription
+    let phoneticTranscription = null;
+    const jsonPhonetic = getPhoneticFromJSON(word);
+
+    if (jsonPhonetic) {
+      // Map API accent codes to JSON accent keys
+      const accentKey = accent.startsWith("en-US") ? "US" : "UK";
+      if (jsonPhonetic[accentKey]) {
+        phoneticTranscription = jsonPhonetic[accentKey];
+      }
+    }
+
     // Prepare request objects before Promise.all for better performance
     const ttsRequestObj = {
       input: { text: word },
@@ -242,12 +274,18 @@ app.post("/get-pronunciation", async (req, res) => {
     };
 
     // Run API calls in parallel with Promise.all
+    // Always get definitions from the API, but maybe use our JSON for phonetics
     const [wordDetails, ttsResponse] = await Promise.all([
       getWordDetails(word),
       client.synthesizeSpeech(ttsRequestObj),
     ]);
 
-    const { phonetic, meanings, examples } = wordDetails;
+    // If we didn't find phonetic in our JSON, use the one from the API
+    if (!phoneticTranscription) {
+      phoneticTranscription = wordDetails.phonetic;
+    }
+
+    const { meanings, examples } = wordDetails;
 
     // Direct base64 conversion
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
@@ -255,7 +293,8 @@ app.post("/get-pronunciation", async (req, res) => {
     // Create response data once
     const responseData = {
       audioContent: base64Audio,
-      phonetic: phonetic || "Phonetic transcription not available.",
+      phonetic:
+        phoneticTranscription || "Phonetic transcription not available.",
       meanings: meanings.slice(0, 3),
       examples: examples.slice(0, 3),
     };
@@ -277,8 +316,5 @@ app.post("/get-pronunciation", async (req, res) => {
     });
   }
 });
-
-// Fetch phonetic JSON on startup
-fetchPhoneticJson();
 
 module.exports = app;
