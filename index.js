@@ -76,9 +76,7 @@ const getPhoneticFromJson = async (word, accent) => {
 
     const phonetics = phoneticCache[word]?.[countryCode];
 
-    if (Array.isArray(phonetics)) {
-      return phonetics[0];
-    }
+    phonetics = phonetics.split(",")[0].trim();
 
     return phonetics || null;
   } catch (error) {
