@@ -21,6 +21,7 @@ const PHONETIC_JSON_URL =
   "https://phonetic-transcriptions.vercel.app/ipa_transcriptions.min.json";
 
 // Function to load phonetic transcriptions
+// Preprocess phonetic data when loading to avoid runtime processing
 const loadPhoneticTranscriptions = async () => {
   try {
     const response = await axios.get(PHONETIC_JSON_URL, {
@@ -29,8 +30,19 @@ const loadPhoneticTranscriptions = async () => {
     });
 
     if (response.data) {
-      phoneticTranscriptions = response.data;
-      console.log("Phonetic transcriptions loaded successfully");
+      // Process the data once during load to optimize lookup
+      const rawData = response.data;
+      phoneticTranscriptions = {};
+
+      // Pre-process transcriptions to avoid split/trim operations at runtime
+      for (const word in rawData) {
+        phoneticTranscriptions[word] = {
+          US: rawData[word].US ? rawData[word].US.split(",")[0].trim() : null,
+          UK: rawData[word].UK ? rawData[word].UK.split(",")[0].trim() : null,
+        };
+      }
+
+      console.log("Phonetic transcriptions loaded and preprocessed");
       return true;
     }
     return false;
@@ -84,6 +96,13 @@ const client = new textToSpeech.TextToSpeechClient({
 const getCacheKey = (word, accent, voice) =>
   `${word.toLowerCase()}_${accent}_${voice}`;
 
+// Add a dedicated cache for phonetic lookups to avoid repeated processing
+const phoneticCache = new NodeCache({
+  stdTTL: 86400 * 7, // Cache for a week since this data rarely changes
+  checkperiod: 3600,
+  useClones: false,
+});
+
 //Predefine voiceMap with optimized object structure
 const voiceMap = {
   "en-US": { male: "en-US-Wavenet-D", female: "en-US-Wavenet-F" },
@@ -96,8 +115,8 @@ const voiceMap = {
 const accentToPhoneticMap = {
   "en-US": "US",
   "en-GB": "UK",
-  "en-AU": "US", // Australian uses UK phonetics
-  "en-IN": "UK", // Indian uses US phonetics
+  "en-AU": "US", // Australian uses US phonetics
+  "en-IN": "UK", // Indian uses UK phonetics
 };
 
 // Create an axios instance with optimized settings
@@ -110,22 +129,31 @@ const dictionaryApi = axios.create({
 
 // Get phonetic transcription from JSON data
 const getPhoneticFromJSON = (word, accent) => {
-  if (!phoneticTranscriptions) return null;
-
   // Normalize word to lowercase
   const normalizedWord = word.toLowerCase();
 
-  // Check if word exists in our JSON data
-  if (phoneticTranscriptions[normalizedWord]) {
-    // Get the appropriate transcription based on accent mapping
-    const accentKey = accentToPhoneticMap[accent] || "US"; // Default to US if unknown accent
-    return (
-      phoneticTranscriptions[normalizedWord][accentKey].split(",")[0].trim() ||
-      null
-    );
+  // Check cache first
+  const cacheKey = `${normalizedWord}_${accent}`;
+  const cachedPhonetic = phoneticCache.get(cacheKey);
+  if (cachedPhonetic !== undefined) {
+    return cachedPhonetic;
   }
 
-  return null;
+  // If not in cache and no phonetic data loaded, return null
+  if (!phoneticTranscriptions) return null;
+
+  // Get the appropriate transcription based on accent mapping
+  const accentKey = accentToPhoneticMap[accent] || "US";
+
+  // Check if word exists in our preprocessed JSON data
+  const result = phoneticTranscriptions[normalizedWord]
+    ? phoneticTranscriptions[normalizedWord][accentKey] || null
+    : null;
+
+  // Cache the result (even null results to avoid repeated lookups)
+  phoneticCache.set(cacheKey, result);
+
+  return result;
 };
 
 // Optimized word details function with example sentences
