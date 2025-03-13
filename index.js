@@ -96,8 +96,8 @@ const voiceMap = {
 const accentToPhoneticMap = {
   "en-US": "US",
   "en-GB": "UK",
-  "en-AU": "UK", // Australian uses UK phonetics
-  "en-IN": "US", // Indian uses US phonetics
+  "en-AU": "US", // Australian uses UK phonetics
+  "en-IN": "UK", // Indian uses US phonetics
 };
 
 // Create an axios instance with optimized settings
