@@ -133,9 +133,10 @@ app.post("/get-pronunciation", async (req, res) => {
     // Try fetching phonetic transcription from JSON
     let phonetic = await getPhoneticFromJson(word, accent);
 
+    const wordDetails = await getWordDetails(word);
+
     // If not found in JSON, fallback to Dictionary API
     if (!phonetic) {
-      const wordDetails = await getWordDetails(word);
       phonetic =
         wordDetails.phonetic || "Phonetic transcription not available.";
     }
