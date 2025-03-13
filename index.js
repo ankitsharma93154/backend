@@ -74,7 +74,13 @@ const getPhoneticFromJson = async (word, accent) => {
     const countryCode = getCountryCode(accent);
     if (!countryCode) return null;
 
-    return phoneticCache[word]?.[countryCode] || null;
+    const phonetics = phoneticCache[word]?.[countryCode];
+
+    if (Array.isArray(phonetics)) {
+      return phonetics[0];
+    }
+
+    return phonetics || null;
   } catch (error) {
     console.error("Error fetching phonetic from JSON:", error);
     return null;
