@@ -92,6 +92,14 @@ const voiceMap = {
   "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
 };
 
+// Map to determine which phonetic transcription to use (US or UK) based on accent
+const accentToPhoneticMap = {
+  "en-US": "US",
+  "en-GB": "UK",
+  "en-AU": "UK", // Australian uses UK phonetics
+  "en-IN": "US", // Indian uses US phonetics
+};
+
 // Create an axios instance with optimized settings
 const dictionaryApi = axios.create({
   baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en",
@@ -101,7 +109,7 @@ const dictionaryApi = axios.create({
 });
 
 // Get phonetic transcription from JSON data
-const getPhoneticFromJSON = (word) => {
+const getPhoneticFromJSON = (word, accent) => {
   if (!phoneticTranscriptions) return null;
 
   // Normalize word to lowercase
@@ -109,12 +117,12 @@ const getPhoneticFromJSON = (word) => {
 
   // Check if word exists in our JSON data
   if (phoneticTranscriptions[normalizedWord]) {
-    return {
-      UK:
-        phoneticTranscriptions[normalizedWord].UK.split(",")[0].trim() || null,
-      US:
-        phoneticTranscriptions[normalizedWord].US.split(",")[0].trim() || null,
-    };
+    // Get the appropriate transcription based on accent mapping
+    const accentKey = accentToPhoneticMap[accent] || "US"; // Default to US if unknown accent
+    return (
+      phoneticTranscriptions[normalizedWord][accentKey].split(",")[0].trim() ||
+      null
+    );
   }
 
   return null;
@@ -252,16 +260,7 @@ app.post("/get-pronunciation", async (req, res) => {
     }
 
     // Check if the word exists in our JSON file first for phonetic transcription
-    let phoneticTranscription = null;
-    const jsonPhonetic = getPhoneticFromJSON(word);
-
-    if (jsonPhonetic) {
-      // Map API accent codes to JSON accent keys
-      const accentKey = accent.startsWith("en-US") ? "US" : "UK";
-      if (jsonPhonetic[accentKey]) {
-        phoneticTranscription = jsonPhonetic[accentKey];
-      }
-    }
+    const phoneticTranscription = getPhoneticFromJSON(word, accent);
 
     // Prepare request objects before Promise.all for better performance
     const ttsRequestObj = {
@@ -281,10 +280,7 @@ app.post("/get-pronunciation", async (req, res) => {
     ]);
 
     // If we didn't find phonetic in our JSON, use the one from the API
-    if (!phoneticTranscription) {
-      phoneticTranscription = wordDetails.phonetic;
-    }
-
+    const finalPhonetic = phoneticTranscription || wordDetails.phonetic;
     const { meanings, examples } = wordDetails;
 
     // Direct base64 conversion
@@ -293,8 +289,7 @@ app.post("/get-pronunciation", async (req, res) => {
     // Create response data once
     const responseData = {
       audioContent: base64Audio,
-      phonetic:
-        phoneticTranscription || "Phonetic transcription not available.",
+      phonetic: finalPhonetic || "Phonetic transcription not available.",
       meanings: meanings.slice(0, 3),
       examples: examples.slice(0, 3),
     };
