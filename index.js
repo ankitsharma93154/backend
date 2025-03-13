@@ -110,8 +110,10 @@ const getPhoneticFromJSON = (word) => {
   // Check if word exists in our JSON data
   if (phoneticTranscriptions[normalizedWord]) {
     return {
-      UK: phoneticTranscriptions[normalizedWord].UK || null,
-      US: phoneticTranscriptions[normalizedWord].US || null,
+      UK:
+        phoneticTranscriptions[normalizedWord].UK.split(",")[0].trim() || null,
+      US:
+        phoneticTranscriptions[normalizedWord].US.split(",")[0].trim() || null,
     };
   }
 
@@ -205,12 +207,10 @@ app.get("/reload-phonetics", async (_, res) => {
       message: "Phonetic transcriptions reloaded",
     });
   } else {
-    res
-      .status(500)
-      .json({
-        status: "error",
-        message: "Failed to reload phonetic transcriptions",
-      });
+    res.status(500).json({
+      status: "error",
+      message: "Failed to reload phonetic transcriptions",
+    });
   }
 });
 
