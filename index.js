@@ -278,4 +278,7 @@ app.post("/get-pronunciation", async (req, res) => {
   }
 });
 
+// Fetch phonetic JSON on startup
+fetchPhoneticJson();
+
 module.exports = app;
