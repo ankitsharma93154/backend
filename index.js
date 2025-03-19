@@ -34,11 +34,12 @@ const loadPhoneticTranscriptions = async () => {
       const rawData = response.data;
       phoneticTranscriptions = {};
 
-      // Pre-process transcriptions to avoid split/trim operations at runtime
+      // Pre-process transcriptions for the new data structure
       for (const word in rawData) {
         phoneticTranscriptions[word] = {
-          US: rawData[word].US ? rawData[word].US.split(",")[0].trim() : null,
-          UK: rawData[word].UK ? rawData[word].UK.split(",")[0].trim() : null,
+          US: rawData[word].us_ipa || null,
+          UK: rawData[word].uk_ipa || null,
+          examples: rawData[word].examples || [],
         };
       }
 
@@ -140,15 +141,18 @@ const getPhoneticFromJSON = (word, accent) => {
   }
 
   // If not in cache and no phonetic data loaded, return null
-  if (!phoneticTranscriptions) return null;
+  if (!phoneticTranscriptions) return { phonetic: null, examples: [] };
 
   // Get the appropriate transcription based on accent mapping
   const accentKey = accentToPhoneticMap[accent] || "US";
 
   // Check if word exists in our preprocessed JSON data
   const result = phoneticTranscriptions[normalizedWord]
-    ? phoneticTranscriptions[normalizedWord][accentKey] || null
-    : null;
+    ? {
+        phonetic: phoneticTranscriptions[normalizedWord][accentKey] || null,
+        examples: phoneticTranscriptions[normalizedWord].examples || [],
+      }
+    : { phonetic: null, examples: [] };
 
   // Cache the result (even null results to avoid repeated lookups)
   phoneticCache.set(cacheKey, result);
@@ -288,7 +292,9 @@ app.post("/get-pronunciation", async (req, res) => {
     }
 
     // Check if the word exists in our JSON file first for phonetic transcription
-    const phoneticTranscription = getPhoneticFromJSON(word, accent);
+    const phoneticData = getPhoneticFromJSON(word, accent);
+    const phoneticTranscription = phoneticData.phonetic;
+    const jsonExamples = phoneticData.examples;
 
     // Prepare request objects before Promise.all for better performance
     const ttsRequestObj = {
@@ -301,15 +307,39 @@ app.post("/get-pronunciation", async (req, res) => {
     };
 
     // Run API calls in parallel with Promise.all
-    // Always get definitions from the API, but maybe use our JSON for phonetics
+    // Only get definitions from the API if we don't have examples from our JSON
+    const shouldFetchWordDetails = jsonExamples.length === 0;
+
     const [wordDetails, ttsResponse] = await Promise.all([
-      getWordDetails(word),
+      shouldFetchWordDetails
+        ? getWordDetails(word)
+        : {
+            phonetic: null,
+            meanings: [],
+            examples: [],
+          },
       client.synthesizeSpeech(ttsRequestObj),
     ]);
 
     // If we didn't find phonetic in our JSON, use the one from the API
     const finalPhonetic = phoneticTranscription || wordDetails.phonetic;
-    const { meanings, examples } = wordDetails;
+
+    // Prefer examples from our JSON file, fall back to API if needed
+    let finalExamples = [];
+    if (jsonExamples.length > 0) {
+      // Format JSON examples to match API format
+      finalExamples = jsonExamples.slice(0, 3).map((example) => ({
+        text: example,
+        partOfSpeech: "", // We don't have part of speech in our JSON
+      }));
+    } else {
+      finalExamples = wordDetails.examples.slice(0, 3);
+    }
+
+    // Use API meanings only if we don't have examples from JSON
+    const finalMeanings = shouldFetchWordDetails
+      ? wordDetails.meanings.slice(0, 3)
+      : ["See examples for word usage"];
 
     // Direct base64 conversion
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
@@ -318,8 +348,8 @@ app.post("/get-pronunciation", async (req, res) => {
     const responseData = {
       audioContent: base64Audio,
       phonetic: finalPhonetic || "Phonetic transcription not available.",
-      meanings: meanings.slice(0, 3),
-      examples: examples.slice(0, 3),
+      meanings: finalMeanings,
+      examples: finalExamples,
     };
 
     // Generate ETag only once
