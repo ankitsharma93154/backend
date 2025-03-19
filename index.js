@@ -306,18 +306,10 @@ app.post("/get-pronunciation", async (req, res) => {
       },
     };
 
-    // Run API calls in parallel with Promise.all
-    // Only get definitions from the API if we don't have examples from our JSON
-    const shouldFetchWordDetails = jsonExamples.length === 0;
-
+    // Always fetch word details from the dictionary API for meanings
+    // We'll use API data as fallback for phonetics and examples
     const [wordDetails, ttsResponse] = await Promise.all([
-      shouldFetchWordDetails
-        ? getWordDetails(word)
-        : {
-            phonetic: null,
-            meanings: [],
-            examples: [],
-          },
+      getWordDetails(word),
       client.synthesizeSpeech(ttsRequestObj),
     ]);
 
@@ -326,7 +318,7 @@ app.post("/get-pronunciation", async (req, res) => {
 
     // Prefer examples from our JSON file, fall back to API if needed
     let finalExamples = [];
-    if (jsonExamples.length > 0) {
+    if (jsonExamples && jsonExamples.length > 0) {
       // Format JSON examples to match API format
       finalExamples = jsonExamples.slice(0, 3).map((example) => ({
         text: example,
@@ -336,10 +328,8 @@ app.post("/get-pronunciation", async (req, res) => {
       finalExamples = wordDetails.examples.slice(0, 3);
     }
 
-    // Use API meanings only if we don't have examples from JSON
-    const finalMeanings = shouldFetchWordDetails
-      ? wordDetails.meanings.slice(0, 3)
-      : ["See examples for word usage"];
+    // Always use meanings from the dictionary API
+    const finalMeanings = wordDetails.meanings.slice(0, 3);
 
     // Direct base64 conversion
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
