@@ -559,18 +559,19 @@ if (process.env.NODE_ENV === "production" && cluster.isMaster) {
   process.on("SIGTERM", shutdown);
   process.on("SIGINT", shutdown);
 
+  // Expose app for serverless environments
+  module.exports = app;
+
   // Start server if not in serverless environment
-  if (
-    process.env.NODE_ENV !== "production" ||
-    process.env.START_SERVER === "true"
-  ) {
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-      // Start loading phonetic data in background
-      loadPhoneticTranscriptions();
-    });
-  }
+  // if (
+  //   process.env.NODE_ENV !== "production" ||
+  //   process.env.START_SERVER === "true"
+  // ) {
+  //   const PORT = process.env.PORT || 3000;
+  //   app.listen(PORT, () => {
+  //     console.log(`Server running on port ${PORT}`);
+  //     // Start loading phonetic data in background
+  //     loadPhoneticTranscriptions();
+  //   });
+  // }
 }
-// Expose app for serverless environments
-module.exports = app;
