@@ -559,9 +559,6 @@ if (process.env.NODE_ENV === "production" && cluster.isMaster) {
   process.on("SIGTERM", shutdown);
   process.on("SIGINT", shutdown);
 
-  // Expose app for serverless environments
-  module.exports = app;
-
   // Start server if not in serverless environment
   if (
     process.env.NODE_ENV !== "production" ||
@@ -575,3 +572,5 @@ if (process.env.NODE_ENV === "production" && cluster.isMaster) {
     });
   }
 }
+// Expose app for serverless environments
+module.exports = app;
