@@ -402,7 +402,12 @@ app.post("/get-pronunciation", async (req, res) => {
   const requestStart = Date.now();
 
   // Destructure with defaults
-  const { word: rawWord = "", accent = "en-US", isMale = true } = req.body;
+  const {
+    word: rawWord = "",
+    accent = "en-US",
+    isMale = true,
+    speed = "normal",
+  } = req.body;
 
   if (!rawWord) {
     return res.status(400).json({ error: "Word is required." });
@@ -416,11 +421,22 @@ app.post("/get-pronunciation", async (req, res) => {
     return res.status(400).json({ error: "Invalid accent selected" });
   }
 
+  // Define speed mapping
+  const speedMap = {
+    slow: 0.6, // Slower speaking rate
+    normal: 0.9, // Default speaking rate
+    fast: 1.2, // Faster speaking rate
+  };
+
+  // Validate and get speaking rate
+  const speakingRate = speedMap[speed] || speedMap.normal;
+
   // Get voice directly
   const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
 
-  // Check cache with efficient key
-  const cacheKey = getCacheKey(word, accent, isMale ? "male" : "female");
+  // Check cache with efficient key (now including speed)
+  const cacheKey =
+    getCacheKey(word, accent, isMale ? "male" : "female") + `_${speed}`;
   const cachedResponse = cache.get(cacheKey);
 
   // If client sent If-None-Match and it matches our ETag, return 304
@@ -451,7 +467,7 @@ app.post("/get-pronunciation", async (req, res) => {
       voice: { languageCode: accent, name: voiceName },
       audioConfig: {
         audioEncoding: "MP3",
-        speakingRate: 0.9, // Slightly slower for better pronunciation
+        speakingRate: speakingRate, // Use dynamic speaking rate
         pitch: 0,
         volumeGainDb: 1,
       },
@@ -492,6 +508,7 @@ app.post("/get-pronunciation", async (req, res) => {
         format: "mp3",
         accent: accent,
         voice: voiceName,
+        speed: speed, // Include speed in metadata
       },
     };
 
