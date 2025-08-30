@@ -240,12 +240,7 @@ app.post("/get-pronunciation", async (req, res) => {
   try {
     // Fetch word data from hosted JSON
     const wordData = await fetchWordData(word);
-    if (!wordData) {
-      return res
-        .status(404)
-        .json({ error: "Word not found in dictionary data." });
-    }
-    // Prepare TTS request
+    // Always generate audio, even if wordData is null
     const ttsRequestObj = {
       input: { text: word },
       voice: { languageCode: accent, name: voiceName },
@@ -258,17 +253,21 @@ app.post("/get-pronunciation", async (req, res) => {
     };
     const ttsResponse = await getTtsClient().synthesizeSpeech(ttsRequestObj);
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
-    // Build response
+    // Build response, fallback to empty/defaults if not found
     const responseData = {
       audioContent: base64Audio,
-      phonetic: accent === "en-GB" ? wordData.uk_ipa : wordData.us_ipa,
-      meanings: wordData.meanings || [],
-      examples: (wordData.examples || []).map((ex) => ({
-        text: ex,
-        partOfSpeech: "",
-      })),
-      synonyms: wordData.synonyms || [],
-      antonyms: wordData.antonyms || [],
+      phonetic: wordData
+        ? accent === "en-GB"
+          ? wordData.uk_ipa
+          : wordData.us_ipa
+        : null,
+      meanings: wordData && wordData.meanings ? wordData.meanings : [],
+      examples:
+        wordData && wordData.examples
+          ? wordData.examples.map((ex) => ({ text: ex, partOfSpeech: "" }))
+          : [],
+      synonyms: wordData && wordData.synonyms ? wordData.synonyms : [],
+      antonyms: wordData && wordData.antonyms ? wordData.antonyms : [],
       audioMetadata: {
         format: "mp3",
         accent: accent,
