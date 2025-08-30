@@ -20,77 +20,33 @@ const cache = new NodeCache({
   deleteOnExpire: true, // Free memory as soon as items expire
 });
 
-// Dedicated phonetic cache with longer TTL
-const phoneticCache = new NodeCache({
-  stdTTL: 2592000, // 30 days since phonetic data rarely changes
-  checkperiod: 86400, // Check daily
+// New: Fetch word data from hosted a-z JSON files
+const DATA_BASE_URL = "https://dictionary-gamma-tan.vercel.app/data/";
+const wordDataCache = new NodeCache({
+  stdTTL: 2592000,
+  checkperiod: 86400,
   useClones: false,
   deleteOnExpire: true,
 });
 
-// Initialize phonetic transcriptions with lazy loading
-let phoneticTranscriptions = null;
-let phoneticLoadPromise = null;
-const PHONETIC_JSON_URL =
-  "https://phonetic-transcriptions.vercel.app/ipa_transcriptions.min.json";
-
-// Lazy load function with promise caching to prevent multiple simultaneous loads
-const loadPhoneticTranscriptions = async () => {
-  // Return existing promise if already loading
-  if (phoneticLoadPromise) {
-    return phoneticLoadPromise;
-  }
-
-  // Create new loading promise
-  phoneticLoadPromise = new Promise(async (resolve) => {
+async function fetchWordData(word) {
+  if (!word || typeof word !== "string" || word.length === 0) return null;
+  const firstLetter = word[0].toLowerCase();
+  const cacheKey = `data_${firstLetter}`;
+  let data = wordDataCache.get(cacheKey);
+  if (!data) {
     try {
-      console.log("Loading phonetic transcriptions...");
-      const response = await axios.get(PHONETIC_JSON_URL, {
-        headers: {
-          "Accept-Encoding": "gzip,deflate",
-          "User-Agent": "pronunciation-app/1.0",
-        },
-        timeout: 4000,
-        decompress: true,
-      });
-
-      if (response.data) {
-        // Process the data once during load to optimize lookup
-        const rawData = response.data;
-        const processed = {};
-
-        // Pre-process transcriptions with optimized structure
-        for (const word in rawData) {
-          processed[word] = {
-            US: rawData[word].us_ipa || null,
-            UK: rawData[word].uk_ipa || null,
-            examples: (rawData[word].examples || []).slice(0, 3), // Only keep top 3 examples
-          };
-        }
-
-        phoneticTranscriptions = processed;
-        console.log("Phonetic transcriptions loaded successfully");
-        resolve(true);
-      } else {
-        console.warn("Empty response when loading phonetic data");
-        resolve(false);
-      }
-    } catch (error) {
-      console.error(
-        "Error loading phonetic transcriptions:",
-        error.message || error
-      );
-      resolve(false);
-    } finally {
-      // Clear the promise after 5 minutes to allow future reload attempts
-      setTimeout(() => {
-        phoneticLoadPromise = null;
-      }, 300000);
+      const url = `${DATA_BASE_URL}${firstLetter}.json`;
+      const response = await axios.get(url, { timeout: 4000 });
+      data = response.data;
+      wordDataCache.set(cacheKey, data);
+    } catch (e) {
+      console.error(`Failed to fetch data for ${firstLetter}:`, e.message);
+      return null;
     }
-  });
-
-  return phoneticLoadPromise;
-};
+  }
+  return data[word.toLowerCase()] || null;
+}
 
 // Initialize Express app with security and performance enhancements
 const app = express();
@@ -206,31 +162,6 @@ const voiceMap = {
   "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
 };
 
-// Map to determine which phonetic transcription to use (US or UK) based on accent
-const accentToPhoneticMap = {
-  "en-US": "US",
-  "en-GB": "UK",
-  "en-AU": "US", // Australian uses US phonetics
-  "en-IN": "UK", // Indian uses UK phonetics
-};
-
-// Create an axios instance with optimized settings
-const dictionaryApi = axios.create({
-  baseURL: "https://api.dictionaryapi.dev/api/v2/entries/en",
-  timeout: 2000, // Reduced timeout for faster response
-  headers: {
-    "Accept-Encoding": "gzip,deflate",
-    Accept: "application/json",
-    "User-Agent": "pronunciation-app/1.0",
-  },
-  maxRedirects: 1, // Limit redirects
-  validateStatus: (status) => status < 500, // Accept any status < 500
-  responseType: "json",
-  transitional: {
-    clarifyTimeoutError: true,
-  },
-});
-
 // Add global error handling for uncaught exceptions
 process.on("uncaughtException", (error) => {
   console.error("Uncaught Exception:", error);
@@ -242,129 +173,6 @@ process.on("unhandledRejection", (reason, promise) => {
   console.error("Unhandled Rejection at:", promise, "reason:", reason);
   // Keep process alive
 });
-
-// Get phonetic transcription from JSON data with optimized lookup
-const getPhoneticFromJSON = (word, accent) => {
-  // Normalize word to lowercase once
-  const normalizedWord = word.toLowerCase();
-
-  // Check cache first with combined key
-  const cacheKey = normalizedWord + "_" + accent;
-  const cachedPhonetic = phoneticCache.get(cacheKey);
-  if (cachedPhonetic !== undefined) {
-    return cachedPhonetic;
-  }
-
-  // If not in cache and no phonetic data loaded, return empty result
-  if (!phoneticTranscriptions) {
-    return { phonetic: null, examples: [] };
-  }
-
-  // Get the appropriate transcription based on accent mapping
-  const accentKey = accentToPhoneticMap[accent] || "US";
-
-  // Direct lookup with fallback
-  const wordData = phoneticTranscriptions[normalizedWord];
-  const result = wordData
-    ? {
-        phonetic: wordData[accentKey] || null,
-        examples: wordData.examples || [],
-      }
-    : { phonetic: null, examples: [] };
-
-  // Cache the result
-  phoneticCache.set(cacheKey, result);
-
-  return result;
-};
-
-// Optimized word details function with reduced API calls
-const getWordDetails = async (word) => {
-  try {
-    const response = await dictionaryApi.get(
-      `/${encodeURIComponent(word.toLowerCase())}`
-    );
-
-    // Handle empty or error responses quickly
-    if (!response.data || !response.data[0]) {
-      return {
-        phonetic: null,
-        meanings: ["No details available"],
-        examples: [],
-      };
-    }
-
-    const wordData = response.data[0];
-    const phonetic = wordData.phonetic || null;
-
-    // Optimized meaning extraction with preallocated arrays
-    const meanings = [];
-    const examples = [];
-
-    if (wordData.meanings && wordData.meanings.length > 0) {
-      // Sort meanings to prioritize adjectives (better example sentences)
-      const sortedMeanings = [...wordData.meanings].sort((a, b) =>
-        a.partOfSpeech === "adjective"
-          ? -1
-          : b.partOfSpeech === "adjective"
-          ? 1
-          : 0
-      );
-
-      // Single loop for better performance
-      for (
-        let i = 0;
-        i < sortedMeanings.length &&
-        (meanings.length < 3 || examples.length < 3);
-        i++
-      ) {
-        const meaning = sortedMeanings[i];
-        const definitions = meaning.definitions || [];
-
-        for (
-          let j = 0;
-          j < definitions.length &&
-          (meanings.length < 3 || examples.length < 3);
-          j++
-        ) {
-          const def = definitions[j];
-
-          // Add definition if needed
-          if (meanings.length < 3 && def.definition) {
-            meanings.push(def.definition);
-          }
-
-          // Add example if needed
-          if (examples.length < 3 && def.example) {
-            examples.push({
-              text: def.example,
-              partOfSpeech: meaning.partOfSpeech,
-            });
-          }
-
-          // Early break if we have all we need
-          if (meanings.length >= 3 && examples.length >= 3) break;
-        }
-      }
-    }
-
-    return {
-      phonetic,
-      meanings: meanings.length > 0 ? meanings : ["No details available"],
-      examples: examples.length > 0 ? examples : [],
-    };
-  } catch (error) {
-    // Simplified error handling with less logging
-    console.error(
-      `Dictionary API error for ${word}: ${error.code || error.message}`
-    );
-    return {
-      phonetic: null,
-      meanings: ["Definition service unavailable."],
-      examples: [],
-    };
-  }
-};
 
 // Root route with health check and caching
 app.get("/", (_, res) => {
@@ -397,11 +205,9 @@ app.get("/reload-phonetics", async (_, res) => {
 });
 
 // Optimized pronunciation route with streaming capability
-app.post("/get-pronunciation", async (req, res) => {
-  // Start request timer
-  const requestStart = Date.now();
 
-  // Destructure with defaults
+app.post("/get-pronunciation", async (req, res) => {
+  const requestStart = Date.now();
   const {
     word: rawWord = "",
     accent = "en-US",
@@ -412,130 +218,79 @@ app.post("/get-pronunciation", async (req, res) => {
   if (!rawWord) {
     return res.status(400).json({ error: "Word is required." });
   }
-
-  // Process once
   const word = rawWord.trim().toLowerCase();
-
-  // Validate accent quickly
   if (!voiceMap[accent]) {
     return res.status(400).json({ error: "Invalid accent selected" });
   }
-
-  // Define speed mapping
-  const speedMap = {
-    slow: 0.6, // Slower speaking rate
-    normal: 0.9, // Default speaking rate
-    fast: 1.2, // Faster speaking rate
-  };
-
-  // Validate and get speaking rate
+  const speedMap = { slow: 0.6, normal: 0.9, fast: 1.2 };
   const speakingRate = speedMap[speed] || speedMap.normal;
-
-  // Get voice directly
   const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
-
-  // Check cache with efficient key (now including speed)
   const cacheKey =
     getCacheKey(word, accent, isMale ? "male" : "female") + `_${speed}`;
   const cachedResponse = cache.get(cacheKey);
-
-  // If client sent If-None-Match and it matches our ETag, return 304
   const clientEtag = req.headers["if-none-match"];
   if (cachedResponse && clientEtag === cachedResponse.etag) {
     return res.status(304).end();
   }
-
-  // Return cached response if available
   if (cachedResponse) {
     res.setHeader("ETag", cachedResponse.etag);
-    res.setHeader("Cache-Control", "private, max-age=604800"); // 7 days
+    res.setHeader("Cache-Control", "private, max-age=604800");
     return res.json(cachedResponse.data);
   }
-
   try {
-    // Lazy load phonetic data if needed
-    if (!phoneticTranscriptions) {
-      await loadPhoneticTranscriptions();
+    // Fetch word data from hosted JSON
+    const wordData = await fetchWordData(word);
+    if (!wordData) {
+      return res
+        .status(404)
+        .json({ error: "Word not found in dictionary data." });
     }
-
-    // Direct data lookup
-    const phoneticData = getPhoneticFromJSON(word, accent);
-
-    // Prepare TTS request before Promise.all
+    // Prepare TTS request
     const ttsRequestObj = {
       input: { text: word },
       voice: { languageCode: accent, name: voiceName },
       audioConfig: {
         audioEncoding: "MP3",
-        speakingRate: speakingRate, // Use dynamic speaking rate
+        speakingRate: speakingRate,
         pitch: 0,
         volumeGainDb: 1,
       },
     };
-
-    // Parallel requests for better performance
-    const [wordDetails, ttsResponse] = await Promise.all([
-      getWordDetails(word),
-      getTtsClient().synthesizeSpeech(ttsRequestObj),
-    ]);
-
-    // Process results
-    const finalPhonetic = phoneticData.phonetic || wordDetails.phonetic;
-
-    // Prefer our curated examples
-    const finalExamples =
-      phoneticData.examples.length > 0
-        ? phoneticData.examples.slice(0, 3).map((example) => ({
-            text: example,
-            partOfSpeech: "",
-          }))
-        : wordDetails.examples.slice(0, 3);
-
-    // Always use API meanings when available
-    const finalMeanings = wordDetails.meanings.slice(0, 3);
-
-    // Direct base64 conversion
+    const ttsResponse = await getTtsClient().synthesizeSpeech(ttsRequestObj);
     const base64Audio = ttsResponse[0].audioContent.toString("base64");
-
-    // Build response once
+    // Build response
     const responseData = {
       audioContent: base64Audio,
-      phonetic: finalPhonetic || "Phonetic transcription not available.",
-      meanings: finalMeanings,
-      examples: finalExamples,
-      // Include audio metadata for better caching
+      phonetic: accent === "en-GB" ? wordData.uk_ipa : wordData.us_ipa,
+      meanings: wordData.meanings || [],
+      examples: (wordData.examples || []).map((ex) => ({
+        text: ex,
+        partOfSpeech: "",
+      })),
+      synonyms: wordData.synonyms || [],
+      antonyms: wordData.antonyms || [],
       audioMetadata: {
         format: "mp3",
         accent: accent,
         voice: voiceName,
-        speed: speed, // Include speed in metadata
+        speed: speed,
       },
     };
-
-    // Generate ETag
     const responseETag = etag(word + accent + (isMale ? "m" : "f"));
-
-    // Store in cache with metadata
     cache.set(cacheKey, {
       data: responseData,
       etag: responseETag,
       timestamp: Date.now(),
     });
-
-    // Set response headers
     res.setHeader("ETag", responseETag);
-    res.setHeader("Cache-Control", "private, max-age=604800"); // 7 days
+    res.setHeader("Cache-Control", "private, max-age=604800");
     res.setHeader("Timing-Allow-Origin", "*");
     res.setHeader("Server-Timing", `total;dur=${Date.now() - requestStart}`);
-
-    // Send the response
     res.json(responseData);
   } catch (error) {
     console.error(
       `Error processing ${word}: ${error.message || "Unknown error"}`
     );
-
-    // Return a helpful error with suggestion
     res.status(500).json({
       error: "Error processing pronunciation request",
       suggestion: "Please try again in a moment",
