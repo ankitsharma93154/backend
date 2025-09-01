@@ -185,6 +185,49 @@ app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
 });
 
+// Serve per-letter JSON through our server with strong caching headers
+app.get("/data/:letter.json", async (req, res) => {
+  const letter = String(req.params.letter || "").toLowerCase()[0];
+  if (!letter || letter < "a" || letter > "z") {
+    return res.status(400).json({ error: "Invalid letter" });
+  }
+  const cacheKey = `data_${letter}`;
+  let data = wordDataCache.get(cacheKey);
+  if (!data) {
+    try {
+      const url = `${DATA_BASE_URL}${letter}.json`;
+      const response = await axios.get(url, { timeout: 5000 });
+      data = response.data;
+      wordDataCache.set(cacheKey, data);
+    } catch (err) {
+      console.error(`Failed to proxy data for ${letter}:`, err.message || err);
+      return res.status(502).json({ error: "Upstream data unavailable" });
+    }
+  }
+
+  try {
+    // Serialize deterministically and compute ETag so clients can do conditional GETs
+    const body = JSON.stringify(data);
+    const responseETag = etag(body);
+    const clientEtag = req.headers["if-none-match"];
+    if (clientEtag && clientEtag === responseETag) {
+      // Not modified
+      res.status(304).end();
+      return;
+    }
+
+    // Strong cache-control for these static JSON files
+    res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+    res.setHeader("Vary", "Accept-Encoding");
+    res.setHeader("ETag", responseETag);
+    res.type("application/json");
+    return res.send(body);
+  } catch (err) {
+    console.error("Error serializing data for", letter, err && err.message);
+    return res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 // Endpoint to force reload of phonetic transcriptions
 app.get("/reload-phonetics", async (_, res) => {
   // Reset the promise to force a fresh load
