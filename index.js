@@ -20,33 +20,8 @@ const cache = new NodeCache({
   deleteOnExpire: true, // Free memory as soon as items expire
 });
 
-// New: Fetch word data from hosted a-z JSON files
+// Data source for per-letter JSON files
 const DATA_BASE_URL = "https://dictionary-gamma-tan.vercel.app/data/";
-const wordDataCache = new NodeCache({
-  stdTTL: 2592000,
-  checkperiod: 86400,
-  useClones: false,
-  deleteOnExpire: true,
-});
-
-async function fetchWordData(word) {
-  if (!word || typeof word !== "string" || word.length === 0) return null;
-  const firstLetter = word[0].toLowerCase();
-  const cacheKey = `data_${firstLetter}`;
-  let data = wordDataCache.get(cacheKey);
-  if (!data) {
-    try {
-      const url = `${DATA_BASE_URL}${firstLetter}.json`;
-      const response = await axios.get(url, { timeout: 4000 });
-      data = response.data;
-      wordDataCache.set(cacheKey, data);
-    } catch (e) {
-      console.error(`Failed to fetch data for ${firstLetter}:`, e.message);
-      return null;
-    }
-  }
-  return data[word.toLowerCase()] || null;
-}
 
 // Initialize Express app with security and performance enhancements
 const app = express();
@@ -191,40 +166,15 @@ app.get("/data/:letter.json", async (req, res) => {
   if (!letter || letter < "a" || letter > "z") {
     return res.status(400).json({ error: "Invalid letter" });
   }
-  const cacheKey = `data_${letter}`;
-  let data = wordDataCache.get(cacheKey);
-  if (!data) {
-    try {
-      const url = `${DATA_BASE_URL}${letter}.json`;
-      const response = await axios.get(url, { timeout: 5000 });
-      data = response.data;
-      wordDataCache.set(cacheKey, data);
-    } catch (err) {
-      console.error(`Failed to proxy data for ${letter}:`, err.message || err);
-      return res.status(502).json({ error: "Upstream data unavailable" });
-    }
-  }
-
   try {
-    // Serialize deterministically and compute ETag so clients can do conditional GETs
-    const body = JSON.stringify(data);
-    const responseETag = etag(body);
-    const clientEtag = req.headers["if-none-match"];
-    if (clientEtag && clientEtag === responseETag) {
-      // Not modified
-      res.status(304).end();
-      return;
-    }
-
-    // Strong cache-control for these static JSON files
-    res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
-    res.setHeader("Vary", "Accept-Encoding");
-    res.setHeader("ETag", responseETag);
+    const url = `${DATA_BASE_URL}${letter}.json`;
+    const response = await axios.get(url, { timeout: 5000 });
+    // Proxy raw JSON directly without extra caching headers
     res.type("application/json");
-    return res.send(body);
+    return res.status(200).send(response.data);
   } catch (err) {
-    console.error("Error serializing data for", letter, err && err.message);
-    return res.status(500).json({ error: "Internal server error" });
+    console.error(`Failed to proxy data for ${letter}:`, err && err.message);
+    return res.status(502).json({ error: "Upstream data unavailable" });
   }
 });
 
