@@ -26,30 +26,6 @@ const letterCache = new NodeCache({
   deleteOnExpire: true,
 });
 
-// ===== Rate Limiter Setup =====
-const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const RATE_LIMIT_MAX = 60; // max 60 requests per IP per window
-const ipRequestCache = new NodeCache({
-  stdTTL: RATE_LIMIT_WINDOW / 1000,
-  checkperiod: 60,
-  useClones: false,
-});
-
-const rateLimiter = (req, res, next) => {
-  const ip = req.ip || req.connection.remoteAddress;
-  let requestCount = ipRequestCache.get(ip) || 0;
-
-  if (requestCount >= RATE_LIMIT_MAX) {
-    return res.status(429).json({
-      error: "Too many requests",
-      message: `Rate limit of ${RATE_LIMIT_MAX} requests per minute exceeded.`,
-    });
-  }
-
-  ipRequestCache.set(ip, requestCount + 1);
-  next();
-};
-
 // ===== Express Setup =====
 const app = express();
 
@@ -154,6 +130,7 @@ const fetchWordData = async (word) => {
 
     let data = letterCache.get(letter);
     if (!data) {
+      // Read from local data folder
       const filePath = path.join(__dirname, "data", `${letter}.json`);
       const fileContent = await fs.readFile(filePath, "utf-8");
       data = JSON.parse(fileContent);
@@ -195,8 +172,8 @@ app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
 });
 
-// ===== Serve local JSON with rate limiter =====
-app.get("/data/:letter.json", rateLimiter, async (req, res) => {
+// ===== Serve local JSON instead of remote URL =====
+app.get("/data/:letter.json", async (req, res) => {
   const letter = String(req.params.letter || "").toLowerCase()[0];
   if (!letter || letter < "a" || letter > "z")
     return res.status(400).json({ error: "Invalid letter" });
