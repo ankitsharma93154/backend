@@ -3,7 +3,8 @@ const bodyParser = require("body-parser");
 const textToSpeech = require("@google-cloud/text-to-speech");
 const cors = require("cors");
 const NodeCache = require("node-cache");
-const axios = require("axios");
+const fs = require("fs").promises;
+const path = require("path");
 const compression = require("compression");
 const etag = require("etag");
 const { GoogleAuth } = require("google-auth-library");
@@ -24,8 +25,6 @@ const letterCache = new NodeCache({
   useClones: false,
   deleteOnExpire: true,
 });
-
-const DATA_BASE_URL = "https://dictionary-gamma-tan.vercel.app/data/";
 
 // ===== Express Setup =====
 const app = express();
@@ -121,7 +120,7 @@ const voiceMap = {
 const getCacheKey = (word, accent, voice, speed) =>
   `${word.toLowerCase()}_${accent}_${voice}_${speed}`;
 
-// ===== Fetch Word Data =====
+// ===== Fetch Word Data (local data folder) =====
 const fetchWordData = async (word) => {
   if (!word) return null;
   try {
@@ -131,12 +130,10 @@ const fetchWordData = async (word) => {
 
     let data = letterCache.get(letter);
     if (!data) {
-      const url = `${DATA_BASE_URL}${letter}.json`;
-      const response = await axios.get(url, {
-        timeout: 5000,
-        responseType: "json",
-      });
-      data = response.data || {};
+      // Read from local data folder
+      const filePath = path.join(__dirname, "data", `${letter}.json`);
+      const fileContent = await fs.readFile(filePath, "utf-8");
+      data = JSON.parse(fileContent);
       letterCache.set(letter, data);
     }
 
@@ -175,21 +172,26 @@ app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
 });
 
+// ===== Serve local JSON instead of remote URL =====
 app.get("/data/:letter.json", async (req, res) => {
   const letter = String(req.params.letter || "").toLowerCase()[0];
   if (!letter || letter < "a" || letter > "z")
     return res.status(400).json({ error: "Invalid letter" });
+
   try {
-    const cachedData = letterCache.get(letter);
+    let cachedData = letterCache.get(letter);
     if (cachedData) return res.json(cachedData);
 
-    const url = `${DATA_BASE_URL}${letter}.json`;
-    const response = await axios.get(url, { timeout: 5000 });
-    letterCache.set(letter, response.data);
-    res.type("application/json").status(200).send(response.data);
+    const filePath = path.join(__dirname, "data", `${letter}.json`);
+    const fileContent = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(fileContent);
+
+    letterCache.set(letter, data);
+    res.setHeader("Cache-Control", "public, max-age=86400"); // 1 day
+    res.json(data);
   } catch (err) {
-    console.error(`Failed to proxy data for ${letter}:`, err?.message);
-    res.status(502).json({ error: "Upstream data unavailable" });
+    console.error(`Failed to read local data for ${letter}:`, err?.message);
+    res.status(500).json({ error: "Data unavailable" });
   }
 });
 
