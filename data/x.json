@@ -1,12 +1,446 @@
 {
+  "xanax": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "za",
+        "stress": 1
+      },
+      {
+        "text": "naks",
+        "stress": 0
+      }
+    ]
+  },
+  "xanthate": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a salt or ester of any of various thio acids and especially C3H6OS2",
+      "a salt or ester of any of various thio acids and especially C3H6OS2"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthelasma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "axanthomaof the eyelid"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthemia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthic": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "of, relating to, or tending toward a yellow color",
+      "colored with some tint of yellowcomparecyanic",
+      "of or relating toxanthinorxanthine"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthine": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a feebly basic compound C5H4N4O2that occurs especially in animal or plant tissue, is derived from guanine and hypoxanthine, and yields uric acid on oxidation",
+      "any of various derivatives of xanthine (such as methylxanthine)",
+      "a feebly basic compound C5H4N4O2that occurs especially in animal or plant tissue, is derived from guanine and hypoxanthine, and yields uric acid on oxidation"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthium": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of coarse and rough or spiny herbs (family Compositae) having small heads of greenish flowers of which the pistillate enclosed in an involucre becomes a burr covered with hooked bristlesseecocklebur"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthoma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a fatty irregular yellow patch or nodule containing lipid-filled foam cells that occurs on the skin (as of the eyelids, neck, or back) or in internal tissue and is associated especially with disturbances of lipid metabolism"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthomatosis": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a condition marked by the presence of multiplexanthomas"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthomonad": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a bacterium of the genusXanthomonas"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthomonas": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a large genus of bacteria (family Pseudomonadaceae) that are distinguished from members of the closely relatedPseudomonasby production of yellow pigments insoluble in water and that include numerous plant pathogens some of which cause necrotic conditions"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthophyceae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a class of algae (division Chrysophyta) in which the green pigments of the chromatophores are partially masked by xanthophyll and reserves are commonly stored in the form of oil and which comprise the yellow-green algae"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthophyl": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthophyll": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "any of several yellow to orange carotenoid pigments that are oxygen derivatives of carotenes",
+      "lutein",
+      "any of several neutral yellow to orange carotenoid pigments that are oxygen derivatives of carotenes"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthopsia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a visual disturbance in which objects appear yellow"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthorrhoeaceae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthorroea": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthosis": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "yellow discoloration of the skin from abnormal causes",
+      "a virus disease of the strawberry plant characterized by crinkling and curling, yellowing and dwarfing of the leaves, and stunting of the entire plant"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthosoma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of tropical American aroids having hastate leaves, a shield-shaped style projecting beyond the ovary, and thick tubersseeyautia"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xanthous": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "having yellowish, red, auburn, or brown hair",
+      "marked by yellow coloration"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xantusiidae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a small family of nocturnal carnivorous ovoviviparous terrestrial lizards of arid southwestern North America"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xavier": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "Saint Francis 1506–1552 Spanish",
+      "Spanish Jesuit missionary"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zayv",
+        "stress": 1
+      },
+      {
+        "text": "yer",
+        "stress": 0
+      }
+    ]
+  },
+  "xaxis": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "the axis in a plane Cartesian coordinate system parallel to which abscissas are measured",
+      "one of the three axes in a three-dimensional rectangular coordinate system",
+      "the horizontal axis in a plane coordinate system along which or parallel to which abscissas are measuredcomparey-axis"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xc": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "cross-country"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xci": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xciii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xciv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcl": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcvi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcvii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xcviii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xe": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "xenon",
+      "xenon"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenarthra": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a suborder or other division of Edentata comprising the American anteaters, armadillos, sloths, and usually the extinct ground sloths"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenicidae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenicus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenogeneic": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "derived from, originating in, or being a member of another species",
+      "derived from, originating in, or being a member of another species",
+      "compareallogeneic,syngeneic"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenogenesis": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "the fancied production of an organism altogether and permanently unlike the parent"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenograft": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a graft of tissue taken from a donor of one species and grafted into a recipient of another species",
+      "a graft of tissue taken from a donor of one species and grafted into a recipient of another species"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenolith": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a fragment of a rock included in another rock"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "xenon": {
     "uk_ipa": "/ˈzenɒn/",
     "us_ipa": "/ˈzenɑːn/",
     "examples": [],
     "meanings": [
-      "a heavy colorless and relatively inert gaseous element that occurs in air as about one part in 2 0 million and is used especially in specialized electric lamps ( such as flash tubes ) and in scientific research see chemical elements table",
-      "a heavy colorless gaseous element that occurs in air in minute quantities and is used especially in specialized electric lamps see element",
-      "a heavy, colorless, and relatively inert gaseous element that occurs in air as about one part in 2 0 million by volume"
+      "a heavy colorless and relatively inert gaseous element that occurs in air as about one part in 20 million and is used especially in specialized electric lamps (such as flash tubes) and in scientific researchseeChemical Elements Table",
+      "a heavy colorless gaseous element that occurs in air in minute quantities and is used especially in specialized electric lampsseeelement",
+      "a heavy, colorless, and relatively inert gaseous element that occurs in air as about one part in 20 million by volume"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zee",
+        "stress": 1
+      },
+      {
+        "text": "nahn",
+        "stress": 0
+      }
+    ]
+  },
+  "xenophanes": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "circa560–circa478b.c.Greek philosopher"
     ],
     "synonyms": [],
     "antonyms": []
@@ -29,7 +463,29 @@
       "nationalism",
       "racism"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zeh",
+        "stress": 2
+      },
+      {
+        "text": "nuh",
+        "stress": 0
+      },
+      {
+        "text": "foh",
+        "stress": 1
+      },
+      {
+        "text": "bee",
+        "stress": 0
+      },
+      {
+        "text": "uh",
+        "stress": 0
+      }
+    ]
   },
   "xenophobic": {
     "uk_ipa": "/ˌzenəˈfəʊbɪk/",
@@ -50,7 +506,116 @@
     ],
     "antonyms": [
       "internationalist"
+    ],
+    "syllables": [
+      {
+        "text": "zeh",
+        "stress": 2
+      },
+      {
+        "text": "nuh",
+        "stress": 0
+      },
+      {
+        "text": "fah",
+        "stress": 1
+      },
+      {
+        "text": "bihk",
+        "stress": 0
+      }
     ]
+  },
+  "xenophon": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "circa431–circa352b.c.Greek historian"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zeh",
+        "stress": 1
+      },
+      {
+        "text": "nuh",
+        "stress": 0
+      },
+      {
+        "text": "fuhn",
+        "stress": 0
+      }
+    ]
+  },
+  "xenopodidae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a family of amphibians comprisingXenopusand a few related genera that are now included in the familyPipidae"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenopus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of African aquatic frogs including one (X. laevis) formerly used in a test for pregnancy"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenorhyncus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenosauridae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a monotypic family of slender-bodied Mexican lizards that is held to be intermediate between Iguanidae and Anguidae and comprises forms with the upper surface covered with minute granules and tubercles"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenosaurus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenotime": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a mineral YPO4that is a phosphate of yttrium occurring in usually brown or yellow tetragonal crystals and rolled grains and that often also contains thorium, erbium, cerium, or other elements (hardness 4–5, specific gravity 4.45–4.56)"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xenotransplant": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "transplantation of an organ, tissue, or cells between two different species",
+      "transplantation of an organ, tissue, or cells between two different species (as a human and a domestic swine)"
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "xenotransplantation": {
     "uk_ipa": "/ˌziːnəʊˌtrænsplɑːnˈteɪʃn/",
@@ -58,8 +623,189 @@
     "examples": [],
     "meanings": [
       "transplantation of an organ, tissue, or cells between two different species",
-      "transplantation of an organ, tissue, or cells between two different species ( as a human and a domestic swine )"
+      "transplantation of an organ, tissue, or cells between two different species (as a human and a domestic swine)"
     ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xeranthemum": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of annual densely tomentose herbs (family Compositae) native to southern Europe, containing one of the most widely cultivated everlastings (X. annuum), and having solitary chaffy or silvery flower heads with purplish tubular flowers",
+      "any plant or flower of the genusXeranthemum"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xeric": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "characterized by, relating to, or requiring only a small amount of moisture",
+      "comparehydric,mesic",
+      "requiring little moisture"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerobates": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xeroderma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genetic disorder inherited as a recessive autosomal trait that is caused by a defect in mechanisms that repair DNA mutations (such as those caused by ultraviolet light) and is characterized by the development of pigment abnormalities and multiple skin cancers in areas exposed to the sun"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerodermia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerographic": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a process for copying graphic matter by the action of light on an electrically charged photoconductive insulating surface in which the latent image is developed with a resinous powder (such as toner)",
+      "xeroradiography",
+      "a process for copying printed material by the action of light on an electrically charged surface in which the image is developed with a powder"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerography": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a process for copying graphic matter by the action of light on an electrically charged photoconductive insulating surface in which the latent image is developed with a resinous powder (such as toner)",
+      "xeroradiography",
+      "a process for copying printed material by the action of light on an electrically charged surface in which the image is developed with a powder"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xeroma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophile": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "thriving in or tolerant or characteristic of a xeric environment"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophilous": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "thriving in or tolerant or characteristic of a xeric environment"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophthalmia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a dry thickened lusterless condition of the eyeball resulting especially from a severe systemic deficiency of vitamin A",
+      "a dry thickened lusterless condition of the eyeball resulting especially from a severe systemic deficiency of vitamin Acomparekeratomalacia"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophthalmus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophyllum": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a small genus of tall North American herbs (family Liliaceae) having thick woody rootstocks, simple stems with rough-edged linear leaves, and small white flowers in a dense terminal racemeseesour grass,squaw grass"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophyte": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a plant adapted for life and growth with a limited water supply",
+      "a plant (as an agave, cactus, sagebrush, or yucca) suited for growth in dry or desert conditions"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerophytic": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a plant adapted for life and growth with a limited water supply",
+      "a plant (as an agave, cactus, sagebrush, or yucca) suited for growth in dry or desert conditions"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xeroradiography": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "radiography used especially in mammographic screening for breast cancer that produces an image using X-rays in a manner similar to the way an image is produced by light inxerography",
+      "radiography used especially in mammographic screening for breast cancer that produces an image using X-rays in a manner similar to the way an image is produced by light inxerography"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerostomia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "abnormal dryness of the mouth due to insufficient secretions"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xerotes": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -70,10 +816,48 @@
       "Could you xerox this letter, please?"
     ],
     "meanings": [
-      "to copy on a xerographic copier",
-      "to make ( a copy ) on a xerographic copier",
+      "to copy on axerographiccopier",
+      "to make (a copy) on a xerographic copier",
       "to copy or make a copy on a xerographic copier"
     ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zih",
+        "stress": 1
+      },
+      {
+        "text": "rahks",
+        "stress": 0
+      }
+    ]
+  },
+  "xerxes": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "circa519–465b.c.the Greatking of Persia (486–465)"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zerk",
+        "stress": 1
+      },
+      {
+        "text": "seez",
+        "stress": 0
+      }
+    ]
+  },
+  "xestobium": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -82,20 +866,197 @@
     "us_ipa": "/ˈkəʊsə/",
     "examples": [],
     "meanings": [
-      "a member of a bantu - speaking people of eastern cape province",
-      "a bantu language of the xhosa s"
+      "a member of a Bantu-speaking people of Eastern Cape province",
+      "a Bantu language of the Xhosas"
     ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zoh",
+        "stress": 1
+      },
+      {
+        "text": "shuh",
+        "stress": 0
+      }
+    ]
   },
   "xi": {
     "uk_ipa": "/saɪ/",
     "us_ipa": "/saɪ/",
     "examples": [],
     "meanings": [
-      "the 1 4 th letter of the greek alphabet see alphabet table",
-      "the 1 4 th letter of the greek alphabet",
-      "river 3 0 0 miles ( 4 8 3 kilometers ) long in guangxi zhuang zu and guangdong, southeastern china, flowing east into the south china sea"
+      "the 14th letter of the Greek alphabetseeAlphabet Table",
+      "the 14th letter of the Greek alphabet",
+      "river 300 miles (483 kilometers) long in Guangxi Zhuangzu and Guangdong, southeastern China, flowing east into the South China Sea"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "shee",
+        "stress": 1
+      }
+    ]
+  },
+  "xian": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zyahn",
+        "stress": 1
+      }
+    ]
+  },
+  "xii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "1682–1718 king of Sweden (1697–1718)"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "1886–1941 king of Spain (1886–1931)"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ximenesia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xinjiang": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "region (formerly a province) of western China between the Kunlun and Altai mountains and bordering Mongolia, Russia, Kazakhstan, Kyrgyzstan, Tajikistan, and the disputed territory of Jammu and Kashmir; capital Ürümqiarea635,829 square miles (1,653,154 square kilometers),population21,815,815"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zihn",
+        "stress": 1
+      },
+      {
+        "text": "jee",
+        "stress": 0
+      },
+      {
+        "text": "ang",
+        "stress": 1
+      }
+    ]
+  },
+  "xiphias": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus (the type of the family Xiphiidae) of large scombroid fishes comprising the common swordfish",
+      "swordfish"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiphiidae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiphium": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "spanish iris"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiphoid": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "xiphoid process",
+      "xiphoid process"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiphosura": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "an order of arthropods comprising the horseshoe crabs and extinct related forms and usually including only the two recent generaLimulus(synonymXiphosurus) with representatives along the American coast of the Atlantic andTachypleuswith species along the Asiatic coast of the Pacific"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiphosurus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xishuangbanna": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xiv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "1763–1844 originally",
+      "king of Sweden and Norway (1818–44)"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xix": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xizang": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "region of southwestern China on a high plateau (average altitude 16,000 feet, or 4877 meters) north of the Himalayas and bordering on India, Nepal, Bhutan, and Myanmar (Burma); capital Lhasaarea471,660 square miles (1,226,316 square kilometers),population3,002,165"
     ],
     "synonyms": [],
     "antonyms": []
@@ -109,8 +1070,84 @@
     "meanings": [
       "extra large",
       "extra long",
-      "extended - release"
+      "extended-release"
     ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xli": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xliii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlinked": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "located on an X chromosome",
+      "transmitted by an X-linked gene",
+      "located on an X chromosome"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xliv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlvi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlvii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xlviii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -133,14 +1170,369 @@
     ],
     "antonyms": []
   },
+  "xor": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a logical operator whose output is true when either of two inputs are true but not both"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xradiation": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "exposure to X-rays",
+      "radiation composed of X-rays",
+      "exposure to X-rays"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xray": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "to examine, treat, or photograph with X-rays",
+      "any of the electromagnetic radiations that have an extremely short wavelength of less than 100 angstroms and have the properties of penetrating various thicknesses of all solids, of producing secondary radiations by impinging on material bodies, and of acting on photographic films and plates as light does",
+      "a photograph obtained by use of X-rays"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xraying": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "to examine, treat, or photograph with X-rays",
+      "any of the electromagnetic radiations that have an extremely short wavelength of less than 100 angstroms and have the properties of penetrating various thicknesses of all solids, of producing secondary radiations by impinging on material bodies, and of acting on photographic films and plates as light does",
+      "a photograph obtained by use of X-rays"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xscid": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xt": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "Christian"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xtc": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "ecstasysense 2"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xvi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "1946–     king of Sweden (1973–    )"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xvii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xviii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xx": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "hyperkeratosissense 2b"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxiii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxiv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxix": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxvi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxvii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxviii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxx": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxiii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxiv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxv": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxvi": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxvii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxxviii": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxy": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xxysyndrome": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xy": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylaria": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "the type genus ofXylariaceaecomprising fungi with perithecia borne in the upper part of erect black corky or woody stromataseeblack root rot"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylariaceae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a family of ascomycetous fungi (order Sphaeriales) characterized by dark brown to black usually nonseptate ascospores and conidia borne superficially on the stroma"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "xylem": {
     "uk_ipa": "/ˈzaɪləm/",
     "us_ipa": "/ˈzaɪləm/",
     "examples": [],
     "meanings": [
-      "a complex tissue in the vascular system of higher plants that consists of vessels, trac he ids, or both usually together with wood fibers and parenchyma cells, functions chiefly in conduction of water and dissolved minerals but also in support and food storage, and typically constitutes the woody element ( as of a plant stem ) compare phloem",
-      "a tissue of higher plants that carries water and dissolved materials upward, functions also in support and storage, lies deeper inside the plant than the phloem, and usually makes up the woody parts ( as of a plant stem ) compare phloem"
+      "a complex tissue in the vascular system of higher plants that consists of vessels, tracheids, or both usually together with wood fibers and parenchyma cells, functions chiefly in conduction of water and dissolved minerals but also in support and food storage, and typically constitutes the woody element (as of a plant stem)comparephloem",
+      "a tissue of higher plants that carries water and dissolved materials upward, functions also in support and storage, lies deeper inside the plant than the phloem, and usually makes up the woody parts (as of a plant stem)comparephloem"
     ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylene": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "any of three toxic flammable oily isomeric aromatic hydrocarbons C8H10that are di-methyl homologues of benzene and are usually obtained from petroleum or natural gas distillates",
+      "a mixture ofxylenesand ethyl benzene used chiefly as a solvent",
+      "any of three toxic flammable oily isomeric aromatic hydrocarbons C8H10that are dimethyl homologues of benzene and are usually obtained from petroleum or natural gas distillates"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylocaine": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylocopa": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of carpenter bees that is the type of the familyXylocopidae"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylol": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "xylene",
+      "xylene"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylomelum": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -152,6 +1544,108 @@
       "a percussion instrument consisting of a series of wooden bars graduated in length to produce the musical scale, supported on belts of straw or felt, and sounded by striking with two small wooden hammers",
       "a musical instrument consisting of a series of wooden bars varying in length and sounded by striking with two wooden hammers"
     ],
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": [
+      {
+        "text": "zeye",
+        "stress": 1
+      },
+      {
+        "text": "luh",
+        "stress": 0
+      },
+      {
+        "text": "fohn",
+        "stress": 2
+      }
+    ]
+  },
+  "xylophonist": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a percussion instrument consisting of a series of wooden bars graduated in length to produce the musical scale, supported on belts of straw or felt, and sounded by striking with two small wooden hammers",
+      "a musical instrument consisting of a series of wooden bars varying in length and sounded by striking with two wooden hammers"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylopia": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a large genus of chiefly tropical American trees or shrubs (family Annonaceae) with coriaceous often distichous leaves, rather large flowers, aromatic berries, and usually bitter woodseeembira,guinea pepper"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylose": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a crystalline aldose sugar C5H10O5that is not fermentable with ordinary yeasts and occurs especially as a constituent of xylans from which it is obtained by hydrolysis",
+      "a crystalline aldose sugar C5H10O5that is not fermentable with ordinary yeasts and occurs especially as a constituent of xylans from which it is obtained by hydrolysis"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xylosma": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a genus of American and Asiatic usually evergreen trees and shrubs (family Flacourtiaceae) with axillary thorns and fine-textured woods"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xyphophorus": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xyridaceae": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a family of herbs (orderXyridales) with basal equitant usually distichous leaves and leafless scapes bearing flowers in dense heads in the axils of imbricated scalesseexyris"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xyridales": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "an order of monocotyledonous herbs having flowers mostly with regular corolla and compound superior ovaryseebromeliaceae,commelinaceae,xyridaceae"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xyris": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [
+      "a large genus (the type of the familyXyridaceae) of chiefly American marsh plants having mostly yellow flowers with three sepals of which the two lateral are small, keeled, and persistent and the other is membranous and spreadingseeyellow-eyed grass"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "xyy": {
+    "uk_ipa": null,
+    "us_ipa": null,
+    "examples": [],
+    "meanings": [],
     "synonyms": [],
     "antonyms": []
   }
