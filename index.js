@@ -33,7 +33,7 @@ app.use(
   helmet({
     contentSecurityPolicy: false,
     crossOriginEmbedderPolicy: false,
-  })
+  }),
 );
 
 app.use(
@@ -42,7 +42,7 @@ app.use(
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"],
     maxAge: 86400,
-  })
+  }),
 );
 
 app.use(
@@ -54,14 +54,14 @@ app.use(
       if (contentType.includes("audio")) return false;
       return compression.filter(req, res);
     },
-  })
+  }),
 );
 
 app.use(
   bodyParser.json({
     limit: "10kb",
     strict: true,
-  })
+  }),
 );
 
 require("dotenv").config();
@@ -80,7 +80,7 @@ app.use(
         res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
       }
     },
-  })
+  }),
 );
 
 // ===== Global Response Timing =====
@@ -147,6 +147,7 @@ const fetchWordData = async (word) => {
       examples: entry.examples || [],
       synonyms: entry.synonyms || [],
       antonyms: entry.antonyms || [],
+      syllables: entry.syllables || [],
     };
   } catch (err) {
     console.warn(`fetchWordData failed for ${word}:`, err?.message);
@@ -156,10 +157,10 @@ const fetchWordData = async (word) => {
 
 // ===== Global Error Handling =====
 process.on("uncaughtException", (error) =>
-  console.error("Uncaught Exception:", error)
+  console.error("Uncaught Exception:", error),
 );
 process.on("unhandledRejection", (reason, promise) =>
-  console.error("Unhandled Rejection at:", promise, "reason:", reason)
+  console.error("Unhandled Rejection at:", promise, "reason:", reason),
 );
 
 // ===== Routes =====
@@ -253,6 +254,7 @@ app.post("/get-pronunciation", async (req, res) => {
         wordData?.examples?.map((ex) => ({ text: ex, partOfSpeech: "" })) ?? [],
       synonyms: wordData?.synonyms ?? [],
       antonyms: wordData?.antonyms ?? [],
+      syllables: wordData?.syllables ?? [],
       audioMetadata: { format: "mp3", accent, voice: voiceName, speed },
     };
 
@@ -270,7 +272,7 @@ app.post("/get-pronunciation", async (req, res) => {
     res.json(responseData);
   } catch (error) {
     console.error(
-      `Error processing ${word}: ${error.message || "Unknown error"}`
+      `Error processing ${word}: ${error.message || "Unknown error"}`,
     );
     res.status(500).json({
       error: "Error processing pronunciation request",
