@@ -1,15 +1,4 @@
 {
-  "yacca": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several chiefly West Indian trees of the genusPodocarpus(such asP. coriaceusandP. purdianus)",
-      "the wood of a yacca"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yacht": {
     "uk_ipa": "/jɒt/",
     "us_ipa": "/jɑːt/",
@@ -21,7 +10,7 @@
     "meanings": [
       "any of various recreational watercraft: such as",
       "a sailboat used for racing",
-      "a large usually motor-driven craft used for pleasure cruising"
+      "a large usually motor - driven craft used for pleasure cruising"
     ],
     "synonyms": [
       "schooner",
@@ -46,7 +35,7 @@
       "a yachting holiday"
     ],
     "meanings": [
-      "the action, fact, or pastime of racing or cruising in ayacht",
+      "the action, fact, or pastime of racing or cruising in a yacht",
       "the sport of racing or cruising in a yacht"
     ],
     "synonyms": [
@@ -75,7 +64,7 @@
       "a round-the-world yachtsman"
     ],
     "meanings": [
-      "a person who owns or sails ayacht",
+      "a person who owns or sails a yacht",
       "a person who owns or sails a yacht"
     ],
     "synonyms": [],
@@ -91,22 +80,14 @@
       }
     ]
   },
-  "yachtswoman": {
-    "uk_ipa": "/ˈjɒtswʊmən/",
-    "us_ipa": "/ˈjɑːtswʊmən/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yack": {
     "uk_ipa": "/jæk/",
     "us_ipa": "/jæk/",
     "examples": [],
     "meanings": [
-      "a large long-haired wild or domesticated ox (Bos grunnienssynonymPoephagus grunniens) of Tibet and adjacent elevated parts of central Asia",
+      "a large long - haired wild or domesticated ox ( bos grunnienssynonympoephag us grun nien s ) of tibet and adjacent elevated parts of central asia",
       "laugh",
-      "joke,gag"
+      "joke, gag"
     ],
     "synonyms": [
       "troll",
@@ -127,64 +108,12 @@
       }
     ]
   },
-  "yafo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "former city in western Israel"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yagi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a highly directional and selective shortwave antenna consisting of a horizontal conductor of one or two dipoles connected with the receiver or transmitter and of a set of nearly equal insulated dipoles parallel to and on a level with the horizontal conductor"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 1
-      },
-      {
-        "text": "gee",
-        "stress": 0
-      }
-    ]
-  },
-  "yahi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an extinct Indian people of the Pitt river valley in northern California",
-      "a member of such people",
-      "a Yanan language of the Yahi people"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 1
-      },
-      {
-        "text": "hee",
-        "stress": 0
-      }
-    ]
-  },
   "yahoo": {
     "uk_ipa": "/ˈjɑːhuː/",
     "us_ipa": "/ˈjɑːhuː/",
     "examples": [],
     "meanings": [
-      "a member of a race of brutes in Swift'sGulliver's Travelswho have the form and all the vices of humans",
+      "a member of a race of brutes in swift ' s gulliver ' s travels who have the form and all the vices of humans",
       "a boorish, crass, or stupid person",
       "yippee"
     ],
@@ -213,46 +142,13 @@
       }
     ]
   },
-  "yahve": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yahveh": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "godsense 1a",
-      "comparetetragrammaton"
-    ],
-    "synonyms": [
-      "God",
-      "Divinity",
-      "King",
-      "Providence",
-      "Lord"
-    ],
-    "antonyms": []
-  },
-  "yahwe": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yahweh": {
     "uk_ipa": "/ˈjɑːweɪ/",
     "us_ipa": "/ˈjɑːweɪ/",
     "examples": [],
     "meanings": [
-      "godsense 1a",
-      "comparetetragrammaton"
+      "god sense 1 a",
+      "compare tetragrammaton"
     ],
     "synonyms": [
       "God",
@@ -273,24 +169,14 @@
       }
     ]
   },
-  "yajurveda": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a collection of Vedic Sanskrit prose formulas intended to be spoken by the officiating priestcompareAtharva Veda,Rig Veda,Sama Veda"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yak": {
     "uk_ipa": "/jæk/",
     "us_ipa": "/jæk/",
     "examples": [],
     "meanings": [
-      "a large long-haired wild or domesticated ox (Bos grunnienssynonymPoephagus grunniens) of Tibet and adjacent elevated parts of central Asia",
+      "a large long - haired wild or domesticated ox ( bos grunnienssynonympoephag us grun nien s ) of tibet and adjacent elevated parts of central asia",
       "laugh",
-      "joke,gag"
+      "joke, gag"
     ],
     "synonyms": [
       "troll",
@@ -311,76 +197,6 @@
       }
     ]
   },
-  "yaketyyak": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "yakentry2",
-      "yakentry3"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yakima": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 200 miles (322 kilometers) long in southern Washington flowing southeast into the Columbia River",
-      "city on the Yakima River in south central Washingtonpopulation91,067"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "ya",
-        "stress": 1
-      },
-      {
-        "text": "kih",
-        "stress": 0
-      },
-      {
-        "text": "muh",
-        "stress": 0
-      }
-    ]
-  },
-  "yaks": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a large long-haired wild or domesticated ox (Bos grunnienssynonymPoephagus grunniens) of Tibet and adjacent elevated parts of central Asia",
-      "laugh",
-      "joke,gag"
-    ],
-    "synonyms": [
-      "trolls",
-      "jaws",
-      "patters",
-      "blabbers",
-      "bleats"
-    ],
-    "antonyms": [
-      "articulates",
-      "pronounces",
-      "enunciates"
-    ]
-  },
-  "yakut": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a Turkic people of northeastern Siberia living mainly in the Lena river basin and practicing herding, crafts, and trading and in the south some agriculture",
-      "a member of such people",
-      "the Turkic language of the Yakut people"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yakuza": {
     "uk_ipa": "/jəˈkuːzə/",
     "us_ipa": "/jəˈkuːzə/",
@@ -389,34 +205,18 @@
       "The Yakuza has a very complex organizational structure."
     ],
     "meanings": [
-      "a Japanese gangster",
-      "an organized crime syndicate in Japan"
+      "a japanese gangster",
+      "an organized crime syndicate in japan"
     ],
     "synonyms": [],
     "antonyms": []
-  },
-  "yale": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Elihu 1649–1721 English (American-born) colonial administrator"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yayl",
-        "stress": 1
-      }
-    ]
   },
   "yalta": {
     "uk_ipa": "/ˈjæltə/",
     "us_ipa": "/ˈjɔːltə/",
     "examples": [],
     "meanings": [
-      "city and port on the Black Sea on the southern coast ofCrimeapopulation82,000"
+      "city and port on the black sea on the southern coast of crime a population 8 2, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -431,32 +231,14 @@
       }
     ]
   },
-  "yaltopya": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yalu": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river about 500 miles (804 kilometers) long in southeastern Manchuria and northwestern North Korea flowing north, west, and southwest into Korea Bay"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yam": {
     "uk_ipa": "/jæm/",
     "us_ipa": "/jæm/",
     "examples": [],
     "meanings": [
-      "the edible starchy tuberous root of various plants (genusDioscoreaof the family Dioscoreaceae) used as a staple food in tropical areas",
+      "the edible starchy tuberous root of various plants ( genus dioscorea of the family dioscorea cea e ) used as a staple food in tropical areas",
       "a plant producing yams",
-      "a moist usually orange-fleshed sweet potato"
+      "a moist usually orange - fleshed sweet potato"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -464,72 +246,6 @@
       {
         "text": "yam",
         "stress": 1
-      }
-    ]
-  },
-  "yama": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yamaltu": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yamamoto": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Isoroku 1884–1943 Japanese admiral"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 0
-      },
-      {
-        "text": "mah",
-        "stress": 0
-      },
-      {
-        "text": "moh",
-        "stress": 1
-      },
-      {
-        "text": "toh",
-        "stress": 0
-      }
-    ]
-  },
-  "yamani": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 0
-      },
-      {
-        "text": "mah",
-        "stress": 1
-      },
-      {
-        "text": "nee",
-        "stress": 0
       }
     ]
   },
@@ -542,7 +258,7 @@
     "meanings": [
       "to utter repeated cries of distress or sorrow",
       "whimper",
-      "to utter persistent complaints:whine"
+      "to utter persistent complaints: whine"
     ],
     "synonyms": [
       "whine",
@@ -559,77 +275,18 @@
       "commendation"
     ]
   },
-  "yamoussukro": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yana": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river of northern Russia in Asia flowing north into the Laptev Sea"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yanan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a language family of the Hokan stock comprising Yahi and Yana"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yang": {
     "uk_ipa": "/jæŋ/",
     "us_ipa": "/jæŋ/",
     "examples": [],
     "meanings": [
-      "the masculine active principle in nature that in Chinese cosmology is exhibited in light, heat, or dryness and that combines with yin to produce all that comes to be"
+      "the masculine active principle in nature that in chinese cosmology is exhibited in light, heat, or dryness and that combines with yin to produce all that comes to be"
     ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
       {
         "text": "yang",
-        "stress": 1
-      }
-    ]
-  },
-  "yangon": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 25 miles (40 kilometers) long in southern Myanmar (Burma)",
-      "city and port on the Yangon River 21 miles (34 kilometers) from its mouth in southern Myanmar (Burma)population4,477,600"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yangtze": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 3915 miles (6299 kilometers) long in central China flowing from the Kunlun Mountains in southwestern Qinghai (province) east into the East China Sea"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yangk",
-        "stress": 1
-      },
-      {
-        "text": "tsee",
         "stress": 1
       }
     ]
@@ -673,9 +330,9 @@
     "us_ipa": "/ˈjæŋki/",
     "examples": [],
     "meanings": [
-      "a native or inhabitant of New England",
-      "a native or inhabitant of the northern U.S.",
-      "a native or inhabitant of the U.S."
+      "a native or inhabitant of new england",
+      "a native or inhabitant of the northern u. s.",
+      "a native or inhabitant of the u. s."
     ],
     "synonyms": [],
     "antonyms": [],
@@ -690,50 +347,14 @@
       }
     ]
   },
-  "yankeedoodle": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "yankee"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yanker": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yanquapin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yaounde": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city in south central Cameroonpopulation1,817,524"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yap": {
     "uk_ipa": "/jæp/",
     "us_ipa": "/jæp/",
     "examples": [],
     "meanings": [
-      "to talk in a shrill insistent way:chatter",
-      "to bark snappishly:yelp",
-      "a quick sharp bark:yelp"
+      "to talk in a shrill insistent way: chatter",
+      "to bark snappish ly: yelp",
+      "a quick sharp bark: yelp"
     ],
     "synonyms": [
       "mouth",
@@ -759,7 +380,7 @@
       "The prisoners were made to line up in the prison yard."
     ],
     "meanings": [
-      "a small usually walled and often paved area open to the sky and adjacent to a building:court",
+      "a small usually walled and often paved area open to the sky and adjacent to a building: court",
       "the grounds of a building or group of buildings",
       "the grounds immediately surrounding a house that are usually covered with grass"
     ],
@@ -793,7 +414,7 @@
     "meanings": [
       "the use of a livestock enclosure for animals in transit provided by a railroad at a station",
       "a charge made by a railroad for the use of a livestock enclosure",
-      "an aggregate number ofyards"
+      "an aggregate number of yards"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -813,8 +434,8 @@
     "us_ipa": "/ˈjɑːrdɑːrm/",
     "examples": [],
     "meanings": [
-      "either end of the yard of a square-rigged ship",
-      "either end of the yard of a square-rigged ship"
+      "either end of the yard of a square - rigged ship",
+      "either end of the yard of a square - rigged ship"
     ],
     "synonyms": [],
     "antonyms": []
@@ -830,77 +451,6 @@
     "synonyms": [],
     "antonyms": []
   },
-  "yarder": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one that is a specified number ofyardsin length"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yahr",
-        "stress": 1
-      },
-      {
-        "text": "der",
-        "stress": 0
-      }
-    ]
-  },
-  "yardgrass": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a tall annual Old World grass (Eleusine indica) widely distributed as a weed"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yardie": {
-    "uk_ipa": "/ˈjɑːdi/",
-    "us_ipa": "/ˈjɑːrdi/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yardlong": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the edible 1- to 3-foot (0.3- to 0.9-meter) long thin stringless pod of a south Asian plant of a subspecies (Vigna unguiculata sesquipedalis) of the cowpea"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yardman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a person employed to do outdoor work (such as mowing lawns)",
-      "a person who works in the yard of a commercial establishment",
-      "one who supervises the handling of building materials in a lumberyard"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yardmaster": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the person in charge of operations in a railroad yard",
-      "the person in charge of a railroad yard"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yardstick": {
     "uk_ipa": "/ˈjɑːdstɪk/",
     "us_ipa": "/ˈjɑːrdstɪk/",
@@ -909,9 +459,9 @@
       "Exam results are not the only yardstick of a school's performance."
     ],
     "meanings": [
-      "a graduated measuring stick three feet (0.9144 meter) long",
+      "a graduated measuring stick three feet ( 0. 9 1 4 4 meter ) long",
       "a standard basis of calculation",
-      "a standard for making a critical judgment:criterion"
+      "a standard for making a critical judgment: criterion"
     ],
     "synonyms": [
       "criterion",
@@ -936,29 +486,13 @@
       }
     ]
   },
-  "yarmelke": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yarmulka": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yarmulke": {
     "uk_ipa": "/ˈjɑːmʊlkə/",
     "us_ipa": "/ˈjɑːrmʊlkə/",
     "examples": [],
     "meanings": [
-      "a skullcap worn especially by Orthodox and Conservative Jewish males in the synagogue and the home",
-      "a skullcap worn especially by Jewish males"
+      "a skullcap worn especially by orthodox and conservative jewish males in the synagogue and the home",
+      "a skullcap worn especially by jewish males"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -986,8 +520,8 @@
       "He used to spin yarns (= tell stories) about his time in the army."
     ],
     "meanings": [
-      "a continuous often plied strand composed of either natural or man-made fibers or filaments and used in weaving and knitting to form cloth",
-      "a similar strand of another material (such as metal, glass, or plastic)",
+      "a continuous often plied strand composed of either natural or man - made fibers or filaments and used in weaving and knitting to form cloth",
+      "a similar strand of another material ( such as metal, glass, or plastic )",
       "a narrative of adventures"
     ],
     "synonyms": [
@@ -1005,31 +539,13 @@
       }
     ]
   },
-  "yarndye": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to dye before weaving or knitting"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yarnspinning": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yarrow": {
     "uk_ipa": "/ˈjærəʊ/",
     "us_ipa": "/ˈjærəʊ/",
     "examples": [],
     "meanings": [
-      "a widely naturalized strong-scented Eurasian composite herb (Achillea millefolium) with finely dissected leaves and small usually white corymbose flowers",
-      "any of several congeneric plants"
+      "a widely naturalized strong - scented eurasian composite herb ( achillea millefolium ) with finely dissected leaves and small usually white cory m bose flowers",
+      "any of several con generic plants"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -1044,137 +560,12 @@
       }
     ]
   },
-  "yashmac": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yashmak": {
     "uk_ipa": "/ˈjæʃmæk/",
     "us_ipa": "/ˈjæʃmæk/",
     "examples": [],
     "meanings": [
-      "a veil worn by Muslim women that is wrapped around the upper and lower parts of the face so that only the eyes remain exposed to public view"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yasser": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "ya",
-        "stress": 1
-      },
-      {
-        "text": "ser",
-        "stress": 0
-      }
-    ]
-  },
-  "yastrzemski": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yataghan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a long knife or short saber that lacks a guard for the hand at the juncture of blade and hilt and that usually has a double curve to the edge and a nearly straight back"
-    ],
-    "synonyms": [
-      "dagger",
-      "bayonet",
-      "poniard",
-      "stiletto",
-      "cutlass"
-    ],
-    "antonyms": []
-  },
-  "yatobyo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yaup": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to make a raucous noise:squawk",
-      "clamor,complain",
-      "a raucous noise:squawk"
-    ],
-    "synonyms": [
-      "complain",
-      "scream",
-      "moan",
-      "squawk",
-      "wail"
-    ],
-    "antonyms": [
-      "rejoice",
-      "delight",
-      "accept",
-      "tolerate",
-      "endure"
-    ]
-  },
-  "yaupon": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a holly (Ilex vomitoria) of the southeastern U.S. that has smooth elliptical leaves with emetic and purgative properties"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yaw",
-        "stress": 1
-      },
-      {
-        "text": "puhn",
-        "stress": 0
-      }
-    ]
-  },
-  "yautia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several aroid plants (genusXanthosoma, especiallyX. sagittifolium) chiefly of tropical America with starchy edible shaggy brown tubers that are cooked and eaten like yams or potatoes",
-      "one of these tubers"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yavapai": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an Indian people of central Arizona",
-      "a member of such people",
-      "a Yuman language of the Yavapai people"
+      "a veil worn by muslim women that is wrapped around the upper and lower parts of the face so that only the eyes remain exposed to public view"
     ],
     "synonyms": [],
     "antonyms": []
@@ -1185,7 +576,7 @@
     "examples": [],
     "meanings": [
       "the action of yawing",
-      "a side-to-side movement",
+      "a side - to - side movement",
       "the extent of the movement in yawing"
     ],
     "synonyms": [
@@ -1210,8 +601,8 @@
     "us_ipa": "/jɔːl/",
     "examples": [],
     "meanings": [
-      "a ship's small boat:jolly boat",
-      "a fore-and-aft rigged sailboat carrying a mainsail and one or more jibs with a mizzenmast far aft",
+      "a ship ' s small boat: jolly boat",
+      "a fore - and - aft rigged sailboat carrying a mainsail and one or more jibs with a mizzen mast far aft",
       "a sailboat having two masts with the shorter one behind the rudder"
     ],
     "synonyms": [
@@ -1232,7 +623,7 @@
       "‘Wow,’ she yawned, ‘a customer.’"
     ],
     "meanings": [
-      "to open wide:gape",
+      "to open wide: gape",
       "to open the mouth wide and take a deep breath usually as an involuntary reaction to fatigue or boredom",
       "to utter with a yawn"
     ],
@@ -1257,104 +648,14 @@
       }
     ]
   },
-  "yawner": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one thatyawns",
-      "something that causes boredom"
-    ],
-    "synonyms": [
-      "bore",
-      "yawn",
-      "drip",
-      "snoozer",
-      "snooze"
-    ],
-    "antonyms": [
-      "blast",
-      "rush",
-      "gas",
-      "kick",
-      "upper"
-    ],
-    "syllables": [
-      {
-        "text": "yaw",
-        "stress": 1
-      },
-      {
-        "text": "ner",
-        "stress": 0
-      }
-    ]
-  },
-  "yawning": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "wide open:cavernous",
-      "showing fatigue or boredom byyawns"
-    ],
-    "synonyms": [
-      "nodding",
-      "sleeping",
-      "resting",
-      "dozing",
-      "dormant"
-    ],
-    "antonyms": [
-      "awake",
-      "conscious",
-      "alert",
-      "wakeful",
-      "wide-awake"
-    ],
-    "syllables": [
-      {
-        "text": "yaw",
-        "stress": 1
-      },
-      {
-        "text": "nihng",
-        "stress": 0
-      }
-    ]
-  },
-  "yawp": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to make a raucous noise:squawk",
-      "clamor,complain",
-      "a raucous noise:squawk"
-    ],
-    "synonyms": [
-      "complain",
-      "scream",
-      "moan",
-      "squawk",
-      "wail"
-    ],
-    "antonyms": [
-      "rejoice",
-      "delight",
-      "accept",
-      "tolerate",
-      "endure"
-    ]
-  },
   "yaws": {
     "uk_ipa": "/jɔːz/",
     "us_ipa": "/jɔːz/",
     "examples": [],
     "meanings": [
-      "a contagious tropical disease especially of children caused by a spirochete (Treponema pertenue) closely resembling the causative agent of syphilis and marked by infectious ulcerative skin lesions with later bone involvement",
+      "a contagious tropical disease especially of children caused by a spirochete ( treponema per tenue ) closely resembling the causative agent of syphilis and marked by infectious ulcerative skin lesions with later bone involvement",
       "a tropical contagious skin disease especially of children caused by a bacterium that is a spirochete",
-      "an infectious contagious tropical disease especially of children that is caused by aspirocheteof the genusTreponema(T. pertenue) and that is characterized by a primary ulcerating lesion on the skin followed by a secondary stage in which ulcers develop all over the body and by a third stage in which the bones are involved"
+      "an infectious contagious tropical disease especially of children that is caused by a spirochete of the genus treponema ( t. per tenue ) and that is characterized by a primary ulcer ating lesion on the skin followed by a secondary stage in which ulcers develop all over the body and by a third stage in which the bones are involved"
     ],
     "synonyms": [
       "veers",
@@ -1367,80 +668,13 @@
       "straightens"
     ]
   },
-  "yaxis": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the axis of a plane Cartesian coordinate system parallel to which ordinates are measured",
-      "one of the three axes in a three-dimensional rectangular coordinate system",
-      "the vertical axis in a plane coordinate system along which or parallel to which ordinates are measuredcomparex-axis"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yay": {
-    "uk_ipa": "/jeɪ/",
-    "us_ipa": "/jeɪ/",
-    "examples": [
-      "I won! Yay!"
-    ],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yay",
-        "stress": 1
-      }
-    ]
-  },
-  "yazoo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 189 miles (304 kilometers) long in Mississippi flowing southwest into the Mississippi River"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 1
-      },
-      {
-        "text": "zoo",
-        "stress": 2
-      }
-    ]
-  },
-  "yb": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "ytterbium",
-      "ytterbium"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ybit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yea": {
     "uk_ipa": "/jeɪ/",
     "us_ipa": "/jeɪ/",
     "examples": [],
     "meanings": [
       "yes",
-      "more than this:not only so but",
+      "more than this: not only so but",
       "to this extent or degree"
     ],
     "synonyms": [
@@ -1474,7 +708,7 @@
     ],
     "meanings": [
       "yes",
-      "yesentry1"
+      "yes entry 1"
     ],
     "synonyms": [
       "okay",
@@ -1505,7 +739,7 @@
       "next/last year"
     ],
     "meanings": [
-      "the period of about 3651/4solar days required for one revolution of the earth around the sun",
+      "the period of about 3 6 5 1 / 4 solar days required for one revolution of the earth around the sun",
       "the time required for the apparent sun to return to an arbitrary fixed or moving reference point in the sky",
       "the time in which a planet completes a revolution about the sun"
     ],
@@ -1524,14 +758,6 @@
       }
     ]
   },
-  "yeararound": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yearbook": {
     "uk_ipa": "/ˈjɪəbʊk/",
     "us_ipa": "/ˈjɪrbʊk/",
@@ -1539,8 +765,8 @@
       "The Artists’ and Writers’ Yearbook"
     ],
     "meanings": [
-      "a book publishedyearlyas a report or summary of statistics or facts:annual",
-      "a school publication that is compiled usually by a graduating class and that serves as a record of the year's activities",
+      "a book published yearly as a report or summary of statistics or facts: annual",
+      "a school publication that is compiled usually by a graduating class and that serves as a record of the year ' s activities",
       "a book published yearly"
     ],
     "synonyms": [
@@ -1562,27 +788,6 @@
       }
     ]
   },
-  "yearend": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the end of usually the fiscal year",
-      "made, occurring, or existing at the year-end"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yih",
-        "stress": 2
-      },
-      {
-        "text": "rehnd",
-        "stress": 1
-      }
-    ]
-  },
   "yearling": {
     "uk_ipa": "/ˈjɪəlɪŋ/",
     "us_ipa": "/ˈjɪrlɪŋ/",
@@ -1590,7 +795,7 @@
     "meanings": [
       "one that is a year old: such as",
       "an animal one year old or in the second year of its age",
-      "a racehorse between January 1 of the year after the year in which it was foaled and the next January 1"
+      "a racehorse between january 1 of the year after the year in which it was foaled and the next january 1"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -1605,26 +810,6 @@
       }
     ]
   },
-  "yearlong": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "lasting through a year"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yihr",
-        "stress": 1
-      },
-      {
-        "text": "lawng",
-        "stress": 1
-      }
-    ]
-  },
   "yearly": {
     "uk_ipa": "/ˈjɪəli/",
     "us_ipa": "/ˈjɪrli/",
@@ -1633,8 +818,8 @@
     ],
     "meanings": [
       "reckoned by the year",
-      "occurring, appearing, made, done, or acted upon every year or once a year:annual",
-      "every year:annually"
+      "occurring, appearing, made, done, or acted upon every year or once a year: annual",
+      "every year: annually"
     ],
     "synonyms": [
       "annual",
@@ -1687,50 +872,6 @@
         "text": "yern",
         "stress": 1
       }
-    ]
-  },
-  "yearnedfor": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [
-      "craved",
-      "died (for)",
-      "wanted",
-      "sighed (for)",
-      "thirsted (for)"
-    ],
-    "antonyms": [
-      "hated",
-      "despised",
-      "loathed",
-      "detested",
-      "abhorred"
-    ]
-  },
-  "yearner": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to long persistently, wistfully, or sadly",
-      "to feel tenderness or compassion",
-      "to desire eagerly"
-    ],
-    "synonyms": [
-      "crave",
-      "long (for)",
-      "die (for)",
-      "want",
-      "thirst (for)"
-    ],
-    "antonyms": [
-      "hate",
-      "despise",
-      "refuse",
-      "loathe",
-      "abhor"
     ]
   },
   "yearning": {
@@ -1793,47 +934,12 @@
       "abhor"
     ]
   },
-  "yearround": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "occurring, effective, employed, staying, or operating for the full year:not seasonal",
-      "being in operation for the whole year"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "years": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the period of about 3651/4solar days required for one revolution of the earth around the sun",
-      "the time required for the apparent sun to return to an arbitrary fixed or moving reference point in the sky",
-      "the time in which a planet completes a revolution about the sun"
-    ],
-    "synonyms": [
-      "days",
-      "periods",
-      "generations",
-      "ages",
-      "times"
-    ],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yihrz",
-        "stress": 1
-      }
-    ]
-  },
   "yeast": {
     "uk_ipa": "/jiːst/",
     "us_ipa": "/jiːst/",
     "examples": [],
     "meanings": [
-      "a yellowish surface froth or sediment that occurs especially in saccharine liquids (such as fruit juices) in which it promotes alcoholic fermentation, consists largely of cells of a fungus (such as the saccharomyces,Saccharomyces cerevisiae), and is used especially in the making of alcoholic liquors and as a leaven in baking",
+      "a yellowish surface froth or sediment that occurs especially in saccharine liquids ( such as fruit juices ) in which it promotes alcoholic fermentation, consists largely of cells of a fungus ( such as the saccharomyces, saccharomyces cerevisiae ), and is used especially in the making of alcoholic liquors and as a leaven in baking",
       "a commercial product containing yeast fungi in a moist or dry medium",
       "a unicellular fungus that is present and functionally active in yeast, usually has little or no mycelium, and reproduces by budding"
     ],
@@ -1855,27 +961,6 @@
       }
     ]
   },
-  "yeastlike": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a yellowish surface froth or sediment that occurs especially in saccharine liquids (such as fruit juices) in which it promotes alcoholic fermentation, consists largely of cells of a fungus (such as the saccharomyces,Saccharomyces cerevisiae), and is used especially in the making of alcoholic liquors and as a leaven in baking",
-      "a commercial product containing yeast fungi in a moist or dry medium",
-      "a unicellular fungus that is present and functionally active in yeast, usually has little or no mycelium, and reproduces by budding"
-    ],
-    "synonyms": [
-      "incentive",
-      "impetus",
-      "encouragement",
-      "stimulus",
-      "motivation"
-    ],
-    "antonyms": [
-      "disincentive",
-      "counterincentive"
-    ]
-  },
   "yeasty": {
     "uk_ipa": "/ˈjiːsti/",
     "us_ipa": "/ˈjiːsti/",
@@ -1883,8 +968,8 @@
       "a yeasty smell"
     ],
     "meanings": [
-      "of, relating to, or resemblingyeast",
-      "immature,unsettled",
+      "of, relating to, or resembling yeast",
+      "immature, unsettled",
       "marked by change"
     ],
     "synonyms": [
@@ -1902,83 +987,6 @@
       "grave"
     ]
   },
-  "yeats": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "William Butler 1865–1939 Irish poet and dramatist"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yayts",
-        "stress": 1
-      }
-    ]
-  },
-  "yeatsian": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "William Butler 1865–1939 Irish poet and dramatist"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yeddo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a natural unsplit straw for hats"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yedo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city in southeastern Honshu, Japan, on",
-      "population8,945,695"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yehudi": {
-    "uk_ipa": "/jəˌhuːdi ˈmenjuɪn/",
-    "us_ipa": "/jəˌhuːdi ˈmenjuɪn/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yay",
-        "stress": 0
-      },
-      {
-        "text": "hoo",
-        "stress": 1
-      },
-      {
-        "text": "dee",
-        "stress": 0
-      }
-    ]
-  },
-  "yekaterinoslav": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yell": {
     "uk_ipa": "/jel/",
     "us_ipa": "/jel/",
@@ -1990,7 +998,7 @@
     "meanings": [
       "to utter a loud cry, scream, or shout",
       "to give a cheer usually in unison",
-      "to utter or declare with or as if with a yell:shout"
+      "to utter or declare with or as if with a yell: shout"
     ],
     "synonyms": [
       "scream",
@@ -2013,94 +1021,6 @@
       }
     ]
   },
-  "yelled": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to utter a loud cry, scream, or shout",
-      "to give a cheer usually in unison",
-      "to utter or declare with or as if with a yell:shout"
-    ],
-    "synonyms": [
-      "shrieked",
-      "screamed",
-      "squealed",
-      "howled",
-      "screeched"
-    ],
-    "antonyms": [
-      "whispered",
-      "muttered",
-      "murmured",
-      "whispered",
-      "muttered"
-    ],
-    "syllables": [
-      {
-        "text": "yehld",
-        "stress": 1
-      }
-    ]
-  },
-  "yeller": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to utter a loud cry, scream, or shout",
-      "to give a cheer usually in unison",
-      "to utter or declare with or as if with a yell:shout"
-    ],
-    "synonyms": [
-      "scream",
-      "shriek",
-      "squeal",
-      "cry",
-      "howl"
-    ],
-    "antonyms": [
-      "whisper",
-      "murmur",
-      "mutter",
-      "whisper",
-      "breathe"
-    ]
-  },
-  "yelling": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to utter a loud cry, scream, or shout",
-      "to give a cheer usually in unison",
-      "to utter or declare with or as if with a yell:shout"
-    ],
-    "synonyms": [
-      "screaming",
-      "shrieking",
-      "squealing",
-      "crying",
-      "screeching"
-    ],
-    "antonyms": [
-      "whispering",
-      "muttering",
-      "murmuring",
-      "whispering",
-      "breathing"
-    ],
-    "syllables": [
-      {
-        "text": "yeh",
-        "stress": 1
-      },
-      {
-        "text": "lihng",
-        "stress": 0
-      }
-    ]
-  },
   "yellow": {
     "uk_ipa": "/ˈjeləʊ/",
     "us_ipa": "/ˈjeləʊ/",
@@ -2111,8 +1031,8 @@
     ],
     "meanings": [
       "of the color yellow",
-      "becomeyellowishthrough age, disease, or discoloration:sallow",
-      "having a lightoliveor light brown complexion"
+      "become yellowish through age, disease, or discoloration: sallow",
+      "having a light olive or light brown complexion"
     ],
     "synonyms": [
       "afraid",
@@ -2139,194 +1059,13 @@
       }
     ]
   },
-  "yellowbanded": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an Australian snapper (Lutjanus amabilis) that is largely pink with a broad yellow band along each side and is an excellent table fish taken chiefly with hook and line"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbeige": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbellied": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "not having courage:cowardly"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbelly": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "pumpkinseedsense 1",
-      "squawfishsense 1",
-      "callop"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbird": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of various American goldfinches",
-      "yellow warblersense 1 a"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowblindness": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "tritanopia"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowblue": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbreasted": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a bunting (Emberiza aureola) that is common in northern Russia and Siberia, winters in tropical Asia, and in the adult male is chestnut above with a buff stripe over the eye and a yellow breast crossed by a narrow chestnut band",
-      "a large American chat (Icteria vireus) that is greenish brown above with a bright yellow throat and breast and a white abdomen, that breeds chiefly in the eastern half of the U.S., that winters in Mexico and Central America, and that is noted for its expert mimicking of other birds"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowbrown": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowcake": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "partially refined uranium ore that is often used as an intermediate step in the production of nuclear weapons"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowcrowned": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a night heron (Nyctanassa violacea) that has a buffy white crown and is found in the southern U.S. and in South America"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowdog": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "mean,contemptible",
-      "of or relating to opposition to trade unionism or a labor union"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of the color yellow",
-      "becomeyellowishthrough age, disease, or discoloration:sallow",
-      "having a lightoliveor light brown complexion"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yelloweyed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a plant of the genusXyris",
-      "xyridaceae",
-      "ignoble hawk"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowfever": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an acute infectious disease that is endemic in sub-Saharan Africa and tropical South America, is marked by symptoms (such as fever, muscle pain, and headache) of sudden onset which typically resolve within a few days but are sometimes followed by more serious symptoms (such as jaundice, high fever, and hemorrhage), and is caused by a flavivirus (speciesYellow fever virusof the genusFlavivirus) transmitted especially by the yellow-fever mosquito",
-      "an infectious disease of warm regions (as sub-Saharan Africa) that is marked by fever, headache, muscle aches, yellowness of the skin, and sometimes death and that is caused by a virus transmitted by a mosquito",
-      "an infectious disease of sudden onset that is endemic in sub-Saharan Africa and tropical South America and includes acute symptoms (as fever, muscle pain, headache, and nausea) which typically resolve within a few days but are sometimes followed by more serious symptoms (as jaundice, abdominal pain, high fever, hemorrhage, and kidney impairment) which may lead to death"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yellowfin": {
     "uk_ipa": "/ˈjeləʊfɪn/",
     "us_ipa": "/ˈjeləʊfɪn/",
     "examples": [],
     "meanings": [
-      "a nearly cosmopolitan tuna (Thunnus albacares) with yellowish fins"
+      "a nearly cosmopolitan tuna ( thunnus alba cares ) with yellowish fins"
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowgray": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowgreen": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of a class (Xanthophyceae of the division Chrysophyta) of algae with the chlorophyll masked by brown or yellow pigment"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowgrey": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -2335,9 +1074,9 @@
     "us_ipa": "/ˈjeləʊhæmər/",
     "examples": [],
     "meanings": [
-      "a common Palearctic finch (Emberiza citrinellaof the family Emberizidae) having the male largelyyellowand chestnut",
-      "yellow-shafted flicker",
-      "yellow-shafted flicker"
+      "a common palearctic finch ( emberiza citrine lla of the family emberizidae ) having the male largely yellow and chestnut",
+      "yellow - shafted flicker",
+      "yellow - shafted flicker"
     ],
     "synonyms": [],
     "antonyms": []
@@ -2350,8 +1089,8 @@
     ],
     "meanings": [
       "of the color yellow",
-      "becomeyellowishthrough age, disease, or discoloration:sallow",
-      "having a lightoliveor light brown complexion"
+      "become yellowish through age, disease, or discoloration: sallow",
+      "having a light olive or light brown complexion"
     ],
     "synonyms": [
       "afraid",
@@ -2382,52 +1121,12 @@
       }
     ]
   },
-  "yellowishbeige": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowishgray": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowishgrey": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowishorange": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowishwhite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yellowknife": {
     "uk_ipa": "/ˈjeləʊnaɪf/",
     "us_ipa": "/ˈjeləʊnaɪf/",
     "examples": [],
     "meanings": [
-      "city in western Canada on Great Slave Lakepopulation18,700"
+      "city in western canada on great slave lake population 1 8, 7 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2446,37 +1145,6 @@
       }
     ]
   },
-  "yellowleaf": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several diseases of plants characterized by chlorosis of the foliage (as cherry leaf spot)",
-      "the latter years of life:old age"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowlegs": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "either of two American shorebirds of the sandpiper family withyellowlegs:",
-      "greater yellowlegs",
-      "lesser yellowlegs"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowmarked": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yellowness": {
     "uk_ipa": "/ˈjeləʊnəs/",
     "us_ipa": "/ˈjeləʊnəs/",
@@ -2484,142 +1152,7 @@
       "the vivid yellowness of the flowers"
     ],
     "meanings": [
-      "the quality or state of beingyellow"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yelloworange": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "deep chrome yellow"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowshafted": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a flicker of eastern North America that is golden yellow on the underside of the tail and wings, has a red mark on the nape, and in the male has a black streak on each cheek"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowspotted": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowstone": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 671 miles (1080 kilometers) long in northwestern Wyoming and southern and eastern Montana flowing north through",
-      "and",
-      "in Yellowstone National Park and northeast into the Missouri River in northwestern North Dakota near the border with Montana"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yeh",
-        "stress": 1
-      },
-      {
-        "text": "lohs",
-        "stress": 0
-      },
-      {
-        "text": "tohn",
-        "stress": 2
-      }
-    ]
-  },
-  "yellowstriped": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a caterpillar that is the larva of a noctuid moth (Prodenia ornithogalli) and that is a general plant feeder in the western U.S. and a serious pest on cotton in the southern states"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowtail": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of various fishes having ayelloworyellowishtail: such as",
-      "any of several carangid fishes (genusSeriola)",
-      "a food and sport fish (S. lalandi) of the Pacific and Indian oceans having a yellow stripe along each side of the body"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowthroat": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several largely olive American warblers (genusGeothlypis)",
-      "one (G. trichas) withyellowbreast and throat and in the male a black mask"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowthroated": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a large strikingly marked yellow and black mustelid mammal (Charronia flavigula) of mountainous southern China and Burma",
-      "a vireo (Vireo flavifrons) of eastern North America with bright yellow throat and breast",
-      "a wood warbler (Dendroica dominica) of the southern U.S."
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowtinged": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowtipped": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowwhite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yellowwood": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of various trees havingyellowishwood or yielding ayellowextract",
-      "a leguminous tree (Cladrastis kentukeasynonymC. lutea) of the southern U.S. having showy white fragrant flowers and yielding a yellow dye",
-      "the wood of a yellowwood tree"
+      "the quality or state of being yellow"
     ],
     "synonyms": [],
     "antonyms": []
@@ -2629,7 +1162,7 @@
     "us_ipa": "/jelp/",
     "examples": [],
     "meanings": [
-      "a sharp shrill bark or cry (as of a dog or turkey)",
+      "a sharp shrill bark or cry ( as of a dog or turkey )",
       "squeal",
       "to utter a sharp quick shrill cry"
     ],
@@ -2652,46 +1185,12 @@
       }
     ]
   },
-  "yelping": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a sharp shrill bark or cry (as of a dog or turkey)",
-      "squeal",
-      "to utter a sharp quick shrill cry"
-    ],
-    "synonyms": [
-      "shrieking",
-      "screaming",
-      "squealing",
-      "yelling",
-      "howling"
-    ],
-    "antonyms": [
-      "whispering",
-      "muttering",
-      "murmuring",
-      "bass",
-      "low"
-    ],
-    "syllables": [
-      {
-        "text": "yehl",
-        "stress": 1
-      },
-      {
-        "text": "pihng",
-        "stress": 0
-      }
-    ]
-  },
   "yemen": {
     "uk_ipa": "/ˈjemən/",
     "us_ipa": "/ˈjemən/",
     "examples": [],
     "meanings": [
-      "country in southern Arabia bordering on the Red Sea and the Gulf of Aden capital Sanaaarea203,850 square miles (527,968 square kilometers),population28,667,000"
+      "country in southern arabia bordering on the red sea and the gulf of aden capital sanaa area 2 0 3, 8 5 0 square miles ( 5 2 7, 9 6 8 square kilometers ), population 2 8, 6 6 7, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2711,7 +1210,7 @@
     "us_ipa": "/ˈjeməni/",
     "examples": [],
     "meanings": [
-      "country in southern Arabia bordering on the Red Sea and the Gulf of Aden capital Sanaaarea203,850 square miles (527,968 square kilometers),population28,667,000"
+      "country in southern arabia bordering on the red sea and the gulf of aden capital sanaa area 2 0 3, 8 5 0 square miles ( 5 2 7, 9 6 8 square kilometers ), population 2 8, 6 6 7, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2737,9 +1236,9 @@
       "I've always had a yen to travel around the world."
     ],
     "meanings": [
-      "the basic monetary unit of JapanseeMoney Table",
+      "the basic monetary unit of japan see money table",
       "a strong desire or propensity",
-      "urge,craving"
+      "urge, craving"
     ],
     "synonyms": [
       "craving",
@@ -2762,69 +1261,13 @@
       }
     ]
   },
-  "yenisei": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the Uralic language of theYeniseianpeople"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yeniseian": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a member of one of a group of peoples in theYeniseiriver country including the Sagai",
-      "a language family spoken in the valley of the Middle Yenisei river in Siberia of which Ket is the only member still spoken"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yeniseisamoyed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yenisey": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "riverover2500 miles (4022 kilometers) long in Russia in Asia flowing north into the Arctic Ocean"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yenta": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one that meddles",
-      "blabbermouth,gossip"
-    ],
-    "synonyms": [
-      "gossiper",
-      "gossip",
-      "informant",
-      "informer",
-      "circulator"
-    ],
-    "antonyms": []
-  },
   "yeoman": {
     "uk_ipa": "/ˈjəʊmən/",
     "us_ipa": "/ˈjəʊmən/",
     "examples": [],
     "meanings": [
       "an attendant or officer in a royal or noble household",
-      "a person attending or assisting another:retainer",
+      "a person attending or assisting another: retainer",
       "yeoman of the guard"
     ],
     "synonyms": [
@@ -2853,104 +1296,10 @@
     "us_ipa": "/ˈjəʊmənri/",
     "examples": [],
     "meanings": [
-      "the body ofyeomen",
+      "the body of yeomen",
       "the body of small landed proprietors of the middle class",
-      "a British volunteer cavalry force created from yeomen in 1761 as a home defense force and reorganized in 1907 as part of the territorial force"
+      "a british volunteer cavalry force created from yeomen in 1 7 6 1 as a home defense force and reorganized in 1 9 0 7 as part of the territorial force"
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yerba": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "maté",
-      "a trailing perennial evergreen herb (Satureia douglasii) of British Columbia, Idaho, and California that has small white flowers and has been used as an anthelmintic and emmenagogue",
-      "a stoloniferous herb (Anemiopsis californica) of the family Saururaceae of the western U.S. and Mexico with a pungent rootstock and small spicate flowers subtended by a white involucre suggesting an anemone"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yerevan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city and capital of Armeniapopulation1,060,000"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yeh",
-        "stress": 1
-      },
-      {
-        "text": "ruh",
-        "stress": 0
-      },
-      {
-        "text": "vuhn",
-        "stress": 0
-      }
-    ]
-  },
-  "yerkes": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "1837–1905 American financier"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yer",
-        "stress": 1
-      },
-      {
-        "text": "keez",
-        "stress": 0
-      }
-    ]
-  },
-  "yersin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of gram-negative bacteria of the family Enterobacteriaceae that includes several important pathogens (as the plague bacterium,Y. pestis) affecting animals and humans and formerly included in the genusPasteurellaseeplaguesense 2",
-      "any bacterium of the genusYersinia"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yersinia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of gram-negative bacteria of the family Enterobacteriaceae that includes several important pathogens (as the plague bacterium,Y. pestis) affecting animals and humans and formerly included in the genusPasteurellaseeplaguesense 2",
-      "any bacterium of the genusYersinia"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yerupaja": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yerwamaiduguri": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -2963,7 +1312,7 @@
       "‘I enjoyed her latest novel.’ ‘Yes, me too.’"
     ],
     "meanings": [
-      "an affirmative reply:yea",
+      "an affirmative reply: yea",
       "a positive reply"
     ],
     "synonyms": [
@@ -2993,8 +1342,8 @@
     "examples": [],
     "meanings": [
       "a school for talmudic study",
-      "an Orthodox Jewish rabbinical seminary",
-      "a Jewish day school providing secular and religious instruction"
+      "an orthodox jewish rabbinical seminary",
+      "a jewish day school providing secular and religious instruction"
     ],
     "synonyms": [
       "madrassah",
@@ -3019,56 +1368,6 @@
       }
     ]
   },
-  "yeshivah": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a school for talmudic study",
-      "an Orthodox Jewish rabbinical seminary",
-      "a Jewish day school providing secular and religious instruction"
-    ],
-    "synonyms": [
-      "madrassah",
-      "madrasa",
-      "madrasah",
-      "madrassa",
-      "Sunday school"
-    ],
-    "antonyms": []
-  },
-  "yesman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a person who agrees with everything that is said",
-      "one who endorses or supports without criticism every opinion or proposal of an associate or superior",
-      "a person who agrees with every opinion or suggestion of a boss"
-    ],
-    "synonyms": [
-      "minion",
-      "soldier",
-      "adherent",
-      "sycophant",
-      "flunkey"
-    ],
-    "antonyms": [
-      "traitor",
-      "turncoat",
-      "renegade",
-      "defector",
-      "apostate"
-    ]
-  },
-  "yesno": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yesterday": {
     "uk_ipa": "/ˈjestədeɪ/",
     "us_ipa": "/ˈjestərdeɪ/",
@@ -3078,9 +1377,9 @@
       "The company yesterday announced a $40 million deal."
     ],
     "meanings": [
-      "on the day last past:on the day preceding today",
-      "at a time not long past:only a short time ago",
-      "the day last past:the day next before the present"
+      "on the day last past: on the day preceding today",
+      "at a time not long past: only a short time ago",
+      "the day last past: the day next before the present"
     ],
     "synonyms": [
       "past",
@@ -3160,9 +1459,9 @@
       "‘Are you ready?’ ‘No, not yet.’"
     ],
     "meanings": [
-      "in addition:besides",
-      "evensense 1b",
-      "on top of everything else:no less"
+      "in addition: besides",
+      "even sense 1 b",
+      "on top of everything else: no less"
     ],
     "synonyms": [
       "eventually",
@@ -3206,50 +1505,14 @@
       }
     ]
   },
-  "yevgeni": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yevtushenko": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Yevgeny Aleksandrovich 1933–2017 Soviet (Russian-born) writer"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yehv",
-        "stress": 2
-      },
-      {
-        "text": "tuh",
-        "stress": 0
-      },
-      {
-        "text": "shehng",
-        "stress": 1
-      },
-      {
-        "text": "koh",
-        "stress": 0
-      }
-    ]
-  },
   "yew": {
     "uk_ipa": "/juː/",
     "us_ipa": "/juː/",
     "examples": [],
     "meanings": [
-      "any of a genus (Taxusof the family Taxaceae, the yew family) of evergreen gymnospermous trees and shrubs with stiff linear leaves and seeds surrounded by a fleshy red aril: such as",
-      "a long-lived Eurasian tree or shrub (T. baccata)",
-      "a low straggling bush (T. canadensis) of the eastern U.S. and Canada"
+      "any of a genus ( taxus of the family tax ace ae, the yew family ) of evergreen gymnosperm ous trees and shrubs with stiff linear leaves and seeds surrounded by a fleshy red aril: such as",
+      "a long - lived eurasian tree or shrub ( t. baccata )",
+      "a low straggling bush ( t. canadensis ) of the eastern u. s. and canada"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3260,94 +1523,6 @@
       }
     ]
   },
-  "yezo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "island of Japan north of Honshu and northernmost of Japan's four main islandsarea (including adjacent small islands)30,313 square miles (78,511 square kilometers),population5,506,419"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ygdrasil": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yggdrasil": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a huge ash tree in Norse mythology that overspreads the world and binds earth, hell, and heaven together"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yhvh": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yhwh": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "yahwehcomparetetragrammaton"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "yelp",
-      "a bark or yelp (as of a dog)",
-      "a small brush for scrubbing clothing or canvas"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yee",
-        "stress": 1
-      }
-    ]
-  },
-  "yib": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yibit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yid": {
-    "uk_ipa": "/jɪd/",
-    "us_ipa": "/jɪd/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yiddish": {
     "uk_ipa": "/ˈjɪdɪʃ/",
     "us_ipa": "/ˈjɪdɪʃ/",
@@ -3355,8 +1530,8 @@
       "Yiddish films/poetry/expressions/comedy"
     ],
     "meanings": [
-      "a High German language written in Hebrew characters that is spoken by Jews and descendants of Jews of central and eastern European origin",
-      "a language that began among the Jews of eastern Europe and is based on German and written in the Hebrew alphabet"
+      "a high german language written in hebrew characters that is spoken by jews and descendants of jews of central and eastern european origin",
+      "a language that began among the jews of eastern europe and is based on german and written in the hebrew alphabet"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3382,7 +1557,7 @@
     "meanings": [
       "to bear or bring forth as a natural product especially as a result of cultivation",
       "to produce or furnish as return",
-      "to produce as return from an expenditure or investment:furnish as profit or interest"
+      "to produce as return from an expenditure or investment: furnish as profit or interest"
     ],
     "synonyms": [
       "succumb",
@@ -3405,18 +1580,6 @@
       }
     ]
   },
-  "yielder": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one thatyields: such as",
-      "a person who surrenders, concedes, or gives in",
-      "something that yields produce or products"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yielding": {
     "uk_ipa": "/ˈjiːldɪŋ/",
     "us_ipa": "/ˈjiːldɪŋ/",
@@ -3426,7 +1589,7 @@
     ],
     "meanings": [
       "productive",
-      "lacking rigidity or stiffness:flexible",
+      "lacking rigidity or stiffness: flexible",
       "disposed to submit or comply"
     ],
     "synonyms": [
@@ -3454,22 +1617,12 @@
       }
     ]
   },
-  "yieldingly": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "in ayieldingmanner"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yin": {
     "uk_ipa": "/jɪn/",
     "us_ipa": "/jɪn/",
     "examples": [],
     "meanings": [
-      "the feminine passive principle in nature that in Chinese cosmology is exhibited in darkness, cold, or wetness and that combines with yang to produce all that comes to be"
+      "the feminine passive principle in nature that in chinese cosmology is exhibited in darkness, cold, or wetness and that combines with yang to produce all that comes to be"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3479,104 +1632,6 @@
         "stress": 1
       }
     ]
-  },
-  "yip": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to bark sharply, quickly, and often continuously",
-      "to utter a short sharp cry",
-      "to bark sharply, quickly, and often continuously"
-    ],
-    "synonyms": [
-      "yelp",
-      "yap",
-      "bark",
-      "moo",
-      "meow"
-    ],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yihp",
-        "stress": 1
-      }
-    ]
-  },
-  "yips": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a state of nervous tension affecting an athlete (such as a golfer) in the performance of a crucial action"
-    ],
-    "synonyms": [
-      "yelps",
-      "yowls",
-      "yaps",
-      "squeaks",
-      "squeals"
-    ],
-    "antonyms": []
-  },
-  "yisrael": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yk": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Yukon; Yukon Territory"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ylangylang": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a tree (Cananga odorata) of the custard-apple family that is native to the Malay Archipelago, the Philippines, and adjacent areas and has very fragrant greenish-yellow flowers",
-      "a perfume distilled from the flowers of the ylang-ylang tree"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ylem": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the primordial first substance from which according to some theories the elements are supposed to be formed",
-      "a primordial gas consisting of neutrons"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ylinked": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ymir": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a giant from whose body the gods create the world in Norse mythology"
-    ],
-    "synonyms": [],
-    "antonyms": []
   },
   "yob": {
     "uk_ipa": "/jɒb/",
@@ -3597,57 +1652,6 @@
     ],
     "antonyms": []
   },
-  "yobbo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "lout,yokel",
-      "hoodlum"
-    ],
-    "synonyms": [
-      "thug",
-      "criminal",
-      "villain",
-      "gangster",
-      "pirate"
-    ],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yah",
-        "stress": 1
-      },
-      {
-        "text": "boh",
-        "stress": 2
-      }
-    ]
-  },
-  "yobibit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yobibyte": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yobo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yodel": {
     "uk_ipa": "/ˈjəʊdl/",
     "us_ipa": "/ˈjəʊdl/",
@@ -3657,7 +1661,7 @@
     "meanings": [
       "to sing by suddenly changing from a natural voice to a falsetto and back",
       "to shout or call in a similar manner",
-      "to sing (a tune) byyodeling"
+      "to sing ( a tune ) by yodeling"
     ],
     "synonyms": [
       "warble",
@@ -3678,57 +1682,6 @@
       }
     ]
   },
-  "yodeling": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "to sing by suddenly changing from a natural voice to a falsetto and back",
-      "to shout or call in a similar manner",
-      "to sing (a tune) byyodeling"
-    ],
-    "synonyms": [
-      "warbling",
-      "crooning",
-      "trilling",
-      "humming",
-      "quavering"
-    ],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoh",
-        "stress": 1
-      },
-      {
-        "text": "duh",
-        "stress": 0
-      },
-      {
-        "text": "lihng",
-        "stress": 0
-      }
-    ]
-  },
-  "yodeller": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yodh": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the 10th letter of the Hebrew alphabetseeAlphabet Table",
-      "the voiced glide sound \\y\\ that is the first sound of the English wordyes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yoga": {
     "uk_ipa": "/ˈjəʊɡə/",
     "us_ipa": "/ˈjəʊɡə/",
@@ -3738,9 +1691,9 @@
       "She does yoga for an hour a day."
     ],
     "meanings": [
-      "a Hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
-      "a system of physical postures, breathing techniques, and sometimes meditation derived from Yoga but often practiced independently especially in Western cultures to promote physical and emotional well-being",
-      "a Hindu philosophy teaching that by holding back the activity of one's body, mind, and will one can know one's true self and be free"
+      "a hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
+      "a system of physical postures, breathing techniques, and sometimes meditation derived from yoga but often practiced independently especially in western cultures to promote physical and emotional well - being",
+      "a hindu philosophy teaching that by holding back the activity of one ' s body, mind, and will one can know one ' s true self and be free"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3755,44 +1708,13 @@
       }
     ]
   },
-  "yogacara": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one of the two major philosophical systems of Mahayana Buddhism agreeing with Madhyamika that external objects are unreal but holding that mind is real and that objects which appear to be external and material are in fact ideas or states of consciousnesscomparevijnanavada",
-      "an adherent of Yogacara"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yoghourt": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yoghurt": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of two bacteria (Lactobacillus bulgaricusandStreptococcus thermophilus) have been added",
-      "a slightly acidic semisolid food that is often flavored and sweetened and is made of milk that has been soured by the addition of bacteria",
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of bacteria of the genusLactobacillus(L. bulgarius) andStreptococcus(S. thermophilus) have been added"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yogi": {
     "uk_ipa": "/ˈjəʊɡi/",
     "us_ipa": "/ˈjəʊɡi/",
     "examples": [],
     "meanings": [
       "a person who practices yoga",
-      "an adherent of Yoga philosophy",
+      "an adherent of yoga philosophy",
       "a markedly reflective or mystical person"
     ],
     "synonyms": [
@@ -3828,18 +1750,10 @@
       "yogic techniques"
     ],
     "meanings": [
-      "a Hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
-      "a system of physical postures, breathing techniques, and sometimes meditation derived from Yoga but often practiced independently especially in Western cultures to promote physical and emotional well-being",
-      "a Hindu philosophy teaching that by holding back the activity of one's body, mind, and will one can know one's true self and be free"
+      "a hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
+      "a system of physical postures, breathing techniques, and sometimes meditation derived from yoga but often practiced independently especially in western cultures to promote physical and emotional well - being",
+      "a hindu philosophy teaching that by holding back the activity of one ' s body, mind, and will one can know one ' s true self and be free"
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yogistic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -3852,9 +1766,9 @@
       "a lemon yogurt"
     ],
     "meanings": [
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of two bacteria (Lactobacillus bulgaricusandStreptococcus thermophilus) have been added",
+      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of two bacteria ( lactobacillus bulgaricus and streptococcus thermophilus ) have been added",
       "a slightly acidic semisolid food that is often flavored and sweetened and is made of milk that has been soured by the addition of bacteria",
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of bacteria of the genusLactobacillus(L. bulgarius) andStreptococcus(S. thermophilus) have been added"
+      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of bacteria of the genus lactobacillus ( l. bulgari us ) and streptococcus ( s. thermophilus ) have been added"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3877,9 +1791,9 @@
       "Young people often chafe under the yoke of parental control."
     ],
     "meanings": [
-      "a wooden bar or frame by which two draft animals (such as oxen) are joined at the heads or necks for working together",
+      "a wooden bar or frame by which two draft animals ( such as oxen ) are joined at the heads or necks for working together",
       "an arched device formerly laid on the neck of a defeated person",
-      "a frame fitted to a person's shoulders to carry a load in two equal portions"
+      "a frame fitted to a person ' s shoulders to carry a load in two equal portions"
     ],
     "synonyms": [
       "slavery",
@@ -3935,82 +1849,6 @@
       }
     ]
   },
-  "yokelish": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "characteristic of or resembling ayokel:rude,uncouth"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yokellike": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yoko": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoh",
-        "stress": 1
-      },
-      {
-        "text": "koh",
-        "stress": 0
-      }
-    ]
-  },
-  "yokohama": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city and port south of Tokyo on Tokyo Bay in southeastern Honshu, Japanpopulation3,688,773"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoh",
-        "stress": 2
-      },
-      {
-        "text": "kuh",
-        "stress": 0
-      },
-      {
-        "text": "hah",
-        "stress": 1
-      },
-      {
-        "text": "muh",
-        "stress": 0
-      }
-    ]
-  },
-  "yokuts": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an Indian people of the San Joaquin Valley and adjacent Sierra Nevada slopes, California",
-      "a member of such people",
-      "a Mariposan language of the Yokuts people"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yolk": {
     "uk_ipa": "/jəʊk/",
     "us_ipa": "/jəʊk/",
@@ -4018,7 +1856,7 @@
       "Separate the whites from the yolks."
     ],
     "meanings": [
-      "the yellow spheroidal mass of stored food that forms the inner portion of the egg of a bird or reptile and is surrounded by the whiteseeegg illustration",
+      "the yellow spheroidal mass of stored food that forms the inner portion of the egg of a bird or reptile and is surrounded by the white see egg illustration",
       "the whole contents of an animal ovum consisting of a protoplasmic formative portion and an inert nutritive portion",
       "material stored in an animal ovum that supplies food to the developing embryo and consists chiefly of proteins, lecithin, and cholesterol"
     ],
@@ -4039,23 +1877,6 @@
     "syllables": [
       {
         "text": "yohk",
-        "stress": 1
-      }
-    ]
-  },
-  "yom": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a Jewish holiday observed with fasting and prayer on the 10th day of Tishri in accordance with the rites described in Leviticus 16",
-      "a Jewish holiday or festival"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yahm",
         "stress": 1
       }
     ]
@@ -4093,7 +1914,7 @@
     ],
     "meanings": [
       "at or in that indicated more or less distant place usually within sight",
-      "farther removed:more distant",
+      "farther removed: more distant",
       "being at a distance within view or at a place or in a direction known or indicated"
     ],
     "synonyms": [
@@ -4150,9 +1971,9 @@
     "us_ipa": "/jɔːrk/",
     "examples": [],
     "meanings": [
-      "Alvin Cullum 1887–1964 American soldier",
-      "city on the Ouse River in NorthYorkshire, northern Englandpopulation153,000",
-      "city in southeastern Pennsylvania southeast of Harrisburgpopulation43,718"
+      "alvin cullum 1 8 8 7 – 1 9 6 4 american soldier",
+      "city on the ouse river in north yorkshire, northern england population 1 5 3, 0 0 0",
+      "city in southeastern pennsylvania southeast of harrisburg population 4 3, 7 1 8"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4168,8 +1989,8 @@
     "us_ipa": "/ˈjɔːrkʃər/",
     "examples": [],
     "meanings": [
-      "a white swine of any of several breeds or strains originated in Yorkshire, England",
-      "former county of northern England roughly bounded by the North Sea on the east, the Humber River on the south, the Pennine Chain on the west, and the county of Durham on the north and comprising the city of York and the (former) administrative counties of",
+      "a white swine of any of several breeds or strains originated in yorkshire, england",
+      "former county of northern england roughly bounded by the north sea on the east, the humber river on the south, the pennine chain on the west, and the county of durham on the north and comprising the city of york and the ( former ) administrative counties of",
       "and"
     ],
     "synonyms": [],
@@ -4190,7 +2011,7 @@
     "us_ipa": "/ˈjɔːrktaʊn/",
     "examples": [],
     "meanings": [
-      "town on Chesapeake Bay in eastern Virginiapopulation195"
+      "town on chesapeake bay in eastern virginia population 1 9 5"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4210,8 +2031,8 @@
     "us_ipa": "/ˈjɔːrəbə/",
     "examples": [],
     "meanings": [
-      "a Niger-Congo language of southwestern Nigeria and parts of Benin and Togo",
-      "a member of any of the Yoruba-speaking peoples of this region"
+      "a niger - congo language of southwestern nigeria and parts of benin and to go",
+      "a member of any of the yoruba - speaking peoples of this region"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4230,53 +2051,6 @@
       }
     ]
   },
-  "yosemite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "waterfall in east central California descending from the rim of Yosemite Valley in two falls connected by cascades: an upper fall that drops 1430 feet (436 meters) and a lower fall that drops 320 feet (98 meters)",
-      "glaciated valley of the Merced River in east central California on the western slope of the Sierra Nevada in"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoh",
-        "stress": 0
-      },
-      {
-        "text": "seh",
-        "stress": 1
-      },
-      {
-        "text": "mih",
-        "stress": 0
-      },
-      {
-        "text": "tee",
-        "stress": 0
-      }
-    ]
-  },
-  "yottabit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yottabyte": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one septillion bytes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "you": {
     "uk_ipa": "/ju/",
     "us_ipa": "/jə/",
@@ -4287,8 +2061,8 @@
     ],
     "meanings": [
       "the one or ones being addressed",
-      "comparethee,thou,ye,your,yours",
-      "onesense 2a"
+      "compare thee, thou, ye, your, yours",
+      "one sense 2 a"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4298,14 +2072,6 @@
         "stress": 1
       }
     ]
-  },
-  "youdrive": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
   },
   "young": {
     "uk_ipa": "/jʌŋ/",
@@ -4317,7 +2083,7 @@
     ],
     "meanings": [
       "being in the first or an early stage of life, growth, or development",
-      "juniorsense 1a",
+      "junior sense 1 a",
       "of an early, tender, or desirable age for use as food or drink"
     ],
     "synonyms": [
@@ -4341,54 +2107,6 @@
       }
     ]
   },
-  "youngbearing": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "youngbegetting": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "younger": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an inferior in age:junior"
-    ],
-    "synonyms": [
-      "youthful",
-      "juvenile",
-      "immature",
-      "adolescent",
-      "teenage"
-    ],
-    "antonyms": [
-      "older",
-      "adult",
-      "mature",
-      "elderly",
-      "old"
-    ],
-    "syllables": [
-      {
-        "text": "yuhng",
-        "stress": 1
-      },
-      {
-        "text": "ger",
-        "stress": 0
-      }
-    ]
-  },
   "youngish": {
     "uk_ipa": "/ˈjʌŋɪʃ/",
     "us_ipa": "/ˈjʌŋɪʃ/",
@@ -4397,7 +2115,7 @@
     ],
     "meanings": [
       "being in the first or an early stage of life, growth, or development",
-      "juniorsense 1a",
+      "junior sense 1 a",
       "of an early, tender, or desirable age for use as food or drink"
     ],
     "synonyms": [
@@ -4415,44 +2133,6 @@
       "old"
     ]
   },
-  "youngness": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "being in the first or an early stage of life, growth, or development",
-      "juniorsense 1a",
-      "of an early, tender, or desirable age for use as food or drink"
-    ],
-    "synonyms": [
-      "youth",
-      "youthfulness",
-      "freshness",
-      "adolescence",
-      "prime"
-    ],
-    "antonyms": [
-      "maturity",
-      "age",
-      "agedness",
-      "ancientness",
-      "elderliness"
-    ]
-  },
-  "youngs": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yuhngz",
-        "stress": 1
-      }
-    ]
-  },
   "youngster": {
     "uk_ipa": "/ˈjʌŋstə(r)/",
     "us_ipa": "/ˈjʌŋstər/",
@@ -4460,7 +2140,7 @@
       "The camp is for youngsters aged 8 to 14."
     ],
     "meanings": [
-      "ayoungperson:youth",
+      "a young person: youth",
       "child",
       "a young animal or plant especially of a domesticated or cultivated breed or type"
     ],
@@ -4485,47 +2165,6 @@
       },
       {
         "text": "ster",
-        "stress": 0
-      }
-    ]
-  },
-  "youngstown": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city in northeastern Ohio east of Akronpopulation66,982"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yuhng",
-        "stress": 1
-      },
-      {
-        "text": "ztown",
-        "stress": 2
-      }
-    ]
-  },
-  "younker": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "ayoungman",
-      "child,youngster"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yuhng",
-        "stress": 1
-      },
-      {
-        "text": "ker",
         "stress": 0
       }
     ]
@@ -4572,7 +2211,7 @@
       "She's a very youthful 65."
     ],
     "meanings": [
-      "of, relating to, or characteristic ofyouth",
+      "of, relating to, or characteristic of youth",
       "being young and not yet mature",
       "marked by or possessing youth"
     ],
@@ -4608,7 +2247,7 @@
       "to act youthfully"
     ],
     "meanings": [
-      "of, relating to, or characteristic ofyouth",
+      "of, relating to, or characteristic of youth",
       "being young and not yet mature",
       "marked by or possessing youth"
     ],
@@ -4635,7 +2274,7 @@
       "She graces the stage with elegance and youthfulness."
     ],
     "meanings": [
-      "of, relating to, or characteristic ofyouth",
+      "of, relating to, or characteristic of youth",
       "being young and not yet mature",
       "marked by or possessing youth"
     ],
@@ -4654,24 +2293,14 @@
       "elderliness"
     ]
   },
-  "youthonage": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "pickaback plant"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yowl": {
     "uk_ipa": "/jaʊl/",
     "us_ipa": "/jaʊl/",
     "examples": [],
     "meanings": [
-      "to utter a loud long cry of grief, pain, or distress:wail",
-      "to complain or protest with or as if withyowls",
-      "to express withyowling"
+      "to utter a loud long cry of grief, pain, or distress: wail",
+      "to complain or protest with or as if with y owls",
+      "to express with yowling"
     ],
     "synonyms": [
       "howl",
@@ -4688,96 +2317,13 @@
       "whimper"
     ]
   },
-  "yoyo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a thick grooved double disk with a string attached to its center axle that is made to fall and rise to the hand by unwinding and rewinding on the string",
-      "a condition or situation marked by regular fluctuations from one extreme to another",
-      "a stupid or foolish person"
-    ],
-    "synonyms": [
-      "fool",
-      "lunatic",
-      "goose",
-      "maniac",
-      "nut"
-    ],
-    "antonyms": [
-      "brain",
-      "genius",
-      "sage",
-      "thinker",
-      "brain"
-    ],
-    "syllables": [
-      {
-        "text": "yoh",
-        "stress": 1
-      },
-      {
-        "text": "yoh",
-        "stress": 0
-      }
-    ]
-  },
   "ypres": {
     "uk_ipa": "/ˈiːprə/",
     "us_ipa": "/ˈiːprə/",
     "examples": [],
     "meanings": [
-      "communein the northwestern Belgium province of West Flanderspopulation35,081"
+      "commune in the northwestern belgium province of west flanders population 3 5, 0 8 1"
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yquem": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "eek",
-        "stress": 1
-      },
-      {
-        "text": "wuhm",
-        "stress": 0
-      }
-    ]
-  },
-  "yr": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [
-      "children aged 4–11 yrs"
-    ],
-    "meanings": [
-      "year",
-      "your"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yshaped": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having the shape of a capital Y"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ytterbite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -4786,9 +2332,9 @@
     "us_ipa": "/ɪˈtɜːrbiəm/",
     "examples": [],
     "meanings": [
-      "a soft metallic element of the rare-earth group that occurs especially with other rare earth elements in minerals and that has few commercial usesseeChemical Elements Table",
-      "a metallic element that occurs in several mineralsseeelement",
-      "a bivalent or trivalent metallic element of the rare-earth group that resembles yttrium and occurs with it and related elements in several minerals"
+      "a soft metallic element of the rare - earth group that occurs especially with other rare earth elements in minerals and that has few commercial uses see chemical elements table",
+      "a metallic element that occurs in several minerals see element",
+      "a bivalent or trivalent metallic element of the rare - earth group that resembles yttrium and occurs with it and related elements in several minerals"
     ],
     "synonyms": [],
     "antonyms": []
@@ -4798,8 +2344,8 @@
     "us_ipa": "/ˈɪtriəm/",
     "examples": [],
     "meanings": [
-      "a metallic element with atomic number 39 usually included in the rare-earth group that occurs usually with other rare earth elements in minerals and is used especially in phosphors,YAGlasers, alloys, and treatments for certain cancersseeChemical Elements Table",
-      "a metallic element that occurs in minerals along with other similar uncommon elementsseeelement",
+      "a metallic element with atomic number 3 9 usually included in the rare - earth group that occurs usually with other rare earth elements in minerals and is used especially in phosphors, yag lasers, alloys, and treatments for certain cancers see chemical elements table",
+      "a metallic element that occurs in minerals along with other similar uncommon elements see element",
       "a trivalent metallic element usually included among the rare earth elements which it resembles chemically and with which it occurs in minerals"
     ],
     "synonyms": [],
@@ -4824,9 +2370,9 @@
     "us_ipa": "/juˈɑːn/",
     "examples": [],
     "meanings": [
-      "the basic monetary unit of the People's Republic of ChinaseeMoney Tablecomparerenminbi",
-      "the dollar of the Republic of China (Taiwan)",
-      "the basic unit of money in China"
+      "the basic monetary unit of the people ' s republic of china see money table compare renminbi",
+      "the dollar of the republic of china ( taiwan )",
+      "the basic unit of money in china"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4841,58 +2387,14 @@
       }
     ]
   },
-  "yucatan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "peninsula jutting into the Caribbean Sea and the Gulf of Mexico in southeastern Mexico and northern Central America including Belize and part of Guatemala",
-      "state of southeastern Mexico at the northern end of the Yucatán Peninsula; capital Méridaarea16,749 square miles (43,380 square kilometers),population1,955,577"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 1
-      },
-      {
-        "text": "kuh",
-        "stress": 0
-      },
-      {
-        "text": "tan",
-        "stress": 2
-      }
-    ]
-  },
-  "yucatec": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a member of an Indigenous people of theYucatán Peninsula, Mexico",
-      "the Mayan language of the Yucatec"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yucateco": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yucca": {
     "uk_ipa": "/ˈjʌkə/",
     "us_ipa": "/ˈjʌkə/",
     "examples": [],
     "meanings": [
-      "any of a genus (Yucca) of sometimes arborescent plants of the asparagus family that occur in warm regions chiefly of western North America and have long sword-shaped often stiff fibrous-margined leaves on a usually woody base and bear a large panicle of white blossoms",
+      "any of a genus ( yucca ) of sometimes arborescent plants of the asparagus family that occur in warm regions chiefly of western north america and have long sword - shaped often stiff fibrous - margined leaves on a usually woody base and bear a large panicle of white blossoms",
       "cassava",
-      "any of a genus of plants that are related to the agaves, grow in warm dry regions mostly of western North America, have long pointed often stiff leaves, and produce a tall stiff stalk with whitish flowers"
+      "any of a genus of plants that are related to the agaves, grow in warm dry regions mostly of western north america, have long pointed often stiff leaves, and produce a tall stiff stalk with whitish flowers"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -4914,9 +2416,9 @@
       "yucky food"
     ],
     "meanings": [
-      "repugnant,distasteful",
-      "unpleasant,disagreeable",
-      "disagreeable,distasteful"
+      "repugnant, distasteful",
+      "unpleasant, disagreeable",
+      "disagreeable, distasteful"
     ],
     "synonyms": [
       "distasteful",
@@ -4943,148 +2445,12 @@
       }
     ]
   },
-  "yue": {
-    "uk_ipa": "/juˈeɪ/",
-    "us_ipa": "/juˈeɪ/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 1
-      }
-    ]
-  },
-  "yugoslav": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "former country in southern Europe on the Balkan Peninsula consisting of Serbia, Montenegro, Slovenia, Croatia, Bosnia and Herzegovina, and Macedonia",
-      "seeserbia and montenegro"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 1
-      },
-      {
-        "text": "gohs",
-        "stress": 0
-      },
-      {
-        "text": "lahv",
-        "stress": 2
-      }
-    ]
-  },
-  "yugoslavia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "former country in southern Europe on the Balkan Peninsula consisting of Serbia, Montenegro, Slovenia, Croatia, Bosnia and Herzegovina, and Macedonia",
-      "seeserbia and montenegro"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 2
-      },
-      {
-        "text": "gohs",
-        "stress": 0
-      },
-      {
-        "text": "lah",
-        "stress": 1
-      },
-      {
-        "text": "vee",
-        "stress": 0
-      },
-      {
-        "text": "uh",
-        "stress": 0
-      }
-    ]
-  },
-  "yugoslavian": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "former country in southern Europe on the Balkan Peninsula consisting of Serbia, Montenegro, Slovenia, Croatia, Bosnia and Herzegovina, and Macedonia",
-      "seeserbia and montenegro"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 2
-      },
-      {
-        "text": "gohs",
-        "stress": 0
-      },
-      {
-        "text": "lah",
-        "stress": 1
-      },
-      {
-        "text": "vee",
-        "stress": 0
-      },
-      {
-        "text": "uhn",
-        "stress": 0
-      }
-    ]
-  },
-  "yukawa": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Hideki 1907–1981 Japanese physicist"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yukon": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river 1979 miles (3185 kilometers) long in Yukon and Alaska flowing northwest and southwest into the Bering Seaseelewessense 1",
-      "territory of northwestern Canada between Alaska and British Columbia bordering on the Arctic Ocean; capital Whitehorsearea205,345 square miles (531,843 square kilometers),population33,897"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 1
-      },
-      {
-        "text": "kahn",
-        "stress": 2
-      }
-    ]
-  },
   "yule": {
     "uk_ipa": "/juːl/",
     "us_ipa": "/juːl/",
     "examples": [],
     "meanings": [
-      "the feast of the nativity of Jesus Christ:christmas",
+      "the feast of the nativity of jesus christ: christmas",
       "christmas"
     ],
     "synonyms": [
@@ -5109,8 +2475,8 @@
       "Yuletide food and drink"
     ],
     "meanings": [
-      "the Christmas season:christmastide",
-      "the Christmas season"
+      "the christmas season: christmastide",
+      "the christmas season"
     ],
     "synonyms": [
       "Christmas",
@@ -5131,36 +2497,6 @@
       }
     ]
   },
-  "yuma": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city on the Colorado River in southwestern Arizonapopulation93,064"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yoo",
-        "stress": 1
-      },
-      {
-        "text": "muh",
-        "stress": 0
-      }
-    ]
-  },
-  "yuman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of languages spoken by Indigenous peoples of the southwestern U.S. and northern Mexico"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yummy": {
     "uk_ipa": "/ˈjʌmi/",
     "us_ipa": "/ˈjʌmi/",
@@ -5171,7 +2507,7 @@
     ],
     "meanings": [
       "highly attractive or pleasing",
-      "delicious,delectable",
+      "delicious, delectable",
       "very pleasing especially to the taste"
     ],
     "synonyms": [
@@ -5199,23 +2535,12 @@
       }
     ]
   },
-  "yunnan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "province of southwestern China bordering on Myanmar (Burma), Laos, and Vietnam; capital Kunmingarea168,417 square miles (437,884 square kilometers),population45,966,766",
-      "seekunming"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "yuppie": {
     "uk_ipa": "/ˈjʌpi/",
     "us_ipa": "/ˈjʌpi/",
     "examples": [],
     "meanings": [
-      "a young college-educated adult who is employed in a well-paying profession and who lives and works in or near a large city"
+      "a young college - educated adult who is employed in a well - paying profession and who lives and works in or near a large city"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -5230,32 +2555,6 @@
       }
     ]
   },
-  "yuraksamoyed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yuri": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yu",
-        "stress": 1
-      },
-      {
-        "text": "ree",
-        "stress": 0
-      }
-    ]
-  },
   "yurt": {
     "uk_ipa": "/jɜːt/",
     "us_ipa": "/jɜːrt/",
@@ -5263,29 +2562,15 @@
       "All our yurts are made of quality canvas and raised on wooden platforms for warmth and an even surface."
     ],
     "meanings": [
-      "a circular domed tent of skins or felt stretched over a collapsible lattice framework and used by pastoral peoples of inner Asia",
+      "a circular domed tent of skins or felt stretched over a collapsible lattice framework and used by pastoral peoples of inner asia",
       "a structure that resembles a yurt usually in size and design",
-      "a light round tent of skins or felt used by nomads in central Asia"
+      "a light round tent of skins or felt used by nomads in central asia"
     ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
       {
         "text": "yurt",
-        "stress": 1
-      }
-    ]
-  },
-  "yves": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "eev",
         "stress": 1
       }
     ]

@@ -1,89 +1,10 @@
 {
-  "zaar": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zabaglione": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a whipped dessert or topping consisting of a mixture of egg yolks, sugar, and usually Marsala wine"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zabrze": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city inSilesia, southwestern Polandpopulation181,000"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zacharias": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zechariah",
-      "zechariah"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "za",
-        "stress": 2
-      },
-      {
-        "text": "ker",
-        "stress": 0
-      },
-      {
-        "text": "eye",
-        "stress": 1
-      },
-      {
-        "text": "uhs",
-        "stress": 0
-      }
-    ]
-  },
-  "zachary": {
-    "uk_ipa": "/ˈzækəri/",
-    "us_ipa": "/ˈzækəri/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "za",
-        "stress": 1
-      },
-      {
-        "text": "ker",
-        "stress": 0
-      },
-      {
-        "text": "ee",
-        "stress": 0
-      }
-    ]
-  },
   "zaftig": {
     "uk_ipa": "/ˈzæftɪɡ/",
     "us_ipa": "/ˈzɑːftɪɡ/",
     "examples": [],
     "meanings": [
-      "having a full rounded figure:pleasingly plump"
+      "having a full rounded figure: pleasingly plump"
     ],
     "synonyms": [
       "buxom",
@@ -110,206 +31,12 @@
       }
     ]
   },
-  "zag": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one of the sharp turns, angles, or alterations in a zigzag course",
-      "one of the short straight lines or sections of a zigzag course at an angle to a zig",
-      "zigsense 2"
-    ],
-    "synonyms": [
-      "veer",
-      "zig",
-      "curve",
-      "cut",
-      "swerve"
-    ],
-    "antonyms": [
-      "straighten"
-    ],
-    "syllables": [
-      {
-        "text": "zag",
-        "stress": 1
-      }
-    ]
-  },
-  "zaglossus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of spiny anteaters of New Guineaseeechidnasense 1b"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zagreb": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city and capital of Croatiapopulation687,500"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zahg",
-        "stress": 1
-      },
-      {
-        "text": "rehb",
-        "stress": 2
-      }
-    ]
-  },
-  "zaharias": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Babe 1914–1956Mildred Ella Zahariasnée",
-      "American athlete"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zaire": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the basic monetary unit of the Democratic Republic of the Congo (1967–71) and of Zaire (1971–96)",
-      "river in Africaseecongosense 1",
-      "seecongosense 2"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zeye",
-        "stress": 0
-      },
-      {
-        "text": "ihr",
-        "stress": 1
-      }
-    ]
-  },
-  "zairean": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the basic monetary unit of the Democratic Republic of the Congo (1967–71) and of Zaire (1971–96)",
-      "river in Africaseecongosense 1",
-      "seecongosense 2"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zeye",
-        "stress": 0
-      },
-      {
-        "text": "ih",
-        "stress": 1
-      },
-      {
-        "text": "ruhn",
-        "stress": 0
-      }
-    ]
-  },
-  "zairese": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zakat": {
     "uk_ipa": "/zəˈkɑːt/",
     "us_ipa": "/zəˈkɑːt/",
     "examples": [],
     "meanings": [
-      "an annual alms tax or poor rate that each Muslim is expected to pay as a religious duty and that is used for charitable and religious purposes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zalcitabine": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "ddc",
-      "ddc"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zalophus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of rather small eared seals including the California sea dog"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zama": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "ancient town in northern Africa southwest of Carthage"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zaman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "rain tree"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zay",
-        "stress": 1
-      },
-      {
-        "text": "muhn",
-        "stress": 0
-      }
-    ]
-  },
-  "zamang": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "rain tree"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zambezi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river about 1700 miles (2735 kilometers) long in southeastern Africa flowing from northwesternZambiaacross eastern Angola and western Zambia to the border of Botswana, forming the border between Zambia and Zimbabwe, crossing central Mozambique, and emptying into Mozambique Channel"
+      "an annual alms tax or poor rate that each muslim is expected to pay as a religious duty and that is used for charitable and religious purposes"
     ],
     "synonyms": [],
     "antonyms": []
@@ -319,7 +46,7 @@
     "us_ipa": "/ˈzæmbiə/",
     "examples": [],
     "meanings": [
-      "landlockedcountry in southern Africa; capital Lusakaarea290,587 square miles (752,618 square kilometers),population16,445,000"
+      "landlocked country in southern africa; capital lusaka area 2 9 0, 5 8 7 square miles ( 7 5 2, 6 1 8 square kilometers ), population 1 6, 4 4 5, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -343,7 +70,7 @@
     "us_ipa": "/ˈzæmbiən/",
     "examples": [],
     "meanings": [
-      "landlockedcountry in southern Africa; capital Lusakaarea290,587 square miles (752,618 square kilometers),population16,445,000"
+      "landlocked country in southern africa; capital lusaka area 2 9 0, 5 8 7 square miles ( 7 5 2, 6 1 8 square kilometers ), population 1 6, 4 4 5, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -362,148 +89,6 @@
       }
     ]
   },
-  "zamboni": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zam",
-        "stress": 0
-      },
-      {
-        "text": "boh",
-        "stress": 1
-      },
-      {
-        "text": "nee",
-        "stress": 0
-      }
-    ]
-  },
-  "zamia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of a genus (Zamiaof the family Zamiaceae) of American cycads with a short thick woody base, a crown of palmlike leaves, and oblong cones"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zamiaceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of cycads that includes the genusZamiaand is commonly itself included in Cycadaceae"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zane": {
-    "uk_ipa": "/ˌzeɪn ˈɡreɪ/",
-    "us_ipa": "/ˌzeɪn ˈɡreɪ/",
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zayn",
-        "stress": 1
-      }
-    ]
-  },
-  "zangwill": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Israel 1864–1926 English dramatist and novelist"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zannichellia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of aquatic plants (family Potamogetonaceae) of wide distribution having branching capillary stems, small acute leaves, and axillary flowers which with the leaves are originally enclosed in a hyaline envelopeseehorned pondweed"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zannichelliaceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zantac": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zan",
-        "stress": 1
-      },
-      {
-        "text": "tak",
-        "stress": 0
-      }
-    ]
-  },
-  "zantedeschia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of southern or tropical African aroids with basal long-stalked often hastate leaves, very showy spathes usually mistaken for a corolla, and a stout central spadixseecallasense 2,yellow calla"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zanthoxylum": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of widely distributed shrubs or trees (family Rutaceae) having odd-pinnate leaves, small greenish flowers with 2 to 5 pistils, and 2-valved fleshy capsules",
-      "any plant of the genusZanthoxylum",
-      "the dried bark of prickly ash or hercules'-club formerly used as a diaphoretic and stimulant"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zanuck": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "za",
-        "stress": 1
-      },
-      {
-        "text": "nuhk",
-        "stress": 0
-      }
-    ]
-  },
   "zany": {
     "uk_ipa": "/ˈzeɪni/",
     "us_ipa": "/ˈzeɪni/",
@@ -511,9 +96,9 @@
       "zany humour"
     ],
     "meanings": [
-      "very eccentric (seeeccentricentry1sense 1a) or absurd (seeabsurdentry1sense 1) often in an amusing way",
-      "being or having the characteristics of azany",
-      "a subordinate clown or acrobat in old comedies who mimics ludicrously the tricks of the principal:merry-andrew"
+      "very eccentric ( see eccentric entry 1 sense 1 a ) or absurd ( see absurd entry 1 sense 1 ) often in an amusing way",
+      "being or having the characteristics of az any",
+      "a subordinate clown or acrobat in old comedies who mimics ludicrously the tricks of the principal: merry - andrew"
     ],
     "synonyms": [
       "silly",
@@ -537,31 +122,6 @@
       {
         "text": "nee",
         "stress": 0
-      }
-    ]
-  },
-  "zanzibar": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "island of eastern Africa off the northeastern Tanzania mainlandarea600 square miles (1554 square kilometers),population700,000",
-      "city and port on the island of Zanzibarpopulation223,033"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zan",
-        "stress": 1
-      },
-      {
-        "text": "zuh",
-        "stress": 0
-      },
-      {
-        "text": "bahr",
-        "stress": 2
       }
     ]
   },
@@ -593,61 +153,6 @@
       }
     ]
   },
-  "zapata": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Emiliano 1879–1919 Mexican revolutionary"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zah",
-        "stress": 0
-      },
-      {
-        "text": "pah",
-        "stress": 1
-      },
-      {
-        "text": "tuh",
-        "stress": 0
-      }
-    ]
-  },
-  "zapodidae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a widely distributed family of myomorph rodents that includes the jumping mice of North America and related Old World mice"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zapotec": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a member of an Indigenous people of the state of Oaxaca, Mexico"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zapotecan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a language stock of southern Mexico comprising Chatino and the several languages all known asZapotec",
-      "the peoples speaking Zapotecan languages"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zapper": {
     "uk_ipa": "/ˈzæpə(r)/",
     "us_ipa": "/ˈzæpər/",
@@ -657,187 +162,10 @@
     "meanings": [
       "one that zaps: such as",
       "an electronic device designed to attract and kill insects",
-      "a person who habitually changes channels (as to avoid commercials)"
+      "a person who habitually changes channels ( as to avoid commercials )"
     ],
     "synonyms": [],
     "antonyms": []
-  },
-  "zapus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the type genus of Zapodidae"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zaragoza": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "province of northeastern Spain in western Aragonarea6639 square miles (17,195 square kilometers),population978,638",
-      "city and capital of the province of Zaragozapopulation682,004"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zah",
-        "stress": 0
-      },
-      {
-        "text": "rah",
-        "stress": 0
-      },
-      {
-        "text": "goh",
-        "stress": 1
-      },
-      {
-        "text": "zuh",
-        "stress": 0
-      }
-    ]
-  },
-  "zarathustra": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zarf": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zaria": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zah",
-        "stress": 1
-      },
-      {
-        "text": "ree",
-        "stress": 0
-      },
-      {
-        "text": "uh",
-        "stress": 0
-      }
-    ]
-  },
-  "zarontin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zarpanit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zarqa": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city in Jordan north-northeast of Amman"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zauschneria": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of California perennial herbs (family Onagraceae) with scarlet racemose flowers like those of fuchsia and comose seeds",
-      "any plant of the genusZauschneria"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zaxis": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one of the axes in a three-dimensional rectangular coordinate system"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zayin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the 7th letter of the Hebrew alphabetseeAlphabet Table"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zb": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zbit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zdv": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "azt"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zea": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of large grasses having broad ribbon-shaped leaves and monoecious flowers of which the staminate forms an ample terminal panicle and the pistillate is in a sessile axillary spike enveloped by numerous bractsseeindian corn",
-      "the fresh styles and stigmas of Indian corn formerly used as a diuretic"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zee",
-        "stress": 1
-      }
-    ]
   },
   "zeal": {
     "uk_ipa": "/ziːl/",
@@ -846,7 +174,7 @@
       "her missionary/reforming/religious/political zeal"
     ],
     "meanings": [
-      "eagerness andardentinterest in pursuit of something:fervor",
+      "eagerness and ardent interest in pursuit of something: fervor",
       "eager desire in going for a goal"
     ],
     "synonyms": [
@@ -870,61 +198,14 @@
       }
     ]
   },
-  "zealand": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several tall New Zealand trees of the genusNothofagussome of which yield useful timber",
-      "new zealand beech",
-      "smoked Australian freshwater catfish"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zee",
-        "stress": 1
-      },
-      {
-        "text": "luhnd",
-        "stress": 0
-      }
-    ]
-  },
-  "zealander": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a native or inhabitant of Zealand in Denmark",
-      "zeelander"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zee",
-        "stress": 1
-      },
-      {
-        "text": "luhn",
-        "stress": 0
-      },
-      {
-        "text": "der",
-        "stress": 0
-      }
-    ]
-  },
   "zealot": {
     "uk_ipa": "/ˈzelət/",
     "us_ipa": "/ˈzelət/",
     "examples": [],
     "meanings": [
-      "azealousperson",
+      "a zealous person",
       "a fanatical partisan",
-      "a member of a fanatical sect arising in Judea during the first centurya.d.and militantly opposing the Roman domination of Palestine"
+      "a member of a fanatical sect arising in judea during the first century a. d. and militantly opposing the roman domination of palestine"
     ],
     "synonyms": [
       "partisan",
@@ -956,7 +237,7 @@
       "religious zealotry"
     ],
     "meanings": [
-      "excess of zeal:fanatical devotion"
+      "excess of zeal: fanatical devotion"
     ],
     "synonyms": [
       "fervor",
@@ -994,8 +275,8 @@
       "a zealous reformer"
     ],
     "meanings": [
-      "marked by fervent partisanship for a person, a cause, or an ideal:filled with or characterized byzeal",
-      "filled with or showing zeal:marked by passionate support for a person, cause, or ideal"
+      "marked by fervent partisanship for a person, a cause, or an ideal: filled with or characterized by zeal",
+      "filled with or showing zeal: marked by passionate support for a person, cause, or ideal"
     ],
     "synonyms": [
       "fervent",
@@ -1029,8 +310,8 @@
       "a zealously guarded secret"
     ],
     "meanings": [
-      "marked by fervent partisanship for a person, a cause, or an ideal:filled with or characterized byzeal",
-      "filled with or showing zeal:marked by passionate support for a person, cause, or ideal"
+      "marked by fervent partisanship for a person, a cause, or an ideal: filled with or characterized by zeal",
+      "filled with or showing zeal: marked by passionate support for a person, cause, or ideal"
     ],
     "synonyms": [
       "vigorously",
@@ -1061,40 +342,13 @@
       }
     ]
   },
-  "zeaxanthin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a yellow crystalline carotenoid alcohol C40H56O2that isisomericwithluteinand occurs especially in fruits and vegetables (such as kiwifruit and spinach) and egg yolks",
-      "a yellow crystalline carotenoid alcohol C40H56O2that is isomeric with lutein and occurs widely with it and that is the chief pigment of yellow Indian corn"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zebibit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zebibyte": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zebra": {
     "uk_ipa": "/ˈzebrə/",
     "us_ipa": "/ˈziːbrə/",
     "examples": [],
     "meanings": [
-      "any of several swift African mammals (Equus grevyi,E. quagga, andE. zebra) related to the horse but distinctively and conspicuously patterned in stripes of black or dark brown and white or buff",
-      "refereesense 2",
+      "any of several swift african mammals ( equus grevy i, e. quagga, and e. zebra ) related to the horse but distinctively and conspicuously patterned in stripes of black or dark brown and white or buff",
+      "referee sense 2",
       "zebra crossing"
     ],
     "synonyms": [],
@@ -1110,28 +364,6 @@
       }
     ]
   },
-  "zebratailed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "gridiron-tailed lizard"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zebrawood": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of several trees or shrubs having mottled or striped wood: such as",
-      "a tall South American timber tree (Astronium fraxinifolium) of the cashew family",
-      "a tall western African timber tree (Microberlinia brazzavillensis) of the legume family"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zebu": {
     "uk_ipa": "/ˈziːbuː/",
     "us_ipa": "/ˈziːbuː/",
@@ -1139,83 +371,8 @@
       "Kenya's beef comes from the zebu cattle."
     ],
     "meanings": [
-      "any of various breeds of domestic oxen developed in India that are often considered conspecific with the common ox (Bos taurus) or sometimes as a separate species (B. indicus) and are characterized by a large fleshy hump over the shoulders, a dewlap, pendulous ears, and marked resistance to the injurious effects of heat and insect attack",
-      "any of various breeds of domestic oxen developed in India that have a large fleshy hump over the shoulders and loose skin with hanging folds and that are able to withstand the harmful effects of heat and insect attack"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zechariah": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a Hebrew prophet of the sixth centuryb.c.",
-      "a prophetic book of canonical Jewish and Christian ScriptureseeBible Table",
-      "a prophetic book of canonical Jewish and Christian Scriptureseebible"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zed": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the letterz",
-      "the letterz"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zehd",
-        "stress": 1
-      }
-    ]
-  },
-  "zee": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the letterz"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zee",
-        "stress": 1
-      }
-    ]
-  },
-  "zeeman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Pieter 1865–1943 Dutch physicist"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zee",
-        "stress": 1
-      },
-      {
-        "text": "muhn",
-        "stress": 0
-      }
-    ]
-  },
-  "zeidae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of marine fishes (order Zeomorphi) comprising the John Dorys"
+      "any of various breeds of domestic oxen developed in india that are often considered conspecific with the common ox ( bos taurus ) or sometimes as a separate species ( b. indicus ) and are characterized by a large fleshy hump over the shoulders, a dew lap, pendulous ears, and marked resistance to the injurious effects of heat and insect attack",
+      "any of various breeds of domestic oxen developed in india that have a large fleshy hump over the shoulders and loose skin with hanging folds and that are able to withstand the harmful effects of heat and insect attack"
     ],
     "synonyms": [],
     "antonyms": []
@@ -1240,22 +397,14 @@
       }
     ]
   },
-  "zellig": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zen": {
     "uk_ipa": "/zen/",
     "us_ipa": "/zen/",
     "examples": [],
     "meanings": [
-      "a Japanese sect of Mahayana Buddhism that aims at enlightenment by direct intuition through meditation",
-      "a state of calm attentiveness in which one's actions are guided by intuition rather than by conscious effort",
-      "of, relating to, or associated with Zen Buddhism"
+      "a japanese sect of mahayana buddhism that aims at enlightenment by direct intuition through meditation",
+      "a state of calm attentiveness in which one ' s actions are guided by intuition rather than by conscious effort",
+      "of, relating to, or associated with zen buddhism"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -1266,36 +415,6 @@
       }
     ]
   },
-  "zenaidura": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of pigeons that includes the common American mourning dove"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zend": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "avesta"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zendavesta": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "avesta"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zenith": {
     "uk_ipa": "/ˈzenɪθ/",
     "us_ipa": "/ˈziːnɪθ/",
@@ -1304,9 +423,9 @@
       "The rock band was at the zenith of its creative powers."
     ],
     "meanings": [
-      "the point of the celestial sphere that is directly opposite the nadir and vertically above the observerseeazimuth illustration",
+      "the point of the celestial sphere that is directly opposite the nadir and vertically above the observer see azimuth illustration",
       "the highest point reached in the heavens by a celestial body",
-      "culminating point:acme"
+      "culminating point: acme"
     ],
     "synonyms": [
       "pinnacle",
@@ -1332,83 +451,6 @@
         "stress": 0
       }
     ]
-  },
-  "zenithal": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of, relating to, or located at or near thezenith",
-      "showing correct directions from the center"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zeno": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "circa335–circa263b.c.Greek philosopher and founder of Stoic school",
-      "circa495–circa430b.c.Greek philosopher"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zay",
-        "stress": 1
-      },
-      {
-        "text": "noh",
-        "stress": 0
-      }
-    ]
-  },
-  "zeolite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of various hydrous silicates that are analogous in composition to the feldspars, occur as secondary minerals in cavities of lavas, and can act as ion-exchangers",
-      "any of various natural or synthesized silicates of similar structure used especially in water softening and as adsorbents and catalysts",
-      "any of various hydrous silicates that can act as ion exchangers"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zeomorphi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small order of marine bony fishes that in some respects are intermediate between the Berycomorphi and Percomorphi and that include the John Dorys and a few related forms"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zep": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zeppelin",
-      "Zephaniah"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zephaniah": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a Hebrew prophet of the seventh centuryb.c.",
-      "an apocalyptic book of canonical Jewish and Christian ScriptureseeBible Table",
-      "a book of canonical Jewish and Christian Scripture about the end of the worldseebible"
-    ],
-    "synonyms": [],
-    "antonyms": []
   },
   "zephyr": {
     "uk_ipa": "/ˈzefə(r)/",
@@ -1466,14 +508,6 @@
       }
     ]
   },
-  "zeppo": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zero": {
     "uk_ipa": "/ˈzɪərəʊ/",
     "us_ipa": "/ˈzɪrəʊ/",
@@ -1483,7 +517,7 @@
       "The thermometer had fallen to zero."
     ],
     "meanings": [
-      "the arithmetical symbol 0 or 0̸ denoting the absence of all magnitude or quantity",
+      "the arithmetical symbol 0 or 0 ̸ denoting the absence of all magnitude or quantity",
       "additive identity",
       "the number between the set of all negative numbers and the set of all positive numbers"
     ],
@@ -1512,47 +546,6 @@
       }
     ]
   },
-  "zerocoupon": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of, relating to, or being an investment security that is sold at a deep discount, is redeemable at face value on maturity, and that pays no periodic interest"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zerosum": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of, relating to, or being a situation (such as a game or relationship) in which a gain for one side entails a corresponding loss for the other side"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zeroth": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "being numbered zero in a series",
-      "zerosense 1"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zerotolerance": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a policy of giving the most severe punishment possible to every person who commits a crime or breaks a rule"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zest": {
     "uk_ipa": "/zest/",
     "us_ipa": "/zest/",
@@ -1562,9 +555,9 @@
       "The slight risk added zest to the experience."
     ],
     "meanings": [
-      "a piece of the peel of a citrus fruit (such as an orange or lemon) used as flavoring",
-      "an enjoyably exciting quality:piquancy",
-      "keen enjoyment:relish,gusto"
+      "a piece of the peel of a citrus fruit ( such as an orange or lemon ) used as flavoring",
+      "an enjoyably exciting quality: piquancy",
+      "keen enjoyment: relish, gusto"
     ],
     "synonyms": [
       "spice",
@@ -1592,9 +585,9 @@
     "us_ipa": "/ˈzestfl/",
     "examples": [],
     "meanings": [
-      "a piece of the peel of a citrus fruit (such as an orange or lemon) used as flavoring",
-      "an enjoyably exciting quality:piquancy",
-      "keen enjoyment:relish,gusto"
+      "a piece of the peel of a citrus fruit ( such as an orange or lemon ) used as flavoring",
+      "an enjoyably exciting quality: piquancy",
+      "keen enjoyment: relish, gusto"
     ],
     "synonyms": [
       "zesty",
@@ -1621,84 +614,6 @@
       }
     ]
   },
-  "zestfully": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a piece of the peel of a citrus fruit (such as an orange or lemon) used as flavoring",
-      "an enjoyably exciting quality:piquancy",
-      "keen enjoyment:relish,gusto"
-    ],
-    "synonyms": [
-      "spice",
-      "piquancy",
-      "zing",
-      "excitement",
-      "tang"
-    ],
-    "antonyms": [
-      "insipidity",
-      "flatness",
-      "dullness",
-      "dulness",
-      "tastelessness"
-    ]
-  },
-  "zestfulness": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a piece of the peel of a citrus fruit (such as an orange or lemon) used as flavoring",
-      "an enjoyably exciting quality:piquancy",
-      "keen enjoyment:relish,gusto"
-    ],
-    "synonyms": [
-      "spice",
-      "piquancy",
-      "zing",
-      "excitement",
-      "tang"
-    ],
-    "antonyms": [
-      "insipidity",
-      "flatness",
-      "dullness",
-      "dulness",
-      "tastelessness"
-    ]
-  },
-  "zestily": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having or characterized by zest:appealingly piquant or lively"
-    ],
-    "synonyms": [
-      "spicy",
-      "piquant",
-      "delicious",
-      "pungent",
-      "zingy"
-    ],
-    "antonyms": [
-      "insipid",
-      "dry",
-      "flat",
-      "tasteless",
-      "stale"
-    ]
-  },
-  "zestril": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zesty": {
     "uk_ipa": "/ˈzesti/",
     "us_ipa": "/ˈzesti/",
@@ -1707,7 +622,7 @@
       "a zesty dipping sauce"
     ],
     "meanings": [
-      "having or characterized by zest:appealingly piquant or lively"
+      "having or characterized by zest: appealingly piquant or lively"
     ],
     "synonyms": [
       "spicy",
@@ -1729,8 +644,8 @@
     "us_ipa": "/ˈzeɪtə/",
     "examples": [],
     "meanings": [
-      "the 6th letter of the Greek alphabetseeAlphabet Table",
-      "the sixth letter of the Greek alphabet"
+      "the 6 th letter of the greek alphabet see alphabet table",
+      "the sixth letter of the greek alphabet"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -1745,217 +660,12 @@
       }
     ]
   },
-  "zetland": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "shetland pony",
-      "shetland sheepdog",
-      "a lightweight loosely twisted yarn of Shetland wool used for knitting and weaving"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zettabit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zettabyte": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one sextillion bytes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zeugma": {
     "uk_ipa": "/ˈzjuːɡmə/",
     "us_ipa": "/ˈzuːɡmə/",
     "examples": [],
     "meanings": [
-      "the use of a word to modify orgoverntwo or more words usually in such a manner that it applies to each word in a different sense (as \"opened\" in \"opened the door and her heart to the stray kitten\") or makes sense with only one word (as \"rolling\" in \"rolling lightning and thunder\")"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zeus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the king of the gods and husband of Hera in Greek mythologycomparejupiter"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoos",
-        "stress": 1
-      }
-    ]
-  },
-  "zhou": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zhoo",
-        "stress": 1
-      }
-    ]
-  },
-  "zhu": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "river in southeastern China flowing from Guangzhou in Guangdong Province to the South China Sea"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zhoo",
-        "stress": 1
-      }
-    ]
-  },
-  "zhuang": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zhukov": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Georgy Konstantinovich 1896–1974 Soviet marshal"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zib": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zibit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zidovudine": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "azt",
-      "azt"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ziegfeld": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Florenz 1869–1932 American theatrical producer"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zihg",
-        "stress": 1
-      },
-      {
-        "text": "fehld",
-        "stress": 0
-      }
-    ]
-  },
-  "ziegler": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a catalyst (as triethyl-aluminum or a complex of a trialkyl-aluminum with titanium tetrachloride) that promotes an ionic type of polymerization of ethylene, propylene, or related olefins at atmospheric pressure with the resultant formation of a relatively high-melting polyethylene, a stereoregular polypropylene, or similar product"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zeeg",
-        "stress": 1
-      },
-      {
-        "text": "ler",
-        "stress": 0
-      }
-    ]
-  },
-  "zig": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one of the sharp turns, angles, or alterations in a zigzag course",
-      "one of the short straight lines or sections of a zigzag course at an angle to a zag",
-      "a sharp alteration or change of direction (as in a process or policy)"
-    ],
-    "synonyms": [
-      "veer",
-      "zag",
-      "curve",
-      "cut",
-      "circle"
-    ],
-    "antonyms": [
-      "straighten"
-    ],
-    "syllables": [
-      {
-        "text": "zihg",
-        "stress": 1
-      }
-    ]
-  },
-  "zigadene": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zigadenus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of herbs (family Liliaceae) of North America and Asia having basal linear leaves and a terminal panicle of whitish or greenish flowers with a flat spreading perianthseedeath camas"
+      "the use of a word to modify or govern two or more words usually in such a manner that it applies to each word in a different sense ( as \" opened \" in \" opened the door and her heart to the stray kitten \" ) or makes sense with only one word ( as \" rolling \" in \" rolling lightning and thunder \" )"
     ],
     "synonyms": [],
     "antonyms": []
@@ -1965,7 +675,7 @@
     "us_ipa": "/ˈzɪɡəræt/",
     "examples": [],
     "meanings": [
-      "an ancient Mesopotamian temple tower consisting of a lofty pyramidal structure built in successive stages with outside staircases and a shrine at the top",
+      "an ancient mesopotamian temple tower consisting of a lofty pyramidal structure built in successive stages with outside staircases and a shrine at the top",
       "a structure or object of similar form"
     ],
     "synonyms": [],
@@ -2020,22 +730,6 @@
       }
     ]
   },
-  "zikkurat": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zikurat": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zilch": {
     "uk_ipa": "/zɪltʃ/",
     "us_ipa": "/zɪltʃ/",
@@ -2043,8 +737,8 @@
       "I arrived in this country with zilch."
     ],
     "meanings": [
-      "zero,nothing",
-      "nothingentry3,zero"
+      "zero, nothing",
+      "nothing entry 3, zero"
     ],
     "synonyms": [
       "nobody",
@@ -2067,20 +761,6 @@
       }
     ]
   },
-  "zill": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zihl",
-        "stress": 1
-      }
-    ]
-  },
   "zillion": {
     "uk_ipa": "/ˈzɪljən/",
     "us_ipa": "/ˈzɪljən/",
@@ -2089,7 +769,7 @@
       "This movie is a zillion times better than her last one."
     ],
     "meanings": [
-      "an indeterminately large number",
+      "an indeterminate ly large number",
       "a large number"
     ],
     "synonyms": [
@@ -2122,8 +802,8 @@
     "us_ipa": "/zɪmˈbɑːbweɪ/",
     "examples": [],
     "meanings": [
-      "archaeological site of a people that flourished especially from the 11th to 15th centuries in the northeastern part of the present-day country of Zimbabwe",
-      "landlockedcountry in southern Africa south of the Zambezi River; capital Hararearea150,872 square miles (390,757 square kilometers),population14,030,000"
+      "archaeological site of a people that flourished especially from the 1 1 th to 1 5 th centuries in the northeastern part of the present - day country of zimbabwe",
+      "landlocked country in southern africa south of the zambezi river; capital harare area 1 5 0, 8 7 2 square miles ( 3 9 0, 7 5 7 square kilometers ), population 1 4, 0 3 0, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2147,8 +827,8 @@
     "us_ipa": "/zɪmˈbɑːbwiən/",
     "examples": [],
     "meanings": [
-      "archaeological site of a people that flourished especially from the 11th to 15th centuries in the northeastern part of the present-day country of Zimbabwe",
-      "landlockedcountry in southern Africa south of the Zambezi River; capital Hararearea150,872 square miles (390,757 square kilometers),population14,030,000"
+      "archaeological site of a people that flourished especially from the 1 1 th to 1 5 th centuries in the northeastern part of the present - day country of zimbabwe",
+      "landlocked country in southern africa south of the zambezi river; capital harare area 1 5 0, 8 7 2 square miles ( 3 9 0, 7 5 7 square kilometers ), population 1 4, 0 3 0, 0 0 0"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2171,54 +851,6 @@
       }
     ]
   },
-  "zimbalist": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zihm",
-        "stress": 1
-      },
-      {
-        "text": "buh",
-        "stress": 0
-      },
-      {
-        "text": "lihst",
-        "stress": 0
-      }
-    ]
-  },
-  "zimmer": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zih",
-        "stress": 1
-      },
-      {
-        "text": "mer",
-        "stress": 0
-      }
-    ]
-  },
-  "zinacef": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zinc": {
     "uk_ipa": "/zɪŋk/",
     "us_ipa": "/zɪŋk/",
@@ -2226,9 +858,9 @@
       "They built a temporary home out of zincs."
     ],
     "meanings": [
-      "a bluish-white metallic element with atomic number 30 that is ductile when pure but in the commercial form is brittle at ordinary temperatures and becomes ductile on slight heating, occurs abundantly in minerals, is an essential micronutrient for both plants and animals, and is used especially in alloys and as a protective coating in galvanizing iron and steel",
-      "seeChemical Elements Table",
-      "to treat or coat with zinc:galvanize"
+      "a bluish - white metallic element with atomic number 3 0 that is ductile when pure but in the commercial form is brittle at ordinary temperatures and becomes ductile on slight heating, occurs abundantly in minerals, is an essential micronutrient for both plants and animals, and is used especially in alloys and as a protective coating in galvanizing iron and steel",
+      "see chemical elements table",
+      "to treat or coat with zinc: galvanize"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2244,7 +876,7 @@
     "us_ipa": "/ˈzɪnfəndel/",
     "examples": [],
     "meanings": [
-      "a dry red table wine made from a small black grape that is grown chiefly in California",
+      "a dry red table wine made from a small black grape that is grown chiefly in california",
       "the grape"
     ],
     "synonyms": [],
@@ -2272,7 +904,7 @@
     ],
     "meanings": [
       "a shrill humming noise",
-      "an enjoyably exciting or stimulating quality:zest",
+      "an enjoyably exciting or stimulating quality: zest",
       "a sharply piquant flavor"
     ],
     "synonyms": [
@@ -2325,63 +957,13 @@
       }
     ]
   },
-  "zingiber": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of tropical Asiatic and Polynesian plants (family Zingiberaceae) having tuberous rootstocks, leafy stems, and a coned cluster of imbricated bracts of which each bract encloses from one to three flowersseeginger",
-      "any plant of the genusZingiber"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zingiberaceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of tropical monocotyledonous plants (order Musales) consisting of leafy perennial herbs with aromatic rootstocks and very irregular flowers having a single perfect stamen"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zinjanthropus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of fossil hominids based on a skull found in eastern Africa, characterized by very low brow and large molars, and tentatively assigned to the Lower Pleistocene",
-      "an individual or fossil of the genusZinjanthropus"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zinkenite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a steel-gray mineral Pb6Sb14S27of metallic luster consisting of a lead antimony sulfide and occurring in orthorhombic crystals and in masses (hardness 3–3.5, specific gravity 5.30–5.35)"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zinnemann": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zinnia": {
     "uk_ipa": "/ˈzɪniə/",
     "us_ipa": "/ˈzɪniə/",
     "examples": [],
     "meanings": [
-      "any of a genus (Zinnia) of tropical American composite herbs and low shrubs that have showy flower heads with long-lasting ray flowers",
-      "any of a genus of tropical American composite herbs having long-lasting flowers"
+      "any of a genus ( zinnia ) of tropical american composite herbs and low shrubs that have showy flower heads with long - lasting ray flowers",
+      "any of a genus of tropical american composite herbs having long - lasting flowers"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2400,44 +982,14 @@
       }
     ]
   },
-  "zinnwaldite": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a pale violet, yellow, brown, or dark gray mineral K2(Li,Fe,Al)6(Si,Al)8O20(OH,F)4that consists of mica containing iron and lithium"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zinsser": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Hans 1878–1940 American bacteriologist"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zinzendorf": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Nikolaus Ludwig 1700–1760 Grafvon ZinzendorfGerman religious reformer"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zion": {
     "uk_ipa": "/ˈzaɪən/",
     "us_ipa": "/ˈzaɪən/",
     "examples": [],
     "meanings": [
-      "the Jewish people:israel",
-      "the Jewish homeland that is symbolic of Judaism or of Jewish national aspiration",
-      "the ideal nation or society envisaged by Judaism"
+      "the jewish people: israel",
+      "the jewish homeland that is symbolic of judaism or of jewish national aspiration",
+      "the ideal nation or society envisaged by judaism"
     ],
     "synonyms": [
       "heaven",
@@ -2469,8 +1021,8 @@
     "us_ipa": "/ˈzaɪənɪzəm/",
     "examples": [],
     "meanings": [
-      "an international movement originally for the establishment of a Jewish national or religious community in Palestine and later for the support of modern Israel",
-      "an international effort working in the beginning for a Jewish homeland and later for the support of Israel"
+      "an international movement originally for the establishment of a jewish national or religious community in palestine and later for the support of modern israel",
+      "an international effort working in the beginning for a jewish homeland and later for the support of israel"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2498,8 +1050,8 @@
     "us_ipa": "/ˈzaɪənɪst/",
     "examples": [],
     "meanings": [
-      "an international movement originally for the establishment of a Jewish national or religious community in Palestine and later for the support of modern Israel",
-      "an international effort working in the beginning for a Jewish homeland and later for the support of Israel"
+      "an international movement originally for the establishment of a jewish national or religious community in palestine and later for the support of modern israel",
+      "an international effort working in the beginning for a jewish homeland and later for the support of israel"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2552,16 +1104,6 @@
       }
     ]
   },
-  "ziphiidae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family oftoothed whalesthat comprise thebeaked whales"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zipper": {
     "uk_ipa": "/ˈzɪpə(r)/",
     "us_ipa": "/ˈzɪpər/",
@@ -2571,7 +1113,7 @@
     ],
     "meanings": [
       "a fastener consisting of two rows of metal or plastic teeth on strips of tape and a sliding piece that closes an opening by drawing the teeth together",
-      "zipentry5",
+      "zip entry 5",
       "a fastener consisting of two rows of metal or plastic teeth on strips of tape and a sliding piece that closes an opening by drawing the teeth together"
     ],
     "synonyms": [],
@@ -2594,7 +1136,7 @@
       "They know zippo about risk."
     ],
     "meanings": [
-      "nothing at all:zip"
+      "nothing at all: zip"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2647,61 +1189,14 @@
       }
     ]
   },
-  "zirbanit": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zircon": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a tetragonal mineral consisting of a silicate ofzirconiumand occurring usually in brown or grayish square prisms of adamantine luster or sometimes in transparent forms which are used as gems",
-      "a mineral that consists of a silicate of zirconium and occurs usually as brown or grayish crystals or sometimes as transparent forms which are used as gems"
-    ],
-    "synonyms": [
-      "rhinestone",
-      "jewelry",
-      "cabochon",
-      "paste",
-      "scarab"
-    ],
-    "antonyms": [
-      "rough"
-    ],
-    "syllables": [
-      {
-        "text": "zer",
-        "stress": 1
-      },
-      {
-        "text": "kuhn",
-        "stress": 0
-      }
-    ]
-  },
-  "zirconia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a white crystalline compound ZrO2used especially in refractories, in thermal and electric insulation, in abrasives, and in enamels and glazes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zirconium": {
     "uk_ipa": "/zɜːˈkəʊniəm/",
     "us_ipa": "/zɜːrˈkəʊniəm/",
     "examples": [],
     "meanings": [
-      "a steel-gray hard ductile metallic element with a high melting point that occurs widely in combined form (as inzircon), is highly resistant to corrosion, and is used especially in alloys and in refractories and ceramicsseeChemical Elements Table",
-      "a steel-gray strong metallic element with a high melting point that is used especially in combination with other metalsseeelement",
-      "a steel-gray strong ductile chiefly tetravalent metallic element with a high melting point"
+      "a steel - gray hard ductile metallic element with a high melting point that occurs widely in combined form ( as in zircon ), is highly resistant to corrosion, and is used especially in alloys and in refractories and ceramics see chemical elements table",
+      "a steel - gray strong metallic element with a high melting point that is used especially in combination with other metals see element",
+      "a steel - gray strong ductile chiefly tetravalent metallic element with a high melting point"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -2729,9 +1224,9 @@
     "us_ipa": "/zɪt/",
     "examples": [],
     "meanings": [
-      "a small, red, swollen spot on the skin:pimple",
+      "a small, red, swollen spot on the skin: pimple",
       "pimple",
-      "pimplesense 1"
+      "pimple sense 1"
     ],
     "synonyms": [
       "blister",
@@ -2747,7 +1242,7 @@
     "us_ipa": "/ˈzɪðər/",
     "examples": [],
     "meanings": [
-      "a stringed instrument having usually 30 to 40 strings over a shallow horizontal soundboard and played with pick and fingers",
+      "a stringed instrument having usually 3 0 to 4 0 strings over a shallow horizontal soundboard and played with pick and fingers",
       "a stringed instrument with thirty to forty tuned strings that are plucked with the fingers or with a pick"
     ],
     "synonyms": [],
@@ -2763,144 +1258,6 @@
       }
     ]
   },
-  "zithern": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zithromax": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ziti": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "medium-sized tubular pasta",
-      "medium-sized tube-shaped pasta"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zizania": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of tall monoecious grasses having long flat leaves and ample panicles of one-flowered spikeletsseewild rice"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "ziziphus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a large genus of spiny chiefly tropical American and Asiatic shrubs (family Rhamnaceae) having triple-veined leaves and small cymose flowers with a 2-celled ovaryseechrist's-thorn,jujube,lotus tree",
-      "any plant of the genusZiziphus"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zizz": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zloty": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the basic monetary unit of PolandseeMoney Table",
-      "the basic unit of money of Poland",
-      "a coin worth one zloty"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zlaw",
-        "stress": 1
-      },
-      {
-        "text": "tee",
-        "stress": 0
-      }
-    ]
-  },
-  "zn": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "azimuth",
-      "zinc",
-      "zinc"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoanthropy": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a monomania in which a person believes himself changed into an animal and acts like one"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoarces": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the type genus of the familyZoarcidae"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoarcidae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of chiefly arctic and antarctic blennies comprising the eelpouts"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zocor": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoh",
-        "stress": 1
-      },
-      {
-        "text": "ker",
-        "stress": 0
-      }
-    ]
-  },
   "zodiac": {
     "uk_ipa": "/ˈzəʊdiæk/",
     "us_ipa": "/ˈzəʊdiæk/",
@@ -2908,7 +1265,7 @@
       "the signs of the zodiac"
     ],
     "meanings": [
-      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 12 constellations or signs each taken for astrological purposes to extend 30 degrees of longitude",
+      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 1 2 constellations or signs each taken for astrological purposes to extend 3 0 degrees of longitude",
       "a figure representing the signs of the zodiac and their symbols",
       "a cyclic course"
     ],
@@ -2942,7 +1299,7 @@
       "the zodiacal signs/animals"
     ],
     "meanings": [
-      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 12 constellations or signs each taken for astrological purposes to extend 30 degrees of longitude",
+      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 1 2 constellations or signs each taken for astrological purposes to extend 3 0 degrees of longitude",
       "a figure representing the signs of the zodiac and their symbols",
       "a cyclic course"
     ],
@@ -2955,143 +1312,14 @@
     ],
     "antonyms": []
   },
-  "zoftig": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having a full rounded figure:pleasingly plump"
-    ],
-    "synonyms": [
-      "buxom",
-      "voluptuous",
-      "shapely",
-      "curvaceous",
-      "chubby"
-    ],
-    "antonyms": [
-      "angular",
-      "lanky",
-      "bony",
-      "gaunt",
-      "sinewy"
-    ]
-  },
-  "zoic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having a (specified) animal mode of existence",
-      "of, relating to, or being a (specified) geologic era"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoisia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of Asiatic grasses that have creeping rhizomes, short pointed leaves, and one-flowered spikelets in racemes and that are valued as lawn grasses especially in warm regionsseezoysia"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zola": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Émile 1840–1902 French novelist"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoh",
-        "stress": 1
-      },
-      {
-        "text": "luh",
-        "stress": 0
-      }
-    ]
-  },
-  "zolaesque": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Émile 1840–1902 French novelist"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zollingerellison": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a syndrome consisting of fulminant intractable peptic ulcers, gastric hypersecretion and hyperacidity, and the occurrence of gastrinomas of the pancreatic cells of the islets of Langerhans"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoloft": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zah",
-        "stress": 1
-      },
-      {
-        "text": "lahft",
-        "stress": 0
-      }
-    ]
-  },
-  "zomba": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "city in southeastern Malawi south of Lake Malawipopulation88,314"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zombi": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a will-less and speechless human (as invoodoobelief and in fictional stories) held to have died and been supernaturally reanimated",
-      "the supernatural power that according to voodoo belief may enter into and reanimate a dead body",
-      "a person held to resemble the so-called walking dead"
-    ],
-    "synonyms": [
-      "vampire",
-      "succubus",
-      "incubus",
-      "ghoul",
-      "lamia"
-    ],
-    "antonyms": []
-  },
   "zombie": {
     "uk_ipa": "/ˈzɒmbi/",
     "us_ipa": "/ˈzɑːmbi/",
     "examples": [],
     "meanings": [
-      "a will-less and speechless human (as invoodoobelief and in fictional stories) held to have died and been supernaturally reanimated",
+      "a will - less and speechless human ( as in voodoo belief and in fictional stories ) held to have died and been supernaturally reanimated",
       "the supernatural power that according to voodoo belief may enter into and reanimate a dead body",
-      "a person held to resemble the so-called walking dead"
+      "a person held to resemble the so - called walking dead"
     ],
     "synonyms": [
       "vampire",
@@ -3112,46 +1340,14 @@
       }
     ]
   },
-  "zona": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the transparent more or less elastic noncellular outer layer or envelope of a mammalian ovum that is composed of glycoproteins",
-      "zona pellucida"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoh",
-        "stress": 1
-      },
-      {
-        "text": "nuh",
-        "stress": 0
-      }
-    ]
-  },
   "zonal": {
     "uk_ipa": "/ˈzəʊnl/",
     "us_ipa": "/ˈzəʊnl/",
     "examples": [],
     "meanings": [
       "of, relating to, affecting, or having the form of a zone",
-      "of, relating to, or being a soil or a major soil group marked by well-developed characteristics that are determined primarily by the action of climate and organisms (such as vegetation)compareazonal,intrazonal",
+      "of, relating to, or being a soil or a major soil group marked by well - developed characteristics that are determined primarily by the action of climate and organisms ( such as vegetation ) compare a zonal, intra zonal",
       "of, relating to, or having the form of a zone"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zonary": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zonal",
-      "having villi arranged in a band (as in carnivores and elephants)"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3165,9 +1361,9 @@
       "a pedestrian zone (= where vehicles may not go)"
     ],
     "meanings": [
-      "any of five great divisions of the earth's surface with respect to latitude and temperaturecomparefrigid zone,temperate zone,torrid zone",
+      "any of five great divisions of the earth ' s surface with respect to latitude and temperature compare frigid zone, temperate zone, torrid zone",
       "a portion of the surface of a sphere included between two parallel planes",
-      "girdle,belt"
+      "girdle, belt"
     ],
     "synonyms": [
       "region",
@@ -3191,7 +1387,7 @@
       "zoning regulations/laws"
     ],
     "meanings": [
-      "the act or process of partitioning a city, town, or borough intozonesreserved for different purposes (such as residence or business)",
+      "the act or process of partitioning a city, town, or borough into zones reserved for different purposes ( such as residence or business )",
       "the set of ordinances by which such zones are established and regulated",
       "municipal or county regulation of land use effected through the creation and enforcement of zones under local law"
     ],
@@ -3217,39 +1413,9 @@
       "The book fell and zonked me on the head."
     ],
     "meanings": [
-      "stun,stupefy",
-      "strike,zap",
+      "stun, st up efy",
+      "strike, zap",
       "to pass out from or as if from alcohol or a drug"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zonotrichia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of rather large New World sparrows (family Fringillidae) occurring chiefly in western North America and having the upperparts largely brown and the underparts unmarked grayish whiteseegambel sparrow,golden-crowned sparrow,white-crowned sparrow,white-throated sparrow"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zonula": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zonule of zinn"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zonule": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zonule of zinn"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3265,7 +1431,7 @@
     "meanings": [
       "a facility with usually indoor and outdoor settings where living, typically wild animals are kept especially for public exhibition",
       "a place, situation, or group marked by crowding, confusion, or unrestrained behavior",
-      "animal:animal kingdom or kind"
+      "animal: animal kingdom or kind"
     ],
     "synonyms": [
       "commotion",
@@ -3288,63 +1454,12 @@
       }
     ]
   },
-  "zooerastia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "bestiality"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zooerasty": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "bestiality"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zooflagellate": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a member of the Zoomastigina:a flagellate protozoan lacking photosynthesis and other plantlike characteristicscompareplantlike flagellate"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zooid": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "one of the asexually produced individuals of a compound organism (such as a bryozoan, siphonophore, or coral colony)",
-      "one of the asexually produced individuals of a compound organism (as a coral colony)"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoolatry": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "animal worship"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zoological": {
     "uk_ipa": "/ˌzuːəˈlɒdʒɪkl/",
     "us_ipa": "/ˌzuːəˈlɑːdʒɪkl/",
     "examples": [],
     "meanings": [
-      "of, relating to, or concerned withzoology",
+      "of, relating to, or concerned with zoology",
       "of, relating to, or affecting lower animals often as distinguished from humans",
       "of, relating to, or concerned with zoology"
     ],
@@ -3375,7 +1490,7 @@
     "examples": [],
     "meanings": [
       "a branch of biology concerned with the classification and the properties and vital phenomena of animals",
-      "animal life (as of a region):fauna",
+      "animal life ( as of a region ): fauna",
       "the properties and vital phenomena exhibited by an animal, animal type, or group"
     ],
     "synonyms": [],
@@ -3405,7 +1520,7 @@
     "examples": [],
     "meanings": [
       "a branch of biology concerned with the classification and the properties and vital phenomena of animals",
-      "animal life (as of a region):fauna",
+      "animal life ( as of a region ): fauna",
       "the properties and vital phenomena exhibited by an animal, animal type, or group"
     ],
     "synonyms": [],
@@ -3439,7 +1554,7 @@
     ],
     "meanings": [
       "to move with a loud low hum or buzz",
-      "to go speedily:zip",
+      "to go speedily: zip",
       "to climb for a short time at an angle greater than that which can be maintained in steady flight so that the machine is carried upward at the expense of stored kinetic energy"
     ],
     "synonyms": [
@@ -3463,35 +1578,6 @@
       }
     ]
   },
-  "zoomastigina": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a subclass of Mastigophora that comprises holozoic or saprozoic flagellates lacking chromatophores and stigma and that includes the orders Hypermastigina, Polymastigina, Protomonadina, and Rhizomastiginacomparephytomastigina"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoomastigote": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoomorphism": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the representation of deity in the form or with the attributes of the lower animals",
-      "the use of animal forms in art or symbolism"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zoonosis": {
     "uk_ipa": "/ˌzuːəˈnəʊsɪs/",
     "us_ipa": "/ˌzuːəˈnəʊsɪs/",
@@ -3501,7 +1587,7 @@
     "meanings": [
       "an infection or disease that is transmissible from animals to humans under natural conditions",
       "an infection or disease that is transmissible between animals and humans",
-      "see alsoreverse zoonosis"
+      "see also reverse zoonosis"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3515,60 +1601,7 @@
     "meanings": [
       "an infection or disease that is transmissible from animals to humans under natural conditions",
       "an infection or disease that is transmissible between animals and humans",
-      "see alsoreverse zoonosis"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoophagous": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "feeding on animals:carnivorous"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoophilia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an erotic fixation on animals that may result in sexual excitement through real or imagined contact"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoophilism": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "attraction to or preference for animals: as",
-      "zoophilia",
-      "preference by an insect of lower animals to humans as a source of food"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoophobia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "abnormal fear of animals"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoophyte": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an invertebrate animal (such as a coral or sponge) more or less resembling a plant in appearance or mode of growth",
-      "an invertebrate animal (as a coral or sponge) more or less resembling a plant in appearance or mode of growth"
+      "see also reverse zoonosis"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3578,78 +1611,9 @@
     "us_ipa": "/ˌzuːəˈplæŋktən/",
     "examples": [],
     "meanings": [
-      "freely floating or weakly swimming typically minute aquatic protozoans and animals (such as copepods, rotifers, and arrow worms) or the eggs or larvae of aquatic animals (such as anemones, mollusks, and fish):planktoncomposed of animals",
-      "comparephytoplankton",
+      "freely floating or weakly swimming typically minute aquatic protozoans and animals ( such as copepods, rotifers, and arrow worms ) or the eggs or larvae of aquatic animals ( such as anemones, mollusks, and fish ): plankton composed of animals",
+      "compare phytoplankton",
       "plankton that is composed of animals"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoopsia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoospore": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an independently motile spore",
-      "a motile usually naked and flagellated asexual spore especially of an alga or lower fungus",
-      "an independently motile spore"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoot": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a suit of extreme cut typically consisting of a thigh-length jacket with wide padded shoulders and peg pants with narrow cuffs"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zootoxin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zori": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a flat thonged sandal usually made of straw, cloth, leather, or rubber"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoril": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "striped muishond",
-      "a North African muishond (Ictonyx frenata) related to the striped muishond"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoroaster": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "circa628–circa551b.c.founder ofZoroastrianism"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3659,7 +1623,7 @@
     "us_ipa": "/ˌzɔːrəʊˈæstriən/",
     "examples": [],
     "meanings": [
-      "a Persian religion founded in the sixth centuryb.c.by the prophetZoroaster, promulgated in the Avesta, and characterized by worship of a supreme god Ahura Mazda who requires good deeds for help in his cosmic struggle against the evil spirit Ahriman"
+      "a persian religion founded in the sixth century b. c. by the prophet zoroaster, promulgated in the avesta, and characterized by worship of a supreme god ahura mazda who requires good deeds for help in his cosmic struggle against the evil spirit ahriman"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3669,118 +1633,8 @@
     "us_ipa": "/ˌzɔːrəʊˈæstriənɪzəm/",
     "examples": [],
     "meanings": [
-      "a Persian religion founded in the sixth centuryb.c.by the prophetZoroaster, promulgated in the Avesta, and characterized by worship of a supreme god Ahura Mazda who requires good deeds for help in his cosmic struggle against the evil spirit Ahriman"
+      "a persian religion founded in the sixth century b. c. by the prophet zoroaster, promulgated in the avesta, and characterized by worship of a supreme god ahura mazda who requires good deeds for help in his cosmic struggle against the evil spirit ahriman"
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zoster": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "shingles",
-      "shingles"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zahs",
-        "stress": 1
-      },
-      {
-        "text": "ter",
-        "stress": 0
-      }
-    ]
-  },
-  "zostera": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of widely distributed marine plants (family Potamogetonaceae) with branching stems, distichous leaves, and monoecious flowers that are borne in a spadixseeeelgrass"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zosteraceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of widely distributed marine or aquatic herbs (order Naiadales) that is nearly or exactly equivalent to Potamogetonaceae"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zovirax": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoh",
-        "stress": 1
-      },
-      {
-        "text": "vih",
-        "stress": 0
-      },
-      {
-        "text": "raks",
-        "stress": 0
-      }
-    ]
-  },
-  "zoysia": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "any of a genus (Zoysia) of creeping perennial grasses of southeastern Asia and New Zealand having fine wiry leaves and including some suitable for lawn grasses especially in warm regions"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zr": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zirconium",
-      "zirconium"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zsigmondy": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zu": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a member of a Zouave regiment in the Civil War"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zubird": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
     "synonyms": [],
     "antonyms": []
   },
@@ -3791,7 +1645,7 @@
     "meanings": [
       "a smooth usually cylindrical dark green summer squash",
       "a plant that bears zucchini",
-      "a smooth cylinder-shaped usually dark green summer squash"
+      "a smooth cylinder - shaped usually dark green summer squash"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3810,38 +1664,6 @@
       }
     ]
   },
-  "zuider": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "former inlet of the North Sea in the northern part of the Netherlands"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zukerman": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zoo",
-        "stress": 1
-      },
-      {
-        "text": "ker",
-        "stress": 0
-      },
-      {
-        "text": "muhn",
-        "stress": 0
-      }
-    ]
-  },
   "zulu": {
     "uk_ipa": "/ˈzuːluː/",
     "us_ipa": "/ˈzuːluː/",
@@ -3850,9 +1672,9 @@
       "It is the first international film in the Zulu language."
     ],
     "meanings": [
-      "a member of a Bantu-speaking people of Natal",
-      "the Bantu language of the Zulus",
-      "a member of a Bantu-speaking people of South Africa"
+      "a member of a bantu - speaking people of natal",
+      "the bantu language of the zulus",
+      "a member of a bantu - speaking people of south africa"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3872,9 +1694,9 @@
     "us_ipa": "/ˈzuːni/",
     "examples": [],
     "meanings": [
-      "a member of an Indigenous people of western New Mexico",
-      "the language of the Zuni people",
-      "an Indigenous people of western New Mexico"
+      "a member of an indigenous people of western new mexico",
+      "the language of the zuni people",
+      "an indigenous people of western new mexico"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3889,60 +1711,6 @@
       }
     ]
   },
-  "zurich": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "cantonof northern Switzerlandarea668 square miles (1730 square kilometers),population1,425,500",
-      "city in northern Switzerland at the northwestern end of the Lake of Zurichpopulation373,000"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zu",
-        "stress": 1
-      },
-      {
-        "text": "rihk",
-        "stress": 0
-      }
-    ]
-  },
-  "zurvan": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zurvanism": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zweig": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Arnold 1887–1968 German author",
-      "Stefan 1881–1942 Austrian writer"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "zweyeg",
-        "stress": 1
-      }
-    ]
-  },
   "zwieback": {
     "uk_ipa": "/ˈzwiːbæk/",
     "us_ipa": "/ˈzwiːbæk/",
@@ -3954,33 +1722,13 @@
     "synonyms": [],
     "antonyms": []
   },
-  "zwingli": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Huldrych 1484–1531 Swiss Reformation leader"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zworykin": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "Vladimir (Kosma) 1889–1982 American (Russian-born) engineer and inventor"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
   "zydeco": {
     "uk_ipa": "/ˈzaɪdɪkəʊ/",
     "us_ipa": "/ˈzaɪdɪkəʊ/",
     "examples": [],
     "meanings": [
-      "popular music of southern Louisiana that combines tunes of French origin with elements of Caribbean music and the blues and that features guitar, washboard, and accordion",
-      "popular music of southern Louisiana that combines tunes of French origin with elements of Caribbean music and blues"
+      "popular music of southern louisiana that combines tunes of french origin with elements of caribbean music and the blues and that features guitar, washboard, and accordion",
+      "popular music of southern louisiana that combines tunes of french origin with elements of caribbean music and blues"
     ],
     "synonyms": [],
     "antonyms": [],
@@ -3998,174 +1746,6 @@
         "stress": 2
       }
     ]
-  },
-  "zygnema": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of common filamentous algae (familyZygnemataceae) having two stellate chromatophores in each cell"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygnemales": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygnemataceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of common freshwater algae (orderZygnematales) often forming bright green slimy masses in stagnant or running water and consisting of unbranched cylindrical filaments with green chromatophores arranged in spiral bands, stars, or rarely straight bandsseespirogyra,zygnema"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygnematales": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an order of green algae (class Chlorophyceae) that include the pond scums and desmids, are distinguished by the absence of asexual reproduction and lack of flagellated reproductive structure, and reproduce sexually by fusion of amoeboid gametescompareakontae"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygocactus": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a small genus of Brazilian cacti having flat fleshy usually branched joints, showy red or pink flowers, and red fleshy fruits and including the widely cultivated crab cactus"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygodactyl": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having the toes arranged two in front and two behind",
-      "syndactyl"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygoma": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "zygomatic arch",
-      "a slender bony process of thezygomaticarch",
-      "zygomatic bone"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomatic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of, relating to, constituting, or situated in the region of the zygomatic bone or zygomatic arch",
-      "of, relating to, constituting, or situated in the region of the zygomatic bone and the zygomatic arch",
-      "zygomatic bone"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomorphic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "having floral parts unequal in size or form so that the flower is capable of division into essentially symmetrical halves by only one longitudinal plane passing through the axis"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomorphous": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomycetes": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a fungus of the subclass Zygomycetes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomycota": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygomycotina": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygophyllaceae": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a family of herbs, shrubs, or trees (order Geraniales) distinguished by pinnate or bifoliolate stipulate leaves and axillary pentamerous flowersseeguaiacumsense 1,tribulus"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygophyllum": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a genus of Old World shrubs (familyZygophyllaceae) that are distinguished mainly by the opposite bifoliate leavesseebean caper"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygoptera": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a suborder of Odonata comprising forms that are distinguished from the typical dragonflies by a slenderer elongated body, by narrow equal wings held upright in repose, and by aquatic larvae that have a pair of paddle-shaped tracheal gills at the apex of the abdomenseedamselflycompareanisoptera"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygospore": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a thick-walled spore of some algae and fungi that is formed by union of two similar sexual cells, usually serves as a resting spore, and produces the sporophytic phase",
-      "a plant spore that is formed by union of two similar sexual cells, usually serves as a resting spore, and produces the sporophytic phase of the plant"
-    ],
-    "synonyms": [],
-    "antonyms": []
   },
   "zygote": {
     "uk_ipa": "/ˈzaɪɡəʊt/",
@@ -4188,134 +1768,5 @@
         "stress": 0
       }
     ]
-  },
-  "zygotene": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "the stage of meiotic prophase which immediately follows the leptotene and during which synapsis of homologous chromosomes occurs",
-      "the stage of meiotic prophase which immediately follows the leptotene and during which synapsis of homologous chromosomes occurs"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zygotic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a cell formed by the union of two gametes",
-      "the developing individual produced from such a cell",
-      "a cell formed by the union of two sex cells"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zyloprim": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymase": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an enzyme or enzyme complex of yeast that promotes fermentation of sugar",
-      "an enzyme or enzyme complex that promotes glycolysis"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymogen": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "an inactive protein precursor of an enzyme secreted by living cells and converted (as by a kinase or an acid) into an active form",
-      "an inactive protein precursor of an enzyme secreted by living cells and converted (as by a kinase or an acid) into an active form"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymoid": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymology": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a science that deals with fermentation"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymolysis": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymolytic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymosis": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "fermentation"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymotic": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "of, relating to, causing, or caused by fermentation",
-      "relating to or being an infectious or contagious disease"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zymurgy": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "a branch of applied chemistry that deals with fermentation processes (as in wine making or brewing)"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zyrian": {
-    "uk_ipa": null,
-    "us_ipa": null,
-    "examples": [],
-    "meanings": [
-      "komi",
-      "the Finno-Ugric language of the Komi people"
-    ],
-    "synonyms": [],
-    "antonyms": []
   }
 }
