@@ -117,8 +117,152 @@ const voiceMap = {
   "en-IN": { male: "en-IN-Wavenet-C", female: "en-IN-Wavenet-D" },
 };
 
+const speedMap = { slow: 0.6, normal: 0.9, fast: 1.2 };
+const inFlightPronunciations = new Map();
+
 const getCacheKey = (word, accent, voice, speed) =>
   `${word.toLowerCase()}_${accent}_${voice}_${speed}`;
+
+const normalizeIsMale = (value) => {
+  if (typeof value === "boolean") return value;
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (["true", "1", "yes", "male", "m"].includes(normalized)) return true;
+    if (["false", "0", "no", "female", "f"].includes(normalized)) return false;
+  }
+  return true;
+};
+
+const applyPronunciationCacheHeaders = (req, res) => {
+  if (req.method === "GET") {
+    res.setHeader(
+      "Cache-Control",
+      "public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400",
+    );
+    res.setHeader("CDN-Cache-Control", "public, s-maxage=604800");
+    res.setHeader("Vercel-CDN-Cache-Control", "public, s-maxage=604800");
+    return;
+  }
+
+  res.setHeader("Cache-Control", "private, max-age=604800");
+};
+
+const buildPronunciationResponse = async ({
+  word,
+  accent,
+  isMale,
+  speed,
+  speakingRate,
+  voiceName,
+}) => {
+  const wordData = await fetchWordData(word);
+  const ttsRequestObj = {
+    input: { text: word },
+    voice: { languageCode: accent, name: voiceName },
+    audioConfig: {
+      audioEncoding: "MP3",
+      speakingRate,
+      pitch: 0,
+      volumeGainDb: 1,
+    },
+  };
+
+  const ttsResponse = await getTtsClient().synthesizeSpeech(ttsRequestObj);
+  const base64Audio = ttsResponse[0].audioContent.toString("base64");
+
+  const responseData = {
+    audioContent: base64Audio,
+    phonetic: wordData
+      ? accent === "en-GB"
+        ? wordData.uk_ipa
+        : wordData.us_ipa
+      : null,
+    meanings: wordData?.meanings ?? [],
+    examples:
+      wordData?.examples?.map((ex) => ({ text: ex, partOfSpeech: "" })) ?? [],
+    synonyms: wordData?.synonyms ?? [],
+    antonyms: wordData?.antonyms ?? [],
+    syllables: wordData?.syllables ?? [],
+    audioMetadata: { format: "mp3", accent, voice: voiceName, speed },
+  };
+
+  const responseETag = etag(word + accent + (isMale ? "m" : "f") + speed);
+  return {
+    data: responseData,
+    etag: responseETag,
+    timestamp: Date.now(),
+  };
+};
+
+const handlePronunciationRequest = async (req, res, payload = {}) => {
+  const requestStart = Date.now();
+  const rawWord = String(payload.word || "");
+  const accent = String(payload.accent || "en-US");
+  const isMale = normalizeIsMale(payload.isMale);
+  const speed = String(payload.speed || "normal").toLowerCase();
+
+  if (!rawWord) return res.status(400).json({ error: "Word is required." });
+  if (!voiceMap[accent])
+    return res.status(400).json({ error: "Invalid accent selected" });
+
+  const word = rawWord.trim().toLowerCase();
+  const speakingRate = speedMap[speed] || speedMap.normal;
+  const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
+  const cacheKey = getCacheKey(word, accent, isMale ? "male" : "female", speed);
+  const clientEtag = req.headers["if-none-match"];
+
+  const cachedResponse = cache.get(cacheKey);
+  if (cachedResponse && clientEtag === cachedResponse.etag)
+    return res.status(304).end();
+  if (cachedResponse) {
+    res.setHeader("ETag", cachedResponse.etag);
+    applyPronunciationCacheHeaders(req, res);
+    return res.json(cachedResponse.data);
+  }
+
+  try {
+    if (inFlightPronunciations.has(cacheKey)) {
+      await inFlightPronunciations.get(cacheKey);
+      const warmedCache = cache.get(cacheKey);
+      if (warmedCache) {
+        if (clientEtag === warmedCache.etag) return res.status(304).end();
+        res.setHeader("ETag", warmedCache.etag);
+        applyPronunciationCacheHeaders(req, res);
+        return res.json(warmedCache.data);
+      }
+    }
+
+    const buildPromise = buildPronunciationResponse({
+      word,
+      accent,
+      isMale,
+      speed,
+      speakingRate,
+      voiceName,
+    });
+    inFlightPronunciations.set(cacheKey, buildPromise);
+
+    const freshResponse = await buildPromise;
+    cache.set(cacheKey, freshResponse);
+
+    res.setHeader("ETag", freshResponse.etag);
+    applyPronunciationCacheHeaders(req, res);
+    res.setHeader("Timing-Allow-Origin", "*");
+    res.setHeader("Server-Timing", `total;dur=${Date.now() - requestStart}`);
+    res.json(freshResponse.data);
+  } catch (error) {
+    console.error(
+      `Error processing ${word}: ${error.message || "Unknown error"}`,
+    );
+    res.status(500).json({
+      error: "Error processing pronunciation request",
+      suggestion: "Please try again in a moment",
+      word,
+    });
+  } finally {
+    inFlightPronunciations.delete(cacheKey);
+  }
+};
 
 // ===== Fetch Word Data (local data folder) =====
 const fetchWordData = async (word) => {
@@ -197,89 +341,11 @@ app.get("/data/:letter.json", async (req, res) => {
 });
 
 app.post("/get-pronunciation", async (req, res) => {
-  const requestStart = Date.now();
-  const {
-    word: rawWord = "",
-    accent = "en-US",
-    isMale = true,
-    speed = "normal",
-  } = req.body;
+  await handlePronunciationRequest(req, res, req.body || {});
+});
 
-  if (!rawWord) return res.status(400).json({ error: "Word is required." });
-  if (!voiceMap[accent])
-    return res.status(400).json({ error: "Invalid accent selected" });
-
-  const word = rawWord.trim().toLowerCase();
-  const speedMap = { slow: 0.6, normal: 0.9, fast: 1.2 };
-  const speakingRate = speedMap[speed] || speedMap.normal;
-  const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
-
-  const cacheKey = getCacheKey(word, accent, isMale ? "male" : "female", speed);
-  const cachedResponse = cache.get(cacheKey);
-  const clientEtag = req.headers["if-none-match"];
-
-  if (cachedResponse && clientEtag === cachedResponse.etag)
-    return res.status(304).end();
-  if (cachedResponse) {
-    res.setHeader("ETag", cachedResponse.etag);
-    res.setHeader("Cache-Control", "private, max-age=604800");
-    return res.json(cachedResponse.data);
-  }
-
-  try {
-    const wordData = await fetchWordData(word);
-    const ttsRequestObj = {
-      input: { text: word },
-      voice: { languageCode: accent, name: voiceName },
-      audioConfig: {
-        audioEncoding: "MP3",
-        speakingRate,
-        pitch: 0,
-        volumeGainDb: 1,
-      },
-    };
-
-    const ttsResponse = await getTtsClient().synthesizeSpeech(ttsRequestObj);
-    const base64Audio = ttsResponse[0].audioContent.toString("base64");
-
-    const responseData = {
-      audioContent: base64Audio,
-      phonetic: wordData
-        ? accent === "en-GB"
-          ? wordData.uk_ipa
-          : wordData.us_ipa
-        : null,
-      meanings: wordData?.meanings ?? [],
-      examples:
-        wordData?.examples?.map((ex) => ({ text: ex, partOfSpeech: "" })) ?? [],
-      synonyms: wordData?.synonyms ?? [],
-      antonyms: wordData?.antonyms ?? [],
-      syllables: wordData?.syllables ?? [],
-      audioMetadata: { format: "mp3", accent, voice: voiceName, speed },
-    };
-
-    const responseETag = etag(word + accent + (isMale ? "m" : "f") + speed);
-    cache.set(cacheKey, {
-      data: responseData,
-      etag: responseETag,
-      timestamp: Date.now(),
-    });
-
-    res.setHeader("ETag", responseETag);
-    res.setHeader("Cache-Control", "private, max-age=604800");
-    res.setHeader("Timing-Allow-Origin", "*");
-    res.setHeader("Server-Timing", `total;dur=${Date.now() - requestStart}`);
-    res.json(responseData);
-  } catch (error) {
-    console.error(
-      `Error processing ${word}: ${error.message || "Unknown error"}`,
-    );
-    res.status(500).json({
-      error: "Error processing pronunciation request",
-      suggestion: "Please try again in a moment",
-      word,
-    });
-  }
+app.get("/get-pronunciation", async (req, res) => {
+  await handlePronunciationRequest(req, res, req.query || {});
 });
 
 // ===== Graceful Shutdown =====
