@@ -685,7 +685,7 @@ app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
 });
 
-app.get("/data/:letter.json", async (req, res) => {
+app.get("/data-v2/:letter.json", async (req, res) => {
   const letter = String(req.params.letter || "").toLowerCase()[0];
   if (!letter || letter < "a" || letter > "z")
     return res.status(400).json({ error: "Invalid letter" });
