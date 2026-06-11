@@ -1,17 +1,85 @@
-{
-  "yacht": {
+[
+  {
+    "word": "y",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(UK, television) Abbreviation of youth, usually followed by an age appropriate for the content so marked."
+        ],
+        "examples": [
+          "Alternative forms: yr, a (“ annum ”)",
+          "Consider the following questions selected from the tests and estimate the proportion of Y 8 pupils you would expect to answer correctly."
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "(slang, text messaging, Internet slang) Abbreviation of why."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Particle",
+        "definitions": [
+          "(computing) Abbreviation of yes."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yacca",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Australia) Any of the various Australian perennial flowering plants of the genus Xanthorrhoea.",
+          "Either of two large evergreens of the West Indies, Podocarpus coriaceus and Podocarpus purdieanus."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yacht",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any vessel used for private, noncommercial purposes.",
+          "(nautical) A slick and light ship for making pleasure trips or racing on water, having sails but often motor-powered. At times used as a residence offshore on a dock."
+        ],
+        "examples": [
+          "Would you like to go sailing on my uncle’s yacht?",
+          "You are a true yachtsman! Are you a member of the local yacht club?",
+          "The megayacht concept is equipped with its own port with enough space for a second yacht measuring up to 30 meters, as well as three swimming pools. […] The market is projected to reach a value of $10.2 billion by 2025 as an increasing amount of yachts measuring longer than 24 meters are ordered, and designers are going all out to ensure their concepts are bigger and better than the competition.",
+          "“I don’t mean all of your friends—only a small proportion—which, however, connects your circle with that deadly, idle, brainless bunch—the insolent chatterers at the opera, […], the chlorotic squatters on huge yachts, […], the neurotic victims of mental cirrhosis, the jewelled animals whose moral code is the code of the barnyard—!\""
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To sail, voyage, or race in a yacht."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɒt/",
     "us_ipa": "/jɑːt/",
-    "examples": [
-      "a 12-metre racing yacht",
-      "a yacht club/race",
-      "a luxury yacht"
-    ],
-    "meanings": [
-      "any of various recreational watercraft: such as",
-      "a sailboat used for racing",
-      "a large usually motor - driven craft used for pleasure cruising"
-    ],
     "synonyms": [
       "schooner",
       "vessel",
@@ -27,17 +95,29 @@
       }
     ]
   },
-  "yachting": {
+  {
+    "word": "yachting",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A physical activity involving yachts, such as racing sailing boats, cruising to distant shores, or day-sailing along a coast."
+        ],
+        "examples": [
+          "In those days, yachting on the east coast was a favourite relaxation, and it was proposed to extend the line for 1¾ miles to a pier on the River Blackwater, where yachts could be moored."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yacht"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɒtɪŋ/",
     "us_ipa": "/ˈjɑːtɪŋ/",
-    "examples": [
-      "They go yachting at weekends.",
-      "a yachting holiday"
-    ],
-    "meanings": [
-      "the action, fact, or pastime of racing or cruising in a yacht",
-      "the sport of racing or cruising in a yacht"
-    ],
     "synonyms": [
       "boating",
       "kayaking",
@@ -57,16 +137,24 @@
       }
     ]
   },
-  "yachtsman": {
+  {
+    "word": "yachtsman",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A man who sails a yacht."
+        ],
+        "examples": [
+          "We knew him already by sight as the owner of a little five-ton cutter, which he sailed alone apparently, a fellow yachtsman in the unpretending band of fanatics who cruise at the mouth of the Thames. But the first time he addressed the waiter sharply as ‘steward’ we knew him at once for a sailor as well as a yachtsman.",
+          "[…] needless to say, the thing that all the cautious and experienced yachtsmen had warned him against happened. The black squall out of nowhere, the sudden, senseless frenzy of wind and rain and waves…",
+          "[…] and so ended, not without a sigh on my part, one of the merriest six-hour rides that five yachtsmen, one cockney, five women and a child, the carman, and a countryman with an alpeen, ever took in their lives."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɒtsmən/",
     "us_ipa": "/ˈjɑːtsmən/",
-    "examples": [
-      "a round-the-world yachtsman"
-    ],
-    "meanings": [
-      "a person who owns or sails a yacht",
-      "a person who owns or sails a yacht"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -80,43 +168,80 @@
       }
     ]
   },
-  "yack": {
-    "uk_ipa": "/jæk/",
-    "us_ipa": "/jæk/",
-    "examples": [],
-    "meanings": [
-      "a large long - haired wild or domesticated ox ( bos grunnienssynonympoephag us grun nien s ) of tibet and adjacent elevated parts of central asia",
-      "laugh",
-      "joke, gag"
-    ],
-    "synonyms": [
-      "troll",
-      "blather",
-      "gab",
-      "prate",
-      "blabber"
-    ],
-    "antonyms": [
-      "articulate",
-      "pronounce",
-      "enunciate"
-    ],
-    "syllables": [
+  {
+    "word": "yachtswoman",
+    "entries": [
       {
-        "text": "yak",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "A woman who sails a yacht."
+        ],
+        "examples": []
       }
-    ]
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
   },
-  "yahoo": {
+  {
+    "word": "yagi",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Yagi-Uda antenna"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yahoo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(derogatory) A rough, coarse, loud or uncouth individual.",
+          "(cryptozoology) A humanoid cryptid said to exist in parts of eastern Australia, and also reported in the Bahamas."
+        ],
+        "examples": [
+          "The natives are greatly terrrified by the sight of a person in a mask calling him \"devil\" or Yah-hoo, which signifies evil spirit."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(transitive, intransitive, informal) To give a cry of yahoo.",
+          "Alternative letter-case form of Yahoo."
+        ],
+        "examples": [
+          "In other words, none of our googling and yahooing is private (you knew that, right?).",
+          "Ah! You mean you have been ' yahooing'? I'm dead!"
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Battle cry.",
+          "Exclamation of joy or enjoyment."
+        ],
+        "examples": [
+          "\" Yahoooooo! Give her some stick!\""
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈjɑːhuː/",
     "us_ipa": "/ˈjɑːhuː/",
-    "examples": [],
-    "meanings": [
-      "a member of a race of brutes in swift ' s gulliver ' s travels who have the form and all the vices of humans",
-      "a boorish, crass, or stupid person",
-      "yippee"
-    ],
     "synonyms": [
       "hey",
       "ha",
@@ -142,42 +267,45 @@
       }
     ]
   },
-  "yahweh": {
-    "uk_ipa": "/ˈjɑːweɪ/",
-    "us_ipa": "/ˈjɑːweɪ/",
-    "examples": [],
-    "meanings": [
-      "god sense 1 a",
-      "compare tetragrammaton"
-    ],
-    "synonyms": [
-      "God",
-      "Divinity",
-      "King",
-      "Providence",
-      "Lord"
-    ],
-    "antonyms": [],
-    "syllables": [
+  {
+    "word": "yak",
+    "entries": [
       {
-        "text": "yah",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "a traditional Korean flute used in court music",
+          "(slang, chiefly in the plural) A yakuza member.",
+          "(slang) A talk, particular an informal talk; chattering; gossip.",
+          "(slang) cognac.",
+          "An ox -like mammal native to the Himalayas, Mongolia, Myanmar, and Tibet with dark, long, and silky hair, a horse-like tail, and a full, bushy mane.",
+          "(slang) A laugh.",
+          "(slang) Vomit.",
+          "(slang) A kayak."
+        ],
+        "examples": [
+          "Yakuza, or Yaks as they are popularly known, Japan's large and tightly organized crime and illicit drug corporations.",
+          "Would-be gags from would-be gagsters. And, nine chances out of ten, not a yak in the lot.",
+          "These days yaks make most of their money through securities fraud.",
+          "Don't worry about it, Carter. Yaks aren't gonna be a problem around here? Yaks? Yakuza?",
+          "Quick cash, flip that, now I got big cash. Sit back, sip yak with a next piff yat."
+        ]
       },
       {
-        "text": "weh",
-        "stress": 2
+        "pos": "Verb",
+        "definitions": [
+          "(slang, intransitive) To vomit, usually as a result of excessive alcohol consumption.",
+          "(slang, intransitive) To talk, particularly informally but persistently; to chatter or prattle."
+        ],
+        "examples": [
+          "She'll feel better when she yaks.",
+          "And in the last few days Clair's boundless capacity to yak about herself while Melissa listened had turned Chip against her, too.",
+          "“You'll like Poppet. Nice dog. Wears his ears inside out. Why do dachshunds wear their ears inside out?” “I could not say, sir.” “Nor me. I've often wondered. But this won't do, Jeeves. Here we are, yakking about Jezebels and dachshunds, when we ought to be concentrating our minds […]"
+        ]
       }
-    ]
-  },
-  "yak": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jæk/",
     "us_ipa": "/jæk/",
-    "examples": [],
-    "meanings": [
-      "a large long - haired wild or domesticated ox ( bos grunnienssynonympoephag us grun nien s ) of tibet and adjacent elevated parts of central asia",
-      "laugh",
-      "joke, gag"
-    ],
     "synonyms": [
       "troll",
       "blather",
@@ -197,49 +325,98 @@
       }
     ]
   },
-  "yakuza": {
-    "uk_ipa": "/jəˈkuːzə/",
-    "us_ipa": "/jəˈkuːzə/",
-    "examples": [
-      "The yakuza is involved in gambling and drugs.",
-      "The Yakuza has a very complex organizational structure."
+  {
+    "word": "yaks",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of yak"
+        ],
+        "examples": []
+      }
     ],
-    "meanings": [
-      "a japanese gangster",
-      "an organized crime syndicate in japan"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yalta": {
-    "uk_ipa": "/ˈjæltə/",
-    "us_ipa": "/ˈjɔːltə/",
-    "examples": [],
-    "meanings": [
-      "city and port on the black sea on the southern coast of crime a population 8 2, 0 0 0"
-    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
+    "syllables": []
+  },
+  {
+    "word": "yakuza",
+    "entries": [
       {
-        "text": "yawl",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "A Japanese organized crime gang.",
+          "A member of that Japanese organized crime gang."
+        ],
+        "examples": [
+          "Japan’s largest yakuza crime syndicate has pledged to end its longstanding war with a rival faction and refrain from causing “trouble,” authorities said, as the mafia-like groups contend with falling membership and increased police crackdowns."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": "/jəˈkuːzə/",
+    "us_ipa": "/jəˈkuːzə/",
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yale",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A mythical beast in European mythology and heraldry, usually portrayed as an antelope - or goatlike four-legged creature with large horns that it can swivel in any direction."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yam",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Scotland) A potato.",
+          "(Malaysia, Singapore) Taro.",
+          "The edible, starchy, tuberous root of that plant, a tropical staple food.",
+          "(US) A sweet potato; a tuber from the species Ipomoea batatas.",
+          "An orange -brown colour, like the flesh of the yam. (Can we add an example for this sense?)",
+          "Any climbing vine of the genus Dioscorea in the Eastern and Western hemispheres, usually cultivated.",
+          "(regional, Cumberland) Home.",
+          "(New Zealand) An oca; a tuber from the species Oxalis tuberosa."
+        ],
+        "examples": [
+          "Inwardly Okonkwo knew that the boys were still too young to understand fully the difficult art of preparing seed-yams. But he thought that one could not begin too early. Yam stood for manliness, and he who could feed his family on yams from one harvest to another was a very great man indeed."
+        ]
       },
       {
-        "text": "tuh",
-        "stress": 0
+        "pos": "Verb",
+        "definitions": [
+          "(UK, slang) To eat.",
+          "(especially basketball) To dunk on; to beat humiliatingly.",
+          "Pronunciation spelling of am."
+        ],
+        "examples": [
+          "“If I was that snake I’d just open my jaw and yam that fool up in one bite!”",
+          "“Stay, jailer, stay, and hear my woe,” repeating again and again, very softly, the line at the end of each stanza, “I am not mad, I am not mad.” Except she sang it: “I yam not mad, I yam not mad.”"
+        ]
       }
-    ]
-  },
-  "yam": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jæm/",
     "us_ipa": "/jæm/",
-    "examples": [],
-    "meanings": [
-      "the edible starchy tuberous root of various plants ( genus dioscorea of the family dioscorea cea e ) used as a staple food in tropical areas",
-      "a plant producing yams",
-      "a moist usually orange - fleshed sweet potato"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -249,17 +426,37 @@
       }
     ]
   },
-  "yammer": {
+  {
+    "word": "yammer",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The act or noise of yammering.",
+          "One who yammers.",
+          "A loud noise."
+        ],
+        "examples": [
+          "The ungodly scream of Jap wings in the wind, and the blood-chilling snarl and yammer of their aerial machine gun and aerial cannon fire was enough to make the very ground shake and tremble.",
+          "The house is just as he had imagined it would be: rubbishy furniture, a clutter of ornaments (porcelain shepherdesses, cowbells, an ostrich-feather flywhisk), the yammer of the radio, the cheeping of birds in cages, cats everywhere underfoot."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To complain peevishly.",
+          "To talk loudly and persistently.",
+          "to repeatedly call someone's name.",
+          "To repeat on and on, usually loudly or in complaint."
+        ],
+        "examples": [
+          "It was a ship, but a whale to the Dark Nebula ’s minnow; and on its side was the Spaceship-and-Sun of the Empire. Every alarm on the ship yammered hysterically."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈjæmə(r)/",
     "us_ipa": "/ˈjæmər/",
-    "examples": [
-      "He was yammering on about his new job."
-    ],
-    "meanings": [
-      "to utter repeated cries of distress or sorrow",
-      "whimper",
-      "to utter persistent complaints: whine"
-    ],
     "synonyms": [
       "whine",
       "moan",
@@ -273,15 +470,49 @@
       "applause",
       "approval",
       "commendation"
-    ]
+    ],
+    "syllables": []
   },
-  "yang": {
+  {
+    "word": "yana",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Buddhism) Any of the vehicles of Buddhist or Tantric practice."
+        ],
+        "examples": [
+          "The Tibetan word for yana is thekpa, which means \"that which lifts you up.\" Anything that lifts you up and takes you to your destination is a yana."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yang",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The monetary unit of Korea from 1892 to 1902, divided into 100 pun.",
+          "The cry of the wild goose; a honk.",
+          "(philosophy) A principle in Chinese and related East Asian philosophies associated with bright, hot, masculine, etc. elements of the natural world."
+        ],
+        "examples": [
+          "Hangs is a false word, — a Northern corruption of the negro dialect yang, — an onomatopœian word, representing the \"far heard clang\" of the wild goose.",
+          "\"Steamed fish and chicken and vegetable soup and even mushrooms are considered cooling foods, edible materializations of the yang, the pure primal air. The yin, or earth element, inheres in fried dishes and especially in shark's fin soup. Am I right, Mr Lee?\"",
+          "The performance was unmistakably male and gay. The rousing lion dance that capped their performance provided the right touch of \" yang \" without destroying the distinct feel of something gay, Asian and new."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jæŋ/",
     "us_ipa": "/jæŋ/",
-    "examples": [],
-    "meanings": [
-      "the masculine active principle in nature that in chinese cosmology is exhibited in light, heat, or dryness and that combines with yin to produce all that comes to be"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -291,19 +522,39 @@
       }
     ]
   },
-  "yank": {
+  {
+    "word": "yank",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A sudden, vigorous pull (sometimes defined as mass times jerk, or rate of change of force).",
+          "(often derogatory) Alternative letter-case form of Yank (“ Yankee ”).",
+          "(slang) A masturbation session.",
+          "(slang, MLE) alternative form of shank (“ stabbing weapon ”)."
+        ],
+        "examples": [
+          "He unjammed the rope with a short yank.",
+          "Tell my young bad, she can vouch for me I was only thirteen with a yank on me",
+          "He rested his hand on his bare chest, an innocent enough spot, but soon it drifted of its own accord down his stomach to slide beneath the waistband of his briefs. Fine. A quick yank would relieve the sexual tension that simmered in him."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To pull (something) with a quick, strong action.",
+          "(transitive, informal) To remove from distribution."
+        ],
+        "examples": [
+          "They yanked the product as soon as they learned it was unsafe.",
+          "Now a white-backed rams its head down the wildebeest’s throat and yanks out an eight-inch length of trachea, ribbed like a vacuum hose.",
+          "[Regarding risks of AI] And you just have to have somebody close to the power cord. [Laughs.] [sic] Right when you see it about to happen, you gotta yank that electricity out of the wall, man."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jæŋk/",
     "us_ipa": "/jæŋk/",
-    "examples": [
-      "He yanked her to her feet.",
-      "I yanked the door open.",
-      "Liz yanked at my arm."
-    ],
-    "meanings": [
-      "to pull on something with a quick vigorous movement",
-      "to pull or extract with a quick vigorous movement",
-      "to remove in or as if in an abrupt manner"
-    ],
     "synonyms": [
       "pull",
       "tug",
@@ -325,15 +576,26 @@
       }
     ]
   },
-  "yankee": {
+  {
+    "word": "yankee",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(international standards) Alternative letter-case form of Yankee from the NATO/ICAO Phonetic Alphabet.",
+          "(nautical) A headsail resembling a genoa or a jib but with a high-cut clew, normally used together with a staysail. A sailing boat is typically equipped with three yankee sails of different sizes, number one being the largest."
+        ],
+        "examples": [
+          "The quidnunctious yankee woman is posted in gynecology. She never breeds.",
+          "It seems as if within the past few years, our yankee friends were turning their attention in earnest to the matter of endeavoring to lighten the heavier parts of female labor.",
+          "As the coach was by law limited to a slow pace on the bridge, we had leisure to read the wayward fancies of our predecessors inscribed in chalk, and many a true yankee name did we recognize;—the bridge is a kind of traveller’s register.",
+          "Meanwhile, rumour had been tramping about with her crescit eundô; and, long before the Faculty received our Scytala, they had heard her cry—“The Board has told Major Thorntree, the Faculty shall be tried and turned right out, and shall be sued for damages done the school and the State, and— Woodville, by their unconstitutional, high-hand, big-buggish, aristocratic yankee notions!!”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjæŋki/",
     "us_ipa": "/ˈjæŋki/",
-    "examples": [],
-    "meanings": [
-      "a native or inhabitant of new england",
-      "a native or inhabitant of the northern u. s.",
-      "a native or inhabitant of the u. s."
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -347,15 +609,61 @@
       }
     ]
   },
-  "yap": {
+  {
+    "word": "yanker",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Someone who yanks, or gives a sudden hard pull",
+          "(Scotland) A brazen lie",
+          "Someone who pranks someone, who yanks chains, such as with crank calls."
+        ],
+        "examples": [
+          "He's a yanker of braids, a tousler of bangs […]",
+          "\"Ay, billy, that is a yanker!\" said Tam aside: \" When ane is gaun to tell a lie, there's naething like telling a plumper at aince, and being done wi't"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yap",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(countable, Geordie) A badly behaved person, especially a child.",
+          "The high-pitched bark of a small dog, or similar.",
+          "(uncountable, slang) Casual talk; chatter.",
+          "(countable, slang, derogatory) The mouth, which produces speech."
+        ],
+        "examples": [
+          "They couldn’t rise above their calls for peace. Those who weren’t “defenders of the fatherland” were incapable of anything except yap and blather about “stopping the war.”",
+          "Had I taken his accusations seriously I might have recommended a change in my under-managership, but I never could translate our jammy products into gas or explosives or even poison. Still yap, at least as concerned Beldite's."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "Of a small dog, to bark.",
+          "(intransitive, slang) To talk, especially excessively; to chatter.",
+          "(transitive, slang) To rob or steal from (someone)."
+        ],
+        "examples": [
+          "Ante up! Yap that fool!",
+          "You’re always yapping, I wish you’d shut up."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jæp/",
     "us_ipa": "/jæp/",
-    "examples": [],
-    "meanings": [
-      "to talk in a shrill insistent way: chatter",
-      "to bark snappish ly: yelp",
-      "a quick sharp bark: yelp"
-    ],
     "synonyms": [
       "mouth",
       "gob",
@@ -371,19 +679,41 @@
       }
     ]
   },
-  "yard": {
+  {
+    "word": "yard",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(US, Canada, Australia) The property surrounding one's house, typically dominated by one's lawn.",
+          "A small, usually uncultivated area adjoining or (now especially) within the precincts of a house or other building.",
+          "A place where moose or deer herd together in winter for pasture, protection, etc.",
+          "A unit of length equal to 3 feet in the US customary and British imperial systems of measurement, equal to precisely 0.9144 m since 1959 (US) or 1963 (UK)."
+        ],
+        "examples": [
+          "You must note, that two Fardells of Land make a Nooke of Land, and two Nookes make halfe a Yard of Land.",
+          "I need to hedge a yard of yen.",
+          "Loues her by the foot. Dum. He may not by the yard.",
+          "How much coke you want? Gimme a yard.",
+          "A little further on, to the right, was a large garage, where the charabancs stood, half in and half out of the yard."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(intransitive, humorous) To move a yard at a time, as opposed to inching along.",
+          "To confine to a yard."
+        ],
+        "examples": [
+          "He inched his way up the corridor as if he would rather be yarding his way down it, which was true.",
+          "As they reached the door, Bose, having yarded the cows, was stealing around the corner of the pig-sty, and making for the woods.",
+          "The sheep were straggling in a manner that meant walking work to round them, and he supposed he would have to yard them tonight, if she didn't liven up."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɑːd/",
     "us_ipa": "/jɑːrd/",
-    "examples": [
-      "They have a gorgeous old oak tree in their front yard.",
-      "My next-door neighbor was watering her yard.",
-      "The prisoners were made to line up in the prison yard."
-    ],
-    "meanings": [
-      "a small usually walled and often paved area open to the sky and adjacent to a building: court",
-      "the grounds of a building or group of buildings",
-      "the grounds immediately surrounding a house that are usually covered with grass"
-    ],
     "synonyms": [
       "courtyard",
       "patio",
@@ -405,17 +735,24 @@
       }
     ]
   },
-  "yardage": {
+  {
+    "word": "yardage",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(American football) Territory.",
+          "An amount or length measured in yards.",
+          "The use of a yard, or the fee charged for it."
+        ],
+        "examples": [
+          "Aiyuk a junior college transfer excels in grabbing yardage after the catch. No, like, really excels. In mid-October, according a story by The Athletic, Aiyuk was averaging more yards after the catch (13.6) than Jerry Jeudy was averaging per catch"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɑːdɪdʒ/",
     "us_ipa": "/ˈjɑːrdɪdʒ/",
-    "examples": [
-      "a large yardage of canvas"
-    ],
-    "meanings": [
-      "the use of a livestock enclosure for animals in transit provided by a railroad at a station",
-      "a charge made by a railroad for the use of a livestock enclosure",
-      "an aggregate number of yards"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -429,40 +766,167 @@
       }
     ]
   },
-  "yardarm": {
+  {
+    "word": "yardarm",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(nautical) The outer end of a yard, often equipped with blocks for reeving signal halyards."
+        ],
+        "examples": [
+          "Sun's under the yardarm, sis!"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɑːdɑːm/",
     "us_ipa": "/ˈjɑːrdɑːrm/",
-    "examples": [],
-    "meanings": [
-      "either end of the yard of a square - rigged ship",
-      "either end of the yard of a square - rigged ship"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yardbird": {
+  {
+    "word": "yardbird",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chiefly US, slang) A soldier who is required to perform menial work on the grounds of a military base.",
+          "(chiefly US, slang) A person who is imprisoned.",
+          "(chiefly US, slang) A chicken."
+        ],
+        "examples": [
+          "As the Marines expanded to war strength, Lou Diamond was the ideal liaison between crusty old-timers and impressionable recruits. He taught quick action by threats of yardbird detail."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɑːdbɜːd/",
     "us_ipa": "/ˈjɑːrdbɜːrd/",
-    "examples": [],
-    "meanings": [
-      "a soldier assigned to a menial task or restricted to a limited area as a disciplinary measure",
-      "an untrained or inept enlisted man"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yardstick": {
+  {
+    "word": "yarder",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(in combination) Something that is a stated number of yards in some dimension.",
+          "(forestry) A motor-driven logging machine which transports logs by means of a system of cables and winches."
+        ],
+        "examples": [
+          "His 25- yarder was sandwiched by classy finishes from Hull’s debutants Abel Hernández and Mohamed Diamé before a howler from the goalkeeper Allan McGregor resulted in a Curtis Davies own goal."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yardgrass",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Grass in a lawn",
+          "Eleusine indica, a coarse annual grass often found as a weed"
+        ],
+        "examples": [
+          "The yardgrass (Eleusine indica) has similarly spread along roadside verges in western Africa and other tropical regions.",
+          "Longarm followed the path in the yardgrass to a cellar door at the rear of the bigger frame church."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yardie",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Australia, New Zealand, slang) A yard of ale."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yardman",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A worker in any of several types of yard, as:"
+        ],
+        "examples": [
+          "I asked the grizzled rustic who appeared to be in sole occupation of the farm buildings, and who was, in fact, the yardman, if he knew whereabouts I should find the [hunting] party. He said something I did not understand, but I followed his pointing arm. […] The yardman, with his lantern, was helping to back ponies into traps. Motor-engines murmured. […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yardmaster",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A railway employee who is in charge of a railway yard."
+        ],
+        "examples": [
+          "Each evening the Yardmaster in charge of each yard prepares a list of the freight trains (booked and special) which he proposes to run next day.",
+          "The London Midland Region has announced receipt of authority from the Ministry of Transport to resume the reconstruction of Stafford station and layout, interrupted at the Minister's behest; contracts have now been placed for the erection of the new station buildings and the yardmaster' s office."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yardstick",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(figuratively) A standard to which other measurements or comparisons are judged.",
+          "A measuring rod thirty-six inches (one yard) long."
+        ],
+        "examples": [
+          "Attacks against civilians in the capital remained relatively unchanged: 69 in March from 62 in February. ¶ However, another yardstick, the number of civilian deaths tracked by the Iraqi government, shot up last month after several months of decline."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɑːdstɪk/",
     "us_ipa": "/ˈjɑːrdstɪk/",
-    "examples": [
-      "a yardstick by which to measure something",
-      "Exam results are not the only yardstick of a school's performance."
-    ],
-    "meanings": [
-      "a graduated measuring stick three feet ( 0. 9 1 4 4 meter ) long",
-      "a standard basis of calculation",
-      "a standard for making a critical judgment: criterion"
-    ],
     "synonyms": [
       "criterion",
       "standard",
@@ -486,14 +950,23 @@
       }
     ]
   },
-  "yarmulke": {
+  {
+    "word": "yarmulke",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Judaism) A skullcap worn by religious Jewish males (especially during prayer). [from 1903]"
+        ],
+        "examples": [
+          "But once Dr. Levenson, who works for the Indian Health Service and wears a colorful tapestry yarmulke, has alerted the tiny network, it almost seems as if we have stepped into Yiddishland.",
+          "“I call on all citizens of Berlin and across Germany to wear the yarmulke (as the skullcap is known in Yiddish) next Saturday if there are new, intolerable attacks targeting Israel and Jews on the occasion of Al-Quds Day in Berlin,” said Felix Klein in a statement."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɑːmʊlkə/",
     "us_ipa": "/ˈjɑːrmʊlkə/",
-    "examples": [],
-    "meanings": [
-      "a skullcap worn especially by orthodox and conservative jewish males in the synagogue and the home",
-      "a skullcap worn especially by jewish males"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -511,19 +984,37 @@
       }
     ]
   },
-  "yarn": {
+  {
+    "word": "yarn",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(nautical) Bundles of fibres twisted together, and which in turn are twisted in bundles to form strands, which in their turn are twisted or plaited to form rope.",
+          "A story, a tale, especially one that is incredible.",
+          "A twisted strand of fibre used for knitting or weaving."
+        ],
+        "examples": [
+          "\"I'm hanged if I know how you've got the immortal rind to come at me with a yarn like this.\"",
+          "Statistically, this person is also likely to be male and well off, but more essentially this person wants to be educated, to be obsessed, wants more than just a good yarn.",
+          "I told him about everything I could think of; and what I couldn't think of he did. He asked about six questions during my yarn, but every question had a point to it. At the end he bowed and thanked me once more. As a thanker he was main-truck high; I never see anybody so polite."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To tell a story or stories, especially one that is lengthy or unlikely to be true."
+        ],
+        "examples": [
+          "They had stayed in some little pension and had gone for little, bored walks while the colonel went out in the boats with the fisherman, or sat yarning with them in the café.",
+          "\"He yarns good,\" said Tom Platt. \"T'other night he told us abaout a kid of his own size steerin' a cunnin' little rig an' four ponies up an' down Toledo, Ohio, I think 'twas, an' givin' suppers to a crowd o' sim'lar kids. Cur'us kind o' fairy-tale, but blame interestin'. He knows scores of 'em.\"",
+          "“Well, well!” exclaimed Mr. van Hoorn. “Here are the boys! As hungry as hunters, I’ll be bound! And we two old fogies have been wasting the whole afternoon yarning away indoors. My goodness, is it as late as that? I say, I want my tea!”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɑːn/",
     "us_ipa": "/jɑːrn/",
-    "examples": [
-      "The sweaters are hand-knitted in cotton, linen or wool yarns.",
-      "There's a knot in the yarn.",
-      "He used to spin yarns (= tell stories) about his time in the army."
-    ],
-    "meanings": [
-      "a continuous often plied strand composed of either natural or man - made fibers or filaments and used in weaving and knitting to form cloth",
-      "a similar strand of another material ( such as metal, glass, or plastic )",
-      "a narrative of adventures"
-    ],
     "synonyms": [
       "tale",
       "story",
@@ -539,14 +1030,44 @@
       }
     ]
   },
-  "yarrow": {
+  {
+    "word": "yarnspinning",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The telling of stories."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yarrow",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(UK) A green woodpecker, of species Picus viridis.",
+          "Common yarrow, Achillea millefolium, the type species of the genus.",
+          "Any of several pungent Eurasian and North American herbs, of the genus Achillea, used in traditional herbal medicine."
+        ],
+        "examples": [
+          "The Yarrow, where-with-all he stops the wound-made gore:",
+          "“Oh, yarrow! This is it,” she said, extracting a single long stemmed ferny grass with clusters of small white flowers from the bouquet in her hand.",
+          "Yarrow is one of the aboriginal English plants, and from time immemorial it has been used in incantations and by witches. Country folk still regard it as one of our most valuable herbs, especially for rheumatism."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjærəʊ/",
     "us_ipa": "/ˈjærəʊ/",
-    "examples": [],
-    "meanings": [
-      "a widely naturalized strong - scented eurasian composite herb ( achillea millefolium ) with finely dissected leaves and small usually white cory m bose flowers",
-      "any of several con generic plants"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -560,25 +1081,146 @@
       }
     ]
   },
-  "yashmak": {
+  {
+    "word": "yashmak",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A veil worn by Muslim women to cover parts of the face when they are in public."
+        ],
+        "examples": [
+          "Through her gauzy yashmak I could see that she was smiling.",
+          "Mungo cannot make out her face, which is concealed behind a yashmak – the double horsehair veil worn by Muslim women in public – but he is immediately struck by her feet and hands."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjæʃmæk/",
     "us_ipa": "/ˈjæʃmæk/",
-    "examples": [],
-    "meanings": [
-      "a veil worn by muslim women that is wrapped around the upper and lower parts of the face so that only the eyes remain exposed to public view"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yaw": {
+  {
+    "word": "yataghan",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A type of sword used in Muslim countries from the mid-16th to late 19th centuries."
+        ],
+        "examples": [
+          "A Montenegrin perceived it and ran immediately to him and drew his yataghan, saying, “You are very brave, and must wish that I should cut off your head rather than that you should fall into the hands of the enemy.”",
+          "The angry-faced official communicated the intelligence to a large group of Anadolian, Caramanian, Bosniac, and Roumelian Turks,— sturdy, undersized, broad-shouldered, bare-legged, splay-footed, horny-fisted, dark-browed, honest-looking mountaineers, who were lounging about with long pistols and yataghans stuck in their broad sashes [...]."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yaup",
+    "entries": [
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(Scotland, intransitive) To be hungry."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(Scotland) hungry"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yaupon",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A tea -like drink, \" black drink \", brewed from the leaves of this holly (or, sometimes, Ilex cassine).",
+          "The yaupon holly, Ilex vomitoria, an evergreen holly shrub with white flowers and red or yellow berries, found in the south-eastern United States."
+        ],
+        "examples": [
+          "“I found some yaupon and made some tea. It's North America's only native caffeinated plant. Well, dahoon, but you're not gonna find that in --”",
+          "Yaupon is evergreen like the American holly and the familiar hollies of Christmas decorations, but the leaves of yaupon are small and smooth-edged rather than prickly. Easy to chew and blandly tasty, they would not stand out in a tossed salad."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yautia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An edible plant commonly found in the Caribbean: Xanthosoma sagittifolium, new cocoyam."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yaw",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The extent of yawing; the rotation angle about the vertical axis.",
+          "The rotation of an aircraft, ship, or missile about its vertical axis so as to cause the longitudinal axis of the aircraft, ship, or missile to deviate from the flight line or heading in its horizontal plane.",
+          "(nautical) A vessel 's motion rotating about the vertical axis, so the bow yaws from side to side; a characteristic of unsteadiness.",
+          "A single tumor in the disease called yaws.",
+          "The angle between the longitudinal axis of a projectile at any moment and the tangent to the trajectory in the corresponding point of flight of the projectile."
+        ],
+        "examples": [
+          "the yaw of an aircraft",
+          "Sometimes there remains one large Yaw, high and knobbed, red and moist; this is called the master Yaw; […]"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To rise in blisters, breaking in white froth, as cane juice in the clarifiers in sugar works.",
+          "(intransitive, nautical) To swerve off course to port or starboard.",
+          "(intransitive, nautical) To steer badly, zigzagging back and forth across the intended course of a boat; to go out of the line of course.",
+          "(intransitive, aviation) To turn about the vertical axis while maintaining course."
+        ],
+        "examples": [
+          "Just as he would lay the ship's course, all yawing being out of the question."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɔː/",
     "us_ipa": "/jɔː/",
-    "examples": [],
-    "meanings": [
-      "the action of yawing",
-      "a side - to - side movement",
-      "the extent of the movement in yawing"
-    ],
     "synonyms": [
       "veer",
       "curve",
@@ -596,15 +1238,32 @@
       }
     ]
   },
-  "yawl": {
+  {
+    "word": "yawl",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A small ship's boat, usually rowed by four or six oars.",
+          "A fore-and-aft rigged sailing vessel with two masts, main and mizzen, the mizzen stepped abaft the rudder post."
+        ],
+        "examples": [
+          "The “Nellie,” a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To cry out; to howl."
+        ],
+        "examples": [
+          "Something scraped slightly against the outer wall. But the night was full of wilder sounds, and in the house the furniture and the boards creaked and sprung between the yawling of the wind among the chimneys, the rattle of the thunder and the pelting of the rain."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɔːl/",
     "us_ipa": "/jɔːl/",
-    "examples": [],
-    "meanings": [
-      "a ship ' s small boat: jolly boat",
-      "a fore - and - aft rigged sailboat carrying a mainsail and one or more jibs with a mizzen mast far aft",
-      "a sailboat having two masts with the shorter one behind the rudder"
-    ],
     "synonyms": [
       "sloop",
       "schooner",
@@ -612,21 +1271,43 @@
       "yacht",
       "catboat"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yawn": {
+  {
+    "word": "yawn",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The action of yawning; opening the mouth widely and taking a long, rather deep breath, often because one is tired or bored.",
+          "(colloquial) A particularly boring event."
+        ],
+        "examples": [
+          "The slideshow we sat through was such a yawn. I was glad when it finished.",
+          "But Mrs. MacWhirr, in the drawing-room […], stifled a yawn —perhaps out of self-respect—for she was alone.",
+          "At length, quite exhausted by the attempt to be amused with her own book, which she had only chosen because it was the second volume of his, she gave a great yawn and said, “How pleasant it is to spend an evening in this way! […] ”"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To open the mouth widely and take a long, rather deep breath, often because one is tired or bored, and sometimes accompanied by pandiculation.",
+          "To say while yawning.",
+          "To present a wide opening; gape."
+        ],
+        "examples": [
+          "The canyon yawns as it has done for millions of years, and we stand looking, dumbstruck.",
+          "I could see my students yawning, so I knew the lesson was boring them.",
+          "Death yawned before us, and I hit the brakes.",
+          "“I haven’t the least idea what I want to do,” he yawned.",
+          "“Oh,” Sutherland yawned, “I’m too old for this.”"
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jɔːn/",
     "us_ipa": "/jɔːn/",
-    "examples": [
-      "He stood up, stretched and yawned.",
-      "We couldn't help yawning during the speech.",
-      "‘Wow,’ she yawned, ‘a customer.’"
-    ],
-    "meanings": [
-      "to open wide: gape",
-      "to open the mouth wide and take a deep breath usually as an involuntary reaction to fatigue or boredom",
-      "to utter with a yawn"
-    ],
     "synonyms": [
       "bore",
       "drip",
@@ -648,15 +1329,119 @@
       }
     ]
   },
-  "yaws": {
+  {
+    "word": "yawner",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(entertainment, sports, informal) Something unexciting or boring, as a book, sporting event, or performance.",
+          "A person who yawns."
+        ],
+        "examples": [
+          "The game's over, and the Bills are winners in a 9-6 yawner that saw no touchdowns and sent the nation to bed early."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yawning",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The action of the verb yawn."
+        ],
+        "examples": [
+          "Her vivacity appeared as graceful as it was buoyant; her gay spirit seemed the musical overflowings of youth and happiness; her eye and cheek brightened together; and her sweet glad laugh was as catching as yawning."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yawn"
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "That yawns or yawn.",
+          "(figuratively) Wide open."
+        ],
+        "examples": [
+          "a yawning chasm; the shark's yawning jaws",
+          "yawning commuters"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yawp",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A yelp or bark.",
+          "Loud or coarse talk."
+        ],
+        "examples": [
+          "I sound my barbaric yawp over the roofs of the world. - Walt Whitman"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To yelp, or utter a sharp cry, as in intense pain, or another raucous noise.",
+          "To clamor, to utter loud complaints.",
+          "To talk loudly and coarsely."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yaws",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of yaw",
+          "(pathology) A contagious tropical disease, caused by the spirochete Treponema pertenue, characterized by yellowish or reddish tumors, which often resemble berries."
+        ],
+        "examples": [
+          "Other threats came from organisms co-evolving with humans, including tapeworms and such spirochaetes as Treponema, the agent of syphilis, and the similar skin infection, yaws."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "third-person singular simple present indicative of yaw"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɔːz/",
     "us_ipa": "/jɔːz/",
-    "examples": [],
-    "meanings": [
-      "a contagious tropical disease especially of children caused by a spirochete ( treponema per tenue ) closely resembling the causative agent of syphilis and marked by infectious ulcerative skin lesions with later bone involvement",
-      "a tropical contagious skin disease especially of children caused by a bacterium that is a spirochete",
-      "an infectious contagious tropical disease especially of children that is caused by a spirochete of the genus treponema ( t. per tenue ) and that is characterized by a primary ulcer ating lesion on the skin followed by a secondary stage in which ulcers develop all over the body and by a third stage in which the bones are involved"
-    ],
     "synonyms": [
       "veers",
       "cuts",
@@ -666,17 +1451,116 @@
     ],
     "antonyms": [
       "straightens"
-    ]
+    ],
+    "syllables": []
   },
-  "yea": {
+  {
+    "word": "yay",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(US, slang) Cocaine (powder or crack)."
+        ],
+        "examples": [
+          "I don't do yay, but if you want to, fine",
+          "I'm in charge of a whole city block, and I always wear gloves when I touch the yay, cuz traces of cocaine show up on my u. a., when I touch it with my bare hands.",
+          "In Billy Corben's engrossing new documentary, Cocaine Cowboys (Magnolia Pictures), self-described \"assassin\" Jorge \"Rivi\" Ayala (among others) give up the goods on Miami's explosive early '80s yay trade."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Misspelling of yea.",
+          "(colloquial) An expression of happiness."
+        ],
+        "examples": [
+          "Yay! I have finally finished my work!"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yazoo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(US) A tributary that runs parallel to a river (especially when separated by a natural levee)."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yb",
+    "entries": [
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(knitting) Initialism of yarn backward."
+        ],
+        "examples": [
+          "Row 3. P1, yb, sl1 purlwise, yf, pbf, p1."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yea",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An affirmative vote, usually but not always spoken"
+        ],
+        "examples": [
+          "Recently senators could fax in their yeas or nays to the committee chairman."
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "(Midwestern US) Thus, so (now often accompanied by a hand gesture by way of measurement).",
+          "Yes, indeed."
+        ],
+        "examples": [
+          "Yea, and the prophet of the heav'nly lyre, / Great Solomon sings in the English quire […]",
+          "This kid... What'd he look like? / Well, he was about yea high. You know, tiny like. I didn't get a good look at him, though. He was back in the kitchen.",
+          "Something of the curate's aptitude for abasement came to him at that moment, and he wept, yea, holding with both hands to Miss Gimblet, in his grief he wept aloud, while Miss Gimblet wiped his countenance with her handkerchief and wept a little, too.",
+          "Let no man say that the Devil is not a cruel tyrant. He may give his folk some scrapings of unhallowed pleasure, but he will exact tithes, yea, of anise and cummin, in return, and there is aye the reckoning to pay at the hinder end."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Misspelling of yay.",
+          "(Southern US, Western US, African-American Vernacular) Yeah, right, yes."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adverb",
     "uk_ipa": "/jeɪ/",
     "us_ipa": "/jeɪ/",
-    "examples": [],
-    "meanings": [
-      "yes",
-      "more than this: not only so but",
-      "to this extent or degree"
-    ],
     "synonyms": [
       "indeed",
       "definitely",
@@ -698,18 +1582,42 @@
       }
     ]
   },
-  "yeah": {
+  {
+    "word": "yeah",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Pronunciation spelling of year."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Particle",
+        "definitions": [
+          "Used to ascertain the continued attention of the listener.",
+          "Yes.",
+          "Used to express acknowledgment of what was previously said."
+        ],
+        "examples": [
+          "I was walking down the road, yeah, and you know what I saw, yeah? A dog wearing a dress!",
+          "—You wanna get pizza for dinner? — Yeah, all right.",
+          "—You wanna get pizza for dinner? — Yeah, I think I'm gonna have leftovers instead."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Expressing joy, celebration, glee, etc."
+        ],
+        "examples": [
+          "Yeah! We did it!"
+        ]
+      }
+    ],
+    "default_pos": "Particle",
     "uk_ipa": "/jeə/",
     "us_ipa": "/jeə/",
-    "examples": [
-      "‘We're off to France soon.’ ‘Oh yeah? When's that?’",
-      "‘I'm going to be rich one day.’ ‘Oh yeah?’ (= I don't believe you.)",
-      "‘You'll be fine.’ ‘Yeah, right.’"
-    ],
-    "meanings": [
-      "yes",
-      "yes entry 1"
-    ],
     "synonyms": [
       "okay",
       "yes",
@@ -730,19 +1638,32 @@
       }
     ]
   },
-  "year": {
+  {
+    "word": "year",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A period between set dates that mark a year, such as from January 1 to December 31 by the Gregorian calendar, from Tishri 1 to Elul 29 by the Jewish calendar, and from Muharram 1 to Dhu al-Hijjah 29 or 30 by the Islamic calendar.",
+          "A period of time akin to the time taken for the Earth to undergo a full cycle of seasons.",
+          "Pronunciation spelling of here.",
+          "(by extension) An orbital period: the period of one revolution in any particular orbit: The time it takes for any astronomical object (such as a planet, dwarf planet, small Solar System body, or comet) in direct orbit around a star (such as the Sun) to make one revolution around the star.",
+          "A scheduled part of a calendar year spent in a specific activity.",
+          "The proportion of a creature's lifespan equivalent to one year of an average human lifespan (see also dog year).",
+          "Pronunciation spelling of hear."
+        ],
+        "examples": [
+          "During this school year I have to get up at 6:30 to catch the bus.",
+          "Geneticists have created baker's yeast that can live to 800 in yeast years.",
+          "The exams in year 12 at high school are the most difficult.",
+          "This Chinese year is the year of the Ox.",
+          "Mars goes around the sun once in a Martian year, or 1.88 Earth years."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɪə(r)/",
     "us_ipa": "/jɪr/",
-    "examples": [
-      "Elections take place every year.",
-      "I lost my job earlier this year.",
-      "next/last year"
-    ],
-    "meanings": [
-      "the period of about 3 6 5 1 / 4 solar days required for one revolution of the earth around the sun",
-      "the time required for the apparent sun to return to an arbitrary fixed or moving reference point in the sky",
-      "the time in which a planet completes a revolution about the sun"
-    ],
     "synonyms": [
       "day",
       "period",
@@ -758,17 +1679,25 @@
       }
     ]
   },
-  "yearbook": {
+  {
+    "word": "yearbook",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A reference book, published annually.",
+          "(countable, US, education) A publication compiled by the graduating class of a high school or college, recording the year 's events and containing photographs of students and faculty.",
+          "(uncountable, US, education) A school subject in which students learn journalistic skills by compiling a yearbook."
+        ],
+        "examples": [
+          "A 2017 yearbook photograph obtained by CNN shows Robert Westman, later known as Robin Westman, then a student at Annunciation Catholic grade school in Minneapolis.",
+          "A New Jersey high school will issue new yearbooks after pro-Trump slogans and logos were removed from photos that some students submitted."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɪəbʊk/",
     "us_ipa": "/ˈjɪrbʊk/",
-    "examples": [
-      "The Artists’ and Writers’ Yearbook"
-    ],
-    "meanings": [
-      "a book published yearly as a report or summary of statistics or facts: annual",
-      "a school publication that is compiled usually by a graduating class and that serves as a record of the year ' s activities",
-      "a book published yearly"
-    ],
     "synonyms": [
       "newspaper",
       "annual",
@@ -788,15 +1717,44 @@
       }
     ]
   },
-  "yearling": {
+  {
+    "word": "yearend",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The end of a year, especially a financial year."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yearling",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An animal that is between one and two years old; one that is in its second year (but not yet two full years old).",
+          "(US) A sophomore at West Point military academy.",
+          "A racehorse that is considered to be one year old until a subsequent January 1st."
+        ],
+        "examples": [
+          "As a yearling, he admitted to doing his part in ensuring that plebes knew their place at the Academy, […]",
+          "\"But is a plebe forbidden to stroll here?\" \"If a plebe did have the brass to try it,\" replied Anstey slowly, \"I reckon he would have to fight the whole yearling class in turn.\"",
+          "a yearling lamb"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɪəlɪŋ/",
     "us_ipa": "/ˈjɪrlɪŋ/",
-    "examples": [],
-    "meanings": [
-      "one that is a year old: such as",
-      "an animal one year old or in the second year of its age",
-      "a racehorse between january 1 of the year after the year in which it was foaled and the next january 1"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -810,17 +1768,79 @@
       }
     ]
   },
-  "yearly": {
+  {
+    "word": "yearlong",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Lasting one year; of a timespan of one year.",
+          "Which lasts throughout every year; which is not seasonal"
+        ],
+        "examples": [
+          "Both are congruent with a yearlong periodicity, which is apparently neutralized in the main settlement.",
+          "By saving your entire file of daily and weekly lists, you will create your yearlong list.",
+          "During interviews, teachers and/or principals in three of the four most effective schools cited a yearlong staff development effort.",
+          "Yearlong manning is needed, although at a somewhat reduced level from the peak periods in the fall."
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "(chiefly agriculture) Per year.",
+          "Throughout every year; not seasonally"
+        ],
+        "examples": [
+          "The carrying capacity of this area is 46 cattle yearlong.",
+          "Black bear and mountain goats occur in the area yearlong.",
+          "The estimate of the number of sheep and cattle now using this range is equivalent to 250000 cattle units yearlong",
+          "Over much of the Great Plains, water was not available yearlong for units of land as small as the customary ownership units"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yearly",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Something that is published once a year."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Over the course of one year",
+          "Happening once every year."
+        ],
+        "examples": [
+          "Christmas is a yearly celebration.",
+          "We deep-clean the kitchen lustrally, on a five- yearly basis.",
+          "a yearly income"
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "Every year.",
+          "Once a year."
+        ],
+        "examples": [
+          "With a scanty supply of laws in Hellenic commonwealths or city states what an immense vista for an Aristotle, of that grand, complex, efficient machinery of law, turning out yearly thousands of laws and taboos for the paternalistic control and alleged welfare of the citizen!"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjɪəli/",
     "us_ipa": "/ˈjɪrli/",
-    "examples": [
-      "The magazine is issued twice yearly (= twice every year)."
-    ],
-    "meanings": [
-      "reckoned by the year",
-      "occurring, appearing, made, done, or acted upon every year or once a year: annual",
-      "every year: annually"
-    ],
     "synonyms": [
       "annual",
       "monthly",
@@ -840,19 +1860,41 @@
       }
     ]
   },
-  "yearn": {
+  {
+    "word": "yearn",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A strong desire or longing; a yearning, a yen."
+        ],
+        "examples": [
+          "\"After he had made a record date with us in 1935, I always had a yearn for Ben,\" he said years later.",
+          "Gibbs now said he wasn't going to pull any punches with Gary when he knew how jealous a man could get, so he also wanted to tell him that Phil Hansen was reputed to have a yearn for attractive ladies.",
+          "\"My guess, however, is that it has because there are many people who have a yearn for sex outside their relationship but wouldn't have the slightest idea about how to do it or do it safely,\" Prof Schwartz added."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "Often followed by out: to perform (music) which conveys or say (words) which express strong desire or longing.",
+          "(Northern England, Scotland, transitive)",
+          "(intransitive, also figuratively) To have a strong desire for something or to do something; to long for or to do something.",
+          "(Northern England, Scotland, intransitive)",
+          "Of music, words, etc.: to express strong desire or longing."
+        ],
+        "examples": [
+          "All I yearn for is a simple life.",
+          "I have left your mother in the next room. Her heart yearns towards you. The spelling has been modernized.",
+          "The spelling has been modernized.",
+          "Also his Honour the Duke will accept ane of our Dunlop cheeses, and it sall be my faut if a better was ever yearned in Lowden.",
+          "The music, yearning like a God in pain, / She scarcely heard: […]"
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jɜːn/",
     "us_ipa": "/jɜːrn/",
-    "examples": [
-      "The people yearned for peace.",
-      "There was a yearning look in his eyes.",
-      "She yearned for children of her own."
-    ],
-    "meanings": [
-      "to long persistently, wistfully, or sadly",
-      "to feel tenderness or compassion",
-      "to desire eagerly"
-    ],
     "synonyms": [
       "long",
       "pine",
@@ -874,17 +1916,49 @@
       }
     ]
   },
-  "yearning": {
+  {
+    "word": "yearner",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "someone who yearns"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yearning",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A wistful or melancholy longing."
+        ],
+        "examples": [
+          "She had a yearning to see her long-lost sister again."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yearn"
+        ],
+        "examples": [
+          "I've got this burning, yearning, yearning / Feeling inside me / Ooh, deep inside me / And it hurts so bad"
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈjɜːnɪŋ/",
     "us_ipa": "/ˈjɜːrnɪŋ/",
-    "examples": [
-      "a yearning for a quiet life",
-      "She had no great yearning to go back."
-    ],
-    "meanings": [
-      "a tender or urgent longing",
-      "a tender or eager longing"
-    ],
     "synonyms": [
       "longing",
       "craving",
@@ -910,15 +1984,24 @@
       }
     ]
   },
-  "yearningly": {
+  {
+    "word": "yearningly",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "With yearning; with desire; longingly."
+        ],
+        "examples": [
+          "The old maple stump shot sickly pink switches from her roots, new switches every year. They crept yearningly toward the little square of window.",
+          "He was silent a few moments, not looking at her; while her eyes were turned toward him yearningly, in alarm at this sudden change.",
+          "Yet what was it she had in mind, what did she wish to make of him beyond what she had already made, a patient, punctilious host, mindful that she had originally arrived much as a stranger, arrived not at all deliberately or yearningly invited?—so that one positively had her possible susceptibilities the MORE on one’s conscience."
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
     "uk_ipa": "/ˈjɜːnɪŋli/",
     "us_ipa": "/ˈjɜːrnɪŋli/",
-    "examples": [],
-    "meanings": [
-      "to long persistently, wistfully, or sadly",
-      "to feel tenderness or compassion",
-      "to desire eagerly"
-    ],
     "synonyms": [
       "crave",
       "long (for)",
@@ -932,17 +2015,60 @@
       "refuse",
       "loathe",
       "abhor"
-    ]
+    ],
+    "syllables": []
   },
-  "yeast": {
+  {
+    "word": "years",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(colloquial, hyperbolic) A very long time.",
+          "plural of year."
+        ],
+        "examples": [
+          "It took years for the bus to come.",
+          "It will be a shorter book and it will not start four million years ago.",
+          "Oxygen levels on Earth skyrocketed 2.4 billion years ago, when cyanobacteria evolved photosynthesis: the ability to convert water and carbon dioxide into carbohydrates and waste oxygen using solar energy."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yeast",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An often humid, yellowish froth produced by fermenting malt worts, and used to brew beer, leaven bread, and also used in certain medicines.",
+          "A single-celled fungus of a wide variety of taxonomic families.",
+          "(figuratively) A frothy foam."
+        ],
+        "examples": [
+          "A microscopical examination of the yeast taken from these rapid vigorous fermentations will only be able to give useful conclusions in one respect.",
+          "But what most puzzled and confounded you was a long, limber, portentous, black mass of something hovering in the centre of the picture over three blue, dim, perpendicular lines floating in a nameless yeast."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(of something prepared with a yeasted dough) To rise.",
+          "(African-American Vernacular, slang) To exaggerate.",
+          "To ferment."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jiːst/",
     "us_ipa": "/jiːst/",
-    "examples": [],
-    "meanings": [
-      "a yellowish surface froth or sediment that occurs especially in saccharine liquids ( such as fruit juices ) in which it promotes alcoholic fermentation, consists largely of cells of a fungus ( such as the saccharomyces, saccharomyces cerevisiae ), and is used especially in the making of alcoholic liquors and as a leaven in baking",
-      "a commercial product containing yeast fungi in a moist or dry medium",
-      "a unicellular fungus that is present and functionally active in yeast, usually has little or no mycelium, and reproduces by budding"
-    ],
     "synonyms": [
       "incentive",
       "impetus",
@@ -961,17 +2087,46 @@
       }
     ]
   },
-  "yeasty": {
+  {
+    "word": "yeastlike",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Resembling or having characteristics of yeast"
+        ],
+        "examples": [
+          "Under certain conditions, it seems, candida can change from its yeastlike, noninvasive state into a parasitic fungus that spreads like wildfire through the gut."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yeasty",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Emotionally bubbling over (as with exuberance)",
+          "Trivial.",
+          "Foamy and frothy.",
+          "Having or resembling yeast."
+        ],
+        "examples": [
+          "The Ocean when its yeasty war is waging / Is awful to the vessel near the rock [...].",
+          "Thus has he, and many more of the same breed that I know the drossy age dotes on, only got the tune of the time and, out of an habit of encounter, a kind of yeasty collection, which carries them through and through the most profane and winnowed opinions"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjiːsti/",
     "us_ipa": "/ˈjiːsti/",
-    "examples": [
-      "a yeasty smell"
-    ],
-    "meanings": [
-      "of, relating to, or resembling yeast",
-      "immature, unsettled",
-      "marked by change"
-    ],
     "synonyms": [
       "goofy",
       "silly",
@@ -985,21 +2140,64 @@
       "sober",
       "melancholy",
       "grave"
-    ]
+    ],
+    "syllables": []
   },
-  "yell": {
+  {
+    "word": "yeats",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of yeat"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yell",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A phrase to be shouted.",
+          "A shout."
+        ],
+        "examples": [
+          "After the dinner a general reception was held in the spacious parlors of the hotel during which the occasion was very much enlivened with the old college songs and old college yells, which transported us all in mind and feelings […]"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(informal, usually followed by at) To tell someone off, to scold or rebuke, typically in a loud and angry manner.",
+          "To shout; holler; make a loud sound with the voice, especially to express intense emotions such as anger or excitement.",
+          "To convey by shouting."
+        ],
+        "examples": [
+          "He yelled directions to the party from the car.",
+          "If I come home late again, my dad is gonna yell at me.",
+          "They sent another email yelling at us to get our reports in on time. (or) They sent another email yelling about how we had to get our reports in on time."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(Ulster) dry (of cow)"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jel/",
     "us_ipa": "/jel/",
-    "examples": [
-      "He yelled at the other driver.",
-      "She yelled at the child to get down from the wall.",
-      "They yelled with excitement."
-    ],
-    "meanings": [
-      "to utter a loud cry, scream, or shout",
-      "to give a cheer usually in unison",
-      "to utter or declare with or as if with a yell: shout"
-    ],
     "synonyms": [
       "scream",
       "shriek",
@@ -1021,19 +2219,140 @@
       }
     ]
   },
-  "yellow": {
+  {
+    "word": "yelled",
+    "entries": [
+      {
+        "pos": "Verb",
+        "definitions": [
+          "simple past and past participle of yell"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yeller",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Someone who yells."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Pronunciation spelling of yellow."
+        ],
+        "examples": [
+          "Men that I knew around Wapatomac didn't wear high, shiny plug hats, nor yeller spring overcoats, nor carry canes with ivory heads as big as a catboat's anchor, as you might say."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yelling",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The act of producing a yell."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yell"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellow",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of various pierid butterflies of the subfamily Coliadinae, especially the yellow colored species. Compare sulphur.",
+          "The color of sunflower petals and lemons; the color obtained by mixing green and red light, or by subtracting blue from white light; the color evoked by light of wavelength around 580 nm; one of the three primary colors in subtractive color systems.",
+          "(US) The middle light in a set of three traffic lights, the lighting of which indicates that drivers should stop short of the intersection if it is safe to do so.",
+          "(sports) A yellow card.",
+          "(pocket billiards) One of two groups of object balls, or a ball from that group, as used in the principally British version of pool that makes use of unnumbered balls (the yellow(s) and red(s)); contrast stripes and solids in the originally American version with numbered balls).",
+          "(snooker) One of the color balls used in snooker, with a value of 2 points."
+        ],
+        "examples": [
+          "It is the strangest yellow, that wall-paper! It makes me think of all the yellow things I ever saw—not beautiful ones like buttercups, but old foul, bad yellow things.",
+          "Red No. 3, red No. 40, blue No. 2 and green No. 3 all have been linked with cancer or tumors in animals. Other sources say red No. 40 and yellow No. 5 and No. 6 contain or may be contaminated with known carcinogens.",
+          "Andrew Surman fired in what proved to be a 37th-minute winner before Forest's Paul Konchesky saw red late on. That second yellow for the loan signing came in stoppage time and did not affect the outcome of a game which Norwich dominated.",
+          "Several other beautiful butterflies rewarded my search in this place [...] The most abundant butterflies were the whites and yellows (Pieridae), several of which I had already found at Lombock and at Coupang, while others were new to me."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make (something) yellow or yellower.",
+          "To become yellow or yellower."
+        ],
+        "examples": [
+          "Then they might yellow him if they wanted to; he would be satisfied with Admiral’s rank.",
+          "Then suddenly, with the least warning, the sky yellows and the Chergui blows in from the Sahara, stinging the eyes and choking with its sandy, sticky breath.",
+          "Interviews, clippings, yellowing stories from foreign newspapers, notebooks with old scribblings. Salisbury called it the debris of a reporter always too much on the run to sort out the paper, but there it was, an investigator's dream, […]"
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(informal) Lacking courage.",
+          "(UK politics) Related to the Liberal Democrats.",
+          "(chiefly derogatory, offensive, ethnic slur) Far East Asian (relating to Asian people).",
+          "(publishing, journalism) Characterized by sensationalism, lurid content, and doubtful accuracy.",
+          "(chiefly derogatory, offensive, ethnic slur, of the skin) Of a hue attributed to Far East Asians, especially the Chinese.",
+          "(politics) Related to the Free Democratic Party, a political party in Germany.",
+          "Of a yellow hue."
+        ],
+        "examples": [
+          "Imagine that awful being, and you have a mental picture of Dr. Fu-Manchu, the yellow peril incarnate in one man.",
+          "He had a yellow laptop in his bag.",
+          "You yellow bastards! Come back here and take what's coming to you!",
+          "The two youths, the brown and the yellow, faced each other at the cross-roads, under a dim street-lamp.",
+          "the black– yellow coalition"
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "(BDSM, procedure word) Used to indicate that the speaker needs a temporary break from current sexual activity."
+        ],
+        "examples": [
+          "Coordinate terms: green, red"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjeləʊ/",
     "us_ipa": "/ˈjeləʊ/",
-    "examples": [
-      "pale yellow flowers",
-      "a bright yellow waterproof jacket",
-      "Her teeth were rather yellow."
-    ],
-    "meanings": [
-      "of the color yellow",
-      "become yellowish through age, disease, or discoloration: sallow",
-      "having a light olive or light brown complexion"
-    ],
     "synonyms": [
       "afraid",
       "scared",
@@ -1059,39 +2378,149 @@
       }
     ]
   },
-  "yellowfin": {
+  {
+    "word": "yellowbelly",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Ireland, slang) Someone from Wexford.",
+          "(Australia) A golden perch (Macquaria ambigua).",
+          "(informal) A coward.",
+          "(UK, slang) Someone from Lincolnshire, or from the Isle of Ely.",
+          "(informal) A yellow-bellied sapsucker (Sphyrapicus varius)."
+        ],
+        "examples": [
+          "The creeks gave us lots of food, too— yellow belly and jew, perch and eel."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowbird",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The yellow warbler",
+          "the American goldfinch"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowcake",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A concentrated form of uranium ore containing a mixture of oxides."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowed",
+    "entries": [
+      {
+        "pos": "Verb",
+        "definitions": [
+          "simple past and past participle of yellow"
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Having acquired a yellow color (or discoloration), especially when due to age; having been made yellow."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowfin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of various fish with yellow fins."
+        ],
+        "examples": [
+          "“It’s estimated that 10,000 yellowfin gobies died … as well as hundreds of striped bass and hundreds of sturgeon,” and the bloom probably is impacting all aquatic species in the area “to some degree,” Traverso said."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjeləʊfɪn/",
     "us_ipa": "/ˈjeləʊfɪn/",
-    "examples": [],
-    "meanings": [
-      "a nearly cosmopolitan tuna ( thunnus alba cares ) with yellowish fins"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yellowhammer": {
+  {
+    "word": "yellowhammer",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(US) The northern flicker, Colaptes auratus, a woodpecker with yellow underwings and undertail and often other yellowish underparts; one of its ways of feeding is to hammer on trees to find insects (adults and larvae) to eat.",
+          "A passerine bird, Emberiza citrinella, of western Eurasia, which is mainly yellow in colour.",
+          "A native or resident of the American state of Alabama."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjeləʊhæmə(r)/",
     "us_ipa": "/ˈjeləʊhæmər/",
-    "examples": [],
-    "meanings": [
-      "a common palearctic finch ( emberiza citrine lla of the family emberizidae ) having the male largely yellow and chestnut",
-      "yellow - shafted flicker",
-      "yellow - shafted flicker"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yellowish": {
+  {
+    "word": "yellowish",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Somewhat yellow in colour."
+        ],
+        "examples": [
+          "But, like more than one similar North Wales beauty-spot, there had to be (at least at the time of which I write), a quarry, or ironworks, or some kind of industrial plant, which lay perpetually under a cloud of yellowish smoke—literally a blot on the landscape.",
+          "A biologist has named a newly discovered species of moth after our next president. The Neopalpa donaldtrumpi is a wee little creature found in parts of California and Baja, Mexico. […] It seems nature favors fancy golden hairdos as much as the man himself (who could forget China’s beloved Trump bird?), because the N. donaldtrumpi sports a very familiar-looking crown of yellowish scales."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjeləʊɪʃ/",
     "us_ipa": "/ˈjeləʊɪʃ/",
-    "examples": [
-      "The paper had a yellowish tinge because it was so old."
-    ],
-    "meanings": [
-      "of the color yellow",
-      "become yellowish through age, disease, or discoloration: sallow",
-      "having a light olive or light brown complexion"
-    ],
     "synonyms": [
       "afraid",
       "scared",
@@ -1121,51 +2550,162 @@
       }
     ]
   },
-  "yellowknife": {
-    "uk_ipa": "/ˈjeləʊnaɪf/",
-    "us_ipa": "/ˈjeləʊnaɪf/",
-    "examples": [],
-    "meanings": [
-      "city in western canada on great slave lake population 1 8, 7 0 0"
+  {
+    "word": "yellowlegs",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of yellowleg"
+        ],
+        "examples": []
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "yeh",
-        "stress": 1
-      },
-      {
-        "text": "loh",
-        "stress": 0
-      },
-      {
-        "text": "neyef",
-        "stress": 2
-      }
-    ]
+    "syllables": []
   },
-  "yellowness": {
+  {
+    "word": "yellowness",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The state, quality, or degree of being yellow in colour.",
+          "Cowardice."
+        ],
+        "examples": [
+          "My humour shall not cool: I will incense Page to deal with poison; I will possess him with yellowness, for the revolt of mine is dangerous: that is my true humour.",
+          "[…] lemonade of a yellowness sufficient to convince the most inveterate pessimist of the presence of the lemon.",
+          "The vndiscreet carriage of some lasciuious gallant […] by his often frequenting of an house, and bold vnseemly gestures, may make a breach, and by his ouer familiarity, if he be inclined to yellownesse, colour him quite out.",
+          "[…] at least there would be no harm in getting a few bottles of “stuff” from him, since if these proved useless it would still be possible to return to the Purifying Pills, which kept you alive, if they did not remove the yellowness."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjeləʊnəs/",
     "us_ipa": "/ˈjeləʊnəs/",
-    "examples": [
-      "the vivid yellowness of the flowers"
-    ],
-    "meanings": [
-      "the quality or state of being yellow"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yelp": {
+  {
+    "word": "yellowspotted",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Having yellow spots"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowtail",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A yellow-tailed oriole (Icterus mesomelas), a passerine bird in the New World family Icteridae.",
+          "A yellow-tailed woolly monkey (Oreonax flavicauda), a New World primate endemic to Peru.",
+          "A European moth (Euproctis similis)",
+          "Any of various fish with yellow tails, including:",
+          "A yellow-tailed black cockatoo (Calyptorhynchus funereus), a large cockatoo native to the south-east of Australia."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(in the names of certain organisms) Having a yellow tail."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowthroat",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of a mostly yellow-colored group of New World warblers in the genus Geothlypis"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yellowwood",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the tree genus Cladrastis.",
+          "The Osage orange tree.",
+          "Zanthoxylum brachyacanthum, thorny yellowwood, of Australia",
+          "Any of the conifer genus Podocarpus.",
+          "Sarcomelicope simplicifolia, a small rainforest tree of Australia.",
+          "Flindersia xanthoxyla, a tall rainforest tree of Australia."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yelp",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An abrupt, high-pitched noise or utterance.",
+          "A type of emergency vehicle siren sounding quicker and more intense than the wail."
+        ],
+        "examples": [
+          "The puppy let out a yelp when I stepped on her tail."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To utter an abrupt, high-pitched noise."
+        ],
+        "examples": [
+          "The children yelped with delight as they played in the cold water."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jelp/",
     "us_ipa": "/jelp/",
-    "examples": [],
-    "meanings": [
-      "a sharp shrill bark or cry ( as of a dog or turkey )",
-      "squeal",
-      "to utter a sharp quick shrill cry"
-    ],
     "synonyms": [
       "shriek",
       "scream",
@@ -1185,13 +2725,48 @@
       }
     ]
   },
-  "yemen": {
+  {
+    "word": "yelping",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The act of producing a yelp."
+        ],
+        "examples": [
+          "the frenzied yelpings of the huntsman's dogs",
+          "[…] While still a pup, / You put him in a sack, then beat it / With a stick. When howls and yelpings die, / You send the houseboi out to set him free."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yelp"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yemen",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of yeman"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjemən/",
     "us_ipa": "/ˈjemən/",
-    "examples": [],
-    "meanings": [
-      "country in southern arabia bordering on the red sea and the gulf of aden capital sanaa area 2 0 3, 8 5 0 square miles ( 5 2 7, 9 6 8 square kilometers ), population 2 8, 6 6 7, 0 0 0"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1205,41 +2780,40 @@
       }
     ]
   },
-  "yemeni": {
-    "uk_ipa": "/ˈjeməni/",
-    "us_ipa": "/ˈjeməni/",
-    "examples": [],
-    "meanings": [
-      "country in southern arabia bordering on the red sea and the gulf of aden capital sanaa area 2 0 3, 8 5 0 square miles ( 5 2 7, 9 6 8 square kilometers ), population 2 8, 6 6 7, 0 0 0"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
+  {
+    "word": "yen",
+    "entries": [
       {
-        "text": "yeh",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "(slang) Opium.",
+          "A strong desire, urge, or yearning.",
+          "The unit of Japanese currency (symbol: ¥) since 1871, divided into 100 sen.",
+          "A coin or note worth one yen."
+        ],
+        "examples": [
+          "humankind's yen for knowledge",
+          "Micron said in a statement that it would bring extreme ultraviolet (EUV) technology to Japan, becoming the first semiconductor company to do so, and expected to invest up to 500 billion yen ($3.6 billion) with support from the Japanese government.",
+          "Does any one however believe that Japan's glorious achievements would have been possible, if the Government of that country had merely poured money like water on its standing battalions, unaugmented by reserves, and the magnificent spirit of every man, woman and child in that country had not been behind the Army to support it? Japan's ordinary budget for the Army is only about 37.3 millions yen, or a little under six crores of rupees.",
+          "Passing by those clauses of it which demand no notice, we arrive at that which provides that \"each proposal (for purchase) must state the price per picul of rice in gold yen.\" But why in gold yen, a coin as yet so scarce as to be almost beyond the ken of the foreign merchant?",
+          "When banks lend, they create money out of nothing, without withdrawing it from other parts of the economy. This way, fiscal policy would not have crowded out private-sector activity yen by yen, as actually happened."
+        ]
       },
       {
-        "text": "muh",
-        "stress": 0
-      },
-      {
-        "text": "nee",
-        "stress": 0
+        "pos": "Verb",
+        "definitions": [
+          "To have a strong desire for."
+        ],
+        "examples": [
+          "Yenning, groaning, longing after.]",
+          "C. S. Lewis warned, \"The yen to publish is spiritually dangerous.\" The \"yen\" in this case is spread around, so perhaps the danger is diminished! This book has been \" yenned \" into existence by many, and is a two-team effort ….",
+          "\"Listen, I'm in Tom Bleutcher's suite at The Brompton House. Been here the whole Almighty morning. Olga wants you to have lunch with us.\" / \"Olga? Who's she?\" / \"His daughter. You made a big hit with her last time they was in town. Come on down.\" / \"Get the new writer.\" / \"I got no new writer. Anyway she yens for you. Come on down.\""
+        ]
       }
-    ]
-  },
-  "yen": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jen/",
     "us_ipa": "/jen/",
-    "examples": [
-      "I've always had a yen to travel around the world."
-    ],
-    "meanings": [
-      "the basic monetary unit of japan see money table",
-      "a strong desire or propensity",
-      "urge, craving"
-    ],
     "synonyms": [
       "craving",
       "desire",
@@ -1261,15 +2835,44 @@
       }
     ]
   },
-  "yeoman": {
+  {
+    "word": "yenta",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Jewish) A woman who meddles in the business of others; a busybody; a female gossipmonger."
+        ],
+        "examples": [
+          "Please don't tell your girlfriend what I said; she's a yenta!"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yeoman",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A dependable, diligent, or loyal worker or someone who does a great service.",
+          "A clerk in the US Navy, and US Coast Guard.",
+          "An official providing honorable service in a royal or high noble household, ranking between a squire and a page. Especially, a yeoman of the guard, a member of a ceremonial bodyguard to the UK monarch."
+        ],
+        "examples": [
+          "This model of production costs might alternatively be derived from a yeoman farmer model, in which households supply goods directly[.]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjəʊmən/",
     "us_ipa": "/ˈjəʊmən/",
-    "examples": [],
-    "meanings": [
-      "an attendant or officer in a royal or noble household",
-      "a person attending or assisting another: retainer",
-      "yeoman of the guard"
-    ],
     "synonyms": [
       "agriculturalist",
       "agriculturist",
@@ -1291,30 +2894,125 @@
       }
     ]
   },
-  "yeomanry": {
+  {
+    "word": "yeomanry",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A British volunteer cavalry force organized in 1761 for home defense and later incorporated into the Territorial Army."
+        ],
+        "examples": [
+          "The enfranchised yeomanry began to feel an instinct for dominion."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjəʊmənri/",
     "us_ipa": "/ˈjəʊmənri/",
-    "examples": [],
-    "meanings": [
-      "the body of yeomen",
-      "the body of small landed proprietors of the middle class",
-      "a british volunteer cavalry force created from yeomen in 1 7 6 1 as a home defense force and reorganized in 1 9 0 7 as part of the territorial force"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yes": {
+  {
+    "word": "yerba",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Ilex paraguariensis, a species of holly native to southern South America; or the dried leaves and twigs of this plant, used to make the caffeine-rich beverage maté."
+        ],
+        "examples": [
+          "His preparations for breakfast are simple, and he is ready to start out after half an hour spent in imbibing a few mates full of yerba infusion.",
+          "The storehouses at Talcahuano had been burst open, and great bags of cotton, yerba, and other valuable merchandise were scattered on the shore.",
+          "This was the place at which the leaves and small sprigs of the yerba tree, when brought from the woods, were first scorched--fire being set to the logs of wood within it."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yersinia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A Gram-negative bacterium, of the genus Yersinia, that is an etiological agent of several diseases in animals and humans, notably Yersinia pestis, which causes bubonic plague."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yes",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A vote of support or in favor of something.",
+          "An affirmative expression; an answer that shows agreement or acceptance."
+        ],
+        "examples": [
+          "The workers voted on whether to strike, and there were thirty \" yeses \" and one \"no\".",
+          "Was that a yes?"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(colloquial, transitive) To agree with, affirm, approve.",
+          "(slang) To attempt to flatter someone by habitually agreeing",
+          "(colloquial, intransitive) To say “ yes ”."
+        ],
+        "examples": [
+          "Did he yes the veto?",
+          "“Heaven knows why a woman ‘Noes’!” / Clarrie nodded glumly. “And why she ‘ Yesses ’ in the end.”",
+          "The next day another writer asked us: “Didja hear about So-and-So? Got two hundred and fifty bucks for an idea!” We “ yessed ” and went our way.",
+          "\" […] Are you—?\" / \"... all right?\" / We yessed simultaneously. / \"At least, I think so.\""
+        ]
+      },
+      {
+        "pos": "Particle",
+        "definitions": [
+          "Used to indicate disagreement or dissent in reply to a negative statement.",
+          "(humorous) Answer to a question presuming one answer when all answers are correct.",
+          "Used to show agreement or acceptance."
+        ],
+        "examples": [
+          "Yes, you are correct.",
+          "Yes, you may go play outside now.",
+          "Yes, sir, we have your package right here.",
+          "It was not my fault we lost the race. Oh, yes, it was!",
+          "Do you like cake, or pie? Yes."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "(interrogative) Used to ask for more information with a request.",
+          "Response that confirms that the user is paying attention.",
+          "An exclamation of pleasure or approval, usually transcribed with an exclamation point."
+        ],
+        "examples": [
+          "Our second goal of the match! Yes!",
+          "I need some help. Yes?"
+        ]
+      }
+    ],
+    "default_pos": "Particle",
     "uk_ipa": "/jes/",
     "us_ipa": "/jes/",
-    "examples": [
-      "‘Is this your car?’ ‘Yes, it is.’",
-      "‘Are you coming? Yes or no?’",
-      "‘I enjoyed her latest novel.’ ‘Yes, me too.’"
-    ],
-    "meanings": [
-      "an affirmative reply: yea",
-      "a positive reply"
-    ],
     "synonyms": [
       "okay",
       "yeah",
@@ -1336,15 +3034,25 @@
       }
     ]
   },
-  "yeshiva": {
+  {
+    "word": "yeshiva",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(education, Judaism) An academy for the advanced study of Jewish texts."
+        ],
+        "examples": [
+          "Shalom grew up in an Orthodox family in Stamford Hill. His father, who ran an office-furniture business, intended him for a synagogue cantor, and when Shalom finished school he was sent to the yeshiva.",
+          "Nonetheless, in 1976, after graduating with a B.A. in religious studies, he entered Yale's doctoral program in the same department. A year later, he left Yale to study Talmud in a Manhattan yeshiva.",
+          "Ultra-Orthodox Jews who don’t send their kids to the public schools control the majority of seats on the local school board. And the families who do send their kids to the public schools say the board members favor the private yeshivas in the district at the expense of the public schools.",
+          "Last month, the Forward reported, a former student at Mechon Hadar—a co-ed egalitarian yeshiva in New York—emailed the school's listserv with a plea for the institution to cut ties with [Leslie] Wexner in light of the unspooling allegations against [Jeffrey] Epstein."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jəˈʃiːvə/",
     "us_ipa": "/jəˈʃiːvə/",
-    "examples": [],
-    "meanings": [
-      "a school for talmudic study",
-      "an orthodox jewish rabbinical seminary",
-      "a jewish day school providing secular and religious instruction"
-    ],
     "synonyms": [
       "madrassah",
       "madrasa",
@@ -1368,19 +3076,38 @@
       }
     ]
   },
-  "yesterday": {
+  {
+    "word": "yesterday",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(figuratively) The past, often in terms of being outdated.",
+          "The day immediately before today; one day ago."
+        ],
+        "examples": [
+          "Today is the child of yesterday and the parent of tomorrow.",
+          "Yesterday was rainy, but by this morning it had begun to snow.",
+          "The worker of today is different from that of yesterday.",
+          "yesterday's technology"
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "On the day before today.",
+          "(informal) As soon as possible."
+        ],
+        "examples": [
+          "I started to watch the video yesterday, but could only finish it this evening.",
+          "I need it yesterday!",
+          "I want this done yesterday!"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjestədeɪ/",
     "us_ipa": "/ˈjestərdeɪ/",
-    "examples": [
-      "A company spokeswoman said yesterday that no final decision had been made yet.",
-      "yesterday morning/afternoon/evening",
-      "The company yesterday announced a $40 million deal."
-    ],
-    "meanings": [
-      "on the day last past: on the day preceding today",
-      "at a time not long past: only a short time ago",
-      "the day last past: the day next before the present"
-    ],
     "synonyms": [
       "past",
       "history",
@@ -1410,17 +3137,37 @@
       }
     ]
   },
-  "yesteryear": {
+  {
+    "word": "yesteryear",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(poetic) Past years; time gone by; yore."
+        ],
+        "examples": [
+          "Oh, the cozy glow of yesteryear. Oh, the twinkly lights and all the cheer. We're bringin' back Christmas.",
+          "It seems to me that it isn't these little acts and little connexions we make in our lives that matter so very much. They pass away, and where are they? Where…Where are the snows of yesteryear?",
+          "To be old here, is to be respectable, and time-honored is the epithet most coveted. You see no sign of the doings of yesterday or yesteryear: the new is careful of obtruding itself, and comes into the world under matronage of the old.",
+          "Where Babcock has proprietary technologies, they will be preserved and developed, in so far as they help to give the company an edge over its rivals. But make no mistake, if Parker and Salmon have their way, boiler suits are the workwear of yesteryear at Babcock. Graduates, not grease-monkeys, are the typical employees of the future.",
+          "After passing Starcross and then the new […] Marsh Barton station, we soon arrive at the delightful Exeter St Davids station, which still retains much of its charm and GWR character of yesteryear."
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "(poetic) In past years."
+        ],
+        "examples": [
+          "What lives there today provides a clue as to what lived here yesteryear.",
+          "Was it yesteryear or centuries ago that the Orient Express thundered over that narrow, glistening channel and linked the Golden Horn to the Seine?",
+          "To believe in God was to Moroni’s credit. But to believe in the Son of God, a Being who had only been prophesied about and whose birth was still in the future, is truly remarkable. It is similar to those who lived yesteryear (and are living today) after the coming of Christ, who believed (and who do believe) in Him, although He has never been seen in person."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjestəjɪə(r)/",
     "us_ipa": "/ˈjestərjɪr/",
-    "examples": [
-      "Three footballing stars of yesteryear were in the commentary box for the match."
-    ],
-    "meanings": [
-      "last year",
-      "time gone by",
-      "the recent past"
-    ],
     "synonyms": [
       "past",
       "yesterday",
@@ -1450,19 +3197,40 @@
       }
     ]
   },
-  "yet": {
+  {
+    "word": "yet",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "(after 'have' and certain copulative verbs, followed by an infinitive) Not as of the time referenced.",
+          "In addition.",
+          "Thus far; up to the present; up to some unspecified time.",
+          "At some future time; eventually.",
+          "(degree) Even."
+        ],
+        "examples": [
+          "The riddle will be solved yet.",
+          "We do not yet know what happened.",
+          "I had yet to go to a convention. — I had not yet gone to a convention.",
+          "I’ve yet to see him. — I have not yet seen him.",
+          "They are yet to win a single match. — They have not yet won a single match."
+        ]
+      },
+      {
+        "pos": "Conjunction",
+        "definitions": [
+          "Nevertheless; however; but; despite that."
+        ],
+        "examples": [
+          "It’s incredible yet true.",
+          "I thought I knew you, yet how wrong was I!"
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
     "uk_ipa": "/jet/",
     "us_ipa": "/jet/",
-    "examples": [
-      "I haven't received a letter from him yet.",
-      "I didn't receive a letter from him yet.",
-      "‘Are you ready?’ ‘No, not yet.’"
-    ],
-    "meanings": [
-      "in addition: besides",
-      "even sense 1 b",
-      "on top of everything else: no less"
-    ],
     "synonyms": [
       "eventually",
       "finally",
@@ -1484,14 +3252,24 @@
       }
     ]
   },
-  "yeti": {
+  {
+    "word": "yeti",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(cryptozoology) An unidentified humanoid animal said to live in the Himalayas."
+        ],
+        "examples": [
+          "Coordinate terms: bigfoot, sasquatch, yowie, menk",
+          "There is no doubt that the Sherpas accept the fact that the Yeti really exists. But then they believe just as confidently that their gods live in comfort on the summit of Mount Everest. We found it quite impossible to divorce the Yeti from the supernatural.",
+          "The Sherpas had no hesitation in pronouncing them to be those of a Snowman or \"Yeti\" (not \"mirka\" as Mr.Smythe's Tibetans had it), and they thought he was the smaller man-eating variety and not his larger yak-eating brother. […] They may even have been our friend ursus arctoc pruinosus, but they were no more like the tracks of our \" Yeti \" than those of a two-toed anteater or an armadillo."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjeti/",
     "us_ipa": "/ˈjeti/",
-    "examples": [],
-    "meanings": [
-      "abominable snowman",
-      "abominable snowman"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1505,15 +3283,46 @@
       }
     ]
   },
-  "yew": {
+  {
+    "word": "yew",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A bow for archery, made of yew wood.",
+          "The wood of such trees.",
+          "Other conifers resembling plants in genus Taxus:",
+          "A species of coniferous tree, Taxus baccata, with dark-green flat needle-like leaves and seeds bearing red arils, native to western, central and southern Europe, northwest Africa, northern Iran and southwest Asia.",
+          "(countable, by extension) Any tree or shrub of the genus Taxus."
+        ],
+        "examples": [
+          "English soldiers handled sturdy bows of yew, ash, or elm, which could propel an iron-tipped arrow as far as a hundred yards.",
+          "At Darley Dale, in Derbyshire, there is another yew about 1,000 years younger with a 32 ft girth, while a mighty yew at Goudhurst, Kent, has a bench seating 12 in its hollow trunk.",
+          "Old Yew, which graspest at the stones ⁠That name the under-lying dead, ⁠Thy fibres net the dreamless head, Thy roots are wrapt about the bones.",
+          "To prevent a too great conſumption of yew, bowyers were directed to make four bows of witch-haſel, aſh or elm, to one of yew, and no perſon under ſeventeen years of age, unleſs poſſeſſed of moveables worth forty marks, or the ſon of parents having an eſtate of ten pounds per annum might ſhoot in an yew bow, under a penalty of 6s. 8d.",
+          "Have a tree or two the witches particularly like, such as the alder, larch, cypress and hemlock; then, to counteract any possible evil effects, there must be a holly, yew, hazel, elder, mountain ash or juniper."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Made from the wood of the yew tree."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Pronoun",
+        "definitions": [
+          "Eye dialect spelling of you."
+        ],
+        "examples": [
+          "A spinoff, “Major Crimes,” starring “Battlestar Galactica” veteran Mary McDonnell and a number of “Closer” cast members, premieres in August. Sedgwick won’t be among them, swapping Brenda’s syrupy “thank yew ” for an upbeat “buh-bye now” to her co-workers."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/juː/",
     "us_ipa": "/juː/",
-    "examples": [],
-    "meanings": [
-      "any of a genus ( taxus of the family tax ace ae, the yew family ) of evergreen gymnosperm ous trees and shrubs with stiff linear leaves and seeds surrounded by a fleshy red aril: such as",
-      "a long - lived eurasian tree or shrub ( t. baccata )",
-      "a low straggling bush ( t. canadensis ) of the eastern u. s. and canada"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1523,42 +3332,58 @@
       }
     ]
   },
-  "yiddish": {
-    "uk_ipa": "/ˈjɪdɪʃ/",
-    "us_ipa": "/ˈjɪdɪʃ/",
-    "examples": [
-      "Yiddish films/poetry/expressions/comedy"
+  {
+    "word": "yid",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Yid."
+        ],
+        "examples": []
+      }
     ],
-    "meanings": [
-      "a high german language written in hebrew characters that is spoken by jews and descendants of jews of central and eastern european origin",
-      "a language that began among the jews of eastern europe and is based on german and written in the hebrew alphabet"
-    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
+    "syllables": []
+  },
+  {
+    "word": "yield",
+    "entries": [
       {
-        "text": "yih",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "(engineering, material science) yield strength of a material.",
+          "The quantity of something produced.",
+          "(programming) The situation where a thread relinquishes the processor to allow other threads to execute.",
+          "A product."
+        ],
+        "examples": [
+          "Zucchini plants always seem to produce a high yield of fruit.",
+          "In the case of countries more favoured by climate than Britain their earliest trade with the foreigner which history has to record is usually in the surface products of the earth—in corn or wine, in the yields of the olive-grove or the orchard."
+        ]
       },
       {
-        "text": "dihsh",
-        "stress": 0
+        "pos": "Verb",
+        "definitions": [
+          "To give as a result or outcome; to produce or render.",
+          "To give up; to surrender or capitulate."
+        ],
+        "examples": [
+          "Yield the right of way to pedestrians.",
+          "It is not clear from the road markings who is supposed to yield at the junction.",
+          "They refuse to yield to the enemy.",
+          "I put my shoulder into the door, but it did not yield.",
+          "Historically, that security yields a high return."
+        ]
       }
-    ]
-  },
-  "yield": {
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jiːld/",
     "us_ipa": "/jiːld/",
-    "examples": [
-      "a high crop yield",
-      "a reduction in milk yield",
-      "This will give a yield of 10% on your investment."
-    ],
-    "meanings": [
-      "to bear or bring forth as a natural product especially as a result of cultivation",
-      "to produce or furnish as return",
-      "to produce as return from an expenditure or investment: furnish as profit or interest"
-    ],
     "synonyms": [
       "succumb",
       "submit",
@@ -1580,18 +3405,59 @@
       }
     ]
   },
-  "yielding": {
+  {
+    "word": "yielder",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Someone or something that yields, or gives way.",
+          "Someone or something that yields a crop or other product."
+        ],
+        "examples": [
+          "Just as with the Irish potato, it is important to know how good a yielder you are planting.",
+          "This variety is a very heavy yielder, has good drought-resistant qualities, and withstands wind and weather so well that it may be said to be storm-proof.",
+          "I am a modest man, sir, and hesitate to talk about myself even among friends; but since you all insist, there is nothing for me to do but yield as gracefully as I may--and as a yielder I glitter in the front rank.",
+          "Their sense thus weak, lost with their fears thus strong, Made senseless things begin to do them wrong; For briers and thorns at their apparel snatch; Some sleeves, some hats, from yielders all things catch.",
+          "Out of the whole ninety-five [cows] there were eight in particular […] who, though the teats of one or two were as hard as carrots, gave down to her with a readiness that made her work on them a mere touch of the fingers. Knowing, however, the dairyman’s wish, she endeavoured conscientiously to take the animals just as they came, excepting the very hard yielders which she could not yet manage."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yielding",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A concession."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yield"
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Docile, or inclined to give way to pressure."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈjiːldɪŋ/",
     "us_ipa": "/ˈjiːldɪŋ/",
-    "examples": [
-      "She sank onto the yielding cushions of the couch.",
-      "high-/low-yielding crops"
-    ],
-    "meanings": [
-      "productive",
-      "lacking rigidity or stiffness: flexible",
-      "disposed to submit or comply"
-    ],
     "synonyms": [
       "resigned",
       "obedient",
@@ -1617,13 +3483,52 @@
       }
     ]
   },
-  "yin": {
+  {
+    "word": "yieldingly",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "In a yielding way."
+        ],
+        "examples": [
+          "He tooke her in his armes, as yet ſo coyiſh to be kiſt / As Mayds that knovv themſelues belou'd and yeeldingly reſiſt.",
+          "A sudden stillness came on them both, a sense of something momentous that must happen. Flory reached across and took her other hand. It came yieldingly, willingly.",
+          "The wet sand is as dark and more yieldingly solid than fudge and waking across a panful is a promenade in the Kingdom of Sweets."
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(philosophy) A principle in Chinese and related East Asian philosophies associated with dark, cool, female, etc. elements of the natural world."
+        ],
+        "examples": [
+          "According to traditional Chinese medicine, blood carries chi, your “life force,” which fuels all the functions of the body. When you lose blood, you lose chi, and this causes your body to go into a state of yin (cold). When yin (cold) and yang (hot) are out of balance, your body will suffer physical disorders.",
+          "\"Steamed fish and chicken and vegetable soup and even mushrooms are considered cooling foods, edible materializations of the yang, the pure primal air. The yin, or earth element, inheres in fried dishes and especially in shark's fin soup. Am I right, Mr Lee?\""
+        ]
+      },
+      {
+        "pos": "Numeral",
+        "definitions": [
+          "The number one, primarily used in Scotland and Ulster"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɪn/",
     "us_ipa": "/jɪn/",
-    "examples": [],
-    "meanings": [
-      "the feminine passive principle in nature that in chinese cosmology is exhibited in darkness, cold, or wetness and that combines with yang to produce all that comes to be"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1633,16 +3538,102 @@
       }
     ]
   },
-  "yob": {
+  {
+    "word": "yip",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "a sharp, high-pitched bark"
+        ],
+        "examples": [
+          "I've never hunted myself, but I understand that half the battle is being able to make noises like some jungle animal with dyspepsia, and I believe that Aunt Dahlia in her prime could lift fellow-members of the Quorn and Pytchley out of their saddles with a single yip, though separated from them by two ploughed fields and a spinney."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "to bark with a sharp, high-pitched voice"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yips",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(informal) A nervous condition which prevents a sportsperson from playing properly; especially a condition which causes a golfer to miss an easy putt, or a tennis player to serve a double fault.",
+          "plural of yip"
+        ],
+        "examples": [
+          "Bracing as all this may be to the President, it gives his security and logistical forces the yips.",
+          "His office is a baseball park and he is a pitcher for the N.Y. Mets—a job guaranteed to give anyone a good case of after-hours yips.",
+          "Golfers may be surprised to learn that the yips, in one form or another, occur in a wide variety of other sports and even in other non-athletic walks of life and work.",
+          "Defining precisely why a professional cyclist might lose his touch on descents is as difficult as explaining a golfer's yips or a striker's sudden inability to find the net. It happens rarely, most famously in the early 1990s; the double world champion Gianni Bugno suffered from it and only rediscovered his \"flow\" after being made to listen to Mozart to calm his nerves."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "third-person singular simple present indicative of yip"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yk",
+    "entries": [
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "(text messaging) Abbreviation of you know."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Interjection",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yob",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(derogatory, chiefly UK, Ireland, Commonwealth, slang) A person who engages in antisocial behaviour or drunkenness."
+        ],
+        "examples": [
+          "And you bet that each gal, not to mention each yob, Didn't care how much ooftish it cost 'em per nob.",
+          "Yes, it's holiday time again for British yobs – and the rest of us can flee to those parts of Abroad which the louts ignore, or just cringe in shame at home.",
+          "Three local yobs have also joined, but they have not reckoned on a redoubtable Conductor and two local revenue protection officers who soon escort them off the train!",
+          "But while doing 70mph on the A1, a hooded yob threw rock [sic – meaning a rock] from a grass verge onto the windscreen of the family’s Jeep, causing it to swerve.",
+          "As we left the cemetery, I heard an elderly gravedigger muttering back slang to himself before Lucien's headstone. \"Bloody shame, ain't it? Doubt the yob did much living by eighteen.\" I corrected the man, saying, “No fear, that yob did plenty of living.”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɒb/",
     "us_ipa": "/jɑːb/",
-    "examples": [
-      "a group of drunken yobs"
-    ],
-    "meanings": [
-      "yobbo",
-      "year of birth"
-    ],
     "synonyms": [
       "thug",
       "criminal",
@@ -1650,19 +3641,92 @@
       "villain",
       "hooligan"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yodel": {
+  {
+    "word": "yobbo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(UK, Ireland, Commonwealth, derogatory, slang) A yob."
+        ],
+        "examples": [
+          "Yeah, but you heard what Blake said. We wouldn't stand a chance against Pike's mob. They're a right bunch of yobbos.",
+          "A wanker fights inequality / And for people’s rights / A wanker fights class prejudice / A yobbo just fights",
+          "He stared at them with eyes dull with fatigue, and let out a long sigh. “Trouble, trouble” he replied wearily. “Skinheads and yobboes fighting the coloureds\".",
+          "We're not catering to the yobbos. We'd rather have a smaller crowd of nice people that are really into the game than a whole mass of uncouth people"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yobibyte",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing) Strictly, 2 (1024, 1,208,925,819,614,629,174,706,176) bytes or 2 (1024) zebibytes, as opposed to a yottabyte."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yobo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Hawaii) A Korean person."
+        ],
+        "examples": [
+          "Grandpa doesn't want Grandma and their kids and grandkids to know that he had to get penicillin shots all the time, or that he smoked boo (marijuana) on a daily basis, or that he dealt in the black market, or that he had yobos (purchased live-in sex slaves)."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yodel",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A song incorporating yodelling.",
+          "An act of yodelling."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To sing (a song) in such a way that the voice fluctuates rapidly between the normal chest voice and falsetto."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjəʊdl/",
     "us_ipa": "/ˈjəʊdl/",
-    "examples": [
-      "The best places to yodel are those with an echo."
-    ],
-    "meanings": [
-      "to sing by suddenly changing from a natural voice to a falsetto and back",
-      "to shout or call in a similar manner",
-      "to sing ( a tune ) by yodeling"
-    ],
     "synonyms": [
       "warble",
       "croon",
@@ -1682,19 +3746,87 @@
       }
     ]
   },
-  "yoga": {
+  {
+    "word": "yodeling",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The act of one who yodels."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of yodel"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yodeller",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(British) Alternative spelling of yodeler."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yodh",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The tenth letter of many Semitic alphabets/abjads (Phoenician, Aramaic, Hebrew, Syriac, Arabic and others).",
+          "A tool used to read a Torah."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yoga",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The tree Elaeocarpus joga.",
+          "Any of several Hindu or Buddhist disciplines aimed at training the consciousness for a state of perfect spiritual insight and tranquillity; especially a system of exercises practiced to promote control of the body and mind."
+        ],
+        "examples": [
+          "Whether you need to recover from a stressful day, a strenuous workout or even an injury or surgery, restorative yoga may be just the thing for you.",
+          "If you're not into yoga / If you have half a brain / […] / Then I'm the love that you've looked for / Write to me and escape",
+          "A mealybug, Pseudococcus nr. microadonidum Beardsley (Homoptera: Pseudococcidae) has been found feeding on the foliage of E. joga. This mealybug was sometimes found in the domatia of yoga leaves. It has been recorded on coconut, banana, and pandanus from Kiribati, Pohnpei, and Marshall Islands. This insect is a new record on yoga and for Guam."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjəʊɡə/",
     "us_ipa": "/ˈjəʊɡə/",
-    "examples": [
-      "He attends regular yoga classes.",
-      "I go to a yoga session on Thursdays.",
-      "She does yoga for an hour a day."
-    ],
-    "meanings": [
-      "a hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
-      "a system of physical postures, breathing techniques, and sometimes meditation derived from yoga but often practiced independently especially in western cultures to promote physical and emotional well - being",
-      "a hindu philosophy teaching that by holding back the activity of one ' s body, mind, and will one can know one ' s true self and be free"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1708,15 +3840,78 @@
       }
     ]
   },
-  "yogi": {
+  {
+    "word": "yoghourt",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(British spelling) Alternative spelling of yogurt."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yoghurt",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(British spelling) Alternative spelling of yogurt."
+        ],
+        "examples": [
+          "Many icecream shops now sell soft-serve yoghurts, icecreams and ice-desserts that are high in carbos and low in fat.",
+          "One serve of carbohydrates is approximately equal to a slice of bread, a piece of fruit, third of a cup of cooked rice, half a cup of grains, cereals, starchy vegetables or cooked pasta, 200 grams of plain yoghurt, or 300 millilitres of milk.",
+          "It was certainly an old smell – of that I could be certain. But it was not, I was sure, produced by any of the three thousand one hundred and twenty-six cheeses, yoghurts and fromages blancs that were being stored in the crypt.",
+          "fudgy flapjacky fudge […] I always buy one of those flapjacks with a layer of yoghurt on top. But even with the topping, they are just never sweet enough for me. I also love fudge but that can be toe-curlingly sweet. So, in my search for a middle ground, I decided to combine the two."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yogi",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(yoga) A devotee or adherent of yoga. [from 17th c.]"
+        ],
+        "examples": [
+          "There is a special healthy menu, and the yogis can all eat together if they choose, but there's none of the birdseed-and-bulgur-wheat diet of a typical retreat.",
+          "To this day, yogins find that these disciplines, which have measurable physical and neurological effects, evoke a sense of calm, harmony and equanimity that is comparable to the effect of music."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(US, thru-hiker slang) To persuade someone to give you food or other favors without actually begging.",
+          "(transitive, informal) To turn (someone) into a yogi; to lead into practicing yoga."
+        ],
+        "examples": [
+          "You can also yogi food from other hikers and tourists. The yogi cannot realistically be counted upon as a primary resupply strategy, but it's reliable for netting a few extra calories during summer months when traveling through popular parks, especially on weekends.",
+          "You do not even need to be psychoanalyzed, Rolfed, estered, altered, gelded, neutered, spayed, fixed, Mooned, acupunctured, meditated, Zenned, massaged, Cayced, yogied, New Aged, astrocharted, holisticized, computerized, megatrended, therapized, androgynized, evangelized, converted, or even, last and least, to be reborn.",
+          "He had followed Larry faithfully for two days, getting yelled at and grieved over and yogied into a pretzel and fucked over by all sorts of weirdoes who seemed to find him a nice object to act on.",
+          "I meet hundreds of people each year who have been New Thoughted, Mind Scienced, Eckankared, Rosicrucianed, l Amed, White Brotherhooded, Scientologied and, yes, even yogied — to the point of mental numbness.",
+          "Ready to do some hiking now that we are through yogi-ing? I asked, grinning at Map Man. The hikers looked up at me quizzically, but Map Man knew yogi-ing meant the good natured way thru-hikers ask for food without actually begging."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈjəʊɡi/",
     "us_ipa": "/ˈjəʊɡi/",
-    "examples": [],
-    "meanings": [
-      "a person who practices yoga",
-      "an adherent of yoga philosophy",
-      "a markedly reflective or mystical person"
-    ],
     "synonyms": [
       "guru",
       "swami",
@@ -1742,34 +3937,45 @@
       }
     ]
   },
-  "yogic": {
+  {
+    "word": "yogic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Of or pertaining to yoga."
+        ],
+        "examples": [
+          "Here we see the yogic pattern, \"Loss of semen equals loss of soul.\"",
+          "She says that rubbing palms or the soles of the feet together is a yogic technique that integrates the left side of the brain and the right."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjəʊɡɪk/",
     "us_ipa": "/ˈjəʊɡɪk/",
-    "examples": [
-      "Indian yogic principles",
-      "yogic techniques"
-    ],
-    "meanings": [
-      "a hindu theistic philosophy teaching the suppression of all activity of body, mind, and will in order that the self may realize its distinction from them and attain liberation",
-      "a system of physical postures, breathing techniques, and sometimes meditation derived from yoga but often practiced independently especially in western cultures to promote physical and emotional well - being",
-      "a hindu philosophy teaching that by holding back the activity of one ' s body, mind, and will one can know one ' s true self and be free"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "yogurt": {
+  {
+    "word": "yogurt",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A milk -based product stiffened by a bacterium -aided curdling process, and sometimes mixed with fruit or other flavoring.",
+          "(especially in compounds) Any similar product based on other substances (e.g. soy yogurt)."
+        ],
+        "examples": [
+          "Moroccan curried crab and streaks of minty, lemony yogurt add luxury to a supersimple zucchini soup ($14).",
+          "It makes up an estimated 73 percent of the U.S. food supply, and contains stereotypically “unhealthy” products like sodas, candies and hot dogs as well as seemingly “healthy” ones like whole grain breads, breakfast cereals, flavored yogurts and plant milks."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɒɡət/",
     "us_ipa": "/ˈjəʊɡərt/",
-    "examples": [
-      "natural yogurt",
-      "There's a yogurt left if you're still hungry.",
-      "a lemon yogurt"
-    ],
-    "meanings": [
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of two bacteria ( lactobacillus bulgaricus and streptococcus thermophilus ) have been added",
-      "a slightly acidic semisolid food that is often flavored and sweetened and is made of milk that has been soured by the addition of bacteria",
-      "a fermented slightly acid often flavored semisolid food made of milk and milk solids to which cultures of bacteria of the genus lactobacillus ( l. bulgari us ) and streptococcus ( s. thermophilus ) have been added"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1783,18 +3989,29 @@
       }
     ]
   },
-  "yoke": {
+  {
+    "word": "yoke",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Senses relating to a pair of harnessed draught animals.",
+          "Senses relating to quantities, and other extended uses.",
+          "Senses relating to a frame around the neck.",
+          "Misspelling of yolk."
+        ],
+        "examples": [
+          "One yoke of cattle became so foot sore that they were unserviceable, and we were obliged to drive them behind the wagon.",
+          "to work two yokes",
+          "A yearling bullock to thy name ſhall ſmoke, / Untam'd, unconſcious of the galling yoke, / With ample forehead, and yet tender horns / Whoſe budding honours ductile gold adorns.",
+          "Firſt let 'em [horses] run at large; and never know / The taming Yoak, or draw the crooked Plough.",
+          "Joyous, th' impatient huſbandman perceives / Relenting Nature, and his luſty ſteers / Drives from their ſtalls, to where the well-us'd plough / Lies in the furrow, looſened from the froſt. / There, unrefuſing, to the harneſs'd yoke / They lend their ſhoulder, and begin their toil, / Chear'd by the ſimple ſong and ſoaring lark."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jəʊk/",
     "us_ipa": "/jəʊk/",
-    "examples": [
-      "the yoke of imperialism",
-      "Young people often chafe under the yoke of parental control."
-    ],
-    "meanings": [
-      "a wooden bar or frame by which two draft animals ( such as oxen ) are joined at the heads or necks for working together",
-      "an arched device formerly laid on the neck of a defeated person",
-      "a frame fitted to a person ' s shoulders to carry a load in two equal portions"
-    ],
     "synonyms": [
       "slavery",
       "bondage",
@@ -1816,14 +4033,22 @@
       }
     ]
   },
-  "yokel": {
+  {
+    "word": "yokel",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(slang, derogatory) A person from or living in the countryside, viewed as being unsophisticated or naive."
+        ],
+        "examples": [
+          "They love the scenery near their summer home, but have no desire to mix with the local yokels."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjəʊkl/",
     "us_ipa": "/ˈjəʊkl/",
-    "examples": [],
-    "meanings": [
-      "a naive or gullible inhabitant of a rural area or small town",
-      "a country person with little education or experience"
-    ],
     "synonyms": [
       "hick",
       "peasant",
@@ -1849,17 +4074,53 @@
       }
     ]
   },
-  "yolk": {
+  {
+    "word": "yokelish",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Like a rustic or bumpkin; simple and ignorant."
+        ],
+        "examples": [
+          "The exclusion of anoblis and the presence of large numbers of country gentry (around a quarter of the delegation as a whole) gave the meetings a very provincial and at time yokelish ethos."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yolk",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The yellow, spherical part of an egg that is surrounded by the white albumen, and serves as nutriment for the growing young.",
+          "The grease in a sheep 's fleece; lanolin."
+        ],
+        "examples": [
+          "To make meringue, you have to separate the white from the yolk.",
+          "Wool-growers appear to entertain different opinions in regard to the effect which yolk has on the value of the fleece. Some seem to suppose that the aggregate amount which they receive for their wool is increased from the greater weight which it possesses by being charged with this substance […]"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To produce yolk."
+        ],
+        "examples": [
+          "This is surprising in that these females were yolking up their clutch of eggs"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jəʊk/",
     "us_ipa": "/jəʊk/",
-    "examples": [
-      "Separate the whites from the yolks."
-    ],
-    "meanings": [
-      "the yellow spheroidal mass of stored food that forms the inner portion of the egg of a bird or reptile and is surrounded by the white see egg illustration",
-      "the whole contents of an animal ovum consisting of a protoplasmic formative portion and an inert nutritive portion",
-      "material stored in an animal ovum that supplies food to the developing embryo and consists chiefly of proteins, lecithin, and cholesterol"
-    ],
     "synonyms": [
       "slavery",
       "bondage",
@@ -1881,17 +4142,22 @@
       }
     ]
   },
-  "yon": {
+  {
+    "word": "yon",
+    "entries": [
+      {
+        "pos": "Phrase",
+        "definitions": [
+          "(knitting) Acronym of yarn over needle."
+        ],
+        "examples": [
+          "Buttonhole row: (K1, p1) 3 times, yon, k2tog, (k1,p1) 5 times, yon, k2tog, […]"
+        ]
+      }
+    ],
+    "default_pos": "Phrase",
     "uk_ipa": "/jɒn/",
     "us_ipa": "/jɑːn/",
-    "examples": [
-      "There's an old farm over yon hill."
-    ],
-    "meanings": [
-      "yonder",
-      "thither",
-      "yonder"
-    ],
     "synonyms": [
       "farther",
       "further",
@@ -1906,17 +4172,22 @@
       }
     ]
   },
-  "yonder": {
+  {
+    "word": "yonder",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(literary) The vast distance, particularly the sky or trackless forest."
+        ],
+        "examples": [
+          "Off we go in to the wild blue yonder, Climbing high into the sun..."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjɒndə(r)/",
     "us_ipa": "/ˈjɑːndər/",
-    "examples": [
-      "Whose is that farm over yonder?"
-    ],
-    "meanings": [
-      "at or in that indicated more or less distant place usually within sight",
-      "farther removed: more distant",
-      "being at a distance within view or at a place or in a direction known or indicated"
-    ],
     "synonyms": [
       "farther",
       "further",
@@ -1935,16 +4206,22 @@
       }
     ]
   },
-  "yore": {
+  {
+    "word": "yore",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(poetic) A time long past."
+        ],
+        "examples": [
+          "This word comes from the days of yore."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɔː(r)/",
     "us_ipa": "/jɔːr/",
-    "examples": [
-      "in days of yore"
-    ],
-    "meanings": [
-      "time past and especially long past",
-      "time long past"
-    ],
     "synonyms": [
       "past",
       "yesteryear",
@@ -1966,15 +4243,23 @@
       }
     ]
   },
-  "york": {
+  {
+    "word": "york",
+    "entries": [
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(cricket) to bowl a yorker at a batsman, especially to get a batsman out in this way.",
+          "(slang) To vomit."
+        ],
+        "examples": [
+          "BADGER: They're eating blueberry pies... […] Okay, finally, Kirk, he can't take it anymore. He yorks! Now it's just down to Chekov and Spock."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jɔːk/",
     "us_ipa": "/jɔːrk/",
-    "examples": [],
-    "meanings": [
-      "alvin cullum 1 8 8 7 – 1 9 6 4 american soldier",
-      "city on the ouse river in north yorkshire, northern england population 1 5 3, 0 0 0",
-      "city in southeastern pennsylvania southeast of harrisburg population 4 3, 7 1 8"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1984,86 +4269,110 @@
       }
     ]
   },
-  "yorkshire": {
-    "uk_ipa": "/ˈjɔːkʃə(r)/",
-    "us_ipa": "/ˈjɔːrkʃər/",
-    "examples": [],
-    "meanings": [
-      "a white swine of any of several breeds or strains originated in yorkshire, england",
-      "former county of northern england roughly bounded by the north sea on the east, the humber river on the south, the pennine chain on the west, and the county of durham on the north and comprising the city of york and the ( former ) administrative counties of",
-      "and"
+  {
+    "word": "yottabit",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing) One septillion (10, or 1,000,000,000,000,000,000,000,000) bits or 1,000 zettabits.",
+          "(computing, informal) a yobibit."
+        ],
+        "examples": [
+          "Assuming a steady traffic growth similar to that created by the Internet over the last 3 years, we could actually be consuming a yottabit of bandwidth by the year 2015!"
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "yawr",
-        "stress": 1
-      },
-      {
-        "text": "ksher",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "yorktown": {
-    "uk_ipa": "/ˈjɔːktaʊn/",
-    "us_ipa": "/ˈjɔːrktaʊn/",
-    "examples": [],
-    "meanings": [
-      "town on chesapeake bay in eastern virginia population 1 9 5"
+  {
+    "word": "yottabyte",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing, informal) A yobibyte.",
+          "(computing) One septillion (10, or 1,000,000,000,000,000,000,000,000) bytes or 1,000 zettabytes."
+        ],
+        "examples": [
+          "[…] the Pentagon is attempting to expand its worldwide communications network, known as the Global Information Grid, to handle yottabytes (10 24 bytes) of data. (A yottabyte is a septillion bytes—so large that no one has yet coined a term for the next higher magnitude.)"
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
+    "syllables": []
+  },
+  {
+    "word": "you",
+    "entries": [
       {
-        "text": "yawr",
-        "stress": 1
+        "pos": "Noun",
+        "definitions": [
+          "The name of the Latin script letter U / u."
+        ],
+        "examples": [
+          "‘S-S-C…sitting on a tree…eff- you -cee-kay-i-en-ji.’",
+          "It said, in a whispering, buzzing voice, \"Gee- you -ess-ess-ay-dash-em-ee-ar-ar-wye-dash-em-eye-en-gee-oh-dash-pee-eye-pee-dash-pee-ee-ar-ar-wye-dash-pee-eye-en-gee-oh.\"",
+          "‘Eff. You. En,’ said Mr Banstead. ‘Fun! […] ’"
+        ]
       },
       {
-        "text": "ktown",
-        "stress": 2
+        "pos": "Verb",
+        "definitions": [
+          "To address (a person) using the pronoun you (in the past, especially to use you rather than thou, when you was considered more formal)."
+        ],
+        "examples": [
+          "Now even Princess Anne had dropped it. Sarah had heard her youing away on television the other night just like the inhabitants of her mother’s dominions beyond the seas.",
+          "Youing consists in relating everything in the conversation to the person you wish to flatter, and introducing the word “you” into your speech as often as possible.",
+          "But even having my very own personal pronoun was risky, because it’s pretty tough to keep stopped-hope stopped up when you are getting all youed up, when someone you really like keeps promising you scary, fun, exciting stuff—and even tougher for the [sic] of that moment to remain securely devoid of hope, to make smart, self-denying decisions with Dad you ing me—the long ooo of it broad and extended, like a hand."
+        ]
+      },
+      {
+        "pos": "Pronoun",
+        "definitions": [
+          "(subject pronoun) The person spoken to or written to, as a subject. (Originally as a mark of respect.) [from 15th c.]",
+          "(object pronoun) The people spoken, or written to, as an object. [from 9th c.]",
+          "(subject pronoun) The people spoken to or written to, as a subject. (Replacing ye.) [from 14th c.]",
+          "(subject pronoun, colloquial) A person's favorite sports team.",
+          "(indefinite personal pronoun) A dummy pronoun used in certain constructions, usually with verbs of receiving (such as get or find) or sensing (such as see or hear), typically stating the existence or typicality of something.",
+          "(object pronoun) The person spoken to or written to, as an object. (Replacing thee; originally as a mark of respect.) [from 13th c.]",
+          "(indefinite personal pronoun) Anyone, one; an unspecified individual or group of individuals (as subject or object). [from 16th c.]",
+          "(reflexive pronoun, now US colloquial) (To) yourselves, (to) yourself. [from 9th c.]"
+        ],
+        "examples": [
+          "You are all supposed to do as I tell you.",
+          "You get a lot of rude people in London.",
+          "You are right, Fanny, to protest against such an office, but you need not be afraid.",
+          "Both of you should get ready now.",
+          "It was one of those small-town dive bars you often read about."
+        ]
+      },
+      {
+        "pos": "Determiner",
+        "definitions": [
+          "The individual or group spoken or written to.",
+          "Used before epithets, describing the person being addressed, for emphasis."
+        ],
+        "examples": [
+          "Tell me about ’e barber who shaved you hair so close,—was he kind to you?",
+          "Have you gentlemen come to see the lady who fell backwards off a bus?",
+          "“ You oyster gravy, Massa Sam,” said Ella, ladling a couple of spoonfuls over the rice.",
+          "“No. I need a ride into Buenos Aires. You remember what we arranged?” “ You wife’s a-gonna give a-birt?” “That’s right. Are you free?”"
+        ]
       }
-    ]
-  },
-  "yoruba": {
-    "uk_ipa": "/ˈjɒrʊbə/",
-    "us_ipa": "/ˈjɔːrəbə/",
-    "examples": [],
-    "meanings": [
-      "a niger - congo language of southwestern nigeria and parts of benin and to go",
-      "a member of any of the yoruba - speaking peoples of this region"
     ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
-      {
-        "text": "yuh",
-        "stress": 0
-      },
-      {
-        "text": "roo",
-        "stress": 1
-      },
-      {
-        "text": "buh",
-        "stress": 0
-      }
-    ]
-  },
-  "you": {
+    "default_pos": "Pronoun",
     "uk_ipa": "/ju/",
     "us_ipa": "/jə/",
-    "examples": [
-      "You said you knew the way.",
-      "I thought she told you.",
-      "Can I sit next to you?"
-    ],
-    "meanings": [
-      "the one or ones being addressed",
-      "compare thee, thou, ye, your, yours",
-      "one sense 2 a"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -2073,19 +4382,56 @@
       }
     ]
   },
-  "young": {
+  {
+    "word": "young",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(often as if a plural noun) Offspring, especially the immature offspring of animals."
+        ],
+        "examples": [
+          "The lion caught a gnu to feed its young.",
+          "The lion's young are curious about the world around them."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(geology) To exhibit younging.",
+          "(informal or demography) To become or seem to become younger.",
+          "(informal or demography) To cause to appear younger."
+        ],
+        "examples": [
+          "The existence of magmatic belts younging northward implies that slabs of Asian mantle subducted one after another under ranges north of the Himalayas.",
+          "Shoshonitic magmatism younged southwards in the Superior Province, commensurate with the southwardly diachronous accretion of allochthonous subprovinces.",
+          "The aging (or younging) of a population refers to the fact that a population, as a unit of observation, is getting older (or younger).",
+          "Medicare data was \" younged \" by a month to achieve conformity with the conventional completed ages recorded in the census."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "In the early part of growth or life; born not long ago.",
+          "Youthful; having the look or qualities of a young person.",
+          "At an early stage of existence or development; having recently come into existence.",
+          "Early (of a decade of life).",
+          "Junior (of two related people with the same name).",
+          "(Not) advanced in age; (far towards or) at a specified stage of existence or age.",
+          "Of or belonging to the early part of life."
+        ],
+        "examples": [
+          "Come skydiving with us. Come on, you're only young once!",
+          "Come, come, elder brother, you are too young in this.",
+          "How young is your dog?",
+          "The cynical world soon shattered my young dreams.",
+          "Her grandmother turned 70 years young last month."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/jʌŋ/",
     "us_ipa": "/jʌŋ/",
-    "examples": [
-      "Young babies need to be wrapped up warmly.",
-      "a young country",
-      "Caterpillars eat the young leaves of this plant."
-    ],
-    "meanings": [
-      "being in the first or an early stage of life, growth, or development",
-      "junior sense 1 a",
-      "of an early, tender, or desirable age for use as food or drink"
-    ],
     "synonyms": [
       "youthful",
       "juvenile",
@@ -2107,17 +4453,57 @@
       }
     ]
   },
-  "youngish": {
+  {
+    "word": "younger",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One who is younger than another."
+        ],
+        "examples": [
+          "Youngers did not like olders to be mean and bossy.",
+          "So, it is necessary to educate our youngers about economy and, [sic] school and college education can do this easily.",
+          "First, the use of Hindi is more among the males than among the females irrespective of the interaction with elders, equals or youngers.",
+          "A section of semi-structured interview schedule was also included in the research in order to test if youngers face any problem with elders staying with them.",
+          "Hugh and Charlie also played fairly well, so perhaps it was not wonderful that James, who had always regarded cricket as a childish waste of time, felt rather at a loss, and did not care to display his inferiority to his youngers."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(card games) Synonym of junior.",
+          "comparative form of young: more young"
+        ],
+        "examples": [
+          "Our neighbors' son is younger than our daughter.",
+          "Reading this book takes me back to my younger days."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "youngish",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Somewhat young."
+        ],
+        "examples": [
+          "In spite of his youngish appearance, he had much experience."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjʌŋɪʃ/",
     "us_ipa": "/ˈjʌŋɪʃ/",
-    "examples": [
-      "a youngish president"
-    ],
-    "meanings": [
-      "being in the first or an early stage of life, growth, or development",
-      "junior sense 1 a",
-      "of an early, tender, or desirable age for use as food or drink"
-    ],
     "synonyms": [
       "young",
       "youthful",
@@ -2131,19 +4517,75 @@
       "adult",
       "mature",
       "old"
-    ]
+    ],
+    "syllables": []
   },
-  "youngster": {
+  {
+    "word": "youngness",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The state or qualities of being young or youthful; youth."
+        ],
+        "examples": [
+          "I was eight years older than Arthur, and our affair had started as a crazy fling with all the beauty for me of his youngness and blackness.",
+          "[…] he was conscious of a feeling which independently pronounced him her senior in point of Time, and Isabel a child of everlasting youngness.",
+          "The puppy room in the basement brimmed with youngness, with suckings, cuddlings, lickings, squirmings—puppies whose eyes were sealed against seeing, puppies whose ears were sealed against hearing for the first ten days of life […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "youngs",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of young."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "third-person singular simple present indicative of young"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "youngster",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A young person."
+        ],
+        "examples": [
+          "“Besides,” she says, looking possessively at her class of Chinese youngsters, “can you imagine these children going to an ordinary school?”",
+          "In a single moment Montenegro and their supporters were given fresh impetus and encouragement. Beciraj tested Hart with a low shot before teenager Phil Jones, on his England debut, suffered an anxious moment when Stevan Jovetic went down under his challenge, leaving the youngster clearly relieved to see referee Stark wave away Montenegro's appeals.",
+          "As soon as Julia returned with a constable, Timothy, who was on the point of exhaustion, prepared to give over to him gratefully. The newcomer turned out to be a powerful youngster, fully trained and eager to help, and he stripped off his tunic at once.",
+          "‘Cook-housekeeper jobs don’t grow on trees,’ went on the woman, ‘leastways not where you can keep a youngster with you.’ [...] ‘Do you mean,’ stammered Jess, ‘that you are...?’ ‘Cook-housekeeper,’ the woman nodded. ‘Aren’t I telling you? It’s all confirmed!’ ‘And the youngster – me?’ asked Jessamy. ‘Well, whoever else you silly child!’ said the housekeeper, smiling."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjʌŋstə(r)/",
     "us_ipa": "/ˈjʌŋstər/",
-    "examples": [
-      "The camp is for youngsters aged 8 to 14."
-    ],
-    "meanings": [
-      "a young person: youth",
-      "child",
-      "a young animal or plant especially of a domesticated or cultivated breed or type"
-    ],
     "synonyms": [
       "kid",
       "child",
@@ -2169,19 +4611,52 @@
       }
     ]
   },
-  "youth": {
+  {
+    "word": "younker",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "junker"
+        ],
+        "examples": [
+          "Trimmed like a younker prancing to his love!",
+          "So foorth they went, and both together giusted; But that same younker soone was overthrowne",
+          "“Jim,” says he, “I reckon we’re fouled, you and me, and we’ll have to sign articles. I’d have had you but for that there lurch, but I don’t have no luck, not I; and I reckon I’ll have to strike, which comes hard, you see, for a master mariner to a ship’s younker like you, Jim.”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "youth",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(uncountable, used as plural or singular) Young persons, collectively.",
+          "A young person.",
+          "The part of life following childhood; the period of existence preceding maturity or age; the whole early part of life, from childhood, or, sometimes, from infancy, to adulthood.",
+          "The quality or state of being young.",
+          "A young man; a male adolescent or young adult."
+        ],
+        "examples": [
+          "Her youth and beauty attracted him to her.",
+          "Make the most of your youth, it will not last forever.",
+          "I made many mistakes in my youth, but learned from them all.",
+          "There was a group of youths hanging around the parking lot, reading fashion magazines and listening to music.",
+          "The actual brides- and grooms-to-be are not in attendance—many youth would be embarrassed by their parents’ matchmaking efforts, and often do not live in the same city anyway."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/juːθ/",
     "us_ipa": "/juːθ/",
-    "examples": [
-      "He had been a talented musician in his youth.",
-      "She regrets that she spent her youth travelling and not studying.",
-      "to relive/recapture your youth"
-    ],
-    "meanings": [
-      "the time of life when one is young",
-      "the period between childhood and maturity",
-      "the early period of existence, growth, or development"
-    ],
     "synonyms": [
       "boy",
       "teenager",
@@ -2203,18 +4678,24 @@
       }
     ]
   },
-  "youthful": {
+  {
+    "word": "youthful",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Characteristic of young people.",
+          "Young or seeming young."
+        ],
+        "examples": [
+          "youthful vivacity",
+          "a youthful butler"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjuːθfl/",
     "us_ipa": "/ˈjuːθfl/",
-    "examples": [
-      "youthful enthusiasm/energy/inexperience",
-      "She's a very youthful 65."
-    ],
-    "meanings": [
-      "of, relating to, or characteristic of youth",
-      "being young and not yet mature",
-      "marked by or possessing youth"
-    ],
     "synonyms": [
       "young",
       "juvenile",
@@ -2240,17 +4721,22 @@
       }
     ]
   },
-  "youthfully": {
+  {
+    "word": "youthfully",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "In a youthful manner."
+        ],
+        "examples": [
+          "Nonetheless, it would be wonderful if, in the face of inevitable fate, all people could live youthfully and vitally until the end."
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
     "uk_ipa": "/ˈjuːθfəli/",
     "us_ipa": "/ˈjuːθfəli/",
-    "examples": [
-      "to act youthfully"
-    ],
-    "meanings": [
-      "of, relating to, or characteristic of youth",
-      "being young and not yet mature",
-      "marked by or possessing youth"
-    ],
     "synonyms": [
       "young",
       "juvenile",
@@ -2264,20 +4750,25 @@
       "older",
       "old",
       "senior"
-    ]
+    ],
+    "syllables": []
   },
-  "youthfulness": {
+  {
+    "word": "youthfulness",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The vitality characteristic of youth."
+        ],
+        "examples": [
+          "But it was not the sadness, nor indeed, strictly speaking, the infantileness of the face of Isabel which so singularly impressed him with the idea of her original and changeless youthfulness."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjuːθflnəs/",
     "us_ipa": "/ˈjuːθflnəs/",
-    "examples": [
-      "the youthfulness of much of the population in nearly all these countries",
-      "She graces the stage with elegance and youthfulness."
-    ],
-    "meanings": [
-      "of, relating to, or characteristic of youth",
-      "being young and not yet mature",
-      "marked by or possessing youth"
-    ],
     "synonyms": [
       "freshness",
       "prime",
@@ -2291,17 +4782,31 @@
       "agedness",
       "ancientness",
       "elderliness"
-    ]
+    ],
+    "syllables": []
   },
-  "yowl": {
+  {
+    "word": "yowl",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A prolonged, loud cry, like the sound of an animal; a wail; a howl."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "Express by yowling; utter with a yowl.",
+          "Utter a yowl."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/jaʊl/",
     "us_ipa": "/jaʊl/",
-    "examples": [],
-    "meanings": [
-      "to utter a loud long cry of grief, pain, or distress: wail",
-      "to complain or protest with or as if with y owls",
-      "to express with yowling"
-    ],
     "synonyms": [
       "howl",
       "shout",
@@ -2315,65 +4820,81 @@
       "whisper",
       "gasp",
       "whimper"
-    ]
-  },
-  "ypres": {
-    "uk_ipa": "/ˈiːprə/",
-    "us_ipa": "/ˈiːprə/",
-    "examples": [],
-    "meanings": [
-      "commune in the northwestern belgium province of west flanders population 3 5, 0 8 1"
     ],
-    "synonyms": [],
-    "antonyms": []
+    "syllables": []
   },
-  "ytterbium": {
-    "uk_ipa": "/ɪˈtɜːbiəm/",
-    "us_ipa": "/ɪˈtɜːrbiəm/",
-    "examples": [],
-    "meanings": [
-      "a soft metallic element of the rare - earth group that occurs especially with other rare earth elements in minerals and that has few commercial uses see chemical elements table",
-      "a metallic element that occurs in several minerals see element",
-      "a bivalent or trivalent metallic element of the rare - earth group that resembles yttrium and occurs with it and related elements in several minerals"
+  {
+    "word": "yr",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A letter of the Anglo-Saxon runic alphabet, ᚣ, representing the vowel sounds /y/ and /yː/ in Old English."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Determiner",
+        "definitions": [
+          "(Internet slang, text messaging) Contraction of you +‎ are."
+        ],
+        "examples": [
+          "Got yr card. Problem is: don't have yr address! Wd love to see you. Write w/number! xo Jeremy.",
+          "On her street he reached into his pocket, pulled out his phone and typed: On yr St. U free? The answer came back: Door open."
+        ]
+      }
     ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "yttrium": {
-    "uk_ipa": "/ˈɪtriəm/",
-    "us_ipa": "/ˈɪtriəm/",
-    "examples": [],
-    "meanings": [
-      "a metallic element with atomic number 3 9 usually included in the rare - earth group that occurs usually with other rare earth elements in minerals and is used especially in phosphors, yag lasers, alloys, and treatments for certain cancers see chemical elements table",
-      "a metallic element that occurs in minerals along with other similar uncommon elements see element",
-      "a trivalent metallic element usually included among the rare earth elements which it resembles chemically and with which it occurs in minerals"
-    ],
+    "default_pos": "Determiner",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "iht",
-        "stress": 1
-      },
-      {
-        "text": "ree",
-        "stress": 0
-      },
-      {
-        "text": "uhm",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "yuan": {
+  {
+    "word": "ytterbium",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A metallic chemical element with an atomic number of 70.",
+          "A single atom of this element."
+        ],
+        "examples": [
+          "The lanthanides samarium, europium and ytterbium possess relatively stable and long-known dispositive states.",
+          "Alternative form: Yb (symbol)",
+          "At a meeting of the Russian Chemical Society held October 20, 1881 (and reported in the Bulletin de la Société Chimique de Paris, for August, 1882), Mendelejeff [Dmitri Mendeleev], the distinguished author of the periodic law, remarked that only two of the recently announced elements—scandium and ytterbium —had been satisfactorily confirmed. These have been obtained in a pure state by [Lars Fredrik] Nilson, and neither of them has absorption spectra."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": "/ɪˈtɜːbiəm/",
+    "us_ipa": "/ɪˈtɜːrbiəm/",
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "yuan",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(numismatics) The basic unit of money in China.",
+          "(Taiwan, politics) One of the five branches of the government of the Republic of China."
+        ],
+        "examples": [
+          "The provincial government has designated thirty-four counties in Henan as officially impoverished (pinkun xian) according to the provincial criterion: an average annual per capita income below 500 yuan and total household assets valued at less than 8,000 yuan, based on 1990 prices.",
+          "Sung paused to show me some of the notes. They were in issues of five yuan (a Chinese dollar, equal at this time to a little less than one American dollar), one yuan, twenty and ten cent denominations.",
+          "Donations to the mosque come from a village considered fairly poor by regional standards, with an average annual income of 300 yuan (about U.S. $100) per household. The 1982 average per capita annual income in Yongning County was substantially higher, 539 yuan according to the Population Census Office (1987:206).",
+          "The Nanchiaoshan Co-operative in Kuangling County originally had 14 households. But they became dissatisfied and 7 withdrew because nothing was done when the production-team leader (a rich peasant) and the bookkeeper made away with some 60 yuan of public money.",
+          "A ticket to these Saturday and Sunday night dances costs 15 yuan, or $5.35, which is a lot when one considers that the average Peking worker makes 60 to 70 yuan ($21 to $25) a month."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/juˈɑːn/",
     "us_ipa": "/juˈɑːn/",
-    "examples": [],
-    "meanings": [
-      "the basic monetary unit of the people ' s republic of china see money table compare renminbi",
-      "the dollar of the republic of china ( taiwan )",
-      "the basic unit of money in china"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -2387,15 +4908,26 @@
       }
     ]
   },
-  "yucca": {
+  {
+    "word": "yucca",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of several evergreen plants of the genus Yucca, having long, pointed, and rigid leaves at the top of a woody stem, and bearing a large panicle of showy white blossoms."
+        ],
+        "examples": [
+          "On the mountains a few junipers and piñons are found, and cactuses, agave, and yuccas, low, fleshy plants with bayonets and thorns.",
+          "The strange yet appealing yucca is native to the United States, Mexico and the West Indies and is part of the Agavaceae family, many species of which have tough, sword-like leaves.",
+          "Jucca, ſive Yucca Peruana. The root whereof the bread Caſua, or Cazava is made.]",
+          "Cassava is a typical Garífuna food made from yucca, a semi-permanent crop found in tropical and subtropical regions. A basic food crop, yucca grows in poor soil where other crops will not.",
+          "In some parts of the Indies they use a kind of bread called cassava, which is made from a certain root called yucca. The yucca root is large and thick. It is cut into small pieces and grated and squeezed in a sort of press, and what is left resembles a thin cake that is very long and broad, almost like a shield. Dried, this is the bread that they eat; it has no taste and is perfectly insipid but is wholesome and nourishing."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjʌkə/",
     "us_ipa": "/ˈjʌkə/",
-    "examples": [],
-    "meanings": [
-      "any of a genus ( yucca ) of sometimes arborescent plants of the asparagus family that occur in warm regions chiefly of western north america and have long sword - shaped often stiff fibrous - margined leaves on a usually woody base and bear a large panicle of white blossoms",
-      "cassava",
-      "any of a genus of plants that are related to the agaves, grow in warm dry regions mostly of western north america, have long pointed often stiff leaves, and produce a tall stiff stalk with whitish flowers"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -2409,17 +4941,22 @@
       }
     ]
   },
-  "yucky": {
+  {
+    "word": "yucky",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(colloquial, often childish) Of something highly offensive; causing aversion or disgust."
+        ],
+        "examples": [
+          "The food that I ate today was very yucky."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈjʌki/",
     "us_ipa": "/ˈjʌki/",
-    "examples": [
-      "yucky food"
-    ],
-    "meanings": [
-      "repugnant, distasteful",
-      "unpleasant, disagreeable",
-      "disagreeable, distasteful"
-    ],
     "synonyms": [
       "distasteful",
       "horrible",
@@ -2445,14 +4982,20 @@
       }
     ]
   },
-  "yule": {
+  {
+    "word": "yule",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Yule."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/juːl/",
     "us_ipa": "/juːl/",
-    "examples": [],
-    "meanings": [
-      "the feast of the nativity of jesus christ: christmas",
-      "christmas"
-    ],
     "synonyms": [
       "Christmas",
       "Xmas",
@@ -2468,16 +5011,23 @@
       }
     ]
   },
-  "yuletide": {
+  {
+    "word": "yuletide",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Yuletide (“ Christmas or the Christmas season ”).",
+          "The flower Camellia sasanqua, native to Japan and nearby islands."
+        ],
+        "examples": [
+          "During nearly 20 years of marriage, our Christmas decor rollout has grown – from a single hatbox of ornaments and lights to seven substantial cartons, filled with yuletide stuff that my wife has accumulated on a trail from Vienna through Saks Fifth Avenue to the Texas Hill country."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjuːltaɪd/",
     "us_ipa": "/ˈjuːltaɪd/",
-    "examples": [
-      "Yuletide food and drink"
-    ],
-    "meanings": [
-      "the christmas season: christmastide",
-      "the christmas season"
-    ],
     "synonyms": [
       "Christmas",
       "Christmastime",
@@ -2497,19 +5047,29 @@
       }
     ]
   },
-  "yummy": {
+  {
+    "word": "yummy",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(slang) Ellipsis of yummy mummy."
+        ],
+        "examples": [
+          "The Yummies were the women who, next to the Starlets and Professional Have-It-Alls, Meredith envied most, and therefore half-despised. You could see them at the latte bars, drinking green tea smoothies, hoisting their fat-cheeked offspring from one hip to the other, comparing notes on washable diapers and baby-friendly resorts."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(colloquial, lighthearted, often childish) Delicious."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈjʌmi/",
     "us_ipa": "/ˈjʌmi/",
-    "examples": [
-      "a yummy cake",
-      "Chocolate cake? Yummy!",
-      "These biscuits are yummy."
-    ],
-    "meanings": [
-      "highly attractive or pleasing",
-      "delicious, delectable",
-      "very pleasing especially to the taste"
-    ],
     "synonyms": [
       "delicious",
       "edible",
@@ -2535,37 +5095,45 @@
       }
     ]
   },
-  "yuppie": {
-    "uk_ipa": "/ˈjʌpi/",
-    "us_ipa": "/ˈjʌpi/",
-    "examples": [],
-    "meanings": [
-      "a young college - educated adult who is employed in a well - paying profession and who lives and works in or near a large city"
+  {
+    "word": "yuri",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(especially Japanese fiction) A narrative or visual work featuring a romantic or sexual relationship between women."
+        ],
+        "examples": [
+          "Coordinate terms: yaoi, boys' love"
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "yuh",
-        "stress": 1
-      },
-      {
-        "text": "pee",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "yurt": {
+  {
+    "word": "yurt",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A large, round, semi-permanent tent with vertical walls and a conical roof, usually associated with Central Asia and Mongolia (where it is known as a ger)."
+        ],
+        "examples": [
+          "Northeast of the center's main group of yurts is a new neighbor—the Spruce Hole Yurt —operated by Cumbres Nordic Adventures. This yurt is easy to get to, affords scenic views, and serves up classic touring terrain.",
+          "Who would have imagined that the circular, skin-covered, pole-framed tents used by Mongolian nomads would find another life in the Colorado backcountry? The Mongols might be surprised if they could see how their portable structures have been improved and put to use in the San Juan Mountains of southern Colorado and northern New Mexico. […] About halfway to the [Neff Mountain] yurt, the trail makes an uphill switchback and passes the bottom of a big, open bowl.",
+          "[T]heir [the Nogais '] cattle grazed on the Little Injik, only seven versts from the boundary line. In summer they kept them in the Black Mountains, and in winter at their auls. They lived in felt yurts, and often changed their place of abode.",
+          "The principal dwelling of the nomadic Kazakhs, the circular, felt-covered yurt is a potent image of Kazakh culture. Few Kazakhs now live in yurts, although they are still used by some pastoralists who still move their herds into summer mountain pastures. […] But the imagery of the yurt remains central to Kazakh ethnic identity, and provides national cultural symbolism deployed by the authorities of independent Kazakhstan."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/jɜːt/",
     "us_ipa": "/jɜːrt/",
-    "examples": [
-      "All our yurts are made of quality canvas and raised on wooden platforms for warmth and an even surface."
-    ],
-    "meanings": [
-      "a circular domed tent of skins or felt stretched over a collapsible lattice framework and used by pastoral peoples of inner asia",
-      "a structure that resembles a yurt usually in size and design",
-      "a light round tent of skins or felt used by nomads in central asia"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -2575,4 +5143,4 @@
       }
     ]
   }
-}
+]

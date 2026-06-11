@@ -1,11 +1,41 @@
-{
-  "zaftig": {
+[
+  {
+    "word": "zabaglione",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A custard-like dessert made with egg yolks, sugar and Marsala wine."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zaftig",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(US, colloquial, of a woman) Having a plump and sexually attractive figure; voluptuous, well-proportioned; large."
+        ],
+        "examples": [
+          "By his description the same broad. A zaftige piece too, in a mink stole.",
+          "Sportcasters are drawn from three different talent pools. Some are professional media people, others are ex-coaches and the most zaftig lot are ex-players.",
+          "But I've been waiting for you just to say / The zoftig chick is mine / But all I know is you got no money / But that's got nothing to do with a good time",
+          "Well, a certain zaftig coed told this on herself. She tried to give her all to Brainy in exchange for a passing grade in the general math course necessary to any degree on our campus. […] \"Brainy\" didn't accept, didn't refuse, wasn't offended, didn't seem to understand. He told her that she had better talk to her instructor about getting tutoring and a re-exam. Now Miss Zaftig is circulating the story that Prof \"No Brain\" must be a eunuch or a robot. Not even a homo. Totally sexless."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzæftɪɡ/",
     "us_ipa": "/ˈzɑːftɪɡ/",
-    "examples": [],
-    "meanings": [
-      "having a full rounded figure: pleasingly plump"
-    ],
     "synonyms": [
       "buxom",
       "voluptuous",
@@ -31,75 +61,177 @@
       }
     ]
   },
-  "zakat": {
+  {
+    "word": "zag",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One of a series of sharp turns or reversals."
+        ],
+        "examples": [
+          "Afterward, she returns to the Dragon Pit to announce her agreement to the truce. “The darkness is coming for us all. We will face it together. And when the Great War is over, perhaps you will remember that I chose to help, with no promises or assurances from any of you. I expect not.” The self-pity and pettiness is classic Cersei, but what a zag! It was always hard to imagine what this show looks like with all the humans on all sides temporarily working together."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To move with a sharp turn or reversal."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zakat",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Islam) Almsgiving, usually in the form of an annual tax on certain types of property which is then used for charitable purposes; the third of the five pillars of Islam."
+        ],
+        "examples": [
+          "Services given by the Sayyids are supposed to be free, but they should receive the Zikat, or one tenth of the fruits of the earth.",
+          "The Alcoran and all the subsequent teachings of the faithful enjoined a constant and liberal charity. […] The theory of the zakat, or tax, is that it is a voluntary gift. Contributing for the needs of the state followed in due course of time, and became obligatory. These taxes, or zakat, amounted by law to two and a half per cent. of the principal of certain assessed property.",
+          "Amongst these stations is the well-known place called Qaṭyā, which the people pronounce Qaṭya, where zakāt is collected from the merchants, their goods are examined, and their baggage most rigorously searched.",
+          "The Mahometan law insists on the legal obligation of society to support their indigent fellow-citizens, the Hedaya or Mahometan Guide begins, \"take zakat,\" said Mahomet, \"from the rich Mussulmans, and bestow it upon the poor Mussulmans: zakat or charity,\" says the code, \"signifies alms imposed by law, in opposition to [sadka], voluntary charity.\" […] The zakat was a property-tax paid on all productions and profits, on merchandise, mines, &c.",
+          "Zakât is an ordinance of God, incumbent upon every perſon vvho is free, ſane, adult, and a Muſſulman, provided he be poſſeſſed, in full propriety, of ſuch eſtate or effects as are termed in the language of the lavv a Niſâb, and that he has been in poſſeſſion of the ſame for the ſpace of one complete year, vvhich is denominated Havvlân-Hâvvl. The reaſon of this obligation is found in the vvord of God, vvho has ordained it in the Koran, ſaying, \" Bestovv Zakât.\""
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zəˈkɑːt/",
     "us_ipa": "/zəˈkɑːt/",
-    "examples": [],
-    "meanings": [
-      "an annual alms tax or poor rate that each muslim is expected to pay as a religious duty and that is used for charitable and religious purposes"
-    ],
-    "synonyms": [],
-    "antonyms": []
-  },
-  "zambia": {
-    "uk_ipa": "/ˈzæmbiə/",
-    "us_ipa": "/ˈzæmbiə/",
-    "examples": [],
-    "meanings": [
-      "landlocked country in southern africa; capital lusaka area 2 9 0, 5 8 7 square miles ( 7 5 2, 6 1 8 square kilometers ), population 1 6, 4 4 5, 0 0 0"
-    ],
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "zam",
-        "stress": 1
-      },
-      {
-        "text": "bee",
-        "stress": 0
-      },
-      {
-        "text": "uh",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "zambian": {
-    "uk_ipa": "/ˈzæmbiən/",
-    "us_ipa": "/ˈzæmbiən/",
-    "examples": [],
-    "meanings": [
-      "landlocked country in southern africa; capital lusaka area 2 9 0, 5 8 7 square miles ( 7 5 2, 6 1 8 square kilometers ), population 1 6, 4 4 5, 0 0 0"
+  {
+    "word": "zaman",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Albizia saman, a large tropical tree in the pea family."
+        ],
+        "examples": [
+          "On shore, the mule's pinkish ears revolved lazily in the shade of the zaman tree."
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "zam",
-        "stress": 1
-      },
-      {
-        "text": "bee",
-        "stress": 0
-      },
-      {
-        "text": "uhn",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "zany": {
+  {
+    "word": "zamboni",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Zamboni."
+        ],
+        "examples": [
+          "I bet you a hundred bucks you can't drive the zamboni to the top of those stairs. (Can we archive this URL?)",
+          "It's nice to see the zambonis are out freshening up the streets, so that the kids can ice-skate to school in northern Minnesota!",
+          "A zamboni cuts away the top layer of ice (often 1/16th of an inch or less) using a sharp blade, much like a shaving razor.",
+          "(Can we archive this URL?)"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zamia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of various cycads of the genera Zamia and Macrozamia"
+        ],
+        "examples": [
+          "It was, in fact, the starchy stems that in some cases led to depletion of wild zamias in some regions of Florida."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zantedeschia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the genus Zantedeschia of herbaceous flowering plants in the family Araceae, native to southern Africa."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zanthoxylum",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the genus Zanthoxylum of deciduous and evergreen trees and shrubs in the citrus or rue family."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zany",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Unusual and awkward in a funny, comical manner; outlandish; clownish.",
+          "Ludicrously or incongruously comical."
+        ],
+        "examples": [
+          "This runs counter to the play, where Grandpa is always benignly indulgent of all his zany progeny and their equally zany spouses, and is even somewhat zany himself.",
+          "When playing for Connie Mack, Rube [Waddell]'s pattern after one of his zany outbursts usually involved promises of good behavior and a spurt of excellent pitching.",
+          "Press articles emphasized his [Dizzy Gillespie 's] ambassadorial role and drew attention to the paradox that he was a shrewd musician and leader despite his zany image.",
+          "The montage goes on to show scenes of Carla singing, dancing, meditating, breaking the tension amongst her co-cheftestants with sing-a-longs and “hootie-hoo” lessons, and ultimately wooing the judges with a combination of her zany personality and solid cooking skills.",
+          "And I will admit now but never then that, more than once, listening to the Viennese chattering their zany German on the pavements, or taking himself to one of the struggling small theatres that were cropping up in cellars and bombed houses..."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzeɪni/",
     "us_ipa": "/ˈzeɪni/",
-    "examples": [
-      "zany humour"
-    ],
-    "meanings": [
-      "very eccentric ( see eccentric entry 1 sense 1 a ) or absurd ( see absurd entry 1 sense 1 ) often in an amusing way",
-      "being or having the characteristics of az any",
-      "a subordinate clown or acrobat in old comedies who mimics ludicrously the tricks of the principal: merry - andrew"
-    ],
     "synonyms": [
       "silly",
       "absurd",
@@ -125,19 +257,57 @@
       }
     ]
   },
-  "zap": {
+  {
+    "word": "zap",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A raucous public demonstration designed to embarrass a public figure or celebrity as a form of political activism.",
+          "(colloquial) A sound made by a sudden release of electricity or some similar energy.",
+          "(colloquial) An electric shock.",
+          "(slang) The act of heating something in a microwave oven."
+        ],
+        "examples": [
+          "You might feel a little zap touching a metal doorknob when the air is dry.",
+          "Black AIDS activists were caught in the middle of a nearly yearlong series of zaps.",
+          "When a zap at Brooklyn's Board of Education opened no dialogue on discrimination suffered by gay teachers, GAA targeted the BOE offices on April 13.",
+          "The guest immediately asked the bartender to give his drink a zap in the microwave oven behind him […]"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make a zap sound.",
+          "To use a remote control to repeatedly fast-forward or change channels on a television.",
+          "To heat (something) in a microwave oven.",
+          "To photocopy.",
+          "To delete or discard (electronic media).",
+          "To participate in a zap (protest) against.",
+          " (slang, transitive) To damage (especially electronics) with electrostatic discharge.",
+          " (US, military, slang, transitive) To kill; to eliminate."
+        ],
+        "examples": [
+          "They zapped a lot of files before realizing they had not backed up lately.",
+          "They zapped my motor's magnets.",
+          "If it's not warm in the middle, zap it some more.",
+          "They spent the whole movie zapping bad guys into oblivion.",
+          "I think they zapped the processor."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Representing the sound or action of a zap."
+        ],
+        "examples": [
+          "Then the computer went zap and I lost all my work."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/zæp/",
     "us_ipa": "/zæp/",
-    "examples": [
-      "The monster got zapped by a flying saucer (= in a computer game).",
-      "It's vital to zap stress fast.",
-      "He jumped like a man who'd been zapped with 1 000 volts."
-    ],
-    "meanings": [
-      "to get rid of, destroy, or kill especially with or as if with sudden force",
-      "to hit with or as if with a sudden concentrated application of force or energy",
-      "to irradiate especially with microwaves"
-    ],
     "synonyms": [
       "hit",
       "knock",
@@ -153,30 +323,130 @@
       }
     ]
   },
-  "zapper": {
+  {
+    "word": "zapper",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(slang) A microwave oven.",
+          "(colloquial, figuratively, by extension) Anything that exterminates.",
+          "(colloquial) A device that electrifies or electrocutes.",
+          "(colloquial) A remote control for a television."
+        ],
+        "examples": [
+          "The news is starting on the other channel; hand me the zapper.",
+          "I hate to spoil your microwave testimonial, but they were actually cooked in the regular oven this morning and just re-heated in the zapper.",
+          "Miranda is not the sort of person to carry a zapper but she has an oar that would cause a dog a lot more grief if it caught it full on.",
+          "You are going to go from being a toxic-thought overreactor to a toxic-thought zapper.",
+          "If games are your life, the choice of a joystick is desperately important. Casual alien- zappers can get by with the cheapest generic Taiwanese clone-stick […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzæpə(r)/",
     "us_ipa": "/ˈzæpər/",
-    "examples": [
-      "a bug zapper"
-    ],
-    "meanings": [
-      "one that zaps: such as",
-      "an electronic device designed to attract and kill insects",
-      "a person who habitually changes channels ( as to avoid commercials )"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zeal": {
+  {
+    "word": "zarf",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An ornamental container designed to hold a coffee cup or teacup and insulate it from the hand of the drinker."
+        ],
+        "examples": [
+          "In presenting the coffee, the servant holds the foot of the zarf with his thumb and first finger. In receiving the fingán and zarf, he makes use of both hands, place the left beneath and the right above at the same instant."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zauschneria",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Epilobium canum, a North American willowherb."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zayin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The seventh letter of many Semitic alphabets (Phoenician, Aramaic, Hebrew, Syriac, Arabic and others)."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zea",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any plant of the genus Zea."
+        ],
+        "examples": [
+          "[…] and here the types used are principally the dwarf ones; and those plants of a greater height with decorative foliage like the zeas or variegated maize, which are used to produce the effect of sub-tropical bedding."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zeal",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A group of zebras.",
+          "The fervour or tireless devotion for a person, cause, or ideal and determination in its furtherance; diligent enthusiasm; powerful interest."
+        ],
+        "examples": [
+          "A zeal of zebras confuses predators. Each zebra has a different set of stripes.",
+          "She extols the virtues of veganism with missionary zeal.",
+          "Zebras can also be called a herd or a zeal.",
+          "[…] like a malicious purblinde zeale as thou art!",
+          "[…] there are questionlesse both in Greeke, Roman and Africa Churches, solemnities, and ceremonies, whereof the wiser zeales doe make a Christian use, and stand condemned by us;"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ziːl/",
     "us_ipa": "/ziːl/",
-    "examples": [
-      "her missionary/reforming/religious/political zeal"
-    ],
-    "meanings": [
-      "eagerness and ardent interest in pursuit of something: fervor",
-      "eager desire in going for a goal"
-    ],
     "synonyms": [
       "vigor",
       "passion",
@@ -198,15 +468,22 @@
       }
     ]
   },
-  "zealot": {
+  {
+    "word": "zealot",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One who is zealous, one who is full of zeal for their own specific beliefs or objectives, usually in the negative sense of being too passionate; a fanatic."
+        ],
+        "examples": [
+          "For Modes of Faith let graceleſs zealots fight; / His can't be wrong whoſe life is in the right:"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzelət/",
     "us_ipa": "/ˈzelət/",
-    "examples": [],
-    "meanings": [
-      "a zealous person",
-      "a fanatical partisan",
-      "a member of a fanatical sect arising in judea during the first century a. d. and militantly opposing the roman domination of palestine"
-    ],
     "synonyms": [
       "partisan",
       "militant",
@@ -230,15 +507,23 @@
       }
     ]
   },
-  "zealotry": {
+  {
+    "word": "zealotry",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Something characteristic of a zealot; excessive zeal; fanaticism."
+        ],
+        "examples": [
+          "Moderation is a wiser policy than zealotry, I think.",
+          "These testosterone thumpers have repackaged and exaggerated the study, with a credulity born of zealotry, into articles with shitposty titles like “Trust The Science: Study Links Left-Wing Politics to Lower Testosterone,” casting it as hard proof of their hormonal theories of healthy politics."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzelətri/",
     "us_ipa": "/ˈzelətri/",
-    "examples": [
-      "religious zealotry"
-    ],
-    "meanings": [
-      "excess of zeal: fanatical devotion"
-    ],
     "synonyms": [
       "fervor",
       "zeal",
@@ -268,16 +553,26 @@
       }
     ]
   },
-  "zealous": {
+  {
+    "word": "zealous",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Full of zeal; ardent, fervent; exhibiting enthusiasm or strong passion, particularly in matters of religion."
+        ],
+        "examples": [
+          "Doubtless many will exclaim against the Roman Catholic Church for this; but the simple truth is that Protestantism was no less zealous against the new scientific doctrine.",
+          "I had almoſt forgotten to acquaint your honor, that one major Alford (who was in mr. Love's conſpiracy) was of the graund inqueſt at Saliſbury, and was very zealous in his highneſſe ſervice here, and his good affection and wiſe carriage here, did much advantage the buſſineſe.",
+          "Johnſon was truly zealous for the ſucceſs of \"The Adventurer;\" and very ſoon after his engaging in it, he wrote the following letter […]",
+          "They neuer paſſe for the procuring of Gods honor, neither regard they how much they be bound vnto him. But euery man in the meane ſeaſon followes his owne likings. One burnes in couetouſneſſe, and another in vaine glorie, ſeeking to be aduaunced to authoritie and honour, and to bee taken to be I wote not what. Thus ye ſee at what point they bee, which will needes be taken to bee greateſt and zealouſeſt Chriſtians.",
+          "[S]orting them into ſeveral congregations of a moderat number, out of the ableſt and zealouſeſt among them to create elders, who, exerciſing and requiring from themſelves what they have learnd (for no learning is retaind without conſtant exerciſe and methodical repetition) may reach and govern the reſt: […]"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzeləs/",
     "us_ipa": "/ˈzeləs/",
-    "examples": [
-      "a zealous reformer"
-    ],
-    "meanings": [
-      "marked by fervent partisanship for a person, a cause, or an ideal: filled with or characterized by zeal",
-      "filled with or showing zeal: marked by passionate support for a person, cause, or ideal"
-    ],
     "synonyms": [
       "fervent",
       "enthusiastic",
@@ -303,16 +598,24 @@
       }
     ]
   },
-  "zealously": {
+  {
+    "word": "zealously",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "Like, or in the manner of, a zealot; with great zeal or zealotry."
+        ],
+        "examples": [
+          "zealously defend someone",
+          "zealously guarded",
+          "working zealously"
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
     "uk_ipa": "/ˈzeləsli/",
     "us_ipa": "/ˈzeləsli/",
-    "examples": [
-      "a zealously guarded secret"
-    ],
-    "meanings": [
-      "marked by fervent partisanship for a person, a cause, or an ideal: filled with or characterized by zeal",
-      "filled with or showing zeal: marked by passionate support for a person, cause, or ideal"
-    ],
     "synonyms": [
       "vigorously",
       "actively",
@@ -342,15 +645,62 @@
       }
     ]
   },
-  "zebra": {
+  {
+    "word": "zeaxanthin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(organic chemistry) A yellow crystalline carotenoid alcohol that occurs widely with lutein, with which it is isomeric, and is the chief pigment of maize"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zebibyte",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing) Strictly, 2 (1024, 1,180,591,620,717,411,303,424) bytes or 2 (1024) exbibytes, as opposed to a zettabyte."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zebra",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of three species of subgenus Hippotigris: Equus grevyi, Equus quagga, or Equus zebra, all with black and white stripes and native to Africa.",
+          "A zebra crossing."
+        ],
+        "examples": [
+          "A group of zebras can be called a dazzle.",
+          "On his way home he'd picked up two economy-sized bags of tortilla chips, and had dropped both when a twat in a Lexus honked him on a zebra...",
+          "“I was told in medical school, ‘when you hear hoofbeats think horses, not zebras,’” she says. Many trainee doctors receive the same advice – when a patient presents with symptoms, “look for the common thing.” That’s why EDS patients commonly refer to themselves as zebras – and also use the fabulous collective noun “dazzle.” The name represents rarity and evokes the stripy stretch marks that are a common feature on EDS skin.",
+          "“People change countries for all kinds of reasons,” Ross tells me. “But at least one of them was that she had this light-skinned, mixed-race child who had already been called a zebra at school.”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzebrə/",
     "us_ipa": "/ˈziːbrə/",
-    "examples": [],
-    "meanings": [
-      "any of several swift african mammals ( equus grevy i, e. quagga, and e. zebra ) related to the horse but distinctively and conspicuously patterned in stripes of black or dark brown and white or buff",
-      "referee sense 2",
-      "zebra crossing"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -364,26 +714,135 @@
       }
     ]
   },
-  "zebu": {
+  {
+    "word": "zebrawood",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any wood with a figure (grain pattern) like the striping of a zebra, most often wood of the genus Microberlinia."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zebu",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A domesticated ox native to Asia and Africa, having a large fleshy hump on its back and a dewlap (Bos taurus indicus)."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈziːbuː/",
     "us_ipa": "/ˈziːbuː/",
-    "examples": [
-      "Kenya's beef comes from the zebu cattle."
-    ],
-    "meanings": [
-      "any of various breeds of domestic oxen developed in india that are often considered conspecific with the common ox ( bos taurus ) or sometimes as a separate species ( b. indicus ) and are characterized by a large fleshy hump over the shoulders, a dew lap, pendulous ears, and marked resistance to the injurious effects of heat and insect attack",
-      "any of various breeds of domestic oxen developed in india that have a large fleshy hump over the shoulders and loose skin with hanging folds and that are able to withstand the harmful effects of heat and insect attack"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zeitgeist": {
+  {
+    "word": "zed",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(in combination) Something Z-shaped.",
+          "The name of the Latin script letter Z / z.",
+          "(slang) A zombie.",
+          "(colloquial, usually in the plural) Sleep."
+        ],
+        "examples": [
+          "Zzz...With all those ʻ zeds ʼ I'll be sending you to sleep.",
+          "A horde of zeds began to shuffle into the shopping mall.",
+          "I'm going to go get some zeds."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(intransitive, informal) To sleep or nap. (Compare zzz, catch some z's.)"
+        ],
+        "examples": [
+          "I guess I must have zedded, for I find a police officer, the same one that nicked me, shaking me.",
+          "We were zedding hell-bells up the hill towards Cervione, with a bank of road metal and a precipice on our left...",
+          "Zedding hogs. Sleep sippers and spitters. Look at 'em cooking in their own snoring heat. One nose after another.",
+          "Licking his lips, his hand zedded on my thigh and he commented, penetratingly, that it wasn't pussy, but that driving the unmade road wasn't at all bad.",
+          "\" Zedding away.\" \"God, I was having the most awful dream. That you'd got lost by the sea and I couldn't find you and something was chasing me, me and Evie.\""
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zee",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(colloquial, usually in the plural) Sleep.",
+          "The name of the Latin script letter Z / z. [from 1580]",
+          "Something Z-shaped. Found in compounds."
+        ],
+        "examples": [
+          "Time to get some zees.",
+          "Thus first C checks to see if ex and wye are equal. The resulting value of 1 or 0 (true or false) then is compared to the value of zee."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(intransitive, informal) To sleep or nap. (Compare zzz, catch some z's.)"
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Article",
+        "definitions": [
+          "Pronunciation spelling of the, representing primarily French or German accented English."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zeitgeist",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The spirit of the age; the taste, outlook, and spirit characteristic of a period."
+        ],
+        "examples": [
+          "After quickly summarizing the zeitgeisten of the Greek, Elizabethan, and early modern periods and their effects on the theatre, Rice turns to the contemporary world.",
+          "The vote also stoked fears that Swiss citizens were reflecting the zeitgeist across Europe, where right-wing populists increasingly are seizing the spotlight with an anti-immigration political agenda.",
+          "She was anchored to that seat by the accumulated indignities of days gone by and the boundless aspirations of generations yet unborn. She was a victim of both the forces of history and the forces of destiny. She had been tracked down by the Zeitgeist —the spirit of the time."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪtɡaɪst/",
     "us_ipa": "/ˈzaɪtɡaɪst/",
-    "examples": [],
-    "meanings": [
-      "the general intellectual, moral, and cultural climate of an era"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -397,15 +856,34 @@
       }
     ]
   },
-  "zen": {
+  {
+    "word": "zen",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(religion) Synonym of enlightenment, particularly the kind acquired through Zen meditation.",
+          "An approach to instruction, understanding, or an activity similarly emphasizing simplicity and intuition rather than conventional thinking or fixation on goals."
+        ],
+        "examples": [
+          "the zen of passing the bar exam",
+          "the zen of cooking"
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(religion) Alternative letter-case form of Zen: of or related to Zen Buddhism, particularly its focus on indirect teaching of wisdom through riddles and stories.",
+          "(colloquial) Wise, displaying enlightenment or similar wisdom, insightful, unburdened and free of worries, extremely relaxed and capable."
+        ],
+        "examples": [
+          "Greggs: You hung over? Just sayin', you look like shit. Moreland: You know what you need at a crime scene? Greggs: Rubber glove? Moreland: Soft eyes. Greggs: Like I'm s'posed to cry an' shit? Moreland: You got soft eyes, you can see the whole thing. You got hard eyes? You starin' at the same tree, missin' the forest. Greggs: Ah. Zen shit. Moreland: Soft eyes, grasshopper."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zen/",
     "us_ipa": "/zen/",
-    "examples": [],
-    "meanings": [
-      "a japanese sect of mahayana buddhism that aims at enlightenment by direct intuition through meditation",
-      "a state of calm attentiveness in which one ' s actions are guided by intuition rather than by conscious effort",
-      "of, relating to, or associated with zen buddhism"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -415,18 +893,28 @@
       }
     ]
   },
-  "zenith": {
+  {
+    "word": "zenith",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(astronomy) The highest point in the sky reached by a celestial body.",
+          "(astronomy) The point in the sky vertically above a given position or observer; the point in the celestial sphere opposite the nadir.",
+          "(by extension) Highest point or state; peak."
+        ],
+        "examples": [
+          "Winning the continental championship was the zenith of my career.",
+          "In this 10th m. appeared that prodigious Comett the tayl whereof was like the blade of a double edged sword, and reached almost from the horizon to the zenith.",
+          "In the east a pillar of cloud reared from horizon to zenith, with a kind of arm outstretched like a threatening colossus.",
+          "[…] in the middle of the day, when the sun was in the zenith, the violence of the heat was too great to stir out […]",
+          "The 12 day wee had the wind high and large ſo that in two dayes ſaile we made the Sunne our Zenith or verticall point […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzenɪθ/",
     "us_ipa": "/ˈziːnɪθ/",
-    "examples": [
-      "The sun rose towards its zenith.",
-      "The rock band was at the zenith of its creative powers."
-    ],
-    "meanings": [
-      "the point of the celestial sphere that is directly opposite the nadir and vertically above the observer see azimuth illustration",
-      "the highest point reached in the heavens by a celestial body",
-      "culminating point: acme"
-    ],
     "synonyms": [
       "pinnacle",
       "height",
@@ -452,15 +940,64 @@
       }
     ]
   },
-  "zephyr": {
+  {
+    "word": "zenithal",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Of or pertaining to a zenith.",
+          "(cartography, of a projection) Azimuthal."
+        ],
+        "examples": [
+          "[…] since he had last shared in the Vicarage life it had grown even more distinctly foreign to his own than usual. Its transcendental aspirations—still unconsciously based on the geocentric view of things, a zenithal paradise, a nadiral hell—were as foreign to his own as if they had been the dreams of people on another planet."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zephyr",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A light wind from the west.",
+          "Anything of fine, soft, or light quality, especially fabric.",
+          "Any light refreshing wind; a gentle breeze.",
+          "A type of soft confectionery made by whipping fruit and berry purée (mostly apple purée) with sugar and egg whites with subsequent addition of a gelling agent like pectin, carrageenan, agar, or gelatine."
+        ],
+        "examples": [
+          "For desserts there were “airy pie,” charlottes, mousses, kissel, plombir and “ zephyrs.”",
+          "2 tablespoons beet juice (optional—include it if you’re nostalgic for pink zephyr)",
+          "The French not only vastly expanded the Russian repertory of sauces, but they also introduced an entirely new range of light, airy desserts including creams, zephyrs, and mousses.",
+          "Alternative form: zefir",
+          "In 1953 the Russian Republic Ministry of the Food Products Industry increased confectionery output 10% above 1952, including wrapped and packaged confectionery 46%, chocolates 57%, toffee 65%, fruit preserves, pastilles and Zephyrs 20% and halva—by 36%."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(transitive, poetic) To blow or blow on gently like a zephyr; to cool or refresh with a gentle breeze.",
+          "(intransitive, poetic) To blow or move like a zephyr, or light breeze."
+        ],
+        "examples": [
+          "But wanton in heaven’s zephyred merrying!",
+          "There was a sudden scrambling and thumping overhead and hot exclamations zephyred down to them.",
+          "He was a fragrant poison, a zephyred pestilence spread through all the city.",
+          "There was a time When the soft zephyring spring came joyfully, Like a young bride, with bloom upon her cheek—",
+          "White-tufted oftentimes with clouds that do"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzefə(r)/",
     "us_ipa": "/ˈzefər/",
-    "examples": [],
-    "meanings": [
-      "a breeze from the west",
-      "a gentle breeze",
-      "any of various lightweight fabrics and articles of clothing"
-    ],
     "synonyms": [
       "breeze",
       "puff",
@@ -482,15 +1019,20 @@
       }
     ]
   },
-  "zeppelin": {
+  {
+    "word": "zeppelin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Zeppelin."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzepəlɪn/",
     "us_ipa": "/ˈzepəlɪn/",
-    "examples": [],
-    "meanings": [
-      "a rigid airship consisting of a cylindrical trussed and covered frame supported by internal gas cells",
-      "airship",
-      "a long cylindrical passenger balloon that has a metal frame and is driven through the air by engines carried on its underside"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -508,19 +1050,68 @@
       }
     ]
   },
-  "zero": {
+  {
+    "word": "zero",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The numeric symbol that represents the cardinal number zero.",
+          "(informal, uncountable) Nothing, or none.",
+          "The digit 0 in the decimal, binary, and all other base numbering systems.",
+          "The point on a scale at which numbering or measurement originates.",
+          "(slang) A person dismissed as unimportant.",
+          "(finance) A security which has a zero coupon (paying no periodic interest)."
+        ],
+        "examples": [
+          "The zeroes of a polynomial are its roots by the fundamental theorem of algebra.",
+          "The quotient ring over a maximal ideal is a field with a single zero element.",
+          "The takeovers were financed by issuing zeroes.",
+          "The derivative of a continuous, differentiable function that twice crosses the axis must have a zero.",
+          "Since a commutative zero is the inverse of any additive identity, it must be unique when it exists."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To disappear or make something disappear.",
+          "To adjust until the variance is reduced to an acceptably low amount.",
+          "To set some amount to be zero."
+        ],
+        "examples": [
+          "George parked in space 34, zeroed the trip meter, closed and locked his car, then went back to the guard shack.",
+          "The soldier took his gun to the shooting range to zero its aim.",
+          "They tried to zero the budget by the end of the quarter.",
+          "Results were inconsistent because an array wasn’t zeroed during initialization.",
+          "Zero the fluorometer with the same solvent used in extraction."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(meteorology) Of horizontal visibility, limited to 165 feet (50.3 meters) or less.",
+          "Used in the names of foodstuffs, especially beverages, to indicate a version with no calories",
+          "(linguistics) Present at an abstract level, but not realized in the surface form.",
+          "(meteorology) Of a cloud ceiling, limiting vision to 50 feet (15 meters) or less."
+        ],
+        "examples": [
+          "The stem of \"kobieta\" with the zero ending is \"kobiet\"."
+        ]
+      },
+      {
+        "pos": "Numeral",
+        "definitions": [
+          "The cardinal number occurring before one and that denotes no quantity or amount at all, represented in Arabic numerals as 0."
+        ],
+        "examples": [
+          "A cheque for zero dollars and zero cents crashed the computers on division by zero.",
+          "The conductor waited until the passenger count was zero."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪərəʊ/",
     "us_ipa": "/ˈzɪrəʊ/",
-    "examples": [
-      "Five, four, three, two, one, zero… We have lift-off.",
-      "It was ten degrees below zero last night (= −10°C).",
-      "The thermometer had fallen to zero."
-    ],
-    "meanings": [
-      "the arithmetical symbol 0 or 0 ̸ denoting the absence of all magnitude or quantity",
-      "additive identity",
-      "the number between the set of all negative numbers and the set of all positive numbers"
-    ],
     "synonyms": [
       "nothing",
       "nil",
@@ -546,19 +1137,60 @@
       }
     ]
   },
-  "zest": {
+  {
+    "word": "zeroth",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Corresponding to a position preceding the first.",
+          "(mathematics) In the initial position in a sequence whose elements are numbered starting at zero; the ordinal number corresponding to zero."
+        ],
+        "examples": [
+          "A and C are in equilibrium following the Zeroth Law of Thermodynamics.",
+          "The zeroth order polynomial approximation is constant."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zest",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(by extension) Enthusiasm; keen enjoyment; relish; gusto. A state of being zesty.",
+          "The outer skin of a citrus fruit, used as a flavouring or garnish.",
+          "General vibrance of flavour.",
+          "(slang, LGBTQ, derogatory) State of being a flamboyant or effeminate homosexual."
+        ],
+        "examples": [
+          "The orange zest gives the strong flavor in this dish.",
+          "Auntie Mame had a real zest for life.",
+          "I add zest to the meat by rubbing it with a spice mixture before grilling.",
+          "The green zest of walnuts was used by the women to shine their teeth and it also gave a beautiful rust colour to their lips."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make more zesty.",
+          "(cooking) To scrape the zest from a fruit."
+        ],
+        "examples": [
+          "Strains ſo artleſs tho’ we proffer, Hearts o’er flowing zest the offer."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zest/",
     "us_ipa": "/zest/",
-    "examples": [
-      "He had a great zest for life.",
-      "She danced with the zest of a twenty-year-old",
-      "The slight risk added zest to the experience."
-    ],
-    "meanings": [
-      "a piece of the peel of a citrus fruit ( such as an orange or lemon ) used as flavoring",
-      "an enjoyably exciting quality: piquancy",
-      "keen enjoyment: relish, gusto"
-    ],
     "synonyms": [
       "spice",
       "piquancy",
@@ -580,15 +1212,23 @@
       }
     ]
   },
-  "zestful": {
+  {
+    "word": "zestful",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Full of zest."
+        ],
+        "examples": [
+          "[T]he former priest, by now habituated to military life, and even zestful for it, enlisted under the new young king, with the rank of captain.",
+          "[T]here appeared a narrowly patriotic government, which presently developed into an aggressive, vindictive and pitiless dictatorship, and set itself at once to the zestful persecution of the unfortunate ethnic minorities (about a third of the entire population) caught in the net of its all too ample boundaries."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzestfl/",
     "us_ipa": "/ˈzestfl/",
-    "examples": [],
-    "meanings": [
-      "a piece of the peel of a citrus fruit ( such as an orange or lemon ) used as flavoring",
-      "an enjoyably exciting quality: piquancy",
-      "keen enjoyment: relish, gusto"
-    ],
     "synonyms": [
       "zesty",
       "tangy",
@@ -614,16 +1254,79 @@
       }
     ]
   },
-  "zesty": {
+  {
+    "word": "zestfully",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "With zest or enthusiasm."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adverb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zestfulness",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "State or condition of being zestful or enthusiastic."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zestily",
+    "entries": [
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "In a zesty manner; with zest"
+        ],
+        "examples": [
+          "The band played zestily."
+        ]
+      }
+    ],
+    "default_pos": "Adverb",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zesty",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(informal, LGBTQ) (of a man) Flamboyantly or effeminately gay.",
+          "(Internet slang, by extension) Gay.",
+          "Zestful.",
+          "Having a piquant or pungent taste; spicy."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzesti/",
     "us_ipa": "/ˈzesti/",
-    "examples": [
-      "The play is full of zesty language and wordplay.",
-      "a zesty dipping sauce"
-    ],
-    "meanings": [
-      "having or characterized by zest: appealingly piquant or lively"
-    ],
     "synonyms": [
       "spicy",
       "piquant",
@@ -637,16 +1340,25 @@
       "flat",
       "tasteless",
       "stale"
-    ]
+    ],
+    "syllables": []
   },
-  "zeta": {
+  {
+    "word": "zeta",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(mathematics) A mathematical function, formally known as the Riemann zeta function."
+        ],
+        "examples": [
+          "Zeta of 3 is irrational"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈziːtə/",
     "us_ipa": "/ˈzeɪtə/",
-    "examples": [],
-    "meanings": [
-      "the 6 th letter of the greek alphabet see alphabet table",
-      "the sixth letter of the greek alphabet"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -660,24 +1372,154 @@
       }
     ]
   },
-  "zeugma": {
+  {
+    "word": "zettabit",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing, informal) a zebibit.",
+          "(computing) One sextillion (10, or 1,000,000,000,000,000,000,000) bits or 1,000 exabits."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zettabyte",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing) One sextillion (10, or 1,000,000,000,000,000,000,000) bytes or 1,000 exabytes.",
+          "(computing, informal) A zebibyte."
+        ],
+        "examples": [
+          "Conservative estimates put data produced in 2020 alone at 44 zettabytes.",
+          "Cerberus Scientist: I'm sorry, sir. None of Normandy's surveillance feeds have been responding since Shepard went rogue. Illusive Man: I want it back. Retry the remote lockdown protocols. Cerberus Scientist: After our last attempt, EDI flooded our server with seven zettabytes of explicit images. I think she was making a joke.",
+          "For such quantities, it is necessary to introduce a further unit: the zettabyte which corresponds to 1000 exabytes. The International Data Corporation (IDC) predicts the world's data will grow to 175 zettabytes in 2025."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zeugma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(rhetoric) Syllepsis.",
+          "(rhetoric) The act of using a word, particularly an adjective or verb, to apply to more than one noun when its sense is appropriate to only one."
+        ],
+        "examples": [
+          "Thus I would describe 'He took his leave and the wrong umbrella' as zeugma, but not 'He took his hat and umbrella'. Zeugma is an important element in Chaucer's poetic technique, not because he uses it, but because he so regularly turns it down.",
+          "The existence of zeugmas suggests the rule of transitivity. Zeugmas appear incorrect because they embody an allegedly univocal use of a term in a way which violated [sic] the rule of transitivity."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzjuːɡmə/",
     "us_ipa": "/ˈzuːɡmə/",
-    "examples": [],
-    "meanings": [
-      "the use of a word to modify or govern two or more words usually in such a manner that it applies to each word in a different sense ( as \" opened \" in \" opened the door and her heart to the stray kitten \" ) or makes sense with only one word ( as \" rolling \" in \" rolling lightning and thunder \" )"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "ziggurat": {
+  {
+    "word": "zhou",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Chinese contexts) Synonym of congee, a thick rice porridge."
+        ],
+        "examples": [
+          "We did, however, send them to a Chinese nursery school that fed them a daily lunch of zhou, a rice porridge with various seasonings: pickled turnips, flakes of dough sticks, green or red beans, sesame paste, or something called hot prickly mustard tubers."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zidovudine",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(pharmacology) A nucleoside analog reverse-transcriptase inhibitor C 10 H 13 N 5 O 4, a type of antiretroviral drug that inhibits replication of some retroviruses (such as HIV) and was first approved for the treatment of AIDS."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zig",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A sudden or sharp turn or change of direction.",
+          "Alternative letter-case form of ZiG.",
+          "A kind of Jewish comedy skit."
+        ],
+        "examples": [
+          "Zigs at Kfar Hanassi were rooted firmly in the history of British comedy."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make such a turn."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "ziggurat",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any building with similar style or shape."
+        ],
+        "examples": [
+          "He works in an old ziggurat of an office building.",
+          "It would be uplifting to think that the ziggurat was the first expression of Near Eastern civilization, for then one could speak about humanity's fascination with the heavens, of the human quest for communion with the infinite."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪɡəræt/",
     "us_ipa": "/ˈzɪɡəræt/",
-    "examples": [],
-    "meanings": [
-      "an ancient mesopotamian temple tower consisting of a lofty pyramidal structure built in successive stages with outside staircases and a shrine at the top",
-      "a structure or object of similar form"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -695,17 +1537,55 @@
       }
     ]
   },
-  "zigzag": {
+  {
+    "word": "zigzag",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One of these sharp turns.",
+          "A line or path that proceeds by sharp turns in alternating directions."
+        ],
+        "examples": [
+          "And still, high in front, arose the precipitous barrier of the mountain, greened over where it seemed that scarce a harebell could find root, barred with the zigzags of a human road where it seemed that not a goat could scramble.",
+          "She had just succeeded in curving it down into a graceful zigzag, and was going to dive in among the leaves, which she found to be nothing but the tops of the trees under which she had been wandering, when a sharp hiss made her draw back in a hurry: […]."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To move or to twist in a zigzag manner."
+        ],
+        "examples": [
+          "At the base this vent was dark, cool, and smelled of dry, musty dust. It zigzagged so that he could not see ahead more than a few yards at a time.",
+          "If the first two novels created a new genre — Peakean fantasy — then this third volume zigzags between several: the Bildungsroman, science fiction, social satire, morality tale and dystopian prophecy.",
+          "[…] she saw them as we see the throngs which cover the canvases of Sallaert, Van Alsloot, and others of that school—vast masses of beings, jostling, zigzagging, and processioning in definite directions, but whose features are indistinguishable by the very comprehensiveness of the view."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(US military slang, World War I) Drunk.",
+          "Moving in, or having a zigzag."
+        ],
+        "examples": [
+          "There, by dint of looking closely about me, I found a rough zig-zag descending path notched out: which I followed.",
+          "Right and left ranked the toothed and zigzag line of storm-torn heights, forming the series which culminated in the one beneath their feet.",
+          "His thoughts were fixed on one subject, and it was an effort to him to follow the zigzag remarks of his children—an effort which he did not make.",
+          "We followed the mule-road, a zigzag course, now to the right, now to the left, but always up, and always crowded and incommoded by going and coming files of reckless tourists who were never, in a single instance, tied together."
+        ]
+      },
+      {
+        "pos": "Adverb",
+        "definitions": [
+          "In a zigzag manner or pattern."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzɪɡzæɡ/",
     "us_ipa": "/ˈzɪɡzæɡ/",
-    "examples": [
-      "a zigzag line/path/pattern"
-    ],
-    "meanings": [
-      "one of a series of short sharp turns, angles, or alterations in a course",
-      "something having the form or character of such a series",
-      "in or by a zigzag path or course"
-    ],
     "synonyms": [
       "weave",
       "duck",
@@ -730,16 +1610,45 @@
       }
     ]
   },
-  "zilch": {
+  {
+    "word": "zilch",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(uncountable, informal) Nothing, zero."
+        ],
+        "examples": [
+          "Dinglegoofer, Mr. Zilch, indefinite nicknames.",
+          "Her search for decent home-made winter clothes came up with zilch, so she had to get imported stuff.",
+          "President Henry P. Zilch. Chairman of the Board Charles D. Zilch. Treasurer Otto Zilch.",
+          "Bernarr Mac Zilch [for Bernarr Macfadden] and His Dynamic-Hooey System... The WEAKLING Who Became 'The World's Most Perfect Ass!'"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(informal, US sports) To cause to score nothing, to thoroughly defeat."
+        ],
+        "examples": [
+          "My favorite film of 1989 got zilched... That would be Field of Dreams.",
+          "We zilched them on that rubber."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(informal, chiefly US) No, zero, non-existent."
+        ],
+        "examples": [
+          "Zilch, adj. Nothing, zero...",
+          "...gorgeous faces but zilch talent..."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɪltʃ/",
     "us_ipa": "/zɪltʃ/",
-    "examples": [
-      "I arrived in this country with zilch."
-    ],
-    "meanings": [
-      "zero, nothing",
-      "nothing entry 3, zero"
-    ],
     "synonyms": [
       "nobody",
       "cipher",
@@ -761,17 +1670,41 @@
       }
     ]
   },
-  "zillion": {
+  {
+    "word": "zill",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One of a set of small finger cymbals used in belly dancing and similar performances."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zillion",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(slang, hyperbolic) An unspecified large number (of)."
+        ],
+        "examples": [
+          "Low Man: 'Thanks again, Woody. I'll see you next time the world needs saving.' / Woody: 'Pfft, yeah. Only if we sell a zillion units!'",
+          "\"We are certainly not blaming lower socioeconomic families for not talking to their kids - there are probably a zillion reasons why that happens.\""
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪljən/",
     "us_ipa": "/ˈzɪljən/",
-    "examples": [
-      "There was a bunch of kids waiting and zillions of reporters.",
-      "This movie is a zillion times better than her last one."
-    ],
-    "meanings": [
-      "an indeterminate ly large number",
-      "a large number"
-    ],
     "synonyms": [
       "thousands",
       "million",
@@ -797,14 +1730,20 @@
       }
     ]
   },
-  "zimbabwe": {
+  {
+    "word": "zimbabwe",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the prominent cultural ruins of which Greater Zimbabwe is the most well known."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɪmˈbɑːbweɪ/",
     "us_ipa": "/zɪmˈbɑːbweɪ/",
-    "examples": [],
-    "meanings": [
-      "archaeological site of a people that flourished especially from the 1 1 th to 1 5 th centuries in the northeastern part of the present - day country of zimbabwe",
-      "landlocked country in southern africa south of the zambezi river; capital harare area 1 5 0, 8 7 2 square miles ( 3 9 0, 7 5 7 square kilometers ), population 1 4, 0 3 0, 0 0 0"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -822,46 +1761,47 @@
       }
     ]
   },
-  "zimbabwean": {
-    "uk_ipa": "/zɪmˈbɑːbwiən/",
-    "us_ipa": "/zɪmˈbɑːbwiən/",
-    "examples": [],
-    "meanings": [
-      "archaeological site of a people that flourished especially from the 1 1 th to 1 5 th centuries in the northeastern part of the present - day country of zimbabwe",
-      "landlocked country in southern africa south of the zambezi river; capital harare area 1 5 0, 8 7 2 square miles ( 3 9 0, 7 5 7 square kilometers ), population 1 4, 0 3 0, 0 0 0"
+  {
+    "word": "zimmer",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Zimmer (“ Zimmer frame ”)."
+        ],
+        "examples": [
+          "I've seen three of them with zimmers. I mean that floor's slippery - I only polished it this morning. But would they listen? They shouldn't be out on a night like this. It's bitter.",
+          "And old men, one with a bumbag, a couple with zimmers, there's people all over the gold carousel, banners, whistles, the works. I'm right beside a circle of older women drumming - they look like some of the women in my team at work, but they're drumming […]"
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
     "antonyms": [],
-    "syllables": [
-      {
-        "text": "zihm",
-        "stress": 0
-      },
-      {
-        "text": "bahb",
-        "stress": 1
-      },
-      {
-        "text": "wee",
-        "stress": 0
-      },
-      {
-        "text": "uhn",
-        "stress": 0
-      }
-    ]
+    "syllables": []
   },
-  "zinc": {
+  {
+    "word": "zinc",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A single atom of this element.",
+          "A chemical element (symbol Zn) with an atomic number of 30, a blue-silvery metal that is slightly brittle at room temperature and tarnishes slightly in moist air.",
+          "(Nigeria) A corrugated iron roof."
+        ],
+        "examples": [
+          "As for daytime sun protection, Dr. Bowe said mineral sunscreens made with zinc oxide may be gentler on sensitized skin than chemical formulas.",
+          "Then, three workmen throwing dice for drinks. And their heads come sharply together as they count the scores. And so violently do they throw the dice that they shoot off \"the zinc \" on to the floor.",
+          "Even if there were a Chef and Brewer near Marble Arch, the name suggests a pint and pie, not a prawn and tomato sandwich and “a dock glass of white port off the zinc ”; i.e., a small glass of a fine aperitif, at the counter […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɪŋk/",
     "us_ipa": "/zɪŋk/",
-    "examples": [
-      "They built a temporary home out of zincs."
-    ],
-    "meanings": [
-      "a bluish - white metallic element with atomic number 3 0 that is ductile when pure but in the commercial form is brittle at ordinary temperatures and becomes ductile on slight heating, occurs abundantly in minerals, is an essential micronutrient for both plants and animals, and is used especially in alloys and as a protective coating in galvanizing iron and steel",
-      "see chemical elements table",
-      "to treat or coat with zinc: galvanize"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -871,14 +1811,23 @@
       }
     ]
   },
-  "zinfandel": {
+  {
+    "word": "zinfandel",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A dry red wine of California.",
+          "A small black grape from which zinfandel wine is made."
+        ],
+        "examples": [
+          "This zinfandel ’s delish. Where’d you get it?"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪnfəndel/",
     "us_ipa": "/ˈzɪnfəndel/",
-    "examples": [],
-    "meanings": [
-      "a dry red table wine made from a small black grape that is grown chiefly in california",
-      "the grape"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -896,17 +1845,49 @@
       }
     ]
   },
-  "zing": {
+  {
+    "word": "zing",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Zest or vitality.",
+          "(slang) A witty insult or derogatory remark.",
+          "A short high-pitched humming sound, such as that made by a bullet or vibrating string.",
+          "(uncountable, slang) Pleasant or exciting flavour of food."
+        ],
+        "examples": [
+          "I heard a zing close to my head and looked up again. Five or six men were lined up on the deck above me with rifles shooting at the shark.",
+          "To accompany a meal, the fresh Italian lager Poretti is perfect; Erdinger Weisbier, a wheat beer from Germany, is full of zing;"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(transitive, slang) To address a witty insult or comeback to.",
+          "To move very quickly, especially while making a high-pitched hum."
+        ],
+        "examples": [
+          "We are all a second or two older than an astronaut who has been zinging around the Earth at 18000 miles per hour, because of his or her greater speed and the lack of gravity.",
+          "Goomba: Ouch that was cold! Paragoomba: “What, you’re too good for us? Come off it, sister! Spike Goomba: “Nobody zings us like that! Nobody! Let’s get ’em!”",
+          "When the caller identified herself as from the Fred Hutchinson Cancer Research Center in Seattle my heart zinged. I heard the words we had yearned for since March: They had found a donor marrow, mismatched at one antigen, that might work for Jane."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "(onomatopoeia) A high pitched humming sound.",
+          "(US, slang) Used to acknowledge a witty comeback, a zinger."
+        ],
+        "examples": [
+          "Something inside of me started a symphony / Zing! Went the strings of my heart",
+          "Zing! The joke had rebounded back on the one who started it. \"Ouch!\" Mama Jane winced ruefully. We all dissolved in laughter at the good-natured repartee."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɪŋ/",
     "us_ipa": "/zɪŋ/",
-    "examples": [
-      "electrical pulses zinging down a wire"
-    ],
-    "meanings": [
-      "a shrill humming noise",
-      "an enjoyably exciting or stimulating quality: zest",
-      "a sharply piquant flavor"
-    ],
     "synonyms": [
       "vigor",
       "energy",
@@ -928,16 +1909,30 @@
       }
     ]
   },
-  "zinger": {
+  {
+    "word": "zinger",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(informal) A very rapidly moving object, especially one that is thrown.",
+          "(informal) An outstanding, energetic and surprising thing or person.",
+          "(informal) A surprising or unusually pointed, humorous and impressive insult or insulting quip.",
+          "A piece of food or drink that is tart and stimulating.",
+          "(informal) An event that when experienced leaves the witness dazed, either physically or metaphorically."
+        ],
+        "examples": [
+          "I was still reeling from the zinger of seeing my ex on a date with my best friend.",
+          "The pitcher threw a real zinger and struck him out.",
+          "Here, have a strawberry zinger and don't tell Mom and Dad that we had candy in the bedroom.",
+          "Think about all the scientists—and all the microscopes and lab equipment and testing—that may come up with zero instead of a zinger.",
+          "You might think it's almost worthwhile calling them and restarting the argument just to get that final zinger in. Why do you think of something good to say when it's too late?"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪŋə(r)/",
     "us_ipa": "/ˈzɪŋər/",
-    "examples": [
-      "She opened the speech with a real zinger."
-    ],
-    "meanings": [
-      "something causing or meant to cause interest, surprise, or shock",
-      "a pointed witty remark or retort"
-    ],
     "synonyms": [
       "witticism",
       "wisecrack",
@@ -957,14 +1952,59 @@
       }
     ]
   },
-  "zinnia": {
+  {
+    "word": "zingiber",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any member of the genus Zingiber of gingers."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zinkenite",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(mineralogy) A grey mineral with hexagonal crystals, Pb 9 Sb 22 S 42."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zinnia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of several brightly coloured flowering plants, of the genus Zinnia, native to tropical America; old maid."
+        ],
+        "examples": [
+          "Santa sighed at the unfairness of it all and slammed the picture down on the mantelpiece among the bowl of wax fruit and the bouquet of paper zinnias and the statue of the Virgin Mary and the figurine of the Infant of Prague.",
+          "[…] the Consul at this moment greeted Mr. Quincey's cat, momentarily forgetting its owner again as the grey, meditative animal, with a tail so long it trailed on the ground, came stalking through the zinnias: […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪniə/",
     "us_ipa": "/ˈzɪniə/",
-    "examples": [],
-    "meanings": [
-      "any of a genus ( zinnia ) of tropical american composite herbs and low shrubs that have showy flower heads with long - lasting ray flowers",
-      "any of a genus of tropical american composite herbs having long - lasting flowers"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -982,15 +2022,38 @@
       }
     ]
   },
-  "zion": {
+  {
+    "word": "zinnwaldite",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(mineralogy) A mineral with monoclinic crystals, K Li Fe Al (Al Si 3) O 10 (F,O H) 2, of the mica group."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zion",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "zayin, Hebrew letter ז."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪən/",
     "us_ipa": "/ˈzaɪən/",
-    "examples": [],
-    "meanings": [
-      "the jewish people: israel",
-      "the jewish homeland that is symbolic of judaism or of jewish national aspiration",
-      "the ideal nation or society envisaged by judaism"
-    ],
     "synonyms": [
       "heaven",
       "paradise",
@@ -1016,43 +2079,20 @@
       }
     ]
   },
-  "zionism": {
-    "uk_ipa": "/ˈzaɪənɪzəm/",
-    "us_ipa": "/ˈzaɪənɪzəm/",
-    "examples": [],
-    "meanings": [
-      "an international movement originally for the establishment of a jewish national or religious community in palestine and later for the support of modern israel",
-      "an international effort working in the beginning for a jewish homeland and later for the support of israel"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
+  {
+    "word": "zionist",
+    "entries": [
       {
-        "text": "zeye",
-        "stress": 1
-      },
-      {
-        "text": "uh",
-        "stress": 0
-      },
-      {
-        "text": "nih",
-        "stress": 2
-      },
-      {
-        "text": "zuhm",
-        "stress": 0
+        "pos": "Noun",
+        "definitions": [
+          "Alternative letter-case form of Zionist."
+        ],
+        "examples": []
       }
-    ]
-  },
-  "zionist": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪənɪst/",
     "us_ipa": "/ˈzaɪənɪst/",
-    "examples": [],
-    "meanings": [
-      "an international movement originally for the establishment of a jewish national or religious community in palestine and later for the support of modern israel",
-      "an international effort working in the beginning for a jewish homeland and later for the support of israel"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1070,19 +2110,53 @@
       }
     ]
   },
-  "zip": {
+  {
+    "word": "zip",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(computing, informal) A zip file.",
+          "(slang) Zero; nothing.",
+          "(UK, Ireland, Commonwealth) A zip fastener.",
+          "The high-pitched sound of a small object moving rapidly through air.",
+          "A trip on a zipline.",
+          "Ellipsis of zip code.",
+          "(informal) Energy; vigor; vim."
+        ],
+        "examples": [
+          "I know zip about economics."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make (something) move quickly",
+          "To close with a zip fastener",
+          "(intransitive, followed by a preposition) To move rapidly (in a specified direction or to a specified place) with a high-pitched sound.",
+          "(transitive, computing) To compress (one or more computer files) into a single and often smaller file, especially one in the ZIP format.",
+          "(intransitive, colloquial, followed by a preposition) To move in haste (in a specified direction or to a specified place).",
+          "(transitive, figuratively) To close as if with a zip fastener. (For example, 'She zipped up her coat and left.')"
+        ],
+        "examples": [
+          "The bullet zipped through the air.",
+          "Zip down to the shops for some milk.",
+          "Tottenham also initially struggled to create genuine goal-scoring opportunities, with Bale, Luka Modric and Rafael van der Vaart zipping passes around to little effect."
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "(onomatopoeia) Imitative of high-pitched sound of a small object moving rapidly through air."
+        ],
+        "examples": [
+          "` Zip!' Just like that, an exquisitely shaped fragment of a flashing rainbow in flight flits across in front of us[.]"
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/zɪp/",
     "us_ipa": "/zɪp/",
-    "examples": [
-      "to do up/undo/open/close a zip",
-      "My zip's stuck.",
-      "We won four zip (= 4–0)."
-    ],
-    "meanings": [
-      "to move, act, or function with speed and vigor",
-      "to travel with a sharp hissing or humming sound",
-      "to impart speed or force to"
-    ],
     "synonyms": [
       "energy",
       "vigor",
@@ -1104,18 +2178,45 @@
       }
     ]
   },
-  "zipper": {
+  {
+    "word": "zipper",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biochemistry) A leucine zipper.",
+          "(slang) A scar on a person's body.",
+          "(BDSM) A string of clothes pegs or clips attached to the body and then quickly pulled off.",
+          "A zipline.",
+          "(chiefly US, Australia) A zip fastener.",
+          "(programming) A technique for arbitrarily traversing an aggregate data structure and updating its contents. See zipper (data structure).",
+          "A pressure -sensitive plastic closure, as on a Ziploc bag."
+        ],
+        "examples": [
+          "He got his T-shirt stuck in the zipper of his jacket.",
+          "I also competed in track and field at Idaho, and it's all because of putting the shot that I've got my long scar, my zipper, down the back of my neck.",
+          "Skills acquired include learning the \"Flea Hop\" and the \"Tarzan Swing\" as well as \"Riding the Zipper \" (sliding 400 feet on a cable between two mountain peaks), canoeing in white-water rapids, bushwacking and learning to \"rappel\" hundreds of feet down sheer rock cliffs on a rope.",
+          "They would handle all the night combat air patrols, the night hecklers who would go over the enemy airfields, and we formed a new little gimmick called \" zippers \" to help close that gap between the time the daylight strikes left the target and darkness.",
+          "[…] the usual gap between the time the last strike of the day departed and the first night hecklers arrived was closed with \" zippers \" — night fighters who, using day fighter tactics, proceeded to the target in daylight in time to relieve the last day blanket patrol."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To close a zipper.",
+          "To put a zipper on an article.",
+          "To act in a manner similar to a zipper."
+        ],
+        "examples": [
+          "He zippered his sweater against the cold.",
+          "These fall jackets are zippered.",
+          "If more drivers knew how to zipper, the accident would not have disrupted traffic so much."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪpə(r)/",
     "us_ipa": "/ˈzɪpər/",
-    "examples": [
-      "My zipper’s stuck.",
-      "The fabric got caught in the zipper and tore."
-    ],
-    "meanings": [
-      "a fastener consisting of two rows of metal or plastic teeth on strips of tape and a sliding piece that closes an opening by drawing the teeth together",
-      "zip entry 5",
-      "a fastener consisting of two rows of metal or plastic teeth on strips of tape and a sliding piece that closes an opening by drawing the teeth together"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1129,15 +2230,42 @@
       }
     ]
   },
-  "zippo": {
+  {
+    "word": "zippo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(informal, emphatic) Zero. Typically used for emphasis, as when the listener might expect a positive quantity."
+        ],
+        "examples": [
+          "We got 200 consoles and we sold 200 consoles and 200 minus 200 is ZIPPO, so I can't sell you anything right now."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(slang, transitive) To light on fire."
+        ],
+        "examples": [
+          "The youth climbed off, Zippoed a wick in a glass bottle and walked towards Jake's flat.",
+          "I didn't want to burn 'em out, but that's policy. So we zippoed their hooch.",
+          "Once the last villagers had left Ben Suc, the buildings were doused with petrol and zippoed."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(slang) Zero; none whatsoever."
+        ],
+        "examples": [
+          "“The whole situation is magnificent news, especially when the problem has been zippo investment by large corporations in Africa,” says Robert H. Bates […]."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈzɪpəʊ/",
     "us_ipa": "/ˈzɪpəʊ/",
-    "examples": [
-      "They know zippo about risk."
-    ],
-    "meanings": [
-      "nothing at all: zip"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1151,19 +2279,27 @@
       }
     ]
   },
-  "zippy": {
+  {
+    "word": "zippy",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(informal) Quick, speedy.",
+          "(informal) Energetic and lively."
+        ],
+        "examples": [
+          "[T]he rising wind, cool and zippy from the far ice floes of Bering Straits— [...]",
+          "Fine department stores showing the zippiest of embroidered gloves imported from Scandinavia and the fluffiest of knitted dresses imported from Wisconsin.",
+          "Fun is the doughboy's pal—that's why he wrote and sings \" K-K-K-Katy \"—the song of songs, with a zippy, catchy melody and those beautifully simple words stammered by Katy's tongue-tied beau.",
+          "He had pored over the websites of the different European car manufacturers, wooed at first by the Beemers, Audis and Saabs before admitting we had a restricted budget. He eventually chose an economical but zippy Renault hatchback.",
+          "Apart from anything else, the zippier Northern cadences meant the radio stations could pack in three or four commercials in the time it would take the average Southerner to clear his throat."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzɪpi/",
     "us_ipa": "/ˈzɪpi/",
-    "examples": [
-      "a zippy little car",
-      "The tomato sauce has a zippy tang.",
-      "a lively, zippy show"
-    ],
-    "meanings": [
-      "full of zip: such as",
-      "very quick or speedy",
-      "strikingly fresh, lively, or appealing in style"
-    ],
     "synonyms": [
       "lively",
       "energetic",
@@ -1189,15 +2325,63 @@
       }
     ]
   },
-  "zirconium": {
+  {
+    "word": "zircon",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A crystal of zircon, sometimes used as a false gemstone.",
+          "A mineral occurring in tetragonal crystals, usually of a brown or grey colour and consisting of silica and zirconia."
+        ],
+        "examples": [
+          "A zircon princess, seemed to lost her senses",
+          "Although there are dozens of different types of gems, among the best known and most important are […]. (Common gem materials not addressed in this article include amber, amethyst, chalcedony, garnet, lazurite, malachite, opals, peridot, rhodonite, spinel, tourmaline, turquoise and zircon.)",
+          "[…] salamanders, mermaids, chimaeras, wild men o’ the woods, leviathans, all hewn from faultless gems, thrice the bulk of a big man’s body, velvet-dark sapphires, chrysolite, beryl, amethyst, and the yellow zircon that is like transparent gold."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zirconia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chemistry) The oxide of zirconium, obtained as a white powder, and possessing both acid and basic properties. On account of its infusibility, and brilliant luminosity when incandescent, it is used as an ingredient of sticks for the Drummond light."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zirconium",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A chemical element (symbol Zr) with an atomic number of 40, a strong, lustrous, grey-white transition metal mainly used as a refractory and opacifier."
+        ],
+        "examples": [
+          "Do you like how I dance? / I've got zirconium pants / Consequential enough / To slip you into a trance"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɜːˈkəʊniəm/",
     "us_ipa": "/zɜːrˈkəʊniəm/",
-    "examples": [],
-    "meanings": [
-      "a steel - gray hard ductile metallic element with a high melting point that occurs widely in combined form ( as in zircon ), is highly resistant to corrosion, and is used especially in alloys and in refractories and ceramics see chemical elements table",
-      "a steel - gray strong metallic element with a high melting point that is used especially in combination with other metals see element",
-      "a steel - gray strong ductile chiefly tetravalent metallic element with a high melting point"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1219,15 +2403,23 @@
       }
     ]
   },
-  "zit": {
+  {
+    "word": "zit",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(Canada, US, slang) Pimple"
+        ],
+        "examples": [
+          "I can't help thinking how little good all that working out did him. I think the only thing he ever got out of it was more zits.",
+          "Brad: Sara, did you take my Clearasil again? Sara: I ran out of brown (paint). Brad: Great. How am I supposed to cover up my zits?"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɪt/",
     "us_ipa": "/zɪt/",
-    "examples": [],
-    "meanings": [
-      "a small, red, swollen spot on the skin: pimple",
-      "pimple",
-      "pimple sense 1"
-    ],
     "synonyms": [
       "blister",
       "pimple",
@@ -1235,16 +2427,38 @@
       "boil",
       "papule"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zither": {
+  {
+    "word": "zither",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(music) A musical instrument consisting of a flat sounding box with numerous strings placed on a horizontal surface, played with a plectrum or fingertips.",
+          "(music, translations) Related or similar instruments in other cultures, such as the Chinese guqin or Norwegian harpeleik; especially any chordophone without a neck, and with strings that pass over the body."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make a sound similar to that made by a zither; to move while making such a sound.",
+          "To play a zither."
+        ],
+        "examples": [
+          "The other men opened fire with pistols, slugs zithering past him with a dull whine.",
+          "‘Look at that!’ she shouted, already backing up the Jeep, its tyres zithering on the crusty surface.",
+          "The olives seemed weighed down under the weight of their fruit, smooth drops of green jade among which the choirs of cicadas zithered.",
+          "We wandered and fiddled and zithered and tambourined through France till the chills and rains of autumn rendered our vagabondage less merry.",
+          "Once I owned a bike […] It had no fenders and one gear only, and on the forks, both fore and aft, I clipped some plastic playing cards to zither loudly through the spokes."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈzɪðə(r)/",
     "us_ipa": "/ˈzɪðər/",
-    "examples": [],
-    "meanings": [
-      "a stringed instrument having usually 3 0 to 4 0 strings over a shallow horizontal soundboard and played with pick and fingers",
-      "a stringed instrument with thirty to forty tuned strings that are plucked with the fingers or with a pick"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1258,17 +2472,149 @@
       }
     ]
   },
-  "zodiac": {
+  {
+    "word": "zithern",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A zither"
+        ],
+        "examples": [
+          "The zitherns and mandolins have forms to match their pretty names, but the soul of the musical instrument abides elsewhere than in its body, and informs it only to the ear."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "ziti",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A type of macaroni pasta in the form of long smooth hollow tubes."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zizania",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of several aquatic North American grasses, of the genus Zizania, grown for their edible grain; wild rice."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zizz",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A buzzing or whizzing sound.",
+          "(informal) A nap or sleep."
+        ],
+        "examples": [
+          "Then I had a little zizz until Martland telephoned."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(informal, intransitive) To take a nap."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zloty",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The currency unit of Poland, divided into 100 groszy."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoanthropy",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The belief that one has transformed into an animal."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zodiac",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A circle decorated with the signs of the zodiac.",
+          "(astronomy) The ecliptic: the belt-like region of the celestial sphere corresponding to the apparent path of the sun over the course of a year.",
+          "(astrology) The belt-like region of the celestial sphere, approximately eight degrees north and south of the ecliptic, which includes the apparent path of the sun, moon, and visible planets.",
+          "(nautical) A inflatable boat.",
+          "(astrology) The twelve equal divisions of the zodiacal region into signs or houses, each named for a prominent constellation in the region.",
+          "Any of various astrological systems considered similar to the above."
+        ],
+        "examples": [
+          "So the Dendera Zodiac seems to be a complete copy of the Mesopotamian zodiac.",
+          "Discussing both Chinese and Western zodiacs might be a prewriting activity.",
+          "Tremulous on the bladed graſs ſhone bright the pearly drops, like an aſſembly of ſparkling ſtars dancing on the plains of the zodiac; vocal was every bending ſpray, every reed was inſpired, each vvarbling throat ſeemed to emulate the melodious voice of the bird of a thouſand ſongs."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzəʊdiæk/",
     "us_ipa": "/ˈzəʊdiæk/",
-    "examples": [
-      "the signs of the zodiac"
-    ],
-    "meanings": [
-      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 1 2 constellations or signs each taken for astrological purposes to extend 3 0 degrees of longitude",
-      "a figure representing the signs of the zodiac and their symbols",
-      "a cyclic course"
-    ],
     "synonyms": [
       "wheel",
       "cycle",
@@ -1292,17 +2638,25 @@
       }
     ]
   },
-  "zodiacal": {
+  {
+    "word": "zodiacal",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(astronomy, astrology) Of or pertaining to the zodiac."
+        ],
+        "examples": [
+          "She knew by heart everyone’s Zodiacal sign.",
+          "For several evenings the pale twinkling of the somber zodiacal stars lighted up the west side of the heavens for some time after the sun had set.",
+          "In the zodiacal procession of the poles, the 25,920-year cycle, Lascaux is the time of Virgo, and Virgo is associated with artistic excellence and discrimination.",
+          "[…] in some passages of the Old Testament they think they discover the Zodiacal course of the Sun […]"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/zəʊˈdaɪəkl/",
     "us_ipa": "/zəʊˈdaɪəkl/",
-    "examples": [
-      "the zodiacal signs/animals"
-    ],
-    "meanings": [
-      "an imaginary band in the heavens centered on the ecliptic that encompasses the apparent paths of all the planets and is divided into 1 2 constellations or signs each taken for astrological purposes to extend 3 0 degrees of longitude",
-      "a figure representing the signs of the zodiac and their symbols",
-      "a cyclic course"
-    ],
     "synonyms": [
       "wheel",
       "cycle",
@@ -1310,17 +2664,75 @@
       "course",
       "round"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zombie": {
+  {
+    "word": "zoic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Having the form of an animal; animal-like, zoomorphic.",
+          "(grammar) referring to animals"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zombi",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Uncommon spelling of zombie."
+        ],
+        "examples": [
+          "The spirit zombi, or the zombi of the ti bon ange alone, is carefully stored in a jar and may later be magically transmuted into insects, animals, or humans in order to accomplish the particular work of the bokor."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zombie",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(figurative) Someone or something that should be dead but is not.",
+          "(computing) A process or task which has terminated but has not been removed from the list of processes, typically because it has an unresponsive parent process.",
+          "A cocktail of rum and fruit juices.",
+          "(figuratively) An apathetic or slow-witted person.",
+          "(Australia, slang) Marijuana, or similar drugs.",
+          "(philosophy) A hypothetical being that is indistinguishable from a normal human being except in that it lacks conscious experience, qualia, or sentience.",
+          "(figuratively) A human being in a state of extreme mental exhaustion.",
+          "(voodoo, horror) A person, usually undead, animated by unnatural forces (such as magic), with no soul or will of his or her own."
+        ],
+        "examples": [
+          "The maitre d’ introduced us and I had a zombie with him. Those zombies are wicked.",
+          "Had the time come to order Canada's home defense draftees—some 70,000 zombies idling at home—to battle overseas?",
+          "The zombies were having fun The party had just begun The guests included Wolf-Man, Dracula, and his son.",
+          "I watched Mario and drank zombies out of a thermos.",
+          "After working for 18 hours on the computer, I was a zombie."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɒmbi/",
     "us_ipa": "/ˈzɑːmbi/",
-    "examples": [],
-    "meanings": [
-      "a will - less and speechless human ( as in voodoo belief and in fictional stories ) held to have died and been supernaturally reanimated",
-      "the supernatural power that according to voodoo belief may enter into and reanimate a dead body",
-      "a person held to resemble the so - called walking dead"
-    ],
     "synonyms": [
       "vampire",
       "succubus",
@@ -1340,31 +2752,110 @@
       }
     ]
   },
-  "zonal": {
+  {
+    "word": "zona",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of species Bedotia madagascariensis",
+          "(medicine) shingles.",
+          "Certain freshwater fishes of genus Bedotia (Atheriniformes), from Madagascar:",
+          "Any of species Bedotia geayi",
+          "(sciences) A zone or band; a layer."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zonal",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Divided into zones.",
+          "(of air or ocean currents) roughly longitudinal (east to west, or west to east)",
+          "Related to, associated with, or similar to zones."
+        ],
+        "examples": [
+          "Decisions made at the DfT inevitably reflect a London-centric experience, with a comparison being made with the closure of ticket offices throughout the London Underground network. This is not judged to have been detrimental, but there is a simple zonal fares system that is hardly comparable with the range of ticket types used on the national rail network."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˈzəʊnl/",
     "us_ipa": "/ˈzəʊnl/",
-    "examples": [],
-    "meanings": [
-      "of, relating to, affecting, or having the form of a zone",
-      "of, relating to, or being a soil or a major soil group marked by well - developed characteristics that are determined primarily by the action of climate and organisms ( such as vegetation ) compare a zonal, intra zonal",
-      "of, relating to, or having the form of a zone"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zone": {
+  {
+    "word": "zonary",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "zonal"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zone",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A given area distinguished on the basis of a particular characteristic, use, restriction, etc.",
+          "A restricted category or virtual place.",
+          "Any given region or area of the world.",
+          "The strike zone.",
+          "A belt or girdle.",
+          "A band or stripe extending around a body.",
+          "A circuit; a circumference.",
+          "That collection of a domain's DNS resource records, the domain and its subdomains, that are not delegated to another authority."
+        ],
+        "examples": [
+          "Her tapered fingers too with rings are graced, / And an embroidered zone surrounds her slender waist.",
+          "I just got in the zone late in the game: everything was going in.",
+          "That pitch was low and away, just outside the zone.",
+          "The defender playing at the top of the zone is nine to fourteen metres out from the goal line.",
+          "There is a no-smoking zone that extends 25 feet outside of each entrance."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To assign to a restricted category.",
+          "To divide into or assign to sections or areas.",
+          "(intransitive, slang) To enter a daydream state temporarily, for instance as a result of boredom, fatigue, or intoxication; to doze off.",
+          "To define the property use classification of (an area)."
+        ],
+        "examples": [
+          "I must have zoned while he was giving us the directions.",
+          "This area was zoned for industrial use.",
+          "Please zone off our staging area, a section for each group.",
+          "We've zoned each other as friends; we'll never be anything more."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zəʊn/",
     "us_ipa": "/zəʊn/",
-    "examples": [
-      "a war/combat/demilitarized/exclusion zone",
-      "a danger zone",
-      "a pedestrian zone (= where vehicles may not go)"
-    ],
-    "meanings": [
-      "any of five great divisions of the earth ' s surface with respect to latitude and temperature compare frigid zone, temperate zone, torrid zone",
-      "a portion of the surface of a sphere included between two parallel planes",
-      "girdle, belt"
-    ],
     "synonyms": [
       "region",
       "neck",
@@ -1380,17 +2871,31 @@
       }
     ]
   },
-  "zoning": {
+  {
+    "word": "zoning",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The use of zones, such as fare zones.",
+          "(law) Legislative action for the purpose of regulating the use of property and the construction of buildings within the area under the jurisdiction of the legislative body concerned."
+        ],
+        "examples": [
+          "The system of zoning would lead logically to the introduction of the modern ticket barriers from 1987 (the Underground Ticketing System, or UTS), in that it allowed the software in the ticket gates to be relatively simple.",
+          "These towers are not only the product of advances in construction technology – and a global surfeit of super-rich buyers – but a zoning policy that allows a developer to acquire unused airspace nearby, add it to their own lot, and erect a vast structure without any kind of public review process taking place."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "present participle and gerund of zone"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzəʊnɪŋ/",
     "us_ipa": "/ˈzəʊnɪŋ/",
-    "examples": [
-      "zoning regulations/laws"
-    ],
-    "meanings": [
-      "the act or process of partitioning a city, town, or borough into zones reserved for different purposes ( such as residence or business )",
-      "the set of ordinances by which such zones are established and regulated",
-      "municipal or county regulation of land use effected through the creation and enforcement of zones under local law"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1404,35 +2909,111 @@
       }
     ]
   },
-  "zonk": {
+  {
+    "word": "zonk",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(slang) The feeling of a drug taking hold.",
+          "(slang) An unfavorable card or token, or undesirable or worthless item used as a prize in a contest or game show (such as Let's Make a Deal).",
+          "(slang) A cigarette hand-rolled from tobacco and cannabis."
+        ],
+        "examples": [
+          "Avoid the Zonk / On the TV show Let's Make a Deal, contestants often had to choose between three curtains.",
+          "I have three empty coffee cans, two with prizes and one with a slip of paper that says \" Zonk.\"",
+          "There will always be two doors that hold zonks, so regardless of whether you initially chose the grand prize or a zonk, Monty will always be able to show you a zonk not chosen.",
+          "A zonk was way overdue, yet the boys knew that the Seniors knew they would think this was a zonk and would trick the boys by making this another real prize.",
+          "A live, mane-embellished, SAG-card-carrying lion, I should point out, who was likely being staged for a few minutes off to the side before he would be used as a freaking “ Zonk!” on a freaking game show, for crying out loud."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(transitive, slang) To hit hard.",
+          "(intransitive, slang, usually followed by “out”) To become exhausted, sleepy or delirious.",
+          "(transitive, slang) To make (someone) sleepy or delirious, to put into a stupor."
+        ],
+        "examples": [
+          "After two hours of studying, I zonked out."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zɒŋk/",
     "us_ipa": "/zɑːŋk/",
-    "examples": [
-      "After two drinks, I usually zonk out.",
-      "Rowing always zonks me.",
-      "The book fell and zonked me on the head."
-    ],
-    "meanings": [
-      "stun, st up efy",
-      "strike, zap",
-      "to pass out from or as if from alcohol or a drug"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zoo": {
+  {
+    "word": "zonula",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(anatomy) Any of several small belt -like regions."
+        ],
+        "examples": [
+          "Nevertheless, the zonula is most often considered as the principal agent of transmission.",
+          "The zonula originates by a small number of delicate fibres from the vitreous [lamella]."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zonule",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(anatomy) A little zone, or girdle; a zonula.",
+          "(anatomy) The zonule of Zinn."
+        ],
+        "examples": [
+          "The rim of a small-sized lens along with zonule is clearly seen through the fully dilated pupil.",
+          "Each tight junction is followed by an adhering zonule extending between arrows 2 and 3 and, farther away, by a desmosome marked D. A condensation of finely fibrillar material occurs mainly along the adhering zonules on each side of the bile capillary.",
+          "In most cases, the goal of this type of lens surgery is the same as that for eyes without a compromised zonule: to remove the contents of the capsular bag through a CCC [continuous curvilinear capsulectomy] and replace the contents with a foldable IOL. [intraocular lens]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoo",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(countable, US, military, slang) The jungle.",
+          "(countable, informal, figuratively) Any place that is wild, crowded, or chaotic.",
+          "A park where live animals are exhibited.",
+          "(countable, informal, figuratively) A large and varied collection of something.",
+          "(countable, informal) Clipping of zoophile."
+        ],
+        "examples": [
+          "Zoophiles, or ' zoos,' are sexually and emotionally attracted to animals, as in a sexual orientation.",
+          "The London Zoo was built in 1828.",
+          "The shopping center was a zoo the week before Christmas.",
+          "From this point on, an entire zoo of possibilities arose: strange stars, different families of neutron stars, hybrid stars, etc.",
+          "But powerful as the quark model and the electroweak theory were in describing the zoo of subatomic particles, this still left a huge gap."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zuː/",
     "us_ipa": "/zuː/",
-    "examples": [
-      "These lions were born in the zoo.",
-      "We saw a baby polar bear at the zoo.",
-      "a badly-run zoo"
-    ],
-    "meanings": [
-      "a facility with usually indoor and outdoor settings where living, typically wild animals are kept especially for public exhibition",
-      "a place, situation, or group marked by crowding, confusion, or unrestrained behavior",
-      "animal: animal kingdom or kind"
-    ],
     "synonyms": [
       "commotion",
       "disturbance",
@@ -1454,15 +3035,124 @@
       }
     ]
   },
-  "zoological": {
+  {
+    "word": "zooerastia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The practice of a human engaging in sexual intercourse with an animal"
+        ],
+        "examples": [
+          "A curious instance of perversion in religio-sexual feeling, bordering on zooerastia, is the case of St. Veronica."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zooerasty",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The practice of a human engaging in sexual intercourse with an animal"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zooflagellate",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(microbiology) Any of the heterotrophic flagellates of the phylum Zoomastigophora"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zooid",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(zoology) An animal in one of its inferior or early stages of development, as one of the intermediate forms in alternate generation.",
+          "(zoology) One of the individual animals in a composite group, as of Anthozoa, Hydrozoa, and Bryozoa; — sometimes restricted to those individuals in which the mouth and digestive organs are not developed.",
+          "(biology) An organic body or cell having locomotion, as a spermatic cell or spermatozoid."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(biology) Relating to, or resembling, an animal."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoolatry",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The worship of animals."
+        ],
+        "examples": [
+          "Excessive zoolatry and heka practices had always been fundamental aspects of Egyptian religion and lifestyles, but from about the Late Period (c. 747 BC), they increasingly became tinged with fundamentalism and fanaticism."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoological",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Of, or relating to, zoology.",
+          "Of, or relating to, animals."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˌzuːəˈlɒdʒɪkl/",
     "us_ipa": "/ˌzuːəˈlɑːdʒɪkl/",
-    "examples": [],
-    "meanings": [
-      "of, relating to, or concerned with zoology",
-      "of, relating to, or affecting lower animals often as distinguished from humans",
-      "of, relating to, or concerned with zoology"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1484,15 +3174,20 @@
       }
     ]
   },
-  "zoologist": {
+  {
+    "word": "zoologist",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "One who studies or practices zoology."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zuˈɒlədʒɪst/",
     "us_ipa": "/zuˈɑːlədʒɪst/",
-    "examples": [],
-    "meanings": [
-      "a branch of biology concerned with the classification and the properties and vital phenomena of animals",
-      "animal life ( as of a region ): fauna",
-      "the properties and vital phenomena exhibited by an animal, animal type, or group"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1514,15 +3209,21 @@
       }
     ]
   },
-  "zoology": {
+  {
+    "word": "zoology",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A treatise on this science.",
+          "The part of biology relating to the animal kingdom, including the structure, embryology, evolution, classification, habits, and distribution of all animals, both living and extinct."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zuˈɒlədʒi/",
     "us_ipa": "/zuˈɑːlədʒi/",
-    "examples": [],
-    "meanings": [
-      "a branch of biology concerned with the classification and the properties and vital phenomena of animals",
-      "animal life ( as of a region ): fauna",
-      "the properties and vital phenomena exhibited by an animal, animal type, or group"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1544,19 +3245,58 @@
       }
     ]
   },
-  "zoom": {
+  {
+    "word": "zoom",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A video teleconferencing call.",
+          "(figurative) A big increase.",
+          "(figurative) A quick ascent.",
+          "An augmentation of a view, by varying the focal length of a lens, or digitally.",
+          "A humming noise from something moving very fast."
+        ],
+        "examples": [
+          "What's the zoom like on your camera?",
+          "Then, later that day, I logged onto a zoom call and my mother and I set up our yoga mats in the living room, as we had been doing a couple of times a week during the pandemic.",
+          "the zoom of traffic"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To go up sharply.",
+          "To move fast with a humming noise.",
+          "To participate in a video teleconferencing call.",
+          "To check someone out; to investigate someone that one is interested in.",
+          "To manipulate a display so as to magnify or shrink it.",
+          "To move rapidly.",
+          "(photography) To change the focal length of a zoom lens.",
+          "(aviation) To zoom climb."
+        ],
+        "examples": [
+          "We zoomed along the highway.",
+          "to zoom in or zoom out",
+          "\"It boggles my mind what kind of mentality is at work there.\" He pointed to two recent issues of the magazine that featured cover stories were about Whitney Houston and Luther Vandross, two pop music icons whose sexual orientations have been widely speculated on in Black lesbian and gay communities. \"It makes you wonder if it's an insult to the intelligence of Essence ’s lesbian and gay leadership,\" Cunningham said. \"Who's really zooming whom here?\""
+        ]
+      },
+      {
+        "pos": "Interjection",
+        "definitions": [
+          "Suggesting something moving quickly",
+          "Suggesting a sudden change, especially an improvement or an increase",
+          "Representing a humming sound"
+        ],
+        "examples": [
+          "Makowsky was playing the Bassgeige. Zoom... zoom-zoom.... The rest of the orchestra would join in presently.",
+          "I would dance a few light fantastic steps to show which way the wind lay, and zoom! Like a breeze I was on the piano stool and doing a velocity exercise."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/zuːm/",
     "us_ipa": "/zuːm/",
-    "examples": [
-      "Traffic zoomed past us.",
-      "For five weeks they zoomed around Europe.",
-      "She spends her time zooming around the country."
-    ],
-    "meanings": [
-      "to move with a loud low hum or buzz",
-      "to go speedily: zip",
-      "to climb for a short time at an angle greater than that which can be maintained in steady flight so that the machine is carried upward at the expense of stored kinetic energy"
-    ],
     "synonyms": [
       "hum",
       "purr",
@@ -1578,75 +3318,337 @@
       }
     ]
   },
-  "zoonosis": {
+  {
+    "word": "zoomastigote",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A zooflagellate: a heterotrophic flagellate of the phylum Zoomastigophora"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoomorphism",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The representation of gods as animals or the attributing of animal characteristics to gods.",
+          "The viewing of human behavior in terms of the behavior of animals.",
+          "(art, literature) The use of animal figures in art and design or of animal symbols in literature."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoonosis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biology, microbiology) An animal disease, such as rabies or anthrax, that can be transmitted to humans."
+        ],
+        "examples": [
+          "In his first book since the 2008 essay collection Natural Acts: A Sidelong View of Science and Nature, David Quammen looks at the natural world from yet another angle: the search for the next human pandemic, what epidemiologists call “the next big one.” His quest leads him around the world to study a variety of suspect zoonoses —animal-hosted pathogens that infect humans."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˌzuːəˈnəʊsɪs/",
     "us_ipa": "/ˌzuːəˈnəʊsɪs/",
-    "examples": [
-      "The disease emerged as a zoonosis but then mutated into a human-only strain."
-    ],
-    "meanings": [
-      "an infection or disease that is transmissible from animals to humans under natural conditions",
-      "an infection or disease that is transmissible between animals and humans",
-      "see also reverse zoonosis"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zoonotic": {
+  {
+    "word": "zoonotic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "relating to, or having a zoonosis"
+        ],
+        "examples": [
+          "Bats host many high-profile viruses that can infect humans, including severe acute respiratory syndrome and Ebola. A recent study explored the ecological variables that may contribute to bats’ propensity to harbor such zoonotic diseases by comparing them with another order of common reservoir hosts: rodents.",
+          "According to Prof Andre and many other experts, increased travel, the spread of mega cities and humanity’s gradual intrusion into more and more report areas means the chances of zoonotic “spillover” events like Covid are becoming more and more likely."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˌzuːəˈnɒtɪk/",
     "us_ipa": "/ˌzuːəˈnɑːtɪk/",
-    "examples": [
-      "Influenza is just one of many zoonotic diseases that pose a serious risk to human health."
-    ],
-    "meanings": [
-      "an infection or disease that is transmissible from animals to humans under natural conditions",
-      "an infection or disease that is transmissible between animals and humans",
-      "see also reverse zoonosis"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zooplankton": {
+  {
+    "word": "zoophilia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A paraphilia involving the sexual attraction of people to non-human animals.",
+          "The human sexual attraction or arousal to non-sapient animals."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoophilism",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(epidemiology) A preference of a parasite or vector to feed on non-human animals",
+          "An affection for non-human animals",
+          "Zoophilia, a sexual inclination towards bestiality"
+        ],
+        "examples": [
+          "Zoophilism bears witness to a new human being, one who no longer fears nature."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoophobia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An unusual fear of animals."
+        ],
+        "examples": [
+          "The girl who had zoophobia didn't like animals, domestic or wild."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zooplankton",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(zoology) Free-floating small protozoa, crustaceans (such as krill), etc. and the eggs and larvae from larger animals."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˌzuːəˈplæŋktən/",
     "us_ipa": "/ˌzuːəˈplæŋktən/",
-    "examples": [],
-    "meanings": [
-      "freely floating or weakly swimming typically minute aquatic protozoans and animals ( such as copepods, rotifers, and arrow worms ) or the eggs or larvae of aquatic animals ( such as anemones, mollusks, and fish ): plankton composed of animals",
-      "compare phytoplankton",
-      "plankton that is composed of animals"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zoroastrian": {
-    "uk_ipa": "/ˌzɒrəʊˈæstriən/",
-    "us_ipa": "/ˌzɔːrəʊˈæstriən/",
-    "examples": [],
-    "meanings": [
-      "a persian religion founded in the sixth century b. c. by the prophet zoroaster, promulgated in the avesta, and characterized by worship of a supreme god ahura mazda who requires good deeds for help in his cosmic struggle against the evil spirit ahriman"
+  {
+    "word": "zoopsia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Visual hallucinations in which a person perceives animals that are not actually present."
+        ],
+        "examples": [
+          "One of her most persistent hallucinations was a small brightly patterned snake moving across the floor in the periphery of her vision. Her zoöpsia was accompanied by a terror of real animals."
+        ]
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zoroastrianism": {
-    "uk_ipa": "/ˌzɒrəʊˈæstriənɪzəm/",
-    "us_ipa": "/ˌzɔːrəʊˈæstriənɪzəm/",
-    "examples": [],
-    "meanings": [
-      "a persian religion founded in the sixth century b. c. by the prophet zoroaster, promulgated in the avesta, and characterized by worship of a supreme god ahura mazda who requires good deeds for help in his cosmic struggle against the evil spirit ahriman"
+  {
+    "word": "zoospore",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A motile asexual spore of some algae and fungi"
+        ],
+        "examples": []
+      }
     ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zucchini": {
+  {
+    "word": "zoot",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(furry fandom) A fursuit.",
+          "(slang, Trinidad and Tobago) A cigarette butt.",
+          "(slang, US) A zoot suit.",
+          "(slang, UK) A marijuana cigarette.",
+          "(uncountable, slang, UK) PCP; phencyclidine."
+        ],
+        "examples": [
+          "It seems some Furries like zoots because they're the closest thing to a live anthro they can find.",
+          "How many zoots you getting out of a 3.5? I’m hearing 4 is normal🥴",
+          "I also told him about a fur meet in which we 'squicked a bunch of mundanes' by running around in a shopping mall in zoots, etc.",
+          "(Can we add an example for this sense?)",
+          "I couldn't wait for eight o'clock to get home to eat out of those soul-food pots of Ella's, then get dressed in my zoot and head for some of my friends' places in town, to lindy-hop and get high, […]"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "(intransitive, slang) To rush around quickly; to scoot."
+        ],
+        "examples": [
+          "Lauren loves to zoot around the shopping mall. At top speed.",
+          "As well as allowing more and more people to zoot around the city in their cars, these roads also allowed for the improvement of public transport within Cardiff."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zootoxin",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A toxin produced by an animal."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zori",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(especially Southeast US) A sandal, usually of rubber, secured to the foot by two straps mounted between the big toe and its neighbour.",
+          "A Japanese sandal made from rice straw or lacquered wood, worn with a kimono for formal occasions."
+        ],
+        "examples": [
+          "He ran back and I watched him go, legs pumping, soles of his zori showing.",
+          "Traditionally, zori are worn to and from the place of practice. Zori are similar to flip-flops and used to be made from straw.",
+          "[…] and they had a machine gun aimed at us, and we stood in the snow for three, four, five hours in our underwear and zoris.",
+          "Zori should be left at the edge of the training area so they can easily be stepped into. In Western dojo, this is sometimes impractical, but zori should at least be put on as soon as possible after leaving the training area.",
+          "She took a while getting her crooked feet into her zori, but finally turned toward Mr. Tanaka and gave him a look he seemed to understand at once, because he left the room, closing the door behind him."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoster",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(uncountable, pathology) The disease called herpes zoster (from the typically beltlike pattern of its rash); shingles."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zoysia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of a genus (Zoysia) of creeping perennial grasses of southern Asia and New Zealand having fine wiry leaves and including some suitable for lawn grasses, especially in warm regions."
+        ],
+        "examples": [
+          "In areas farther north, zoysias will live but will not spread. Zoysias need bright, hot sunlight."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zucchini",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of zucchino",
+          "(Australia, New Zealand, Canada, US, Philippines) The edible fruit of this variety of squash.",
+          "(Australia, New Zealand, Canada, US, Philippines) A courgette; a variety of squash, Cucurbita pepo, which bears edible fruit."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/zuˈkiːni/",
     "us_ipa": "/zuˈkiːni/",
-    "examples": [],
-    "meanings": [
-      "a smooth usually cylindrical dark green summer squash",
-      "a plant that bears zucchini",
-      "a smooth cylinder - shaped usually dark green summer squash"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1664,18 +3666,20 @@
       }
     ]
   },
-  "zulu": {
+  {
+    "word": "zulu",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(international standards) Alternative letter-case form of Zulu from the NATO/ICAO Phonetic Alphabet."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzuːluː/",
     "us_ipa": "/ˈzuːluː/",
-    "examples": [
-      "Zulu culture/history/traditions",
-      "It is the first international film in the Zulu language."
-    ],
-    "meanings": [
-      "a member of a bantu - speaking people of natal",
-      "the bantu language of the zulus",
-      "a member of a bantu - speaking people of south africa"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1689,47 +3693,42 @@
       }
     ]
   },
-  "zuni": {
-    "uk_ipa": "/ˈzuːni/",
-    "us_ipa": "/ˈzuːni/",
-    "examples": [],
-    "meanings": [
-      "a member of an indigenous people of western new mexico",
-      "the language of the zuni people",
-      "an indigenous people of western new mexico"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
+  {
+    "word": "zwieback",
+    "entries": [
       {
-        "text": "zoo",
-        "stress": 1
-      },
-      {
-        "text": "nee",
-        "stress": 2
+        "pos": "Noun",
+        "definitions": [
+          "A form of rusk, usually sweetened bread enriched with eggs that is baked and then sliced and toasted until dry and crisp; considered easy to digest and therefore given to the ill and used as a teething food for toddlers."
+        ],
+        "examples": [
+          "She nibbled the zwieback that she always fed off, And when it was gone, she cut the giant's head off."
+        ]
       }
-    ]
-  },
-  "zwieback": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzwiːbæk/",
     "us_ipa": "/ˈzwiːbæk/",
-    "examples": [],
-    "meanings": [
-      "a usually sweetened bread enriched with eggs that is baked and then sliced and toasted until dry and crisp",
-      "a usually sweet bread made with eggs that is baked and then sliced and toasted until dry and crisp"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "zydeco": {
+  {
+    "word": "zydeco",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A form of Louisiana Creole music, characteristically performed by accordion and washboard bands, that combines Cajun and Creole roots music with elements of African American music."
+        ],
+        "examples": [
+          "Sunpie—in real life, a park ranger and an accordionist who leads a good zydeco band—taunted Harrison […]."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪdɪkəʊ/",
     "us_ipa": "/ˈzaɪdɪkəʊ/",
-    "examples": [],
-    "meanings": [
-      "popular music of southern louisiana that combines tunes of french origin with elements of caribbean music and the blues and that features guitar, washboard, and accordion",
-      "popular music of southern louisiana that combines tunes of french origin with elements of caribbean music and blues"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1747,15 +3746,183 @@
       }
     ]
   },
-  "zygote": {
+  {
+    "word": "zygocactus",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any cactus in the genus Schlumbergera (previously Zygocactus)"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygodactyl",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(ornithology) Any bird with toes of this kind, such as the parrot."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Having two toes pointing forward, and two pointing backward; zygodactylous."
+        ],
+        "examples": [
+          "In parrots, the tarsometatarsus has a distinct shape resulting from the particular arrangement of parrot toes. As zygodactyl birds, toes number 2 and 3 are facing forward, while toes 1 and 4 are facing backwards."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygoma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(anatomy) The cheekbone."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygomatic",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(anatomy) Ellipsis of zygomatic bone."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(anatomy, relational) Of, relating to, or located in the area of the zygomatic bone or zygomatic arch."
+        ],
+        "examples": [
+          "They show (1) the left orbit and zygomatic arch of President Kennedy magnified from Zapruder frame 230"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygomorphic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(biology) Having bilateral symmetry."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygomorphous",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "zygomorphic"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygomycetes",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of zygomycete"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygospore",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(botany) A spore formed by the union of several zoospores.",
+          "(botany) A zygosperm."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygote",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(cytology, also attributive) A eukaryotic cell formed from the fusion of two gametes (“ reproductive cells ”) during a fertilization process. [from late 19th c.]"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪɡəʊt/",
     "us_ipa": "/ˈzaɪɡəʊt/",
-    "examples": [],
-    "meanings": [
-      "a cell formed by the union of two gametes",
-      "the developing individual produced from such a cell",
-      "a cell formed by the union of two sex cells"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -1768,5 +3935,201 @@
         "stress": 0
       }
     ]
+  },
+  {
+    "word": "zygotene",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biology) The intimate pairing of homologous chromosomes during the synaptic stage of meiosis"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zygotic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(biology) Of, pertaining to or existing as a zygote."
+        ],
+        "examples": [
+          "zygotic divergence (analysis)"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymase",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biochemistry) Any of a group of enzymes that catalyze the fermentation of simple carbohydrates to ethanol and carbon dioxide."
+        ],
+        "examples": [
+          "In 1905, Harden and Young found that the zymase of Buchner consisted of a thermolabile ferment fraction, which was later designated as \"apo-zymase\" by Neuberg and v. Euler, and of a thermostable ultrafiltrable factor, \"co-zymase,\" the presence of which is necessary for the fermentation of sugar."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymogen",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biochemistry) A proenzyme, or enzyme precursor, which requires a biochemical change (i.e. hydrolysis) to become an active form of the enzyme."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymology",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A treatise on the use of fermentation to produce liquors.",
+          "The chemistry of fermentation with yeasts, especially the science involved in beermaking and winemaking; zymurgy."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymolysis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chemistry) The action of enzymes in breaking down organic substances during fermentation"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymolytic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Causing fermentation"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymosis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A fermentation; hence, an analogous process by which an infectious disease is believed to be developed.",
+          "A zymotic disease."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymotic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Of or causing fermentation."
+        ],
+        "examples": [
+          "Farr concluded that overcrowding was the main determinant of high mortality from what (following Liebig) he style ‘ zymotic diseases’.",
+          "The incidence of zymotic diseases upon any particular organ or set of organs, is, of course, well recognised; one recalls the nephritis of scarlatina, the endocarditis of rheumatism, gastritis of rabies, and—perhaps the most striking instance of the selective affinity of disease for specific local manifestation—the lesions of foot-and-mouth disease.",
+          "[…] these […] accounts by no means bear out the zymotic doctrine of the Board of Health as to the cause of cholera; for where the zymotic influences from the sewers were the worst, […] the cholera was the least destructive."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "zymurgy",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The practice of using fermentation to produce alcoholic beverages."
+        ],
+        "examples": [
+          "Translated from Eis und Kaelte-industrie by an anonymous author.",
+          "The natural languages, however, cover every subject from aardvarks to zymurgies.]",
+          "Appears to be the earliest use of the word in print.]",
+          "Of Zymurgy I little know, / Perhaps because I little knead, / And can but make a sorry show / In singing liaisons of feed, / Flour, fodder,— […]",
+          "With great interest I learn from a pamphlet by Mr. Georg Barth, expert in zymurgy at Munich, which I have received lately, that the author, in his essay on \"The Best Method of Storing Hops,\" arrives at the same conclusions which I have drawn in this article. Translated from Eis und Kaelte-industrie by an anonymous author."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
   }
-}
+]

@@ -1,13 +1,389 @@
-{
-  "xenon": {
+[
+  {
+    "word": "x",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Alternative letter-case form of X (“ intersex or non-binary (in passports and identification documents) ”)."
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Numeral",
+        "definitions": [
+          "(sometimes humorous) An unknown or unspecified number of."
+        ],
+        "examples": [
+          "Alternative form: X",
+          "But chances are that Google will continue to float new ideas before eventually merging the best of them into a single, coherent application, as it did with Hangouts. And then it'll start the process again. In the meantime, Google will spend money developing x number of duplicate apps, and users will have to deal with a confusing mess of applications on their home screens.",
+          "David Cameron gives a Commons statement after every EU summit and normally they follow a predictable pattern; he says that he set out with X number of aims, and then he explains he has achieved all X of them (even if he hasn’t). The most interesting comments normally come in the exchanges with MPs."
+        ]
+      },
+      {
+        "pos": "Conjunction",
+        "definitions": [
+          "(music) Used in place of and in artist collaborations.",
+          "(fandom slang) Used between the names of two characters to denote a ship, particularly in anime, manga, and video games."
+        ],
+        "examples": [
+          "Taska Black x DROELOE, Steve Aoki x Lauren Jauregui, etc.",
+          "Tho' my doujinshi is a Cloud x Sephiroth - yes you read that right - Cloud's name is first. ^^!",
+          "If there is anyone in the audience who can't stand someone pushing a Shinji x Rei thing, I know you want to quit on this fic now.",
+          "I'm a fairly big Angel x Buffy fan, though I'm not a particularly big fan of Angel. They just work well together, IMO."
+        ]
+      }
+    ],
+    "default_pos": "Conjunction",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthate",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chemistry) Any salt or ester of xanthic acid."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthelasma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A deposit of cholesterol on the eyelid."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthemia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(pathology) The occurrence of yellow matter in the blood.",
+          "(pathology) The occurrence of yellow skin"
+        ],
+        "examples": [
+          "Among the latter, incipient nephritis and metabolic anomalies, as xanthemia, arthritis uritica, oxaluria are common.",
+          "False jaundice or carotenemia (xanthemia) is an unusual and abnormal yellowness of the human skin, sometimes actually appearing in the sweat, resulting from the ingestion of carotenoid-rich food such as carrots, oranges or yellow cucurbits in large quantities over protracted periods.",
+          "Carotin was inferred, not demonstrated, in these cases, although Salomon measured the extent of the \" xanthemia \" in certain individuals by determining the extinction coefficient of the absorption bands of the ether extract of the blood."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Of a yellowish colour."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthine",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chemistry) Any of a group of alkaloids that include caffeine, theophylline, and theobromine as well as the parent compound, a precursor of uric acid found in many organs of the body."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthoma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(medicine) A small, yellow nodule, rich in cholesterol and other lipids, that occurs in the skin, often near a joint"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthomatosis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(medicine) A disorder in which excess lipid accumulates in the body and produces xanthomas"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthomonad",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the genus Xanthomonas of proteobacteria."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthophyll",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(organic chemistry, uncountable) Lutein.",
+          "(organic chemistry, countable) Any of various hydroxy, carbonyl or carboxylic acid derivatives of carotenes."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthopsia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A visual defect, a form of chromatopsia in which everything appears yellow."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthosis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(alchemy) Synonym of citrinitas.",
+          "(pathology) A yellowish discolouration of tissues undergoing degeneration."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xanthous",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Yellow - brown; yolk -colored."
+        ],
+        "examples": [
+          "The xanthous variety springs up out of every black-haired race.",
+          "[…] the xanthous, or fair class, comprises those who have brown, auburn, yellow, flaxen, or red hair; […]",
+          "Absorbent fatty xanthous histiocytes and xanthous granulations are observed in the marginal area of necrosis of the fatty tissue […]"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xc",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(finance) Without a coupon."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenogeneic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(genetics) Derived from a different species and therefore genetically and immunologically incompatible"
+        ],
+        "examples": [
+          "Among the types of xenografts that might be undertaken are extracorporeal \"xenoperfusion\" or perfusion of devices containing xenogeneic hepatocytes, auxiliary liver transplants, bridge liver transplants, and hepatocyte transplants."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenogenesis",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A foreign origin or source.",
+          "(biology) The production of an offspring that is unlike either of its parents."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenograft",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A tissue graft taken from a species different from that of the recipient."
+        ],
+        "examples": [
+          "Likewise the survival of xenografts of rat megaislets transplanted into miceis extended by these special pretransplant culture conditions."
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To perform a tissue graft using tissue taken from a species different from that of the recipient."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenolith",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(geology) Any piece of rock having a different origin to that of the igneous rock in which it is found."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenon",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The chemical element (symbol Xe) with an atomic number of 54. It is a colorless, odorless, unreactive noble gas, used notably in camera flash technology."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzenɒn/",
     "us_ipa": "/ˈzenɑːn/",
-    "examples": [],
-    "meanings": [
-      "a heavy colorless and relatively inert gaseous element that occurs in air as about one part in 2 0 million and is used especially in specialized electric lamps ( such as flash tubes ) and in scientific research see chemical elements table",
-      "a heavy colorless gaseous element that occurs in air in minute quantities and is used especially in specialized electric lamps see element",
-      "a heavy, colorless, and relatively inert gaseous element that occurs in air as about one part in 2 0 million by volume"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -21,17 +397,24 @@
       }
     ]
   },
-  "xenophobia": {
+  {
+    "word": "xenophobia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A fear, antipathy, or hatred of strangers or foreigners."
+        ],
+        "examples": [
+          "The United States is not the only country where xenophobia pays dividends for politicians.",
+          "Like the Communist party before it, the Front National claimed to speak for the “working class”. The class enemy was rebranded from “bourgeoisie” to “elite”, communist xenophobia about “international capital” was supplemented with xenophobia against immigrants, and the proletariat had to ally with former adversaries such as small business owners, but the essential claim of working-class dignity remained intact.",
+          "The great sociologist Zygmunt Bauman argued that philo-Semitism and anti-Semitism both fall under “allosemitism”: literally Othering the Jew. He defined it not as resentment of what is different, which is xenophobia, but rather of what defies order and clear categories. In 1997, he wrote, “The Jew is ambivalence incarnate. And ambivalence is ambivalence mostly because it cannot be contemplated without ambivalent feeling: it is simultaneously attractive and repelling.”"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˌzenəˈfəʊbiə/",
     "us_ipa": "/ˌzenəˈfəʊbiə/",
-    "examples": [
-      "a campaign against racism and xenophobia"
-    ],
-    "meanings": [
-      "fear and hatred of strangers or foreigners or of anything that is strange or foreign",
-      "fear of foreigners or foreign things",
-      "fear and hatred of strangers or foreigners or of anything that is strange or foreign"
-    ],
     "synonyms": [
       "nativism",
       "chauvinism",
@@ -63,16 +446,33 @@
       }
     ]
   },
-  "xenophobic": {
+  {
+    "word": "xenophobic",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A xenophobe."
+        ],
+        "examples": [
+          "So Buzz Bissinger sees fit that we give up on the ideal of Olympism and give in to xenophobics, terrorists, drug abusers, profiteers and human rights abusers?"
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Exhibiting or characterised by xenophobia, a fear or hatred of strangers, foreigners, or extraterrestial life."
+        ],
+        "examples": [
+          "Residents of Plettenberg Bay this week launched violent xenophobic attacks on foreign Africans living in informal settlements, beating them and ransacking their houses",
+          "It has not yet promised much in the way of serious debate about the migrant crisis or the EU’s failure to tackle it in a humane and coordinated manner, in the context of the Italian government’s increasingly xenophobic policies.",
+          "Fox News Channel host Tucker Carlson, who often spreads xenophobic arguments, has ardently embraced the charge that Democrats are “trying to replace the current electorate – the voters now casting ballots – with new people, more obedient voters from the Third World.”"
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
     "uk_ipa": "/ˌzenəˈfəʊbɪk/",
     "us_ipa": "/ˌzenəˈfəʊbɪk/",
-    "examples": [
-      "xenophobic slogans"
-    ],
-    "meanings": [
-      "one unduly fearful of what is foreign and especially of people of foreign origin",
-      "a person unduly fearful of what is foreign and especially of people of foreign origin"
-    ],
     "synonyms": [
       "nativist",
       "nativistic",
@@ -102,28 +502,363 @@
       }
     ]
   },
-  "xenotransplantation": {
+  {
+    "word": "xenotime",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(mineralogy) A yellow-brown mineral, yttrium phosphate (Y P O 4)"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenotransplant",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The graft (tissue or organ) transplanted in such an instance: Synonym of xenograft.",
+          "An instance of xenotransplantation."
+        ],
+        "examples": [
+          "Near-synonym: xenoengraftment"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To carry out xenotransplantation."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xenotransplantation",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The transplantation of biological or organic matter from a given species into a different one, especially when this matter has been altered (such as by genetic engineering)"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˌziːnəʊˌtrænsplɑːnˈteɪʃn/",
     "us_ipa": "/ˌziːnəʊˌtrænsplænˈteɪʃn/",
-    "examples": [],
-    "meanings": [
-      "transplantation of an organ, tissue, or cells between two different species",
-      "transplantation of an organ, tissue, or cells between two different species ( as a human and a domestic swine )"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "xerox": {
+  {
+    "word": "xeranthemum",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of the genus Xeranthemum of flowering plants native to Southern Europe."
+        ],
+        "examples": [
+          "Xeranthemums have silvery flower heads with purplish tubular flowers."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xeric",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(of an environment or habitat) Very dry, lacking humidity and water.",
+          "(of an organism) Adapted to live in a very dry habitat."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xeroderma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(pathology) Any of various skin diseases characterised by dry, hard, scaly skin, especially ichthyosis."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerographic",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "of, relating to, or produced by xerography"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerography",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A photocopying process in which a negative image formed on an electrically charged plate is transferred as a positive to paper and thermally fixed."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xeroma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(medicine) Dryness of the eye."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerophile",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any xerophilic organism."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerophilous",
+    "entries": [
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Able to thrive in dry weather."
+        ],
+        "examples": [
+          "The cactus is very xerophilous."
+        ]
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerophthalmia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(ophthalmology) A condition due to a deficiency of vitamin A where the conjunctiva and cornea become dry. The condition starts with conjunctival xerosis and night blindness and progresses to corneal xerosis and, later, a severe condition called keratomalacia."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerophyte",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(botany) Any plant suited for life in a habitat where water is scarce, such as in a desert or chaparral. Such plants may be succulent, have small or reduced leaves, or spines.",
+          "A desert plant"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerophytic",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "xerophyte"
+        ],
+        "examples": []
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(botany) Of, pertaining to, or being a xerophyte",
+          "(ecology) Having a very dry environment"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xeroradiography",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "A method of X-ray photography which uses an electrically charged metal plate instead of film."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerostomia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(medicine) Abnormal dryness of the mouth."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerotes",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(pathology) A general dryness of the body."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xerox",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(colloquial, informal) A xerograph (copy).",
+          "(colloquial, informal) A xerographer (machine)."
+        ],
+        "examples": [
+          "The xerox broke down yesterday.",
+          "Hand me that xerox, would you?"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To make a copy using a xerographer."
+        ],
+        "examples": [
+          "I xeroxed the report for all the people at the meeting."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzɪərɒks/",
     "us_ipa": "/ˈzɪrɑːks/",
-    "examples": [
-      "Could you xerox this letter, please?"
-    ],
-    "meanings": [
-      "to copy on a xerographic copier",
-      "to make ( a copy ) on a xerographic copier",
-      "to copy or make a copy on a xerographic copier"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -137,36 +872,20 @@
       }
     ]
   },
-  "xhosa": {
-    "uk_ipa": "/ˈkəʊsə/",
-    "us_ipa": "/ˈkəʊsə/",
-    "examples": [],
-    "meanings": [
-      "a member of a bantu - speaking people of eastern cape province",
-      "a bantu language of the xhosa s"
-    ],
-    "synonyms": [],
-    "antonyms": [],
-    "syllables": [
+  {
+    "word": "xi",
+    "entries": [
       {
-        "text": "zoh",
-        "stress": 1
-      },
-      {
-        "text": "shuh",
-        "stress": 0
+        "pos": "Noun",
+        "definitions": [
+          "(particle physics) Either of a pair of hyperons having spin 1/2, which decay into a lambda particle and a pion."
+        ],
+        "examples": []
       }
-    ]
-  },
-  "xi": {
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/saɪ/",
     "us_ipa": "/saɪ/",
-    "examples": [],
-    "meanings": [
-      "the 1 4 th letter of the greek alphabet see alphabet table",
-      "the 1 4 th letter of the greek alphabet",
-      "river 3 0 0 miles ( 4 8 3 kilometers ) long in guangxi zhuang zu and guangdong, southeastern china, flowing east into the south china sea"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -176,30 +895,81 @@
       }
     ]
   },
-  "xl": {
-    "uk_ipa": "/ˌeks ˈel/",
-    "us_ipa": "/ˌeks ˈel/",
-    "examples": [
-      "an XL T-shirt"
+  {
+    "word": "xian",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(China, Taiwan) An administrative subdivision of imperial, republican, and communist China roughly equivalent to counties, now distinguished from the more urban \" districts \" (qu). (Alternative form of hsien for Taiwan (ROC).)",
+          "(sometimes derogatory or offensive) Alternative form of Xian: Christian."
+        ],
+        "examples": [
+          "The Henan Mongol autonomous county (xian) is inhabited by Tsoros Mongols, and there are Ööld Mongols in the Huzhu autonomous county.",
+          "Tight and dense motifs occur on bronzes excavated in 1923 from a tomb at Lijialou at Xinzheng Xian in southern Henan attributed to the small state of Zheng.",
+          "At the time of the elections (1980) Nanjing was subdivided into three suburban counties (xian) and nine urban districts (qu)."
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "(Singapore, Singlish) Alternative spelling of sian (“ bored, boring ”).",
+          "(sometimes derogatory or offensive) Alternative form of Xian: Christian."
+        ],
+        "examples": [
+          "But what an epoch in the xian world—what a time for a xian Orator to make a deep & eternal impression on socity [sic]."
+        ]
+      }
     ],
-    "meanings": [
-      "extra large",
-      "extra long",
-      "extended - release"
-    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "xmas": {
+  {
+    "word": "xiphoid",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(anatomy) The xiphoid process."
+        ],
+        "examples": [
+          "In Asian pangolins the xiphoids are shorter […]"
+        ]
+      },
+      {
+        "pos": "Adjective",
+        "definitions": [
+          "Shaped like a sword, ensiform.",
+          "(anatomy) Of or relating to the xiphoid process (also called xiphisternum)."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Adjective",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xmas",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(informal) Alternative form of Xmas."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈkrɪsməs/",
     "us_ipa": "/ˈkrɪsməs/",
-    "examples": [
-      "A merry Xmas to all our readers!"
-    ],
-    "meanings": [
-      "christmas",
-      "christmas"
-    ],
     "synonyms": [
       "Christmas",
       "nativity",
@@ -207,27 +977,168 @@
       "Christmastime",
       "yule"
     ],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "xylem": {
+  {
+    "word": "xor",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "The logic function exclusive OR (as opposed to inclusive OR), whose output is true only when exactly one of its inputs is true."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xxx",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "An abbreviation for kisses, usually placed at the end of a letter or text message, often alongside ooo (hugs)."
+        ],
+        "examples": [
+          "[written on a letter] Dear Chip — See you tonight. Love xxxx Clarice"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylaria",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "plural of xylarium"
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylem",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(botany) A vascular tissue in land plants primarily responsible for the distribution of water and minerals taken up by the roots; also the primary component of wood."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
     "uk_ipa": "/ˈzaɪləm/",
     "us_ipa": "/ˈzaɪləm/",
-    "examples": [],
-    "meanings": [
-      "a complex tissue in the vascular system of higher plants that consists of vessels, trac he ids, or both usually together with wood fibers and parenchyma cells, functions chiefly in conduction of water and dissolved minerals but also in support and food storage, and typically constitutes the woody element ( as of a plant stem ) compare phloem",
-      "a tissue of higher plants that carries water and dissolved materials upward, functions also in support and storage, lies deeper inside the plant than the phloem, and usually makes up the woody parts ( as of a plant stem ) compare phloem"
-    ],
     "synonyms": [],
-    "antonyms": []
+    "antonyms": [],
+    "syllables": []
   },
-  "xylophone": {
+  {
+    "word": "xylene",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(chemistry) Any of a group of three isomeric aromatic hydrocarbons, found in coal and wood tar."
+        ],
+        "examples": [
+          "[…] proceeding, desperately, from such opiated catarrh preparations as Collis Brown's Mixture on to cocainized brain tonics, cigarettes soaked in absinthe, xylene in unventilated rooms, and so on […]"
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylocaine",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Lidocaine."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylol",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Xylene."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylophone",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(music) Any musical instrument (percussion idiophone) made of wooden slats graduated so as to make the sounds of the scale when struck with a small drumstick-like mallet; the standard Western concert xylophone or one of its derivatives."
+        ],
+        "examples": [
+          "All I know how to play on my xylophone is \" Mary Had a Little Lamb \". Would you like to hear it?"
+        ]
+      },
+      {
+        "pos": "Verb",
+        "definitions": [
+          "To move above a ridged surface or series of surfaces so as to hit every ridge, in a manner similar to playing quickly and sequentially on a xylophone.",
+          "To play a xylophone or to play something else as though it was a xylophone."
+        ],
+        "examples": [
+          "The others waged active war, claws xylophoning across Jack's pinwheeling swords.",
+          "my eager fingers xylophoning over the memories",
+          "His right hand, the good one, found one of Glass's ankles, pulled. Glass fell, her ulna, clavicle, pevis, and kneecap xylophoning along stair edges.",
+          "Like a cat, I arch into the back of the bench, my spine xylophoning along the slats while the tension of the day slowly drains out of me. I'm totally chill and mellow."
+        ]
+      }
+    ],
+    "default_pos": "Verb",
     "uk_ipa": "/ˈzaɪləfəʊn/",
     "us_ipa": "/ˈzaɪləfəʊn/",
-    "examples": [],
-    "meanings": [
-      "a percussion instrument consisting of a series of wooden bars graduated in length to produce the musical scale, supported on belts of straw or felt, and sounded by striking with two small wooden hammers",
-      "a musical instrument consisting of a series of wooden bars varying in length and sounded by striking with two wooden hammers"
-    ],
     "synonyms": [],
     "antonyms": [],
     "syllables": [
@@ -244,5 +1155,97 @@
         "stress": 2
       }
     ]
+  },
+  {
+    "word": "xylophonist",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Someone who plays a xylophone."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylopia",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any plant of the genus Xylopia, trees of Africa."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylose",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(biochemistry) One of the pentoses, C 5 H 10 O 5, a white crystalline sugar, derived from wood."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xylosma",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "Any of various evergreen shrubs and small trees in the genus Xylosma"
+        ],
+        "examples": [
+          "The intergrown foliage atop a xylosma hedge appears to be delicately balanced on long wooden fingers."
+        ]
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
+  },
+  {
+    "word": "xyris",
+    "entries": [
+      {
+        "pos": "Noun",
+        "definitions": [
+          "(botany) Any member of the plant genus Xyris."
+        ],
+        "examples": []
+      }
+    ],
+    "default_pos": "Noun",
+    "uk_ipa": null,
+    "us_ipa": null,
+    "synonyms": [],
+    "antonyms": [],
+    "syllables": []
   }
-}
+]
