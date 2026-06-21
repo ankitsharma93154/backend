@@ -440,6 +440,7 @@ const etag = require("etag");
 const { GoogleAuth } = require("google-auth-library");
 const helmet = require("helmet");
 const crypto = require("crypto");
+const { waitUntil } = require("@vercel/functions");
 const { r2, GetObjectCommand, PutObjectCommand } = require("./lib/r2");
 
 // ===== Cache Setup =====
@@ -756,18 +757,21 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     const freshResponse = await buildPromise;
     cache.set(cacheKey, freshResponse);
 
-    // --- Fix #1: R2 write failures must NEVER fail the request. ---
-    // Previously this was an unguarded `await saveToR2(...)`. If R2 was
-    // down, misconfigured, or rate-limited, this threw and the catch
-    // block below sent the user a 500 — even though TTS audio had
-    // already been generated successfully. Caching is a side effect,
-    // not a dependency of the response.
-    saveToR2(r2Key, freshResponse).catch((err) => {
-      console.error(
-        `Unexpected R2 save error for ${r2Key}:`,
-        err?.message || err,
-      );
-    });
+    // --- Fix #1 (revised): R2 write failures must never fail the request,
+    // AND the background write must not get cut off by the platform
+    // freezing this function right after the response is sent. A plain
+    // unawaited promise risks being silently killed mid-flight on
+    // serverless platforms once the handler returns — waitUntil tells
+    // Vercel to keep this execution context alive until the save settles,
+    // without making the user's response wait for it.
+    waitUntil(
+      saveToR2(r2Key, freshResponse).catch((err) => {
+        console.error(
+          `Unexpected R2 save error for ${r2Key}:`,
+          err?.message || err,
+        );
+      }),
+    );
 
     res.setHeader("ETag", freshResponse.etag);
     applyPronunciationCacheHeaders(req, res);
