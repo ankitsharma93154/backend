@@ -851,56 +851,6 @@ app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
 });
 
-// ===== TEMPORARY DEBUG ROUTE — remove once R2 issue is resolved =====
-// Tests raw TLS connectivity to the R2 endpoint with zero AWS SDK
-// involvement, to isolate whether the handshake failure is an SDK/signing
-// issue or a fundamental network/TLS compatibility problem between
-// Vercel and this specific Cloudflare hostname.
-app.get("/r2-raw-test", (req, res) => {
-  const https = require("https");
-  const hostname = `${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com`;
-
-  const options = {
-    hostname,
-    port: 443,
-    path: "/",
-    method: "GET",
-    timeout: 8000,
-  };
-
-  const testReq = https.request(options, (testRes) => {
-    let body = "";
-    testRes.on("data", (chunk) => (body += chunk));
-    testRes.on("end", () => {
-      res.json({
-        success: true,
-        hostname,
-        statusCode: testRes.statusCode,
-        headers: testRes.headers,
-        bodySnippet: body.slice(0, 300),
-      });
-    });
-  });
-
-  testReq.on("error", (err) => {
-    res.status(500).json({
-      success: false,
-      hostname,
-      errorCode: err.code,
-      errorMessage: err.message,
-    });
-  });
-
-  testReq.on("timeout", () => {
-    testReq.destroy();
-    res
-      .status(500)
-      .json({ success: false, hostname, error: "Request timed out" });
-  });
-
-  testReq.end();
-});
-
 app.get("/data/:letter.json", async (req, res) => {
   const letter = String(req.params.letter || "").toLowerCase()[0];
   if (!letter || letter < "a" || letter > "z")
