@@ -1,3 +1,5 @@
+// require("dotenv").config();
+
 // const express = require("express");
 // const bodyParser = require("body-parser");
 // const textToSpeech = require("@google-cloud/text-to-speech");
@@ -10,6 +12,7 @@
 // const { GoogleAuth } = require("google-auth-library");
 // const helmet = require("helmet");
 // const crypto = require("crypto");
+// const { waitUntil } = require("@vercel/functions");
 // const { r2, GetObjectCommand, PutObjectCommand } = require("./lib/r2");
 
 // // ===== Cache Setup =====
@@ -66,7 +69,12 @@
 //   }),
 // );
 
-// require("dotenv").config();
+// // ===== Startup sanity checks (fail loud, not silently, on misconfig) =====
+// if (!process.env.R2_BUCKET) {
+//   console.error(
+//     "WARNING: R2_BUCKET is not set. R2 caching will fail on every request and silently fall back to regenerating audio via TTS every time.",
+//   );
+// }
 
 // // ===== Static File Serving =====
 // app.use(
@@ -134,6 +142,10 @@
 //   );
 // };
 
+// // ===== R2 Helpers =====
+// // Read failures are logged (not just swallowed) so a real misconfig
+// // (bad bucket name, bad credentials, R2 outage) is visible in logs
+// // instead of silently looking like "every word is just a cold cache miss."
 // async function getFromR2(key) {
 //   try {
 //     const response = await r2.send(
@@ -144,22 +156,34 @@
 //     );
 
 //     const text = await response.Body.transformToString();
-
 //     return JSON.parse(text);
-//   } catch {
+//   } catch (err) {
+//     // NoSuchKey is expected on a genuine cache miss — don't log that as an error.
+//     if (err?.name !== "NoSuchKey") {
+//       console.warn(`R2 GET failed for key ${key}:`, err?.message || err);
+//     }
 //     return null;
 //   }
 // }
 
+// // Write failures are caught HERE and never thrown to the caller.
+// // Caching must never be allowed to turn a successful TTS generation
+// // into a failed user-facing request.
 // async function saveToR2(key, data) {
-//   await r2.send(
-//     new PutObjectCommand({
-//       Bucket: process.env.R2_BUCKET,
-//       Key: key,
-//       Body: JSON.stringify(data),
-//       ContentType: "application/json",
-//     }),
-//   );
+//   try {
+//     await r2.send(
+//       new PutObjectCommand({
+//         Bucket: process.env.R2_BUCKET,
+//         Key: key,
+//         Body: JSON.stringify(data),
+//         ContentType: "application/json",
+//       }),
+//     );
+//     return true;
+//   } catch (err) {
+//     console.error(`R2 PUT failed for key ${key}:`, err?.message || err);
+//     return false;
+//   }
 // }
 
 // const normalizeIsMale = (value) => {
@@ -252,12 +276,23 @@
 //   const r2Key = getR2Key(word, accent, isMale ? "male" : "female", speed);
 //   const clientEtag = req.headers["if-none-match"];
 
+//   // --- Fix #2: check the cheap in-memory cache FIRST. ---
+//   // Previously R2 was queried unconditionally on every single request,
+//   // even when the word was already warm in memory. That meant every
+//   // request paid R2 round-trip latency regardless of whether it was needed,
+//   // defeating half the point of having a memory cache in front of R2.
 //   const cachedResponse = cache.get(cacheKey);
-//   const r2Response = await getFromR2(r2Key);
+//   if (cachedResponse) {
+//     if (clientEtag === cachedResponse.etag) return res.status(304).end();
+//     res.setHeader("ETag", cachedResponse.etag);
+//     applyPronunciationCacheHeaders(req, res);
+//     return res.json(cachedResponse.data);
+//   }
 
+//   // Only hit R2 on a memory-cache miss.
+//   const r2Response = await getFromR2(r2Key);
 //   if (r2Response) {
 //     console.log("R2 CACHE HIT");
-
 //     cache.set(cacheKey, r2Response);
 
 //     if (clientEtag === r2Response.etag) {
@@ -266,15 +301,7 @@
 
 //     res.setHeader("ETag", r2Response.etag);
 //     applyPronunciationCacheHeaders(req, res);
-
 //     return res.json(r2Response.data);
-//   }
-//   if (cachedResponse && clientEtag === cachedResponse.etag)
-//     return res.status(304).end();
-//   if (cachedResponse) {
-//     res.setHeader("ETag", cachedResponse.etag);
-//     applyPronunciationCacheHeaders(req, res);
-//     return res.json(cachedResponse.data);
 //   }
 
 //   try {
@@ -301,7 +328,22 @@
 
 //     const freshResponse = await buildPromise;
 //     cache.set(cacheKey, freshResponse);
-//     await saveToR2(r2Key, freshResponse);
+
+//     // --- Fix #1 (revised): R2 write failures must never fail the request,
+//     // AND the background write must not get cut off by the platform
+//     // freezing this function right after the response is sent. A plain
+//     // unawaited promise risks being silently killed mid-flight on
+//     // serverless platforms once the handler returns — waitUntil tells
+//     // Vercel to keep this execution context alive until the save settles,
+//     // without making the user's response wait for it.
+//     waitUntil(
+//       saveToR2(r2Key, freshResponse).catch((err) => {
+//         console.error(
+//           `Unexpected R2 save error for ${r2Key}:`,
+//           err?.message || err,
+//         );
+//       }),
+//     );
 
 //     res.setHeader("ETag", freshResponse.etag);
 //     applyPronunciationCacheHeaders(req, res);
@@ -421,11 +463,6 @@
 // process.on("SIGINT", shutdown);
 // module.exports = app;
 
-// dotenv MUST be loaded before anything that reads process.env at import
-// time (like lib/r2.js, which builds the S3Client as soon as it's required).
-// Loading it later meant R2's env vars were always undefined when lib/r2.js
-// ran, even though .env had them — GOOGLE_APPLICATION_CREDENTIALS only
-// "worked" because it's read lazily inside a function, not at import time.
 require("dotenv").config();
 
 const express = require("express");
@@ -717,23 +754,16 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     return res.json(cachedResponse.data);
   }
 
-  // Only hit R2 on a memory-cache miss.
-  const r2Response = await getFromR2(r2Key);
-  if (r2Response) {
-    console.log("R2 CACHE HIT");
-    cache.set(cacheKey, r2Response);
-
-    if (clientEtag === r2Response.etag) {
-      return res.status(304).end();
-    }
-
-    res.setHeader("ETag", r2Response.etag);
-    applyPronunciationCacheHeaders(req, res);
-    return res.json(r2Response.data);
-  }
-
-  try {
-    if (inFlightPronunciations.has(cacheKey)) {
+  // --- Fix #3: register the in-flight promise BEFORE the R2 round trip,
+  // not after. Previously, the inFlightPronunciations.has(cacheKey) check
+  // only happened after `await getFromR2(...)`. Two near-simultaneous
+  // requests for the same brand-new word could both pass the memory-cache
+  // miss and the R2 miss before either had registered itself, so both
+  // would kick off a real (billed) TTS call. Registering the promise here
+  // closes that window: the second request will find the first one's
+  // in-flight promise and just wait on it instead of racing it.
+  if (inFlightPronunciations.has(cacheKey)) {
+    try {
       await inFlightPronunciations.get(cacheKey);
       const warmedCache = cache.get(cacheKey);
       if (warmedCache) {
@@ -742,9 +772,33 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
         applyPronunciationCacheHeaders(req, res);
         return res.json(warmedCache.data);
       }
+      // Fall through to the normal path below if, for whatever reason,
+      // the in-flight request didn't end up warming the cache.
+    } catch {
+      // The in-flight request failed for the other caller; fall through
+      // and let this request try again independently below.
+    }
+  }
+
+  let buildPromise;
+  try {
+    // Only hit R2 on a memory-cache miss (and once we know nobody else
+    // is already building this exact response).
+    const r2Response = await getFromR2(r2Key);
+    if (r2Response) {
+      console.log("R2 CACHE HIT");
+      cache.set(cacheKey, r2Response);
+
+      if (clientEtag === r2Response.etag) {
+        return res.status(304).end();
+      }
+
+      res.setHeader("ETag", r2Response.etag);
+      applyPronunciationCacheHeaders(req, res);
+      return res.json(r2Response.data);
     }
 
-    const buildPromise = buildPronunciationResponse({
+    buildPromise = buildPronunciationResponse({
       word,
       accent,
       isMale,
@@ -788,7 +842,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
       word,
     });
   } finally {
-    inFlightPronunciations.delete(cacheKey);
+    if (buildPromise) inFlightPronunciations.delete(cacheKey);
   }
 };
 
@@ -800,7 +854,16 @@ const fetchWordData = async (word) => {
     const letter = normalized[0];
     if (!letter || letter < "a" || letter > "z") return null;
 
-    let data = letterCache.get(letter);
+    // Fix: namespace this cache key separately from the raw /data/:letter.json
+    // route below. Both routes used to read/write the SAME letterCache key
+    // (just the bare letter), but they store different shapes — this one
+    // converts the array-format file into an object keyed by word, while the
+    // /data/:letter.json route caches the raw parsed array as-is. Whichever
+    // route ran first for a given letter silently decided what shape the
+    // OTHER route would return for the rest of that 24h TTL. Namespacing the
+    // keys means each route only ever reads back what it itself wrote.
+    const indexedCacheKey = `indexed:${letter}`;
+    let data = letterCache.get(indexedCacheKey);
     if (!data) {
       const filePath = path.join(__dirname, "data", `${letter}.json`); // ← must be inside here
       const fileContent = await fs.readFile(filePath, "utf-8");
@@ -808,7 +871,7 @@ const fetchWordData = async (word) => {
       data = Array.isArray(parsed)
         ? Object.fromEntries(parsed.map((e) => [e.word, e]))
         : parsed;
-      letterCache.set(letter, data);
+      letterCache.set(indexedCacheKey, data);
     }
 
     const entry = Array.isArray(data)
@@ -857,14 +920,16 @@ app.get("/data/:letter.json", async (req, res) => {
     return res.status(400).json({ error: "Invalid letter" });
 
   try {
-    let cachedData = letterCache.get(letter);
+    // Fix: namespaced key, see comment in fetchWordData above for why.
+    const rawCacheKey = `raw:${letter}`;
+    let cachedData = letterCache.get(rawCacheKey);
     if (cachedData) return res.json(cachedData);
 
     const filePath = path.join(__dirname, "data", `${letter}.json`);
     const fileContent = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(fileContent);
 
-    letterCache.set(letter, data);
+    letterCache.set(rawCacheKey, data);
     res.setHeader("Cache-Control", "public, max-age=86400");
     res.json(data);
   } catch (err) {
