@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.1073.0",
     "@google-cloud/text-to-speech": "^5.8.1",
     "@supabase/supabase-js": "^2.49.1",
     "@vercel/functions": "^3.7.2",
@@ -18,12 +17,15 @@
     "body-parser": "^1.20.3",
     "compression": "^1.8.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
     "etag": "^1.8.1",
     "express": "^4.21.2",
     "helmet": "^8.1.0",
     "node-cache": "^5.1.2",
     "nodemon": "^3.1.9",
     "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1080.0",
+    "dotenv": "^17.4.2"
   }
 }
