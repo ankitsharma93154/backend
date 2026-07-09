@@ -13,7 +13,9 @@
 // const helmet = require("helmet");
 // const crypto = require("crypto");
 // const { waitUntil } = require("@vercel/functions");
-// const { r2, GetObjectCommand, PutObjectCommand } = require("./lib/r2");
+// // getFromR2/saveToR2 now live in lib/r2.js with built-in timing logs,
+// // so every caller gets consistent [R2-GET]/[R2-PUT] logging for free.
+// const { getFromR2, saveToR2 } = require("./lib/r2");
 
 // // ===== Cache Setup =====
 // const cache = new NodeCache({
@@ -142,50 +144,6 @@
 //   );
 // };
 
-// // ===== R2 Helpers =====
-// // Read failures are logged (not just swallowed) so a real misconfig
-// // (bad bucket name, bad credentials, R2 outage) is visible in logs
-// // instead of silently looking like "every word is just a cold cache miss."
-// async function getFromR2(key) {
-//   try {
-//     const response = await r2.send(
-//       new GetObjectCommand({
-//         Bucket: process.env.R2_BUCKET,
-//         Key: key,
-//       }),
-//     );
-
-//     const text = await response.Body.transformToString();
-//     return JSON.parse(text);
-//   } catch (err) {
-//     // NoSuchKey is expected on a genuine cache miss — don't log that as an error.
-//     if (err?.name !== "NoSuchKey") {
-//       console.warn(`R2 GET failed for key ${key}:`, err?.message || err);
-//     }
-//     return null;
-//   }
-// }
-
-// // Write failures are caught HERE and never thrown to the caller.
-// // Caching must never be allowed to turn a successful TTS generation
-// // into a failed user-facing request.
-// async function saveToR2(key, data) {
-//   try {
-//     await r2.send(
-//       new PutObjectCommand({
-//         Bucket: process.env.R2_BUCKET,
-//         Key: key,
-//         Body: JSON.stringify(data),
-//         ContentType: "application/json",
-//       }),
-//     );
-//     return true;
-//   } catch (err) {
-//     console.error(`R2 PUT failed for key ${key}:`, err?.message || err);
-//     return false;
-//   }
-// }
-
 // const normalizeIsMale = (value) => {
 //   if (typeof value === "boolean") return value;
 //   if (typeof value === "string") {
@@ -276,39 +234,35 @@
 //   const r2Key = getR2Key(word, accent, isMale ? "male" : "female", speed);
 //   const clientEtag = req.headers["if-none-match"];
 
-//   // --- Fix #2: check the cheap in-memory cache FIRST. ---
-//   // Previously R2 was queried unconditionally on every single request,
-//   // even when the word was already warm in memory. That meant every
-//   // request paid R2 round-trip latency regardless of whether it was needed,
-//   // defeating half the point of having a memory cache in front of R2.
+//   // helper so every exit path logs total duration + which tier served it
+//   const logTotal = (tier) =>
+//     console.log(
+//       `[TOTAL] tier=${tier} word=${word} dur=${Date.now() - requestStart}ms`,
+//     );
+
+//   // Fix #2: check the cheap in-memory cache FIRST.
 //   const cachedResponse = cache.get(cacheKey);
 //   if (cachedResponse) {
+//     logTotal("memory-hit");
 //     if (clientEtag === cachedResponse.etag) return res.status(304).end();
 //     res.setHeader("ETag", cachedResponse.etag);
 //     applyPronunciationCacheHeaders(req, res);
 //     return res.json(cachedResponse.data);
 //   }
 
-//   // --- Fix #3: register the in-flight promise BEFORE the R2 round trip,
-//   // not after. Previously, the inFlightPronunciations.has(cacheKey) check
-//   // only happened after `await getFromR2(...)`. Two near-simultaneous
-//   // requests for the same brand-new word could both pass the memory-cache
-//   // miss and the R2 miss before either had registered itself, so both
-//   // would kick off a real (billed) TTS call. Registering the promise here
-//   // closes that window: the second request will find the first one's
-//   // in-flight promise and just wait on it instead of racing it.
+//   // Fix #3: in-flight check registered BEFORE the R2 round trip.
 //   if (inFlightPronunciations.has(cacheKey)) {
 //     try {
 //       await inFlightPronunciations.get(cacheKey);
 //       const warmedCache = cache.get(cacheKey);
 //       if (warmedCache) {
+//         logTotal("in-flight-join");
 //         if (clientEtag === warmedCache.etag) return res.status(304).end();
 //         res.setHeader("ETag", warmedCache.etag);
 //         applyPronunciationCacheHeaders(req, res);
 //         return res.json(warmedCache.data);
 //       }
-//       // Fall through to the normal path below if, for whatever reason,
-//       // the in-flight request didn't end up warming the cache.
+//       // Fall through if the in-flight request didn't warm the cache.
 //     } catch {
 //       // The in-flight request failed for the other caller; fall through
 //       // and let this request try again independently below.
@@ -317,12 +271,11 @@
 
 //   let buildPromise;
 //   try {
-//     // Only hit R2 on a memory-cache miss (and once we know nobody else
-//     // is already building this exact response).
+//     // getFromR2 logs its own [R2-GET] hit/miss/fail + duration internally.
 //     const r2Response = await getFromR2(r2Key);
 //     if (r2Response) {
-//       console.log("R2 CACHE HIT");
 //       cache.set(cacheKey, r2Response);
+//       logTotal("r2-hit");
 
 //       if (clientEtag === r2Response.etag) {
 //         return res.status(304).end();
@@ -345,14 +298,12 @@
 
 //     const freshResponse = await buildPromise;
 //     cache.set(cacheKey, freshResponse);
+//     logTotal("cold-miss"); // response-sent duration; does NOT include the waitUntil PUT tail below
 
-//     // --- Fix #1 (revised): R2 write failures must never fail the request,
-//     // AND the background write must not get cut off by the platform
-//     // freezing this function right after the response is sent. A plain
-//     // unawaited promise risks being silently killed mid-flight on
-//     // serverless platforms once the handler returns — waitUntil tells
-//     // Vercel to keep this execution context alive until the save settles,
-//     // without making the user's response wait for it.
+//     // Fix #1: R2 write failures never fail the request, and waitUntil
+//     // keeps the invocation alive until the save settles (Vercel would
+//     // otherwise be free to freeze the function right after res.json()).
+//     // saveToR2 logs its own [R2-PUT] duration internally.
 //     waitUntil(
 //       saveToR2(r2Key, freshResponse).catch((err) => {
 //         console.error(
@@ -389,18 +340,13 @@
 //     const letter = normalized[0];
 //     if (!letter || letter < "a" || letter > "z") return null;
 
-//     // Fix: namespace this cache key separately from the raw /data/:letter.json
-//     // route below. Both routes used to read/write the SAME letterCache key
-//     // (just the bare letter), but they store different shapes — this one
-//     // converts the array-format file into an object keyed by word, while the
-//     // /data/:letter.json route caches the raw parsed array as-is. Whichever
-//     // route ran first for a given letter silently decided what shape the
-//     // OTHER route would return for the rest of that 24h TTL. Namespacing the
-//     // keys means each route only ever reads back what it itself wrote.
+//     // Namespaced separately from the raw /data/:letter.json route below —
+//     // they store different shapes, so each route must only read back what
+//     // it itself wrote.
 //     const indexedCacheKey = `indexed:${letter}`;
 //     let data = letterCache.get(indexedCacheKey);
 //     if (!data) {
-//       const filePath = path.join(__dirname, "data", `${letter}.json`); // ← must be inside here
+//       const filePath = path.join(__dirname, "data", `${letter}.json`);
 //       const fileContent = await fs.readFile(filePath, "utf-8");
 //       const parsed = JSON.parse(fileContent);
 //       data = Array.isArray(parsed)
@@ -417,10 +363,8 @@
 //     return {
 //       us_ipa: entry.us_ipa || entry.us || null,
 //       uk_ipa: entry.uk_ipa || entry.uk || null,
-//       // New format fields
 //       entries: entry.entries || [],
 //       default_pos: entry.default_pos || null,
-//       // Old format fallbacks
 //       synonyms: entry.synonyms || [],
 //       antonyms: entry.antonyms || [],
 //       syllables: entry.syllables || [],
@@ -455,7 +399,6 @@
 //     return res.status(400).json({ error: "Invalid letter" });
 
 //   try {
-//     // Fix: namespaced key, see comment in fetchWordData above for why.
 //     const rawCacheKey = `raw:${letter}`;
 //     let cachedData = letterCache.get(rawCacheKey);
 //     if (cachedData) return res.json(cachedData);
@@ -509,6 +452,11 @@ const { waitUntil } = require("@vercel/functions");
 // getFromR2/saveToR2 now live in lib/r2.js with built-in timing logs,
 // so every caller gets consistent [R2-GET]/[R2-PUT] logging for free.
 const { getFromR2, saveToR2 } = require("./lib/r2");
+const {
+  recordRequest,
+  getMonthlySummary,
+  currentMonthKey,
+} = require("./lib/metrics");
 
 // ===== Cache Setup =====
 const cache = new NodeCache({
@@ -727,11 +675,13 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   const r2Key = getR2Key(word, accent, isMale ? "male" : "female", speed);
   const clientEtag = req.headers["if-none-match"];
 
-  // helper so every exit path logs total duration + which tier served it
-  const logTotal = (tier) =>
-    console.log(
-      `[TOTAL] tier=${tier} word=${word} dur=${Date.now() - requestStart}ms`,
-    );
+  // helper so every exit path logs total duration + which tier served it,
+  // and also records it to persistent monthly metrics (non-blocking).
+  const logTotal = (tier) => {
+    const dur = Date.now() - requestStart;
+    console.log(`[TOTAL] tier=${tier} word=${word} dur=${dur}ms`);
+    waitUntil(recordRequest(tier, dur).catch(() => {}));
+  };
 
   // Fix #2: check the cheap in-memory cache FIRST.
   const cachedResponse = cache.get(cacheKey);
@@ -884,6 +834,21 @@ app.get("/", (_, res) => {
 
 app.get("/health", (_, res) => {
   res.status(200).json({ status: "ok", timestamp: Date.now() });
+});
+
+// GET /metrics?month=2026-07  (defaults to current month if omitted)
+app.get("/metrics", async (req, res) => {
+  const month = String(req.query.month || currentMonthKey());
+  if (!/^\d{4}-\d{2}$/.test(month)) {
+    return res.status(400).json({ error: "month must be in YYYY-MM format" });
+  }
+  try {
+    const summary = await getMonthlySummary(month);
+    res.json(summary);
+  } catch (err) {
+    console.error("Failed to load metrics summary:", err?.message || err);
+    res.status(500).json({ error: "Could not load metrics" });
+  }
 });
 
 app.get("/data/:letter.json", async (req, res) => {
