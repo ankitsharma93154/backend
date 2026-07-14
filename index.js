@@ -39,6 +39,246 @@ const letterCache = new NodeCache({
   deleteOnExpire: true,
 });
 
+// ===== Abuse Protection Config =====
+// Centralized so nothing below is a magic number.
+const MAX_WORD_LENGTH = 60;
+const MAX_WORDS = 4;
+const MAX_COLD_MISSES = 20; // per IP, within COLD_MISS_WINDOW_SECONDS
+const COLD_MISS_WINDOW_SECONDS = 600; // 10 minutes
+const IP_BAN_DURATION = 60 * 60; // 1 hour, in seconds
+const REPUTATION_THRESHOLD = 20; // score at which an IP gets auto-banned
+const REPUTATION_TTL_SECONDS = 300; // score decays to 0 after 5 min of good behavior
+
+// Point weights for the reputation system. Tune freely.
+const POINTS_INVALID_INPUT = 3;
+const POINTS_LONG_INPUT = 4;
+const POINTS_RATE_LIMIT = 5;
+const POINTS_BOT_UA = 2;
+
+// IP reputation score. Using NodeCache's TTL as the decay mechanism: every
+// increment refreshes the TTL, so a score only decays once an IP goes quiet
+// for REPUTATION_TTL_SECONDS.
+const ipScoreCache = new NodeCache({
+  stdTTL: REPUTATION_TTL_SECONDS,
+  checkperiod: 60,
+  useClones: false,
+});
+
+// ip -> ban record. TTL enforces the 1-hour (or shorter) ban automatically —
+// no manual cleanup needed.
+const bannedIpsCache = new NodeCache({
+  stdTTL: IP_BAN_DURATION,
+  checkperiod: 60,
+  useClones: false,
+});
+
+// ip -> cold-miss count in the trailing window. Legitimate users mostly hit
+// cache; a client generating lots of brand-new words in a few minutes is
+// either a bot or scraping the dictionary, both of which cost real TTS money.
+const coldMissCache = new NodeCache({
+  stdTTL: COLD_MISS_WINDOW_SECONDS,
+  checkperiod: 120,
+  useClones: false,
+});
+
+// Lightweight in-process counters for observability. These are separate from
+// lib/metrics.js (which persists per-month tier/error counts) — this block
+// is specifically about how much abuse-prevention is doing.
+const securityMetrics = {
+  totalRequests: 0,
+  acceptedRequests: 0,
+  rejectedValidation: 0,
+  rateLimited: 0,
+  blockedIPs: 0,
+  coldMisses: 0,
+  memoryHits: 0,
+  r2Hits: 0,
+};
+
+const getClientIp = (req) =>
+  req.ip || req.connection?.remoteAddress || "unknown";
+
+const logSuspiciousRequest = (req, { word, reason }) => {
+  const ip = getClientIp(req);
+  const ua = req.headers["user-agent"] || "unknown";
+  const referer = req.headers["referer"] || req.headers["referrer"] || "none";
+  console.warn(
+    `[SUSPICIOUS] timestamp=${new Date().toISOString()} ip=${ip} ua="${ua}" referer="${referer}" reason=${reason} word="${word}"`,
+  );
+};
+
+const banIp = (ip, durationSeconds, reason) => {
+  bannedIpsCache.set(ip, { reason, bannedAt: Date.now() }, durationSeconds);
+  securityMetrics.blockedIPs++;
+  console.warn(
+    `[IP-BANNED] ip=${ip} reason=${reason} duration=${durationSeconds}s`,
+  );
+};
+
+const isIpBlocked = (ip) => bannedIpsCache.has(ip);
+
+const incrementIpScore = (ip, points, reason) => {
+  const current = ipScoreCache.get(ip) || 0;
+  const next = current + points;
+  ipScoreCache.set(ip, next); // refresh TTL -> sliding decay window
+  console.warn(
+    `[IP-SCORE] ip=${ip} score=${next} (+${points}) reason=${reason}`,
+  );
+  if (next >= REPUTATION_THRESHOLD && !isIpBlocked(ip)) {
+    banIp(ip, IP_BAN_DURATION, `reputation-threshold:${reason}`);
+  }
+  return next;
+};
+
+const incrementColdMiss = (ip) => {
+  const current = coldMissCache.get(ip) || 0;
+  const next = current + 1;
+  coldMissCache.set(ip, next); // sliding window, resets TTL on each new miss
+  if (next > MAX_COLD_MISSES && !isIpBlocked(ip)) {
+    banIp(ip, IP_BAN_DURATION, "cold-miss-abuse");
+  }
+  return next;
+};
+
+const recordRejectedRequest = (_reason) => {
+  securityMetrics.rejectedValidation++;
+};
+
+const BOT_UA_PATTERNS = [
+  /python-requests/i,
+  /curl\//i,
+  /wget/i,
+  /go-http-client/i,
+  /axios/i,
+  /node-fetch/i,
+  /^java\//i,
+  /okhttp/i,
+  /libwww-perl/i,
+  /scrapy/i,
+];
+
+// A missing User-Agent is itself unusual for a browser-driven site, so it's
+// treated as automated too (log + score bump only — never an outright block).
+const isAutomatedClient = (ua) => {
+  if (!ua) return true;
+  return BOT_UA_PATTERNS.some((pattern) => pattern.test(ua));
+};
+
+// Allows unicode letters/marks/numbers, spaces, apostrophes and hyphens.
+// This deliberately keeps foreign alphabets, names, brand names, made-up
+// words, and hyphenated/apostrophe'd names working (see requirement #14) —
+// it only excludes things a real dictionary word would never contain:
+// HTML/URL/email syntax, control characters, and stray symbols/punctuation
+// (which also happens to catch sentence-like input, since periods,
+// exclamation points, commas etc. aren't in the allowed set).
+const ALLOWED_WORD_CHARS_PATTERN = /^[\p{L}\p{M}\p{N}\s'’\-]+$/u;
+const CONTROL_CHAR_PATTERN = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/;
+const HTML_TAG_PATTERN = /<[^>]*>/;
+const URL_PATTERN = /(https?:\/\/|www\.)/i;
+const EMAIL_PATTERN = /[^\s@]+@[^\s@]+\.[^\s@]+/;
+
+const validateWordInput = (rawWord) => {
+  const value = String(rawWord ?? "");
+  const trimmed = value.trim();
+
+  if (!trimmed) return { valid: false, reason: "empty" };
+  if (trimmed.length > MAX_WORD_LENGTH)
+    return { valid: false, reason: "too-long" };
+  if (CONTROL_CHAR_PATTERN.test(trimmed))
+    return { valid: false, reason: "control-chars" };
+  if (HTML_TAG_PATTERN.test(trimmed))
+    return { valid: false, reason: "html-tag" };
+  if (URL_PATTERN.test(trimmed)) return { valid: false, reason: "url" };
+  if (EMAIL_PATTERN.test(trimmed)) return { valid: false, reason: "email" };
+
+  const wordCount = trimmed.split(/\s+/).filter(Boolean).length;
+  if (wordCount > MAX_WORDS) return { valid: false, reason: "too-many-words" };
+
+  if (!ALLOWED_WORD_CHARS_PATTERN.test(trimmed)) {
+    return { valid: false, reason: "unsupported-symbols" };
+  }
+
+  return { valid: true };
+};
+
+const validateAccentInput = (rawAccent) => {
+  const accent = String(rawAccent || "en-US").trim();
+  if (!voiceMap[accent]) return { valid: false, reason: "invalid-accent" };
+  return { valid: true, value: accent };
+};
+
+const validateSpeedInput = (rawSpeed) => {
+  if (rawSpeed === undefined || rawSpeed === null || rawSpeed === "") {
+    return { valid: true, value: "normal" };
+  }
+  const normalized = String(rawSpeed).trim().toLowerCase();
+  if (!Object.prototype.hasOwnProperty.call(speedMap, normalized)) {
+    return { valid: false, reason: "invalid-speed" };
+  }
+  return { valid: true, value: normalized };
+};
+
+const TRUE_TOKENS = new Set(["true", "1", "yes", "male", "m"]);
+const FALSE_TOKENS = new Set(["false", "0", "no", "female", "f"]);
+
+const validateIsMaleInput = (rawIsMale) => {
+  if (rawIsMale === undefined || rawIsMale === null || rawIsMale === "") {
+    return { valid: true, value: true };
+  }
+  if (typeof rawIsMale === "boolean") return { valid: true, value: rawIsMale };
+  const normalized = String(rawIsMale).trim().toLowerCase();
+  if (TRUE_TOKENS.has(normalized)) return { valid: true, value: true };
+  if (FALSE_TOKENS.has(normalized)) return { valid: true, value: false };
+  return { valid: false, reason: "invalid-isMale" };
+};
+
+// ===== Origin / API-key gate for the expensive endpoint =====
+// The /get-pronunciation hammering came from clients with no relationship
+// to the actual site — curl/scripts hitting the API directly. This ties
+// requests to either (a) a browser sending Origin/Referer that matches your
+// own site, or (b) a shared-secret header for non-browser clients you
+// control (a mobile app, a server-to-server integration, etc).
+//
+// ALLOWED_ORIGINS: comma-separated list, e.g. "https://example.com,https://www.example.com"
+// API_SHARED_SECRET: a long random string; clients you control send it as X-API-Key
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || "")
+  .split(",")
+  .map((o) => o.trim())
+  .filter(Boolean);
+
+const API_SHARED_SECRET = process.env.API_SHARED_SECRET || null;
+
+const verifyRequestOrigin = (req, res, next) => {
+  const apiKey = req.headers["x-api-key"];
+  if (API_SHARED_SECRET && apiKey === API_SHARED_SECRET) return next();
+
+  // Not configured yet — don't silently break the whole site on deploy.
+  // The startup warning below makes sure this doesn't stay unnoticed.
+  if (ALLOWED_ORIGINS.length === 0) return next();
+
+  const origin = req.headers["origin"];
+  const referer = req.headers["referer"] || req.headers["referrer"];
+  const candidate = origin || referer;
+
+  const isAllowed =
+    !!candidate &&
+    ALLOWED_ORIGINS.some((allowed) => candidate.startsWith(allowed));
+
+  if (!isAllowed) {
+    const ip = getClientIp(req);
+    const word = String(req.body?.word || req.query?.word || "");
+    logSuspiciousRequest(req, { word, reason: "bad-origin" });
+    incrementIpScore(ip, POINTS_INVALID_INPUT, "bad-origin");
+    recordRejectedRequest("bad-origin");
+    return res.status(403).json({
+      error: "Forbidden",
+      reason: "Requests must originate from an authorized client.",
+    });
+  }
+
+  next();
+};
+
 // ===== Express Setup =====
 const app = express();
 
@@ -55,11 +295,35 @@ app.use(
   }),
 );
 
+// Belt-and-suspenders on top of Helmet's defaults — explicit so these are
+// guaranteed present regardless of Helmet version/config changes.
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("Referrer-Policy", "no-referrer");
+  res.setHeader(
+    "Permissions-Policy",
+    "geolocation=(), microphone=(), camera=()",
+  );
+  next();
+});
+
 app.use(
   cors({
-    origin: true,
+    origin: (origin, callback) => {
+      // Non-browser clients (curl, server-to-server) don't send an Origin
+      // header at all — CORS doesn't apply to them anyway; the
+      // verifyRequestOrigin middleware on /get-pronunciation is what
+      // actually gates those. Browser requests get checked against the
+      // allowlist below.
+      if (!origin) return callback(null, true);
+      if (ALLOWED_ORIGINS.length === 0) return callback(null, true); // not configured yet
+      if (ALLOWED_ORIGINS.some((allowed) => origin.startsWith(allowed))) {
+        return callback(null, true);
+      }
+      return callback(null, false);
+    },
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-API-Key"],
     maxAge: 86400,
   }),
 );
@@ -87,6 +351,12 @@ app.use(
 if (!process.env.R2_BUCKET) {
   console.error(
     "WARNING: R2_BUCKET is not set. R2 caching will fail on every request and silently fall back to regenerating audio via TTS every time.",
+  );
+}
+
+if (ALLOWED_ORIGINS.length === 0) {
+  console.error(
+    "WARNING: ALLOWED_ORIGINS is not set. The origin/API-key gate on /get-pronunciation is running in PERMISSIVE mode — anyone can call it directly, same as before. Set ALLOWED_ORIGINS (comma-separated site origins) and/or API_SHARED_SECRET to actually enforce it.",
   );
 }
 
@@ -156,16 +426,6 @@ const getR2Key = (word, accent, voice, speed) => {
   );
 };
 
-const normalizeIsMale = (value) => {
-  if (typeof value === "boolean") return value;
-  if (typeof value === "string") {
-    const normalized = value.trim().toLowerCase();
-    if (["true", "1", "yes", "male", "m"].includes(normalized)) return true;
-    if (["false", "0", "no", "female", "f"].includes(normalized)) return false;
-  }
-  return true;
-};
-
 const applyPronunciationCacheHeaders = (req, res) => {
   if (req.method === "GET") {
     res.setHeader(
@@ -230,15 +490,65 @@ const buildPronunciationResponse = async ({
 
 const handlePronunciationRequest = async (req, res, payload = {}) => {
   const requestStart = Date.now();
+  const ip = getClientIp(req);
+  const ua = req.headers["user-agent"] || "";
+  securityMetrics.totalRequests++;
+
   const rawWord = String(payload.word || "");
-  const accent = String(payload.accent || "en-US");
-  const isMale = normalizeIsMale(payload.isMale);
-  const speed = String(payload.speed || "normal").toLowerCase();
 
-  if (!rawWord) return res.status(400).json({ error: "Word is required." });
-  if (!voiceMap[accent])
+  // ---- Strict parameter validation (Fix #10: never silently default a bad
+  // value — reject it with 400 instead) ----
+  const accentResult = validateAccentInput(payload.accent);
+  if (!accentResult.valid) {
+    logSuspiciousRequest(req, { word: rawWord, reason: accentResult.reason });
+    incrementIpScore(ip, POINTS_INVALID_INPUT, accentResult.reason);
+    recordRejectedRequest(accentResult.reason);
     return res.status(400).json({ error: "Invalid accent selected" });
+  }
 
+  const speedResult = validateSpeedInput(payload.speed);
+  if (!speedResult.valid) {
+    logSuspiciousRequest(req, { word: rawWord, reason: speedResult.reason });
+    incrementIpScore(ip, POINTS_INVALID_INPUT, speedResult.reason);
+    recordRejectedRequest(speedResult.reason);
+    return res.status(400).json({ error: "Invalid speed selected" });
+  }
+
+  const isMaleResult = validateIsMaleInput(payload.isMale);
+  if (!isMaleResult.valid) {
+    logSuspiciousRequest(req, { word: rawWord, reason: isMaleResult.reason });
+    incrementIpScore(ip, POINTS_INVALID_INPUT, isMaleResult.reason);
+    recordRejectedRequest(isMaleResult.reason);
+    return res.status(400).json({ error: "Invalid isMale value" });
+  }
+
+  // ---- Word input validation (Fix #1: highest priority — runs before any
+  // cache lookup or R2 request) ----
+  const wordValidation = validateWordInput(rawWord);
+  if (!wordValidation.valid) {
+    logSuspiciousRequest(req, { word: rawWord, reason: wordValidation.reason });
+    incrementIpScore(
+      ip,
+      wordValidation.reason === "too-long"
+        ? POINTS_LONG_INPUT
+        : POINTS_INVALID_INPUT,
+      wordValidation.reason,
+    );
+    recordRejectedRequest(wordValidation.reason);
+    return res.status(400).json({
+      error: "Invalid word input.",
+      reason: wordValidation.reason,
+    });
+  }
+
+  if (isAutomatedClient(ua)) {
+    console.warn(`[BOT-UA] ip=${ip} ua="${ua}" word="${rawWord}"`);
+    incrementIpScore(ip, POINTS_BOT_UA, "automated-client");
+  }
+
+  const accent = accentResult.value;
+  const isMale = isMaleResult.value;
+  const speed = speedResult.value;
   const word = rawWord.trim().toLowerCase();
   const speakingRate = speedMap[speed] || speedMap.normal;
   const voiceName = isMale ? voiceMap[accent].male : voiceMap[accent].female;
@@ -247,7 +557,8 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   const clientEtag = req.headers["if-none-match"];
 
   // helper so every exit path logs total duration + which tier served it,
-  // and also records it to persistent monthly metrics (non-blocking).
+  // and also records it to persistent monthly metrics (non-blocking), plus
+  // the in-process security counters used by /metrics.
   //
   // NOTE: no waitUntil here anymore. On App Platform the process is a
   // persistent long-lived server, not a serverless function that freezes
@@ -258,6 +569,13 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     const dur = Date.now() - requestStart;
     console.log(`[TOTAL] tier=${tier} word=${word} dur=${dur}ms`);
     recordRequest(tier, dur); // synchronous now — no .catch() needed
+    securityMetrics.acceptedRequests++;
+    if (tier === "memory-hit") securityMetrics.memoryHits++;
+    if (tier === "r2-hit") securityMetrics.r2Hits++;
+    if (tier === "cold-miss") {
+      securityMetrics.coldMisses++;
+      incrementColdMiss(ip);
+    }
   };
 
   // Fix #2: check the cheap in-memory cache FIRST.
@@ -394,21 +712,82 @@ const fetchWordData = async (word) => {
   }
 };
 
+// ===== IP Blocking Middleware =====
+// Runs before the rate limiters on the pronunciation routes. Anyone whose
+// reputation score crossed REPUTATION_THRESHOLD, or who tripped the
+// cold-miss abuse threshold, gets a flat 403 for the remainder of their ban.
+const blockBannedIps = (req, res, next) => {
+  const ip = getClientIp(req);
+  if (isIpBlocked(ip)) {
+    const ttl = bannedIpsCache.getTtl(ip); // epoch ms when the ban expires
+    const retryAfter = ttl
+      ? Math.max(1, Math.ceil((ttl - Date.now()) / 1000))
+      : IP_BAN_DURATION;
+    return res.status(403).json({
+      error: "Forbidden",
+      reason:
+        "This IP has been temporarily blocked due to abusive request patterns.",
+      retryAfter,
+    });
+  }
+  next();
+};
+
 // ===== Rate Limiting =====
 // Scoped to /get-pronunciation specifically, since that's the only route
 // that costs real money (TTS synthesis on cold-miss) and the only one
-// that's been seeing scripted/abusive traffic. 60 req/min per IP is
-// generous for a real user (nobody looks up 60 words a minute by hand)
-// but low enough to blunt a scripted burst hitting many word/accent/voice
-// combinations back to back.
-const pronunciationLimiter = rateLimit({
-  windowMs: 60 * 1000, // 1 minute
-  limit: 60,
-  standardHeaders: true, // adds RateLimit-* response headers
+// that's been seeing scripted/abusive traffic. GET and POST are split
+// (Fix #4) since POST is the more common scripted-abuse vector; health
+// routes stay unrestricted.
+//
+// Fix #7: the rate-limit key is normally just IP, but for clients that are
+// already showing signs of automation or bad behavior (bot-like UA, or a
+// nonzero reputation score), the User-Agent is folded into the key too.
+// This stops a single bot from spinning up many UAs to look like separate
+// "users" against a plain IP limit, while leaving ordinary users on a
+// simple per-IP limit.
+const buildRateLimitKey = (req) => {
+  const ip = getClientIp(req);
+  const ua = req.headers["user-agent"] || "";
+  const score = ipScoreCache.get(ip) || 0;
+  if (isAutomatedClient(ua) || score > 0) {
+    return `${ip}:${ua}`;
+  }
+  return ip;
+};
+
+// Fix #11: graceful abuse responses instead of a bare "too many requests"
+// string — include a retryAfter and bump the IP's reputation score, since a
+// rate-limit hit is itself a signal.
+const rateLimitHandler = (windowMs) => (req, res) => {
+  const ip = getClientIp(req);
+  incrementIpScore(ip, POINTS_RATE_LIMIT, "rate-limit");
+  securityMetrics.rateLimited++;
+  res.status(429).json({
+    error: "Rate limit exceeded",
+    retryAfter: Math.ceil(windowMs / 1000),
+  });
+};
+
+const GET_WINDOW_MS = 60 * 1000;
+const POST_WINDOW_MS = 60 * 1000;
+
+const getPronunciationLimiter = rateLimit({
+  windowMs: GET_WINDOW_MS,
+  limit: 30,
+  standardHeaders: true,
   legacyHeaders: false,
-  message: {
-    error: "Too many requests. Please slow down and try again shortly.",
-  },
+  keyGenerator: buildRateLimitKey,
+  handler: rateLimitHandler(GET_WINDOW_MS),
+});
+
+const postPronunciationLimiter = rateLimit({
+  windowMs: POST_WINDOW_MS,
+  limit: 20,
+  standardHeaders: true,
+  legacyHeaders: false,
+  keyGenerator: buildRateLimitKey,
+  handler: rateLimitHandler(POST_WINDOW_MS),
 });
 
 process.on("uncaughtException", (error) =>
@@ -436,7 +815,7 @@ app.get("/metrics", async (req, res) => {
   }
   try {
     const summary = await getMonthlySummary(month);
-    res.json(summary);
+    res.json({ ...summary, security: securityMetrics });
   } catch (err) {
     console.error("Failed to load metrics summary:", err?.message || err);
     res.status(500).json({ error: "Could not load metrics" });
@@ -466,13 +845,25 @@ app.get("/data/:letter.json", async (req, res) => {
   }
 });
 
-app.post("/get-pronunciation", pronunciationLimiter, async (req, res) => {
-  await handlePronunciationRequest(req, res, req.body || {});
-});
+app.post(
+  "/get-pronunciation",
+  blockBannedIps,
+  verifyRequestOrigin,
+  postPronunciationLimiter,
+  async (req, res) => {
+    await handlePronunciationRequest(req, res, req.body || {});
+  },
+);
 
-app.get("/get-pronunciation", pronunciationLimiter, async (req, res) => {
-  await handlePronunciationRequest(req, res, req.query || {});
-});
+app.get(
+  "/get-pronunciation",
+  blockBannedIps,
+  verifyRequestOrigin,
+  getPronunciationLimiter,
+  async (req, res) => {
+    await handlePronunciationRequest(req, res, req.query || {});
+  },
+);
 
 // ===== Graceful Shutdown =====
 const shutdown = () => {
