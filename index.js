@@ -12,6 +12,7 @@ const etag = require("etag");
 const { GoogleAuth } = require("google-auth-library");
 const helmet = require("helmet");
 const crypto = require("crypto");
+const rateLimit = require("express-rate-limit");
 // getFromR2/saveToR2 now live in lib/r2.js with built-in timing logs,
 // so every caller gets consistent [R2-GET]/[R2-PUT] logging for free.
 const { getFromR2, saveToR2 } = require("./lib/r2");
@@ -40,6 +41,12 @@ const letterCache = new NodeCache({
 
 // ===== Express Setup =====
 const app = express();
+
+// App Platform sits behind a load balancer/proxy, so Express needs this to
+// read the real client IP from X-Forwarded-For instead of seeing every
+// request as coming from the same internal address. Without it, the rate
+// limiter below would group all users together instead of limiting per-IP.
+app.set("trust proxy", 1);
 
 app.use(
   helmet({
@@ -387,7 +394,23 @@ const fetchWordData = async (word) => {
   }
 };
 
-// ===== Global Error Handling =====
+// ===== Rate Limiting =====
+// Scoped to /get-pronunciation specifically, since that's the only route
+// that costs real money (TTS synthesis on cold-miss) and the only one
+// that's been seeing scripted/abusive traffic. 60 req/min per IP is
+// generous for a real user (nobody looks up 60 words a minute by hand)
+// but low enough to blunt a scripted burst hitting many word/accent/voice
+// combinations back to back.
+const pronunciationLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  limit: 60,
+  standardHeaders: true, // adds RateLimit-* response headers
+  legacyHeaders: false,
+  message: {
+    error: "Too many requests. Please slow down and try again shortly.",
+  },
+});
+
 process.on("uncaughtException", (error) =>
   console.error("Uncaught Exception:", error),
 );
@@ -443,11 +466,11 @@ app.get("/data/:letter.json", async (req, res) => {
   }
 });
 
-app.post("/get-pronunciation", async (req, res) => {
+app.post("/get-pronunciation", pronunciationLimiter, async (req, res) => {
   await handlePronunciationRequest(req, res, req.body || {});
 });
 
-app.get("/get-pronunciation", async (req, res) => {
+app.get("/get-pronunciation", pronunciationLimiter, async (req, res) => {
   await handlePronunciationRequest(req, res, req.query || {});
 });
 
