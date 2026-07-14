@@ -250,7 +250,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   const logTotal = (tier) => {
     const dur = Date.now() - requestStart;
     console.log(`[TOTAL] tier=${tier} word=${word} dur=${dur}ms`);
-    recordRequest(tier, dur).catch(() => {});
+    recordRequest(tier, dur); // synchronous now — no .catch() needed
   };
 
   // Fix #2: check the cheap in-memory cache FIRST.
@@ -333,7 +333,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     console.error(
       `Error processing ${word}: ${error.message || "Unknown error"}`,
     );
-    recordError().catch(() => {});
+    recordError(); // synchronous now — no .catch() needed
     res.status(500).json({
       error: "Error processing pronunciation request",
       suggestion: "Please try again in a moment",
