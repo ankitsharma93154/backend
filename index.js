@@ -9,6 +9,10 @@ const fs = require("fs").promises;
 const path = require("path");
 const compression = require("compression");
 const etag = require("etag");
+const bufferModule = require("buffer");
+if (!bufferModule.SlowBuffer) {
+  bufferModule.SlowBuffer = Buffer;
+}
 const { GoogleAuth } = require("google-auth-library");
 const helmet = require("helmet");
 const crypto = require("crypto");
