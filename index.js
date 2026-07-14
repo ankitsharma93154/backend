@@ -21,6 +21,9 @@ const {
   recordError,
   getMonthlySummary,
   currentMonthKey,
+  getRawValue,
+  setRawValue,
+  deleteRawValue,
 } = require("./lib/metrics");
 
 // ===== Cache Setup =====
@@ -90,6 +93,8 @@ const banHistoryCache = new NodeCache({
   useClones: false,
 });
 
+const persistentBanKey = (ip) => `abuse:ban:${ip}`;
+
 // ip -> cold-miss count in the trailing window. Legitimate users mostly hit
 // cache; a client generating lots of brand-new words in a few minutes is
 // either a bot or scraping the dictionary, both of which cost real TTS money.
@@ -114,7 +119,10 @@ const securityMetrics = {
 };
 
 const getClientIp = (req) =>
-  req.ip || req.connection?.remoteAddress || "unknown";
+  req.headers["cf-connecting-ip"] ||
+  req.ip ||
+  req.connection?.remoteAddress ||
+  "unknown";
 
 const logSuspiciousRequest = (req, { word, reason }) => {
   const ip = getClientIp(req);
@@ -130,15 +138,56 @@ const banIp = (ip, reason) => {
   const tierIndex = Math.min(priorBans, BAN_DURATIONS.length - 1);
   const duration = BAN_DURATIONS[tierIndex];
   banHistoryCache.set(ip, priorBans + 1); // refresh the 24h repeat-offense window
-  bannedIpsCache.set(
-    ip,
-    { reason, bannedAt: Date.now(), tier: tierIndex + 1 },
+  const banRecord = {
+    reason,
+    bannedAt: Date.now(),
+    tier: tierIndex + 1,
+  };
+  bannedIpsCache.set(ip, banRecord, duration);
+  void setRawValue(
+    persistentBanKey(ip),
+    JSON.stringify(banRecord),
     duration,
-  );
+  ).catch((err) => {
+    console.warn(
+      `[IP-BAN-PERSIST] ip=${ip} reason=${reason} err=${err?.message || err}`,
+    );
+  });
   securityMetrics.blockedIPs++;
   console.warn(
     `[IP-BANNED] ip=${ip} reason=${reason} tier=${tierIndex + 1}/${BAN_DURATIONS.length} duration=${duration}s`,
   );
+};
+
+const hydrateBlockedIp = async (ip) => {
+  if (bannedIpsCache.has(ip)) return bannedIpsCache.get(ip);
+
+  const rawBan = await getRawValue(persistentBanKey(ip));
+  if (!rawBan) return null;
+
+  try {
+    const banRecord = JSON.parse(rawBan);
+    const bannedAt = Number(banRecord?.bannedAt) || 0;
+    const tier = Number(banRecord?.tier) || 1;
+    const duration =
+      BAN_DURATIONS[Math.min(Math.max(tier - 1, 0), BAN_DURATIONS.length - 1)];
+    const expiresAt = bannedAt + duration * 1000;
+    if (!bannedAt || expiresAt <= Date.now()) {
+      bannedIpsCache.del(ip);
+      void deleteRawValue(persistentBanKey(ip)).catch(() => {});
+      return null;
+    }
+
+    bannedIpsCache.set(
+      ip,
+      banRecord,
+      Math.max(1, Math.ceil((expiresAt - Date.now()) / 1000)),
+    );
+    return banRecord;
+  } catch (err) {
+    console.warn(`[IP-BAN-HYDRATE] ip=${ip} err=${err?.message || err}`);
+    return null;
+  }
 };
 
 const isIpBlocked = (ip) => bannedIpsCache.has(ip);
@@ -723,65 +772,62 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     }
   }
 
-  let buildPromise;
   try {
-    // getFromR2 logs its own [R2-GET] hit/miss/fail + duration internally.
-    const r2Response = await getFromR2(r2Key);
-    if (r2Response) {
-      cache.set(cacheKey, r2Response);
-      logTotal("r2-hit");
-
-      if (clientEtag === r2Response.etag) {
-        return res.status(304).end();
+    const buildPromise = (async () => {
+      // getFromR2 logs its own [R2-GET] hit/miss/fail + duration internally.
+      const r2Response = await getFromR2(r2Key);
+      if (r2Response) {
+        cache.set(cacheKey, r2Response);
+        return { tier: "r2-hit", response: r2Response };
       }
 
-      res.setHeader("ETag", r2Response.etag);
-      applyPronunciationCacheHeaders(req, res);
-      return res.json(r2Response.data);
-    }
+      if (!checkTtsBudget()) {
+        console.error(
+          `[TTS-BUDGET] Monthly cap reached (${ttsUsageCount}/${TTS_MONTHLY_SOFT_LIMIT}) — rejecting cold-miss for "${word}"`,
+        );
+        return { tier: "budget-exhausted" };
+      }
+      recordTtsUsage();
 
-    if (!checkTtsBudget()) {
-      console.error(
-        `[TTS-BUDGET] Monthly cap reached (${ttsUsageCount}/${TTS_MONTHLY_SOFT_LIMIT}) — rejecting cold-miss for "${word}"`,
-      );
+      const freshResponse = await buildPronunciationResponse({
+        word,
+        accent,
+        isMale,
+        speed,
+        speakingRate,
+        voiceName,
+      });
+
+      cache.set(cacheKey, freshResponse);
+      saveToR2(r2Key, freshResponse).catch((err) => {
+        console.error(
+          `Unexpected R2 save error for ${r2Key}:`,
+          err?.message || err,
+        );
+      });
+
+      return { tier: "cold-miss", response: freshResponse };
+    })();
+    inFlightPronunciations.set(cacheKey, buildPromise);
+
+    const buildResult = await buildPromise;
+
+    if (buildResult?.tier === "budget-exhausted") {
       return res.status(503).json({
         error: "Service temporarily unavailable",
         reason:
           "Monthly speech-synthesis budget reached. Please try again later.",
       });
     }
-    recordTtsUsage();
 
-    buildPromise = buildPronunciationResponse({
-      word,
-      accent,
-      isMale,
-      speed,
-      speakingRate,
-      voiceName,
-    });
-    inFlightPronunciations.set(cacheKey, buildPromise);
+    const { tier, response } = buildResult;
+    logTotal(tier); // response-sent duration; does NOT include the async R2 save below
 
-    const freshResponse = await buildPromise;
-    cache.set(cacheKey, freshResponse);
-    logTotal("cold-miss"); // response-sent duration; does NOT include the async R2 save below
-
-    // Fix #1: R2 write failures never fail the request. No waitUntil
-    // needed on a persistent server — the process stays alive on its own,
-    // so this just runs in the background after the response is sent.
-    // saveToR2 logs its own [R2-PUT] duration internally.
-    saveToR2(r2Key, freshResponse).catch((err) => {
-      console.error(
-        `Unexpected R2 save error for ${r2Key}:`,
-        err?.message || err,
-      );
-    });
-
-    res.setHeader("ETag", freshResponse.etag);
+    res.setHeader("ETag", response.etag);
     applyPronunciationCacheHeaders(req, res);
     res.setHeader("Timing-Allow-Origin", "*");
     res.setHeader("Server-Timing", `total;dur=${Date.now() - requestStart}`);
-    res.json(freshResponse.data);
+    res.json(response.data);
   } catch (error) {
     console.error(
       `Error processing ${word}: ${error.message || "Unknown error"}`,
@@ -793,7 +839,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
       word,
     });
   } finally {
-    if (buildPromise) inFlightPronunciations.delete(cacheKey);
+    inFlightPronunciations.delete(cacheKey);
   }
 };
 
@@ -845,20 +891,26 @@ const fetchWordData = async (word) => {
 // reputation score crossed REPUTATION_THRESHOLD, or who tripped the
 // cold-miss abuse threshold, gets a flat 403 for the remainder of their ban.
 const blockBannedIps = (req, res, next) => {
-  const ip = getClientIp(req);
-  if (isIpBlocked(ip)) {
-    const ttl = bannedIpsCache.getTtl(ip); // epoch ms when the ban expires
-    const retryAfter = ttl
-      ? Math.max(1, Math.ceil((ttl - Date.now()) / 1000))
-      : IP_BAN_DURATION;
-    return res.status(403).json({
-      error: "Forbidden",
-      reason:
-        "This IP has been temporarily blocked due to abusive request patterns.",
-      retryAfter,
-    });
-  }
-  next();
+  (async () => {
+    const ip = getClientIp(req);
+    const banRecord = await hydrateBlockedIp(ip);
+    if (banRecord || isIpBlocked(ip)) {
+      const ttl = bannedIpsCache.getTtl(ip); // epoch ms when the ban expires
+      const retryAfter = ttl
+        ? Math.max(1, Math.ceil((ttl - Date.now()) / 1000))
+        : IP_BAN_DURATION;
+      return res.status(403).json({
+        error: "Forbidden",
+        reason:
+          "This IP has been temporarily blocked due to abusive request patterns.",
+        retryAfter,
+      });
+    }
+    next();
+  })().catch((err) => {
+    console.error(`[IP-BLOCK-CHECK] unexpected error: ${err?.message || err}`);
+    next();
+  });
 };
 
 // ===== Rate Limiting =====
