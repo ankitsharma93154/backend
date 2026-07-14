@@ -258,6 +258,35 @@ const validateIsMaleInput = (rawIsMale) => {
   return { valid: false, reason: "invalid-isMale" };
 };
 
+// ===== User-facing validation messages =====
+// The `reason` codes above (e.g. "too-many-words") are useful in logs but
+// meaningless to an actual visitor. This maps each one to a plain-English
+// sentence the frontend can show directly under the input box, so someone
+// whose input got rejected understands why instead of just seeing a
+// generic "something went wrong."
+const USER_FACING_REASONS = {
+  empty: "Please enter a word or short phrase to look up.",
+  "too-long": `That entry is too long — please keep it under ${MAX_WORD_LENGTH} characters.`,
+  "control-chars":
+    "That entry contains characters we can't process. Please remove any special/invisible characters and try again.",
+  "html-tag": "That entry can't contain HTML tags.",
+  url: "That entry looks like a link — please enter a word or phrase instead.",
+  email:
+    "That entry looks like an email address — please enter a word or phrase instead.",
+  "too-many-words": `Please enter up to ${MAX_WORDS} words at a time — that looked more like a full sentence.`,
+  "unsupported-symbols":
+    "That entry contains symbols we don't support. Please use letters, numbers, spaces, hyphens, or apostrophes only.",
+  "invalid-accent":
+    "That accent isn't supported. Please choose one of the available accents.",
+  "invalid-speed":
+    "That speed option isn't supported. Please choose slow, normal, or fast.",
+  "invalid-isMale": "That voice option isn't valid.",
+};
+
+const getUserFacingMessage = (reason) =>
+  USER_FACING_REASONS[reason] ||
+  "We couldn't process that entry. Please try a different word or phrase.";
+
 // ===== TTS budget guard =====
 // Everything above limits *requests*. This limits *dollars* — the actual
 // cost driver is Google TTS synthesis, which only happens on a cold-miss.
@@ -313,6 +342,15 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || "")
 
 const API_SHARED_SECRET = process.env.API_SHARED_SECRET || null;
 
+// Exact-match (or proper path-boundary) origin check. A naive
+// candidate.startsWith(allowed) is bypassable — e.g. allowed
+// "https://quickpronounce.site" would also match
+// "https://quickpronounce.site.evil.com", since that string literally
+// starts with the allowed origin as a substring. Requiring an exact match,
+// or a match followed by "/", closes that off.
+const originMatches = (candidate, allowed) =>
+  candidate === allowed || candidate.startsWith(allowed + "/");
+
 const verifyRequestOrigin = (req, res, next) => {
   const apiKey = req.headers["x-api-key"];
   if (API_SHARED_SECRET && apiKey === API_SHARED_SECRET) return next();
@@ -327,7 +365,7 @@ const verifyRequestOrigin = (req, res, next) => {
 
   const isAllowed =
     !!candidate &&
-    ALLOWED_ORIGINS.some((allowed) => candidate.startsWith(allowed));
+    ALLOWED_ORIGINS.some((allowed) => originMatches(candidate, allowed));
 
   if (!isAllowed) {
     const ip = getClientIp(req);
@@ -382,7 +420,7 @@ app.use(
       // allowlist below.
       if (!origin) return callback(null, true);
       if (ALLOWED_ORIGINS.length === 0) return callback(null, true); // not configured yet
-      if (ALLOWED_ORIGINS.some((allowed) => origin.startsWith(allowed))) {
+      if (ALLOWED_ORIGINS.some((allowed) => originMatches(origin, allowed))) {
         return callback(null, true);
       }
       return callback(null, false);
@@ -568,7 +606,11 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     logSuspiciousRequest(req, { word: rawWord, reason: accentResult.reason });
     incrementIpScore(ip, POINTS_INVALID_INPUT, accentResult.reason);
     recordRejectedRequest(accentResult.reason);
-    return res.status(400).json({ error: "Invalid accent selected" });
+    return res.status(400).json({
+      error: "Invalid accent selected",
+      reason: accentResult.reason,
+      message: getUserFacingMessage(accentResult.reason),
+    });
   }
 
   const speedResult = validateSpeedInput(payload.speed);
@@ -576,7 +618,11 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     logSuspiciousRequest(req, { word: rawWord, reason: speedResult.reason });
     incrementIpScore(ip, POINTS_INVALID_INPUT, speedResult.reason);
     recordRejectedRequest(speedResult.reason);
-    return res.status(400).json({ error: "Invalid speed selected" });
+    return res.status(400).json({
+      error: "Invalid speed selected",
+      reason: speedResult.reason,
+      message: getUserFacingMessage(speedResult.reason),
+    });
   }
 
   const isMaleResult = validateIsMaleInput(payload.isMale);
@@ -584,7 +630,11 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     logSuspiciousRequest(req, { word: rawWord, reason: isMaleResult.reason });
     incrementIpScore(ip, POINTS_INVALID_INPUT, isMaleResult.reason);
     recordRejectedRequest(isMaleResult.reason);
-    return res.status(400).json({ error: "Invalid isMale value" });
+    return res.status(400).json({
+      error: "Invalid isMale value",
+      reason: isMaleResult.reason,
+      message: getUserFacingMessage(isMaleResult.reason),
+    });
   }
 
   // ---- Word input validation (Fix #1: highest priority — runs before any
@@ -603,6 +653,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     return res.status(400).json({
       error: "Invalid word input.",
       reason: wordValidation.reason,
+      message: getUserFacingMessage(wordValidation.reason),
     });
   }
 
