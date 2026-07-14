@@ -41,13 +41,20 @@ const letterCache = new NodeCache({
 
 // ===== Abuse Protection Config =====
 // Centralized so nothing below is a magic number.
-const MAX_WORD_LENGTH = 60;
+const MAX_WORD_LENGTH = 80;
 const MAX_WORDS = 4;
-const MAX_COLD_MISSES = 20; // per IP, within COLD_MISS_WINDOW_SECONDS
+const MAX_COLD_MISSES = 50; // per IP, within COLD_MISS_WINDOW_SECONDS
 const COLD_MISS_WINDOW_SECONDS = 600; // 10 minutes
-const IP_BAN_DURATION = 60 * 60; // 1 hour, in seconds
+const IP_BAN_DURATION = 60 * 60; // max/final tier ban, in seconds — see BAN_DURATIONS below
 const REPUTATION_THRESHOLD = 20; // score at which an IP gets auto-banned
 const REPUTATION_TTL_SECONDS = 300; // score decays to 0 after 5 min of good behavior
+
+// Progressive bans: first offense is short, repeat offenses within a 24h
+// window escalate. This limits collateral damage to a legitimate user who
+// trips a threshold once (e.g. shared/NAT'd IP, an unusually heavy study
+// session) while still coming down hard on sustained abuse.
+const BAN_DURATIONS = [15 * 60, 30 * 60, IP_BAN_DURATION]; // 15min, 30min, 1hr
+const BAN_HISTORY_TTL_SECONDS = 24 * 60 * 60; // offense count resets after 24h clean
 
 // Point weights for the reputation system. Tune freely.
 const POINTS_INVALID_INPUT = 3;
@@ -64,11 +71,22 @@ const ipScoreCache = new NodeCache({
   useClones: false,
 });
 
-// ip -> ban record. TTL enforces the 1-hour (or shorter) ban automatically —
-// no manual cleanup needed.
+// ip -> ban record. TTL enforces the current tier's ban duration
+// automatically — no manual cleanup needed.
 const bannedIpsCache = new NodeCache({
   stdTTL: IP_BAN_DURATION,
   checkperiod: 60,
+  useClones: false,
+});
+
+// ip -> number of prior bans in the trailing 24h window. Used to pick which
+// tier of BAN_DURATIONS applies on the next offense. A long TTL relative to
+// the ban itself is intentional: an IP that keeps re-offending across
+// several separate bans should keep escalating, not reset to "first offense"
+// the moment its previous ban expires.
+const banHistoryCache = new NodeCache({
+  stdTTL: BAN_HISTORY_TTL_SECONDS,
+  checkperiod: 300,
   useClones: false,
 });
 
@@ -107,11 +125,19 @@ const logSuspiciousRequest = (req, { word, reason }) => {
   );
 };
 
-const banIp = (ip, durationSeconds, reason) => {
-  bannedIpsCache.set(ip, { reason, bannedAt: Date.now() }, durationSeconds);
+const banIp = (ip, reason) => {
+  const priorBans = banHistoryCache.get(ip) || 0;
+  const tierIndex = Math.min(priorBans, BAN_DURATIONS.length - 1);
+  const duration = BAN_DURATIONS[tierIndex];
+  banHistoryCache.set(ip, priorBans + 1); // refresh the 24h repeat-offense window
+  bannedIpsCache.set(
+    ip,
+    { reason, bannedAt: Date.now(), tier: tierIndex + 1 },
+    duration,
+  );
   securityMetrics.blockedIPs++;
   console.warn(
-    `[IP-BANNED] ip=${ip} reason=${reason} duration=${durationSeconds}s`,
+    `[IP-BANNED] ip=${ip} reason=${reason} tier=${tierIndex + 1}/${BAN_DURATIONS.length} duration=${duration}s`,
   );
 };
 
@@ -125,7 +151,7 @@ const incrementIpScore = (ip, points, reason) => {
     `[IP-SCORE] ip=${ip} score=${next} (+${points}) reason=${reason}`,
   );
   if (next >= REPUTATION_THRESHOLD && !isIpBlocked(ip)) {
-    banIp(ip, IP_BAN_DURATION, `reputation-threshold:${reason}`);
+    banIp(ip, `reputation-threshold:${reason}`);
   }
   return next;
 };
@@ -135,7 +161,7 @@ const incrementColdMiss = (ip) => {
   const next = current + 1;
   coldMissCache.set(ip, next); // sliding window, resets TTL on each new miss
   if (next > MAX_COLD_MISSES && !isIpBlocked(ip)) {
-    banIp(ip, IP_BAN_DURATION, "cold-miss-abuse");
+    banIp(ip, "cold-miss-abuse");
   }
   return next;
 };
@@ -230,6 +256,45 @@ const validateIsMaleInput = (rawIsMale) => {
   if (TRUE_TOKENS.has(normalized)) return { valid: true, value: true };
   if (FALSE_TOKENS.has(normalized)) return { valid: true, value: false };
   return { valid: false, reason: "invalid-isMale" };
+};
+
+// ===== TTS budget guard =====
+// Everything above limits *requests*. This limits *dollars* — the actual
+// cost driver is Google TTS synthesis, which only happens on a cold-miss.
+// This is a soft, in-memory monthly cap: it resets on redeploy/restart, so
+// treat it as a safety net that stops a slow leak from becoming a shock
+// bill between now and when you notice, NOT a replacement for a real budget
+// alert configured in Google Cloud Console (which persists regardless of
+// this process's lifecycle).
+//
+// Disabled by default (0). Set TTS_MONTHLY_SOFT_LIMIT to the number of
+// cold-miss TTS calls you're comfortable with per month to enable it.
+const TTS_MONTHLY_SOFT_LIMIT = Number(process.env.TTS_MONTHLY_SOFT_LIMIT) || 0;
+let ttsUsageMonthKey = currentMonthKey();
+let ttsUsageCount = 0;
+
+const checkTtsBudget = () => {
+  const nowMonthKey = currentMonthKey();
+  if (nowMonthKey !== ttsUsageMonthKey) {
+    ttsUsageMonthKey = nowMonthKey;
+    ttsUsageCount = 0;
+  }
+  if (TTS_MONTHLY_SOFT_LIMIT > 0 && ttsUsageCount >= TTS_MONTHLY_SOFT_LIMIT) {
+    return false;
+  }
+  return true;
+};
+
+const recordTtsUsage = () => {
+  ttsUsageCount += 1;
+  if (
+    TTS_MONTHLY_SOFT_LIMIT > 0 &&
+    ttsUsageCount === Math.floor(TTS_MONTHLY_SOFT_LIMIT * 0.9)
+  ) {
+    console.error(
+      `[TTS-BUDGET] WARNING: ${ttsUsageCount}/${TTS_MONTHLY_SOFT_LIMIT} monthly TTS calls used (90%).`,
+    );
+  }
 };
 
 // ===== Origin / API-key gate for the expensive endpoint =====
@@ -624,6 +689,18 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
       return res.json(r2Response.data);
     }
 
+    if (!checkTtsBudget()) {
+      console.error(
+        `[TTS-BUDGET] Monthly cap reached (${ttsUsageCount}/${TTS_MONTHLY_SOFT_LIMIT}) — rejecting cold-miss for "${word}"`,
+      );
+      return res.status(503).json({
+        error: "Service temporarily unavailable",
+        reason:
+          "Monthly speech-synthesis budget reached. Please try again later.",
+      });
+    }
+    recordTtsUsage();
+
     buildPromise = buildPronunciationResponse({
       word,
       accent,
@@ -740,21 +817,15 @@ const blockBannedIps = (req, res, next) => {
 // (Fix #4) since POST is the more common scripted-abuse vector; health
 // routes stay unrestricted.
 //
-// Fix #7: the rate-limit key is normally just IP, but for clients that are
-// already showing signs of automation or bad behavior (bot-like UA, or a
-// nonzero reputation score), the User-Agent is folded into the key too.
-// This stops a single bot from spinning up many UAs to look like separate
-// "users" against a plain IP limit, while leaving ordinary users on a
-// simple per-IP limit.
-const buildRateLimitKey = (req) => {
-  const ip = getClientIp(req);
-  const ua = req.headers["user-agent"] || "";
-  const score = ipScoreCache.get(ip) || 0;
-  if (isAutomatedClient(ua) || score > 0) {
-    return `${ip}:${ua}`;
-  }
-  return ip;
-};
+// Fix #7 revisited: originally this also folded User-Agent into the key for
+// "suspicious" clients, on the theory that it would reduce bypasses. On
+// review that was backwards — a script can set an arbitrary User-Agent on
+// every request (unlike a browser, which can't override it), so keying by
+// IP+UA would let a bot multiply its effective rate-limit budget just by
+// rotating UA strings from the same IP. Plain IP is simpler and doesn't
+// have that hole; UA is still used elsewhere (reputation scoring) where it
+// can only ever add friction, never subtract it.
+const buildRateLimitKey = (req) => getClientIp(req);
 
 // Fix #11: graceful abuse responses instead of a bare "too many requests"
 // string — include a retryAfter and bump the IP's reputation score, since a
