@@ -49,7 +49,15 @@ const letterCache = new NodeCache({
 // ===== Abuse Protection Config =====
 // Centralized so nothing below is a magic number.
 const MAX_WORD_LENGTH = 80;
-const MAX_WORDS = 4;
+// Cost is already capped by MAX_WORD_LENGTH (TTS billing is per-character),
+// so this isn't a cost control — it's a heuristic for "this looks like a
+// full sentence, not a lookup." Raised from 4 -> 8 after seeing legitimate
+// rejections in production: addresses ("land east off pengilly way,
+// hartland"), quotes/poem lines ("paper boats by rabindranath tagore"),
+// and org names ("association to advance collegiate schools of business")
+// were all getting caught at 4 words. 8 covers those while still rejecting
+// genuine full sentences/paragraphs.
+const MAX_WORDS = 6;
 const MAX_COLD_MISSES = 50; // per IP, within COLD_MISS_WINDOW_SECONDS
 const COLD_MISS_WINDOW_SECONDS = 600; // 10 minutes
 const IP_BAN_DURATION = 60 * 60; // max/final tier ban, in seconds — see BAN_DURATIONS below
@@ -243,14 +251,20 @@ const isAutomatedClient = (ua) => {
   return BOT_UA_PATTERNS.some((pattern) => pattern.test(ua));
 };
 
-// Allows unicode letters/marks/numbers, spaces, apostrophes and hyphens.
-// This deliberately keeps foreign alphabets, names, brand names, made-up
-// words, and hyphenated/apostrophe'd names working (see requirement #14) —
-// it only excludes things a real dictionary word would never contain:
-// HTML/URL/email syntax, control characters, and stray symbols/punctuation
-// (which also happens to catch sentence-like input, since periods,
-// exclamation points, commas etc. aren't in the allowed set).
-const ALLOWED_WORD_CHARS_PATTERN = /^[\p{L}\p{M}\p{N}\s'’\-]+$/u;
+// Allows unicode letters/marks/numbers, spaces, apostrophes, hyphens, plus
+// periods/commas/ampersands. This deliberately keeps foreign alphabets,
+// names, brand names, made-up words, and hyphenated/apostrophe'd names
+// working (see requirement #14) — and, as of the symbol widening below,
+// also keeps working: abbreviated names ("donald w. riegle jr"), brand
+// names with "&" ("sellier & bellot"), numbers with thousands separators
+// ("34,320,000"), and addresses/titles with commas ("...way, hartland").
+// It still excludes things a real dictionary word/phrase would never
+// contain: HTML/URL/email syntax (caught separately below, before this
+// check runs), control characters, and other stray symbols. Periods/commas
+// don't reopen the sentence-spam door on their own — MAX_WORDS and
+// MAX_WORD_LENGTH still cap how much a single request can contain either
+// way.
+const ALLOWED_WORD_CHARS_PATTERN = /^[\p{L}\p{M}\p{N}\s'’\-.,&]+$/u;
 const CONTROL_CHAR_PATTERN = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/;
 const HTML_TAG_PATTERN = /<[^>]*>/;
 const URL_PATTERN = /(https?:\/\/|www\.)/i;
@@ -328,7 +342,7 @@ const USER_FACING_REASONS = {
     "That entry looks like an email address — please enter a word or phrase instead.",
   "too-many-words": `Please enter up to ${MAX_WORDS} words at a time — that looked more like a full sentence.`,
   "unsupported-symbols":
-    "That entry contains symbols we don't support. Please use letters, numbers, spaces, hyphens, or apostrophes only.",
+    "That entry contains symbols we don't support. Please use letters, numbers, spaces, hyphens, apostrophes, periods, commas, or '&' only.",
   "invalid-accent":
     "That accent isn't supported. Please choose one of the available accents.",
   "invalid-speed":
@@ -570,6 +584,20 @@ const voiceMap = {
 const speedMap = { slow: 0.6, normal: 0.9, fast: 1.2 };
 const inFlightPronunciations = new Map();
 
+// Storing a response in the fast in-memory cache is purely an optimization
+// — R2 already durably has it. If the cache is at maxKeys, node-cache
+// throws rather than evicting, which previously meant a full cache turned
+// an already-successful R2/TTS fetch into a 500 for the user. This wrapper
+// makes a full cache degrade to "skip the local cache this time" instead
+// of breaking the response.
+const safeCacheSet = (key, value) => {
+  try {
+    cache.set(key, value);
+  } catch (err) {
+    console.warn(`[CACHE] set failed for ${key}: ${err?.message || err}`);
+  }
+};
+
 const getCacheKey = (word, accent, voice, speed) =>
   `${word.toLowerCase()}_${accent}_${voice}_${speed}`;
 
@@ -781,7 +809,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
       // getFromR2 logs its own [R2-GET] hit/miss/fail + duration internally.
       const r2Response = await getFromR2(r2Key);
       if (r2Response) {
-        cache.set(cacheKey, r2Response);
+        safeCacheSet(cacheKey, r2Response);
         return { tier: "r2-hit", response: r2Response };
       }
 
@@ -802,7 +830,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
         voiceName,
       });
 
-      cache.set(cacheKey, freshResponse);
+      safeCacheSet(cacheKey, freshResponse);
       saveToR2(r2Key, freshResponse).catch((err) => {
         console.error(
           `Unexpected R2 save error for ${r2Key}:`,
