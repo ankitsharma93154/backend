@@ -25,9 +25,6 @@ const {
   recordError,
   getMonthlySummary,
   currentMonthKey,
-  getRawValue,
-  setRawValue,
-  deleteRawValue,
 } = require("./lib/metrics");
 
 // ===== Cache Setup =====
@@ -47,88 +44,23 @@ const letterCache = new NodeCache({
 });
 
 // ===== Abuse Protection Config =====
-// Centralized so nothing below is a magic number.
+// SIMPLIFIED (Jul 2026): this used to include an IP reputation-scoring
+// system with progressive bans, persisted to Redis for cross-container
+// consistency. Removed after review — the actual abuse seen in production
+// was naive scripts (curl/python, no headers, obvious garbage/slur
+// strings, short bursts). Input validation and rate limiting alone stop
+// that; the reputation/ban system was solving for a more sophisticated
+// slow-and-low attacker that never actually showed up, and its Redis
+// lookup on every request was adding real latency to every single click.
+// What's left below (validation limits, origin gate, TTS budget cap, bot
+// UA logging, rate limiting) is cheap — no per-request network calls.
 const MAX_WORD_LENGTH = 80;
 // Cost is already capped by MAX_WORD_LENGTH (TTS billing is per-character),
 // so this isn't a cost control — it's a heuristic for "this looks like a
-// full sentence, not a lookup." Raised from 4 -> 8 after seeing legitimate
-// rejections in production: addresses ("land east off pengilly way,
-// hartland"), quotes/poem lines ("paper boats by rabindranath tagore"),
-// and org names ("association to advance collegiate schools of business")
-// were all getting caught at 4 words. 8 covers those while still rejecting
-// genuine full sentences/paragraphs.
-const MAX_WORDS = 6;
-const MAX_COLD_MISSES = 50; // per IP, within COLD_MISS_WINDOW_SECONDS
-const COLD_MISS_WINDOW_SECONDS = 600; // 10 minutes
-const IP_BAN_DURATION = 60 * 60; // max/final tier ban, in seconds — see BAN_DURATIONS below
-const REPUTATION_THRESHOLD = 20; // score at which an IP gets auto-banned
-const REPUTATION_TTL_SECONDS = 300; // score decays to 0 after 5 min of good behavior
-
-// Progressive bans: first offense is short, repeat offenses within a 24h
-// window escalate. This limits collateral damage to a legitimate user who
-// trips a threshold once (e.g. shared/NAT'd IP, an unusually heavy study
-// session) while still coming down hard on sustained abuse.
-const BAN_DURATIONS = [15 * 60, 30 * 60, IP_BAN_DURATION]; // 15min, 30min, 1hr
-const BAN_HISTORY_TTL_SECONDS = 24 * 60 * 60; // offense count resets after 24h clean
-
-// Point weights for the reputation system. Tune freely.
-const POINTS_INVALID_INPUT = 3;
-const POINTS_LONG_INPUT = 4;
-const POINTS_RATE_LIMIT = 5;
-const POINTS_BOT_UA = 2;
-
-// IP reputation score. Using NodeCache's TTL as the decay mechanism: every
-// increment refreshes the TTL, so a score only decays once an IP goes quiet
-// for REPUTATION_TTL_SECONDS.
-const ipScoreCache = new NodeCache({
-  stdTTL: REPUTATION_TTL_SECONDS,
-  checkperiod: 60,
-  useClones: false,
-});
-
-// ip -> ban record. TTL enforces the current tier's ban duration
-// automatically — no manual cleanup needed.
-const bannedIpsCache = new NodeCache({
-  stdTTL: IP_BAN_DURATION,
-  checkperiod: 60,
-  useClones: false,
-});
-
-// ip -> number of prior bans in the trailing 24h window. Used to pick which
-// tier of BAN_DURATIONS applies on the next offense. A long TTL relative to
-// the ban itself is intentional: an IP that keeps re-offending across
-// several separate bans should keep escalating, not reset to "first offense"
-// the moment its previous ban expires.
-const banHistoryCache = new NodeCache({
-  stdTTL: BAN_HISTORY_TTL_SECONDS,
-  checkperiod: 300,
-  useClones: false,
-});
-
-const persistentBanKey = (ip) => `abuse:ban:${ip}`;
-
-// ip -> cold-miss count in the trailing window. Legitimate users mostly hit
-// cache; a client generating lots of brand-new words in a few minutes is
-// either a bot or scraping the dictionary, both of which cost real TTS money.
-const coldMissCache = new NodeCache({
-  stdTTL: COLD_MISS_WINDOW_SECONDS,
-  checkperiod: 120,
-  useClones: false,
-});
-
-// Lightweight in-process counters for observability. These are separate from
-// lib/metrics.js (which persists per-month tier/error counts) — this block
-// is specifically about how much abuse-prevention is doing.
-const securityMetrics = {
-  totalRequests: 0,
-  acceptedRequests: 0,
-  rejectedValidation: 0,
-  rateLimited: 0,
-  blockedIPs: 0,
-  coldMisses: 0,
-  memoryHits: 0,
-  r2Hits: 0,
-};
+// full sentence, not a lookup." 8 covers real cases seen in production
+// (addresses, quote/poem lines, org names) while still rejecting genuine
+// full sentences/paragraphs.
+const MAX_WORDS = 8;
 
 const getClientIp = (req) =>
   req.headers["cf-connecting-ip"] ||
@@ -145,86 +77,18 @@ const logSuspiciousRequest = (req, { word, reason }) => {
   );
 };
 
-const banIp = (ip, reason) => {
-  const priorBans = banHistoryCache.get(ip) || 0;
-  const tierIndex = Math.min(priorBans, BAN_DURATIONS.length - 1);
-  const duration = BAN_DURATIONS[tierIndex];
-  banHistoryCache.set(ip, priorBans + 1); // refresh the 24h repeat-offense window
-  const banRecord = {
-    reason,
-    bannedAt: Date.now(),
-    tier: tierIndex + 1,
-  };
-  bannedIpsCache.set(ip, banRecord, duration);
-  void setRawValue(
-    persistentBanKey(ip),
-    JSON.stringify(banRecord),
-    duration,
-  ).catch((err) => {
-    console.warn(
-      `[IP-BAN-PERSIST] ip=${ip} reason=${reason} err=${err?.message || err}`,
-    );
-  });
-  securityMetrics.blockedIPs++;
-  console.warn(
-    `[IP-BANNED] ip=${ip} reason=${reason} tier=${tierIndex + 1}/${BAN_DURATIONS.length} duration=${duration}s`,
-  );
-};
-
-const hydrateBlockedIp = async (ip) => {
-  if (bannedIpsCache.has(ip)) return bannedIpsCache.get(ip);
-
-  const rawBan = await getRawValue(persistentBanKey(ip));
-  if (!rawBan) return null;
-
-  try {
-    const banRecord = JSON.parse(rawBan);
-    const bannedAt = Number(banRecord?.bannedAt) || 0;
-    const tier = Number(banRecord?.tier) || 1;
-    const duration =
-      BAN_DURATIONS[Math.min(Math.max(tier - 1, 0), BAN_DURATIONS.length - 1)];
-    const expiresAt = bannedAt + duration * 1000;
-    if (!bannedAt || expiresAt <= Date.now()) {
-      bannedIpsCache.del(ip);
-      void deleteRawValue(persistentBanKey(ip)).catch(() => {});
-      return null;
-    }
-
-    bannedIpsCache.set(
-      ip,
-      banRecord,
-      Math.max(1, Math.ceil((expiresAt - Date.now()) / 1000)),
-    );
-    return banRecord;
-  } catch (err) {
-    console.warn(`[IP-BAN-HYDRATE] ip=${ip} err=${err?.message || err}`);
-    return null;
-  }
-};
-
-const isIpBlocked = (ip) => bannedIpsCache.has(ip);
-
-const incrementIpScore = (ip, points, reason) => {
-  const current = ipScoreCache.get(ip) || 0;
-  const next = current + points;
-  ipScoreCache.set(ip, next); // refresh TTL -> sliding decay window
-  console.warn(
-    `[IP-SCORE] ip=${ip} score=${next} (+${points}) reason=${reason}`,
-  );
-  if (next >= REPUTATION_THRESHOLD && !isIpBlocked(ip)) {
-    banIp(ip, `reputation-threshold:${reason}`);
-  }
-  return next;
-};
-
-const incrementColdMiss = (ip) => {
-  const current = coldMissCache.get(ip) || 0;
-  const next = current + 1;
-  coldMissCache.set(ip, next); // sliding window, resets TTL on each new miss
-  if (next > MAX_COLD_MISSES && !isIpBlocked(ip)) {
-    banIp(ip, "cold-miss-abuse");
-  }
-  return next;
+// Lightweight in-process counters for observability. These are separate from
+// lib/metrics.js (which persists per-month tier/error counts) — just simple
+// tallies of what's happening on this instance, no scoring or banning tied
+// to them.
+const securityMetrics = {
+  totalRequests: 0,
+  acceptedRequests: 0,
+  rejectedValidation: 0,
+  rateLimited: 0,
+  coldMisses: 0,
+  memoryHits: 0,
+  r2Hits: 0,
 };
 
 const recordRejectedRequest = (_reason) => {
@@ -245,7 +109,7 @@ const BOT_UA_PATTERNS = [
 ];
 
 // A missing User-Agent is itself unusual for a browser-driven site, so it's
-// treated as automated too (log + score bump only — never an outright block).
+// treated as automated too. Log-only — no scoring/banning tied to this.
 const isAutomatedClient = (ua) => {
   if (!ua) return true;
   return BOT_UA_PATTERNS.some((pattern) => pattern.test(ua));
@@ -254,16 +118,12 @@ const isAutomatedClient = (ua) => {
 // Allows unicode letters/marks/numbers, spaces, apostrophes, hyphens, plus
 // periods/commas/ampersands. This deliberately keeps foreign alphabets,
 // names, brand names, made-up words, and hyphenated/apostrophe'd names
-// working (see requirement #14) — and, as of the symbol widening below,
-// also keeps working: abbreviated names ("donald w. riegle jr"), brand
-// names with "&" ("sellier & bellot"), numbers with thousands separators
-// ("34,320,000"), and addresses/titles with commas ("...way, hartland").
-// It still excludes things a real dictionary word/phrase would never
-// contain: HTML/URL/email syntax (caught separately below, before this
-// check runs), control characters, and other stray symbols. Periods/commas
-// don't reopen the sentence-spam door on their own — MAX_WORDS and
-// MAX_WORD_LENGTH still cap how much a single request can contain either
-// way.
+// working — and also keeps working: abbreviated names ("donald w. riegle
+// jr"), brand names with "&" ("sellier & bellot"), numbers with thousands
+// separators ("34,320,000"), and addresses/titles with commas ("...way,
+// hartland"). It still excludes things a real dictionary word/phrase would
+// never contain: HTML/URL/email syntax (caught separately below, before
+// this check runs), control characters, and other stray symbols.
 const ALLOWED_WORD_CHARS_PATTERN = /^[\p{L}\p{M}\p{N}\s'’\-.,&]+$/u;
 const CONTROL_CHAR_PATTERN = /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/;
 const HTML_TAG_PATTERN = /<[^>]*>/;
@@ -398,7 +258,8 @@ const recordTtsUsage = () => {
 // to the actual site — curl/scripts hitting the API directly. This ties
 // requests to either (a) a browser sending Origin/Referer that matches your
 // own site, or (b) a shared-secret header for non-browser clients you
-// control (a mobile app, a server-to-server integration, etc).
+// control (a mobile app, a server-to-server integration, etc). This check
+// is cheap — no network calls — just header comparisons.
 //
 // ALLOWED_ORIGINS: comma-separated list, e.g. "https://example.com,https://www.example.com"
 // API_SHARED_SECRET: a long random string; clients you control send it as X-API-Key
@@ -435,10 +296,8 @@ const verifyRequestOrigin = (req, res, next) => {
     ALLOWED_ORIGINS.some((allowed) => originMatches(candidate, allowed));
 
   if (!isAllowed) {
-    const ip = getClientIp(req);
     const word = String(req.body?.word || req.query?.word || "");
     logSuspiciousRequest(req, { word, reason: "bad-origin" });
-    incrementIpScore(ip, POINTS_INVALID_INPUT, "bad-origin");
     recordRejectedRequest("bad-origin");
     return res.status(403).json({
       error: "Forbidden",
@@ -674,18 +533,16 @@ const buildPronunciationResponse = async ({
 
 const handlePronunciationRequest = async (req, res, payload = {}) => {
   const requestStart = Date.now();
-  const ip = getClientIp(req);
   const ua = req.headers["user-agent"] || "";
   securityMetrics.totalRequests++;
 
   const rawWord = String(payload.word || "");
 
-  // ---- Strict parameter validation (Fix #10: never silently default a bad
-  // value — reject it with 400 instead) ----
+  // ---- Strict parameter validation: never silently default a bad value —
+  // reject it with 400 instead ----
   const accentResult = validateAccentInput(payload.accent);
   if (!accentResult.valid) {
     logSuspiciousRequest(req, { word: rawWord, reason: accentResult.reason });
-    incrementIpScore(ip, POINTS_INVALID_INPUT, accentResult.reason);
     recordRejectedRequest(accentResult.reason);
     return res.status(400).json({
       error: "Invalid accent selected",
@@ -697,7 +554,6 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   const speedResult = validateSpeedInput(payload.speed);
   if (!speedResult.valid) {
     logSuspiciousRequest(req, { word: rawWord, reason: speedResult.reason });
-    incrementIpScore(ip, POINTS_INVALID_INPUT, speedResult.reason);
     recordRejectedRequest(speedResult.reason);
     return res.status(400).json({
       error: "Invalid speed selected",
@@ -709,7 +565,6 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   const isMaleResult = validateIsMaleInput(payload.isMale);
   if (!isMaleResult.valid) {
     logSuspiciousRequest(req, { word: rawWord, reason: isMaleResult.reason });
-    incrementIpScore(ip, POINTS_INVALID_INPUT, isMaleResult.reason);
     recordRejectedRequest(isMaleResult.reason);
     return res.status(400).json({
       error: "Invalid isMale value",
@@ -718,18 +573,11 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     });
   }
 
-  // ---- Word input validation (Fix #1: highest priority — runs before any
-  // cache lookup or R2 request) ----
+  // ---- Word input validation: highest priority — runs before any cache
+  // lookup or R2 request ----
   const wordValidation = validateWordInput(rawWord);
   if (!wordValidation.valid) {
     logSuspiciousRequest(req, { word: rawWord, reason: wordValidation.reason });
-    incrementIpScore(
-      ip,
-      wordValidation.reason === "too-long"
-        ? POINTS_LONG_INPUT
-        : POINTS_INVALID_INPUT,
-      wordValidation.reason,
-    );
     recordRejectedRequest(wordValidation.reason);
     return res.status(400).json({
       error: "Invalid word input.",
@@ -739,8 +587,9 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   }
 
   if (isAutomatedClient(ua)) {
-    console.warn(`[BOT-UA] ip=${ip} ua="${ua}" word="${rawWord}"`);
-    incrementIpScore(ip, POINTS_BOT_UA, "automated-client");
+    console.warn(
+      `[BOT-UA] ip=${getClientIp(req)} ua="${ua}" word="${rawWord}"`,
+    );
   }
 
   const accent = accentResult.value;
@@ -756,12 +605,6 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
   // helper so every exit path logs total duration + which tier served it,
   // and also records it to persistent monthly metrics (non-blocking), plus
   // the in-process security counters used by /metrics.
-  //
-  // NOTE: no waitUntil here anymore. On App Platform the process is a
-  // persistent long-lived server, not a serverless function that freezes
-  // right after res.json() — so this promise just runs to completion in
-  // the background naturally. waitUntil was only ever needed to prevent
-  // Vercel from freezing the invocation before a background task finished.
   const logTotal = (tier) => {
     const dur = Date.now() - requestStart;
     console.log(`[TOTAL] tier=${tier} word=${word} dur=${dur}ms`);
@@ -769,10 +612,7 @@ const handlePronunciationRequest = async (req, res, payload = {}) => {
     securityMetrics.acceptedRequests++;
     if (tier === "memory-hit") securityMetrics.memoryHits++;
     if (tier === "r2-hit") securityMetrics.r2Hits++;
-    if (tier === "cold-miss") {
-      securityMetrics.coldMisses++;
-      incrementColdMiss(ip);
-    }
+    if (tier === "cold-miss") securityMetrics.coldMisses++;
   };
 
   // Fix #2: check the cheap in-memory cache FIRST.
@@ -918,56 +758,21 @@ const fetchWordData = async (word) => {
   }
 };
 
-// ===== IP Blocking Middleware =====
-// Runs before the rate limiters on the pronunciation routes. Anyone whose
-// reputation score crossed REPUTATION_THRESHOLD, or who tripped the
-// cold-miss abuse threshold, gets a flat 403 for the remainder of their ban.
-const blockBannedIps = (req, res, next) => {
-  (async () => {
-    const ip = getClientIp(req);
-    const banRecord = await hydrateBlockedIp(ip);
-    if (banRecord || isIpBlocked(ip)) {
-      const ttl = bannedIpsCache.getTtl(ip); // epoch ms when the ban expires
-      const retryAfter = ttl
-        ? Math.max(1, Math.ceil((ttl - Date.now()) / 1000))
-        : IP_BAN_DURATION;
-      return res.status(403).json({
-        error: "Forbidden",
-        reason:
-          "This IP has been temporarily blocked due to abusive request patterns.",
-        retryAfter,
-      });
-    }
-    next();
-  })().catch((err) => {
-    console.error(`[IP-BLOCK-CHECK] unexpected error: ${err?.message || err}`);
-    next();
-  });
-};
-
 // ===== Rate Limiting =====
 // Scoped to /get-pronunciation specifically, since that's the only route
 // that costs real money (TTS synthesis on cold-miss) and the only one
 // that's been seeing scripted/abusive traffic. GET and POST are split
-// (Fix #4) since POST is the more common scripted-abuse vector; health
-// routes stay unrestricted.
+// since POST is the more common scripted-abuse vector; health routes stay
+// unrestricted. This is pure in-memory state — no network calls, so it
+// doesn't add latency to requests.
 //
-// Fix #7 revisited: originally this also folded User-Agent into the key for
-// "suspicious" clients, on the theory that it would reduce bypasses. On
-// review that was backwards — a script can set an arbitrary User-Agent on
-// every request (unlike a browser, which can't override it), so keying by
-// IP+UA would let a bot multiply its effective rate-limit budget just by
-// rotating UA strings from the same IP. Plain IP is simpler and doesn't
-// have that hole; UA is still used elsewhere (reputation scoring) where it
-// can only ever add friction, never subtract it.
+// Keying by plain IP (not IP+UA): a script can set an arbitrary User-Agent
+// on every request (unlike a browser, which can't override it), so keying
+// by IP+UA would let a bot multiply its effective rate-limit budget just by
+// rotating UA strings from the same IP.
 const buildRateLimitKey = (req) => getClientIp(req);
 
-// Fix #11: graceful abuse responses instead of a bare "too many requests"
-// string — include a retryAfter and bump the IP's reputation score, since a
-// rate-limit hit is itself a signal.
 const rateLimitHandler = (windowMs) => (req, res) => {
-  const ip = getClientIp(req);
-  incrementIpScore(ip, POINTS_RATE_LIMIT, "rate-limit");
   securityMetrics.rateLimited++;
   res.status(429).json({
     error: "Rate limit exceeded",
@@ -1053,7 +858,6 @@ app.get("/data/:letter.json", async (req, res) => {
 
 app.post(
   "/get-pronunciation",
-  blockBannedIps,
   verifyRequestOrigin,
   postPronunciationLimiter,
   async (req, res) => {
@@ -1063,7 +867,6 @@ app.post(
 
 app.get(
   "/get-pronunciation",
-  blockBannedIps,
   verifyRequestOrigin,
   getPronunciationLimiter,
   async (req, res) => {
